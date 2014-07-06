@@ -6,4 +6,4 @@
  *  - Wetlands
  *  - Chaparral
  */
-Posts = new Meteor.Collection('posts');
+Components = new Meteor.Collection('components');
