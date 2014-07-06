@@ -1,0 +1,26 @@
+/**
+ * Dev styles for representing how the media will look inside a graphic panel
+ * These should be removed in production
+ */
+
+@import "_colors.less";
+@import "_sizes.less";
+
+.graphic-panel,
+.mullion {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graphic-panel {
+  width: calc(@screen-width + 200px);
+  background: @torrey-pines-green;
+  height: 1000px;
+}
+
+.mullion {
+  width: calc(@screen-width + 50px);
+  padding: 0;
+  background: black;
+  border: 20px solid black;
+}

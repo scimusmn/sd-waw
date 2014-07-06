@@ -1,5 +1,290 @@
 @import "/packages/bootstrap3-less/bootstrap.import.less";
 @import "_colors.import.less";
+@import "_sizes.import.less";
+@import "_font-sizes.import.less";
+
+/**
+ * ---------------------------------------------------------------------------
+ * Body and containers
+ * ---------------------------------------------------------------------------
+ */
+body {
+  background: @background-tan;
+}
+
+/**
+ * Make the primary container relative so that we can position things inside
+ * of it with some absolute numbers.
+ */
+.container {
+  position: relative;
+}
+
+.container,
+.container-map {
+  width: @screen-width;
+  max-width: @screen-width;
+  height: @screen-height;
+  padding: 0;
+  background: none;
+}
+
+/**
+ * Page specific background maps
+ */
+.map-tp-menu {
+  background-image: url("../images/map-base.png");
+  background-position: 0 -100px;
+}
+
+.map-tp-where {
+  background-image: url("../images/map-zoom-torrey.png");
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * Global text styles
+ * ----------------------------------------------------------------------------
+ */
+body {
+  font-family: 'FuturaTS-Light', sans-serif;
+  font-size: @body-font-size;
+}
+
+h1, h2, h3 {
+  font-family: 'FuturaTS-Demibold', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * Navigation
+ * ---------------------------------------------------------------------------
+ */
+
+/**
+ * Home screen primary footer navigation
+ */
+.menu-footer {
+  height: 168px;
+  width: 100%;
+}
+
+.menu-footer h1 {
+  color: black;
+  padding: 18px 10px 2px 10px;
+  font-size: 28px;
+  font-weight: lighter;
+  font-family: 'FuturaTS-Light', sans-serif;
+}
+
+.menu-footer .buttons {
+  width: 1116px;
+}
+
+.menu-footer .btn {
+  float: left;
+  white-space: normal;
+  height: 106px;
+  width: 186px;
+  margin: 0;
+  padding: 5px 10px 10px 10px;
+  text-align: left;
+  font-size: @menu-button-size;
+  border: none;
+  border-radius:0;
+  box-shadow: none;
+}
+
+.btn-last {
+  border-right: none;
+}
+
+/**
+ * Interior pages footer navigation
+ */
+.menu-footer-interior {
+  width: 100%;
+  padding: 15px;
+  height: 80px;
+}
+
+.menu-footer-interior .btn {
+  position: relative;
+  padding: 10px 6px;
+  font-size: 1.3em;
+  box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+.btn-home {
+  left: 30px;
+}
+
+.btn-lang {
+  left: 1140px;
+}
+
+/**
+ * Application specific colors
+ *
+ * Each component features a different color scheme, the navigation buttons
+ * carry most of this visual style.
+ */
+
+/**
+ * Torrey Pines
+ */
+.menu-footer-interior-tp {
+  border-top: 1px solid darken(@desert-brown, 8%);
+}
+.buttons-tp,
+.menu-footer-interior-tp {
+  background: @desert-brown;
+}
+
+.buttons-tp .btn,
+.buttons-tp .btn:hover {
+  background: @desert-brown;
+  color: white;
+  border-right: 1px solid darken(@desert-brown, 8%);
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * Content
+ * ---------------------------------------------------------------------------
+ */
+.body-copy {
+  display: table;
+  position: absolute;
+  background: white;
+  top: 30px;
+  left: 47%;
+  padding: 1em;
+  width: auto;
+}
+
+.body-copy h2,
+.body-copy p {
+  width: 500px;
+}
+
+.body-copy img {
+  margin-bottom: 10px;
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * Atomic parts
+ * ---------------------------------------------------------------------------
+ */
+.pabs {
+  position: absolute;
+}
+
+.btm-left {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.btm-right {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+
+.border-top-1 {
+  border: none;
+  border-top: 1px solid @border-grey;
+}
+
+.border-left-1 {
+  border-left: 1px solid @border-grey;
+}
+
+.border-right-1 {
+  border-right: 1px solid @border-grey;
+}
+
+.bgc-white {
+  background: white;
+}
+
+.brighter {
+  -webkit-filter: brightness(1.5);
+}
+
+/**
+ * Images
+ */
+.jaunt-left-02 {
+  transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Safari and Chrome */
+  -o-transform: rotate(-2deg); /* Opera */
+  -moz-transform: rotate(-2deg); /* Firefox */
+  /*-webkit-backface-visibility: hidden;*/
+}
+
+.jaunt-right-02 {
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Safari and Chrome */
+  -o-transform: rotate(2deg); /* Opera */
+  -moz-transform: rotate(2deg); /* Firefox */
+  /*-webkit-backface-visibility: hidden;*/
+}
+
+.postcard-border {
+  border: 10px solid white;
+  background: white;
+}
+
+.postcard-shadow {
+  box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * Font faces
+ * ---------------------------------------------------------------------------
+ */
+@font-face {
+    font-family: 'FuturaTS-Demibold';
+    src: url('../fonts/FuturaTS-Demibold.eot');
+    src: url('../fonts/FuturaTS-Demibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaTS-Demibold.woff') format('woff'),
+         url('../fonts/FuturaTS-Demibold.ttf') format('truetype'),
+         url('../fonts/FuturaTS-Demibold.svg#FuturaTS-Demibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaTS-Light';
+    src: url('../fonts/FuturaTS-Light.eot');
+    src: url('../fonts/FuturaTS-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaTS-Light.woff') format('woff'),
+         url('../fonts/FuturaTS-Light.ttf') format('truetype'),
+         url('../fonts/FuturaTS-Light.svg#FuturaTS-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaTS-Medium';
+    src: url('../fonts/FuturaTS-Medium.eot');
+    src: url('../fonts/FuturaTS-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaTS-Medium.woff') format('woff'),
+         url('../fonts/FuturaTS-Medium.ttf') format('truetype'),
+         url('../fonts/FuturaTS-Medium.svg#FuturaTS-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .grid-block, .main, .post, .comments li, .comment-form {
   background: @background-tan;
@@ -14,11 +299,6 @@
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-}
-
-body {
-  background: @change-brown;
-  color: #666666;
 }
 
 .navbar {
