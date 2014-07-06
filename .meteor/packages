@@ -5,10 +5,10 @@
 
 insecure
 standard-app-packages
-bootstrap
 iron-router
 spin
 accounts-ui-bootstrap-dropdown
 accounts-password
 iron-router-progress
 less
+bootstrap3-less
