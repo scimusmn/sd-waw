@@ -27,16 +27,6 @@ if ( Meteor.users.find().count() === 0 ) {
  * Setup admin user
  */
 if (Components.find().count() === 0) {
-    var torreyPines = Components.insert({
-        title: 'Torrey Pines',
-        userId: admin._id,
-        author: admin.profile.name,
-        // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
-        description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
-        componentNum: '0416',
-        bodyCopy: dimsum()
-    });
 
     var wetlands = Components.insert({
         title: 'Wetlands',
@@ -46,6 +36,19 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Wetlands general description.',
         componentNum: '0316',
+        order: 1,
+        bodyCopy: dimsum()
+    });
+
+    var torreyPines = Components.insert({
+        title: 'Torrey Pines',
+        userId: admin._id,
+        author: admin.profile.name,
+        // TODO - Not sure if I need this field
+        submitted: now - i * 3600 * 1000 + 1,
+        description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
+        componentNum: '0416',
+        order: 2,
         bodyCopy: dimsum()
     });
 
@@ -57,6 +60,7 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Canyons general description.',
         componentNum: '0516',
+        order: 3,
         bodyCopy: dimsum()
     });
 
@@ -68,6 +72,7 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Streams general description.',
         componentNum: '0616',
+        order: 4,
         bodyCopy: dimsum()
     });
 
@@ -79,6 +84,7 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Chaparral general description.',
         componentNum: '0704',
+        order: 5,
         bodyCopy: dimsum()
     });
 
@@ -90,6 +96,7 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Oak Tree general description.',
         componentNum: '0813',
+        order: 6,
         bodyCopy: dimsum()
     });
 
@@ -101,6 +108,7 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Mountains general description.',
         componentNum: '0816',
+        order: 7,
         bodyCopy: dimsum()
     });
 
@@ -112,6 +120,7 @@ if (Components.find().count() === 0) {
         submitted: now - i * 3600 * 1000 + 1,
         description: 'Desert general description.',
         componentNum: '0916',
+        order: 8,
         bodyCopy: dimsum()
     });
 
