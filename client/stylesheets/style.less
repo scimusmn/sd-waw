@@ -12,6 +12,17 @@ body {
   background: #000;
 }
 
+.page-animation {
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+  /*transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);,*/
+  transition-delay: 0ms;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
 /**
  * Make the primary container relative so that we can position things inside
  * of it with some absolute numbers.
