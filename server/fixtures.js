@@ -4,6 +4,7 @@
  * This sets up the Mongo DB database
  */
 var now = new Date().getTime();
+dimsum.configure({ flavor: 'jabberwocky' });
 
 /**
  * Setup admin user
@@ -32,6 +33,7 @@ if (Components.find().count() === 0) {
             author: admin.profile.name,
             userId: admin._id,
             submitted: now - i * 3600 * 1000 + 1,
+            bodyCopy: dimsum()
         });
     }
 }

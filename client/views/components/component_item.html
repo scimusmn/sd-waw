@@ -1,8 +1,7 @@
 <template name="componentItem">
-this is a component item
   <div class="component" {{attributes}}>
     <div class="component-current">
-      <h3>{{title}}</h3>
+      <a href="{{pathFor 'componentPage'}}"><h3>{{title}}</h3></a><br>
     </div>
   </div>
 </template>
