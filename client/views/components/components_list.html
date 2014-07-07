@@ -1,7 +1,13 @@
 <template name="componentsList">
-  <div class="components">
-    {{#each components}}
-      {{> componentItem}}
-    {{/each}}
+  <div class="col-lg-12">
+    <div class="components">
+      {{#each components}}
+        <div class="row">
+          <div class="col-lg-offset-1 col-lg-10">
+            {{> componentItem}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
   </div>
 </template>
