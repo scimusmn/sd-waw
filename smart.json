@@ -4,6 +4,7 @@
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {},
     "iron-router-progress": {},
-    "bootstrap3-less": {}
+    "bootstrap3-less": {},
+    "dimsum": {}
   }
 }
