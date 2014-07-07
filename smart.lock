@@ -5,7 +5,6 @@
       "iron-router": {},
       "spin": {},
       "accounts-ui-bootstrap-dropdown": {},
-      "iron-router-progress": {},
       "bootstrap3-less": {},
       "dimsum": {},
       "iron-transitioner": {}
@@ -25,11 +24,6 @@
         "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
         "tag": "v0.8.3",
         "commit": "a7af8a52e4e74db020a69b158a8f992797b8b0b0"
-      },
-      "iron-router-progress": {
-        "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.4.1",
-        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
       },
       "bootstrap3-less": {
         "git": "https://github.com/eprochasson/bootstrap3-less",
