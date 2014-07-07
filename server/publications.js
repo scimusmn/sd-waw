@@ -1,3 +1,7 @@
+Meteor.publish('components', function(options) {
+  return Components.find({}, options);
+});
+
 Meteor.publish('posts', function(options) {
   return Posts.find({}, options);
 });
