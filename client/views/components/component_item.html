@@ -1,9 +1,11 @@
 <template name="componentItem">
   <div class="component" {{attributes}}>
     <div class="component-current">
-      <a href="{{pathFor 'componentPage'}}">
-        <h3>{{componentNum}} - {{title}}</h3>
-      </a><br>
+      <h3>
+        <a href="{{pathFor 'componentPage'}}">
+          {{componentNum}} - {{title}}
+        </a>
+      </h3>
       {{description}}
     </div>
   </div>
