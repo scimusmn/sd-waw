@@ -11,16 +11,6 @@
 body {
   background: #000;
 }
-.components .row {
-  margin-top: 10px;
-}
-
-.components .component {
-  border-radius: 5px;
-  background: darken(@background-tan, 10%);
-  border: 1px solid darken(@background-tan, 20%);
-  padding: 5px;
-}
 
 /**
  * Make the primary container relative so that we can position things inside
@@ -36,7 +26,43 @@ body {
   max-width: @screen-width;
   height: @screen-height;
   padding: 0;
-  background: @background-tan;
+  background: lighten(@background-tan, 10%);
+}
+
+.components .row {
+  margin-top: 10px;
+}
+
+/**
+ * Animation settings are handled in javascript
+ *
+ * .components .component.animate
+ */
+
+/**
+ * Starting state for animations when a page is rendered
+ */
+.components .component.loading {
+  /*background: darken(@background-tan, 10%);*/
+  opacity: 0;
+}
+
+/**
+ * End state for components after loading class is removed
+ */
+.components .component {
+  /*border-radius: 5px;*/
+  background: lighten(@wetland-blue, 20%);
+  border-left: 3px solid lighten(@wetland-blue, 30%);
+  border-right: 3px solid lighten(@wetland-blue, 30%);
+  padding: 5px;
+  opacity: 1;
+}
+
+.components .component h3,
+.components .component h3 a {
+  font-family: 'FuturaTS-Medium', sans-serif;
+  color: lighten(@wetland-blue, 60%);
 }
 
 /**
