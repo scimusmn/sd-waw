@@ -52,6 +52,22 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
+    var tpHome = Pages.insert({
+        title: 'TP Home',
+        userId: admin._id,
+        author: admin.profile.name,
+        order: 1,
+        bodyCopy: dimsum()
+    });
+
+    var tpWhere = Pages.insert({
+        title: 'TP Where',
+        userId: admin._id,
+        order: 2,
+        author: admin.profile.name,
+        bodyCopy: dimsum()
+    });
+
     var canyons = Components.insert({
         title: 'Canyons',
         userId: admin._id,
