@@ -7,7 +7,8 @@
       "accounts-ui-bootstrap-dropdown": {},
       "iron-router-progress": {},
       "bootstrap3-less": {},
-      "dimsum": {}
+      "dimsum": {},
+      "iron-transitioner": {}
     },
     "packages": {
       "iron-router": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/peerlibrary/meteor-dimsum.git",
         "tag": "v0.1.8-4",
         "commit": "cc695d2ec7affa6219561f088ddc0ab4fa574921"
+      },
+      "iron-transitioner": {
+        "git": "https://github.com/percolatestudio/iron-transitioner.git",
+        "tag": "v0.1.0",
+        "commit": "4a5db7d9c7e212d8784b86aa833334e619bb4bd3"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
