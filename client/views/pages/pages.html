@@ -1,9 +1,8 @@
 <template name="page">
-  <!-- Navigation elements-->
-  <a class="btn btn-block {{pageClass}} tp-{{order}}" href="#">
+  <!-- pages.html - Navigation elements-->
+  <a class="btn btn-block {{pageClass}} tp-{{order}}" href="{{pathFor 'pagePage'}}">
     {{buttonTitle}}<br>
     <span class="esp">{{espButtonTitle}}</span>
   </a>
   <!-- /Navigation elements-->
 </template>
-

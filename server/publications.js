@@ -22,6 +22,10 @@ Meteor.publish('pages', function(componentId) {
   return Pages.find({componentId: componentId});
 });
 
+Meteor.publish('singlePage', function(id) {
+  return id && Pages.find(id);
+});
+
 /**
  * OLD - Posts
  */
