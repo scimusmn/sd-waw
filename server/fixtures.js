@@ -41,7 +41,8 @@ if (Components.find().count() === 0) {
     });
 
     var torreyPines = Components.insert({
-        title: 'Torrey Pines',
+        title: 'Welcome to Torrey Pines',
+        espTitle: 'Bienvenido a Torrey Pines',
         userId: admin._id,
         author: admin.profile.name,
         // TODO - Not sure if I need this field
