@@ -50,25 +50,62 @@ if (Components.find().count() === 0) {
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
+        mural: 'tp-mural.jpg',
         bodyCopy: dimsum()
-    });
-
-    var tpHome = Pages.insert({
-        componentId: torreyPines,
-        title: 'TP Home',
-        userId: admin._id,
-        author: admin.profile.name,
-        order: 1,
-        pageCopy: dimsum()
     });
 
     var tpWhere = Pages.insert({
         componentId: torreyPines,
-        title: 'TP Where',
+        title: 'Where is it?',
+        espTitle: '¿Dónde está?',
+        userId: admin._id,
+        order: 1,
+        author: admin.profile.name,
+    });
+
+    var tpRareTree = Pages.insert({
+        componentId: torreyPines,
+        title: 'Rare tree',
+        espTitle: 'Árbol raro',
         userId: admin._id,
         order: 2,
         author: admin.profile.name,
-        pageCopy: dimsum()
+    });
+
+    var tpRareHabitat = Pages.insert({
+        componentId: torreyPines,
+        title: 'Rare habitat',
+        espTitle: 'Hábitat raros',
+        userId: admin._id,
+        order: 3,
+        author: admin.profile.name,
+    });
+
+    var tpRareClimate = Pages.insert({
+        componentId: torreyPines,
+        title: 'Rare climate zone',
+        espTitle: 'Zona de clima raro',
+        userId: admin._id,
+        order: 4,
+        author: admin.profile.name,
+    });
+
+    var tpExplore = Pages.insert({
+        componentId: torreyPines,
+        title: 'Explore',
+        espTitle: 'Explorá',
+        userId: admin._id,
+        order: 5,
+        author: admin.profile.name,
+    });
+
+    var tpScienceStories = Pages.insert({
+        componentId: torreyPines,
+        title: 'Science stories',
+        espTitle: 'Historias de ciencia',
+        userId: admin._id,
+        order: 6,
+        author: admin.profile.name,
     });
 
     var canyons = Components.insert({

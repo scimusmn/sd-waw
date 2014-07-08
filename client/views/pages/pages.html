@@ -1,7 +1,9 @@
 <template name="page">
-  <li>
-    <h4>{{title}}</h4>
-    <p>{{pageCopy}}</p>
-  </li>
+  <!-- Navigation elements-->
+  <a class="btn btn-block {{pageClass}} tp-{{order}}" href="#">
+    {{title}}<br>
+    <span class="esp">{{espTitle}}</span>
+  </a>
+  <!-- /Navigation elements-->
 </template>
 

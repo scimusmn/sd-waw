@@ -3,17 +3,17 @@
   <div class="container-map map-tp-menu"></div>
   <!-- Title -->
   <div class="pabs welcome-title">
-    <div class="eng">{{title}}</div><br>
+    <div class="eng">{{title}}</div>
     <div class="esp">{{espTitle}}</div>
   </div>
+  <img class="postcard postcard-border jaunt-left-02 postcard-shadow" src="/images/{{mural}}">
   <!-- Menu -->
-  <div class="pabs btm-left border-top-1 menu-footer">
-    {{bodyCopy}}
-    <h3>Sub pages</h3>
-    {{#each pages}}
-      This should show up if the DB query is working
-      {{> page}}
-    {{/each}}
+  <div class="pabs menu-footer">
+    <div class="buttons buttons-tp">
+      {{#each pages}}
+        {{> page}}
+      {{/each}}
+    </div>
   </div>
   <div class="col-lg-offset-1 col-lg-10">
   </div>
