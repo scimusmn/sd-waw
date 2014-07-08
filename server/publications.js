@@ -1,15 +1,4 @@
 /**
- * Pages
- */
-Meteor.publish('pages', function(options) {
-  return Comments.find({componentId: componentId});
-});
-
-Meteor.publish('singlePage', function(id) {
-  return id && Pages.find(id);
-});
-
-/**
  * Components
  */
 Meteor.publish('components', function(options) {
@@ -18,6 +7,19 @@ Meteor.publish('components', function(options) {
 
 Meteor.publish('singleComponent', function(id) {
   return id && Components.find(id);
+});
+
+/**
+ * Pages
+ */
+// Trying simple to see if I can get it to work
+//Meteor.publish('pages', function() {
+  //return Pages.find();
+//});
+
+// This should work, but isn't right now
+Meteor.publish('pages', function(componentId) {
+  return Pages.find({componentId: componentId});
 });
 
 /**

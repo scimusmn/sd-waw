@@ -53,19 +53,21 @@ if (Components.find().count() === 0) {
     });
 
     var tpHome = Pages.insert({
+        componentId: torreyPines,
         title: 'TP Home',
         userId: admin._id,
         author: admin.profile.name,
         order: 1,
-        bodyCopy: dimsum()
+        pageCopy: dimsum()
     });
 
     var tpWhere = Pages.insert({
+        componentId: torreyPines,
         title: 'TP Where',
         userId: admin._id,
         order: 2,
         author: admin.profile.name,
-        bodyCopy: dimsum()
+        pageCopy: dimsum()
     });
 
     var canyons = Components.insert({
@@ -78,6 +80,15 @@ if (Components.find().count() === 0) {
         componentNum: '0516',
         order: 3,
         bodyCopy: dimsum()
+    });
+
+    var cWhere = Pages.insert({
+        componentId: canyons,
+        title: 'Canyons Where',
+        userId: admin._id,
+        order: 2,
+        author: admin.profile.name,
+        pageCopy: dimsum()
     });
 
     var streams = Components.insert({
