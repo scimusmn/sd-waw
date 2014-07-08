@@ -61,6 +61,8 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 1,
         author: admin.profile.name,
+        bodyCopy: 'Torrey Pines State Reserve is only 18 miles from theNat and is the setting for the scene you are looking at.',
+        espBodyCopy: 'Torrey Pines State Reserve está a sólo 18 millas de theNat y es el escenario de la escena que está viendo.'
     });
 
     var tpRareTree = Pages.insert({
