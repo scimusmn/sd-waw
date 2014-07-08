@@ -80,11 +80,18 @@ body {
 /**
  * Page specific background maps
  */
+.map-animate {
+  transition: all 300ms 0ms ease-in;
+}
 .map-tp-menu {
-  /*background-image: url("/images/map-base-natural.png");*/
   background-image: url("/images/map-base-human.png");
   background-position: 0 -100px;
 }
+
+.map-tp-menu.natural {
+  background-image: url("/images/map-base-natural.png");
+}
+
 
 .map-tp-where {
   background-image: url("/images/map-zoom-torrey.png");
@@ -477,7 +484,7 @@ h1, h2, h3 {
   transition: none;
 }
 
-.post.animate{
+.post.animate {
   -webkit-transition: all 300ms 0ms;
   -webkit-transition-delay: ease-in;
   -moz-transition: all 300ms 0ms ease-in;
