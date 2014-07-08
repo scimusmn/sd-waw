@@ -56,8 +56,8 @@ if (Components.find().count() === 0) {
 
     var tpWhere = Pages.insert({
         componentId: torreyPines,
-        title: 'Where is it?',
-        espTitle: '¿Dónde está?',
+        buttonTitle: 'Where is it?',
+        espButtonTitle: '¿Dónde está?',
         userId: admin._id,
         order: 1,
         author: admin.profile.name,
@@ -65,8 +65,8 @@ if (Components.find().count() === 0) {
 
     var tpRareTree = Pages.insert({
         componentId: torreyPines,
-        title: 'Rare tree',
-        espTitle: 'Árbol raro',
+        buttonTitle: 'Rare tree',
+        espButtonTitle: 'Árbol raro',
         userId: admin._id,
         order: 2,
         author: admin.profile.name,
@@ -74,8 +74,8 @@ if (Components.find().count() === 0) {
 
     var tpRareHabitat = Pages.insert({
         componentId: torreyPines,
-        title: 'Rare habitat',
-        espTitle: 'Hábitat raros',
+        buttonTitle: 'Rare habitat',
+        espButtonTitle: 'Hábitat raros',
         userId: admin._id,
         order: 3,
         author: admin.profile.name,
@@ -83,8 +83,8 @@ if (Components.find().count() === 0) {
 
     var tpRareClimate = Pages.insert({
         componentId: torreyPines,
-        title: 'Rare climate zone',
-        espTitle: 'Zona de clima raro',
+        buttonTitle: 'Rare climate zone',
+        espButtonTitle: 'Zona de clima raro',
         userId: admin._id,
         order: 4,
         author: admin.profile.name,
@@ -92,8 +92,8 @@ if (Components.find().count() === 0) {
 
     var tpExplore = Pages.insert({
         componentId: torreyPines,
-        title: 'Explore',
-        espTitle: 'Explorá',
+        buttonTitle: 'Explore',
+        espButtonTitle: 'Explorá',
         userId: admin._id,
         order: 5,
         author: admin.profile.name,
@@ -101,8 +101,8 @@ if (Components.find().count() === 0) {
 
     var tpScienceStories = Pages.insert({
         componentId: torreyPines,
-        title: 'Science stories',
-        espTitle: 'Historias de ciencia',
+        buttonTitle: 'Science stories',
+        espButtonTitle: 'Historias de ciencia',
         userId: admin._id,
         order: 6,
         author: admin.profile.name,
