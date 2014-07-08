@@ -1,19 +1,13 @@
 <template name="layout">
+  <!-- Layout -->
   <div class="graphic-panel">
     <div class="mullion">
       <div class="container">
-        <div id="content" class="container">
-          <!--<div class="row">-->
-            <!--{{> header}}-->
-            <!--</div>-->
-          <!--<div class="row">-->
-            <!--{{> errors}}-->
-            <!--</div>-->
-          <div class="row">
-            {{> yield}}
-          </div>
+        <div id="content">
+          {{> yield}}
         </div>
       </div>
     </div>
   </div>
+  <!-- /Layout -->
 </template>
