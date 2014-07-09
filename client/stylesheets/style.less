@@ -92,9 +92,8 @@ body {
   background-image: url("/images/map-base-natural.png");
 }
 
-
-.map-tp-where {
-  background-image: url("/images/map-zoom-torrey.png");
+.map-tp-park {
+  background-image: url("/images/map-tp-park.png");
 }
 
 /**
@@ -269,7 +268,14 @@ h1, h2, h3 {
 }
 
 .btn-home {
-  left: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  background: white;
+  font-size: 2em;
+  box-shadow: 2px 2px 20px @shadow-grey;
+  padding: 10px;
+  color: @border-grey;
 }
 
 .btn-lang {
@@ -289,22 +295,38 @@ h1, h2, h3 {
  * ---------------------------------------------------------------------------
  */
 .body-copy {
-  display: table;
   position: absolute;
-  background: white;
-  top: 30px;
-  left: 47%;
+  background: lighten(@background-tan, 15%);
+  bottom: 0;
+  right: 0;
   padding: 1em;
-  width: auto;
+  width: 543px;
+  height: 100%;
+  font-size: 1.3em;
+  box-shadow: 2px 2px 20px @shadow-grey;
 }
 
-.body-copy h2,
-.body-copy p {
-  width: 500px;
+.body-copy h3 {
+  font-family: 'FuturaTS-Medium', sans-serif;
+  font-size: 1.4em;
 }
+
+.body-copy p {
+  width: 90%;
+}
+/*.body-copy p.esp{*/
+  /*margin-left: 20px;*/
+/*}*/
 
 .body-copy img {
   margin-bottom: 10px;
+}
+
+.body-copy .esp {
+  color: darken(@background-tan, 40%);
+  font-size: .9em;
+  font-style: italic;
+  letter-spacing: 0.03em;
 }
 
 /**
