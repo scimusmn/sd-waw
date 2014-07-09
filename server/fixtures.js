@@ -50,7 +50,7 @@ if (Components.find().count() === 0) {
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
-        mural: 'tp-mural.jpg',
+        mural: 'tp-mural-2.jpg',
         bodyCopy: dimsum()
     });
 
@@ -74,6 +74,10 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 2,
         author: admin.profile.name,
+        bodyCopy: 'The Torrey Pine is so rare it is found in only two places in the world—Torrey Pines State Reserve and Santa Rosa Island.',
+        espBodyCopy: 'El pino de Torrey es tan raro que sólo se encuentra en dos lugares en el mundo-- Reserva Estatal Torrey Pines y la isla de Santa Rosa.',
+        backgroundMapClass: 'map-tp-extent',
+        bodyImage: 'tp-tree-rare.jpg'
     });
 
     var tpRareHabitat = Pages.insert({

@@ -17,9 +17,10 @@ Meteor.publish('singleComponent', function(id) {
   //return Pages.find();
 //});
 
-// This should work, but isn't right now
 Meteor.publish('pages', function(componentId) {
-  return Pages.find({componentId: componentId});
+  return Pages.find({componentId: componentId}, {sort: {order: 1}});
+  // Works
+  //return Pages.find({componentId: componentId});
 });
 
 Meteor.publish('singlePage', function(id) {
