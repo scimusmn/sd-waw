@@ -16,6 +16,6 @@ Template.componentPage.helpers({
         return 'whort';
     },
     pages: function() {
-        return Pages.find({componentId: this._id});
+        return Pages.find({componentId: this._id}, {sort: {order: 1}});
     }
 });
