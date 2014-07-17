@@ -12,11 +12,6 @@ Meteor.publish('singleComponent', function(id) {
 /**
  * Pages
  */
-// Trying simple to see if I can get it to work
-//Meteor.publish('pages', function() {
-  //return Pages.find();
-//});
-
 Meteor.publish('pages', function(componentId) {
   return Pages.find({componentId: componentId}, {sort: {order: 1}});
   // Works
@@ -28,23 +23,10 @@ Meteor.publish('singlePage', function(id) {
 });
 
 /**
- * OLD - Posts
- */
-Meteor.publish('posts', function(options) {
-  return Posts.find({}, options);
-});
-
-Meteor.publish('singlePost', function(id) {
-  return id && Posts.find(id);
-});
-
-/**
  * OLD - Comments
+ *
+ * TODO - figure out why we can't remove this. This should be done with
  */
-Meteor.publish('comments', function(postId) {
-  return Comments.find({postId: postId});
-});
-
 Meteor.publish('notifications', function() {
   return Notifications.find({userId: this.userId});
 });
