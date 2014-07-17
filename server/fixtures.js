@@ -6,6 +6,10 @@
 var now = new Date().getTime();
 dimsum.configure({ flavor: 'jabberwocky' });
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 /**
  * Setup admin user
  */
@@ -24,9 +28,11 @@ if ( Meteor.users.find().count() === 0 ) {
 }
 
 /**
- * Setup admin user
+ * Setup default content
  */
 if (Components.find().count() === 0) {
+
+    i = getRandomInt(0, 10);
 
     var wetlands = Components.insert({
         title: 'Wetlands',
@@ -196,20 +202,5 @@ if (Components.find().count() === 0) {
         order: 8,
         bodyCopy: dimsum()
     });
-
-}
-
-if (Posts.find().count() === 0) {
-    for (var i = 0; i < 10; i++) {
-        Posts.insert({
-            title: 'Test post #' + i,
-            author: admin.profile.name,
-            userId: admin._id,
-            url: 'http://google.com/?q=test-' + i,
-            submitted: now - i * 3600 * 1000 + 1,
-            commentsCount: 0,
-            upvoters: [], votes: 0
-        });
-    }
 
 }
