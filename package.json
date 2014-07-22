@@ -1,0 +1,11 @@
+{
+  "name": "sd-where-are-we",
+  "description": "San Diego Natural History Museum - Coast to Cactus - Where are We media component"
+  "version": "0.0.1"
+  "main": "http://localhost:3000/",
+  "window": {
+    "title": "node-webkit demo",
+    "fullscreen": true,
+    "toolbar": false
+  }
+}
