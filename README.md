@@ -1,4 +1,4 @@
-# San Diego Where are We application
+# San Diego - Where are We application
 
 This is a Meteor app.
 
