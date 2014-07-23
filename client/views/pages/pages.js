@@ -65,12 +65,6 @@ Template.page.events({
             $('.postcard').addClass('fadeOutDownBigLeft');
             $('.welcome-title, .menu-footer').addClass('fadeOutDownBig');
 
-            //$('.postcard').animate({
-                //bottom: -510,
-                //left: -250,
-            //}, 500, function() {
-                //console.log('Complete');
-            //});
         }
         animateContentOut();
 
