@@ -19,7 +19,6 @@ Template.page.helpers({
             'transition-timing-function: cubic-bezier(0.330, 0.005, 0.000, 1.000);',
             'transition-delay: ' + delay + 'ms;'
         ];
-
         attributes.class = [
             'btn ',
             'btn-block ',

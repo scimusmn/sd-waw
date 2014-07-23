@@ -6,6 +6,6 @@
   "window": {
     "title": "node-webkit demo",
     "fullscreen": true,
-    "toolbar": false
+    "toolbar": true
   }
 }
