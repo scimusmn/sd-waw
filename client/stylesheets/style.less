@@ -1,8 +1,10 @@
 @import "/packages/bootstrap3-less/bootstrap.import.less";
+@import "_animate.import.less";
 @import "_colors.import.less";
 @import "_sizes.import.less";
 @import "_font-sizes.import.less";
 @import "graphic-panel.import.less";
+
 
 /**
  * ---------------------------------------------------------------------------
@@ -44,6 +46,39 @@ body {
 .components .row {
   margin-top: 10px;
 }
+
+
+
+@-webkit-keyframes fadeOutDownBigLeft {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1000px, 2000px, 0);
+    transform: translate3d(-1000px, 2000px, 0);
+  }
+}
+
+@keyframes fadeOutDownBigLeft {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1000px, 2000px, 0);
+    -ms-transform: translate3d(-1000px, 2000px, 0);
+    transform: translate3d(-1000px, 2000px, 0);
+  }
+}
+
+.fadeOutDownBigLeft {
+  -webkit-animation-name: fadeOutDownBigLeft;
+  animation-name: fadeOutDownBigLeft;
+}
+
 
 /**
  * Animation settings are handled in javascript
