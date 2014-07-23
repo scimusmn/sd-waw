@@ -1,8 +1,15 @@
 Template.page.helpers({
+    /**
+     * Define the attributes for each page link
+     */
     attributes: function() {
         pageId = this.buttonTitle;
         pageClass = pageId.replace(/\s+/g, '-').toLowerCase();
 
+        /**
+         * Stagger the appearance animation for each link so that they
+         * cascade in.
+         */
         order = this.order;
         var attributes = {};
         var delta = 50;
@@ -12,6 +19,7 @@ Template.page.helpers({
             'transition-timing-function: cubic-bezier(0.330, 0.005, 0.000, 1.000);',
             'transition-delay: ' + delay + 'ms;'
         ];
+
         attributes.class = [
             'btn ',
             'btn-block ',
