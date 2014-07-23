@@ -356,6 +356,11 @@ h1, h2, h3 {
  * Content
  * ---------------------------------------------------------------------------
  */
+#content {
+  overflow: hidden;
+  position: absolute;
+}
+
 .body-copy {
   position: absolute;
   background: lighten(@background-tan, 6%);
@@ -480,7 +485,7 @@ h1, h2, h3 {
   left: -30px;
   z-index: 1000;
   /*-webkit-clip-path: polygon(41px 443px, 667px 465px, 666px 0px, 57px 10px);*/
-  -webkit-clip-path: polygon(49px 453px, 667px 453px, 666px 0px, 49px 0px)
+  /*-webkit-clip-path: polygon(49px 453px, 667px 453px, 666px 0px, 49px 0px)*/
 }
 
 .jaunt-left-02 {
