@@ -39,3 +39,52 @@ Template.page.rendered = function() {
         $item.removeClass('loading');
     });
 };
+
+Template.page.events({
+    /**
+     * Custom actions for page links
+     */
+    'click .btn': function(e) {
+
+        e.preventDefault();
+        destination = this;
+
+        /**
+         * Animate the page before we leave. We're mostly removing
+         * the layers on top of the map
+         */
+        var animateContentOut = function() {
+            // Animate all overlays
+            $('.postcard, .welcome-title, .menu-footer').addClass('animated');
+
+            // Random time for each overlay so they don't look too uniform
+            $('.postcard').css('-webkit-animation-duration', '1.5s');
+            $('.postcard').css('animation-duration', '1.5s');
+
+            // Move them all off the canvas
+            $('.postcard').addClass('fadeOutDownBigLeft');
+            $('.welcome-title, .menu-footer').addClass('fadeOutDownBig');
+
+            //$('.postcard').animate({
+                //bottom: -510,
+                //left: -250,
+            //}, 500, function() {
+                //console.log('Complete');
+            //});
+        }
+        animateContentOut();
+
+        /**
+         * Wait for the animation to complete before navigating away
+         *
+         * We do this here instead of the router because it allows us to
+         * control the navigation without hacking the router core.
+         */
+        window.setTimeout(function() {
+            goDestination();
+        }, 1000);
+        function goDestination() {
+            Router.go('pagePage', destination);
+        }
+    }
+})
