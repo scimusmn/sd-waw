@@ -55,7 +55,7 @@ Template.page.events({
          */
         var animateContentOut = function() {
             // Animate all overlays
-            $('.postcard, .welcome-title, .menu-footer').addClass('animated');
+            $('.postcard, .welcome-title, .menu-footer, .container-map').addClass('animated');
 
             // Random time for each overlay so they don't look too uniform
             $('.postcard').css('-webkit-animation-duration', '1.5s');
@@ -64,6 +64,10 @@ Template.page.events({
             // Move them all off the canvas
             $('.postcard').addClass('fadeOutDownBigLeft');
             $('.welcome-title, .menu-footer').addClass('fadeOutDownBig');
+
+            $('.container-map').css('-webkit-animation-duration', '.5s');
+            $('.container-map').css('animation-duration', '.5s');
+            $('.container-map').addClass('zoomInBig');
 
         }
         animateContentOut();
@@ -76,7 +80,7 @@ Template.page.events({
          */
         window.setTimeout(function() {
             goDestination();
-        }, 1000);
+        }, 500);
         function goDestination() {
             Router.go('pagePage', destination);
         }

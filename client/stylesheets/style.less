@@ -47,8 +47,31 @@ body {
   margin-top: 10px;
 }
 
+/**
+ * Animations
+ */
 
+/**
+ * Zoom in big
+ */
+@-webkit-keyframes zoomInBig {
+  0% {
+    opacity: 1;
+  }
 
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+
+.zoomInBig {
+  -webkit-animation-name: zoomInBig;
+}
+
+/**
+ * fadeOutDownBigLeft
+ */
 @-webkit-keyframes fadeOutDownBigLeft {
   0% {
     opacity: 1;
