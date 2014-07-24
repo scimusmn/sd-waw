@@ -41,6 +41,13 @@ body {
 }
 
 /**
+ * Used when loading content
+ */
+#spinner {
+  height: 300px;
+}
+
+/**
  * ----------------------------------------------------------------------------
  * Page specific background maps
  * ----------------------------------------------------------------------------
@@ -481,63 +488,6 @@ h1, h2, h3 {
 .postcard-shadow {
   -webkit-box-shadow: 2px 2px 20px @shadow-grey;
           box-shadow: 2px 2px 20px @shadow-grey;
-}
-
-/**
- * Meteor template styles
- *
- * TODO - Clean these up and only keep ones that we're actively using
- */
-
-.grid-block, .main, .post, .comments li, .comment-form {
-  background: @background-tan;
-  /*background: #fff;*/
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  padding: 10px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-}
-
-.navbar {
-  margin-bottom: 10px;
-}
-
-/* line 32, ../sass/style.scss */
-.navbar .navbar-inner {
-  -o-border-radius: 0px 0px 3px 3px;
-  border-radius: 0px 0px 3px 3px;
-}
-
-#spinner {
-  height: 300px;
-}
-
-.dropdown-menu span {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  line-height: 20px;
-  color: #bbb;
-  white-space: nowrap;
-}
-
-.load-more {
-  display: block;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.05);
-  text-align: center;
-  height: 60px;
-  line-height: 60px;
-  margin-bottom: 10px;
-
-}
-
-.load-more:hover {
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 /**
