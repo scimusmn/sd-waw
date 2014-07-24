@@ -34,6 +34,8 @@ Template.page.helpers({
 });
 
 Template.page.rendered = function() {
+    $('.container-map').addClass('animated fadeIn');
+
     var $item = $(this.find('.btn'));
     Meteor.defer(function() {
         $item.removeClass('loading');
