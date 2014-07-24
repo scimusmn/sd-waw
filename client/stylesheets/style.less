@@ -69,10 +69,13 @@ body {
  */
 
 .page-animation {
-  transition-duration: 400ms;
-  transition-timing-function: linear;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
   /*transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);,*/
-  transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
 }
 
 .fadeOut {
@@ -164,7 +167,8 @@ body {
 }
 
 .map-animate {
-  transition: all 300ms 0ms ease-in;
+  -webkit-transition: all 300ms 0ms ease-in;
+          transition: all 300ms 0ms ease-in;
 }
 
 /**
@@ -266,7 +270,8 @@ h1, h2, h3 {
   font-size: 1.5em;
   border: none;
   border-radius:0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .menu-footer .btn .esp {
   color: darken(@background-tan, 5%);
@@ -328,7 +333,8 @@ h1, h2, h3 {
   padding: 1em;
   height: 100%;
   font-size: 1.3em;
-  box-shadow: 2px 2px 20px @shadow-grey;
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
 }
 
 .body-copy img {
@@ -348,7 +354,8 @@ h1, h2, h3 {
   font-size: 1.5em;
   padding: 10px;
   color: @border-grey;
-  box-shadow: -1px 0px 10px @shadow-grey;
+  -webkit-box-shadow: -1px 0px 10px @shadow-grey;
+          box-shadow: -1px 0px 10px @shadow-grey;
   text-align: center;
 }
 
@@ -452,7 +459,9 @@ h1, h2, h3 {
 }
 
 .jaunt-left-02 {
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 .jaunt-right-02 {
@@ -470,7 +479,8 @@ h1, h2, h3 {
 }
 
 .postcard-shadow {
-  box-shadow: 2px 2px 20px @shadow-grey;
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
 }
 
 /**
@@ -514,15 +524,11 @@ h1, h2, h3 {
 .grid-block, .main, .post, .comments li, .comment-form {
   background: @background-tan;
   /*background: #fff;*/
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
   padding: 10px;
   margin-bottom: 10px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -532,9 +538,6 @@ h1, h2, h3 {
 
 /* line 32, ../sass/style.scss */
 .navbar .navbar-inner {
-  -webkit-border-radius: 0px 0px 3px 3px;
-  -moz-border-radius: 0px 0px 3px 3px;
-  -ms-border-radius: 0px 0px 3px 3px;
   -o-border-radius: 0px 0px 3px 3px;
   border-radius: 0px 0px 3px 3px;
 }
@@ -566,17 +569,14 @@ h1, h2, h3 {
 
 .post.instant {
   -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
   transition: none;
 }
 
 .post.animate {
   -webkit-transition: all 300ms 0ms;
   -webkit-transition-delay: ease-in;
-  -moz-transition: all 300ms 0ms ease-in;
-  -o-transition: all 300ms 0ms ease-in;
-  transition: all 300ms 0ms ease-in;
+  -webkit-transition: all 300ms 0ms ease-in;
+          transition: all 300ms 0ms ease-in;
 }
 
 .post .upvote {
@@ -652,9 +652,6 @@ h1, h2, h3 {
 
 .load-more {
   display: block;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.05);
