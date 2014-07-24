@@ -163,6 +163,19 @@ body {
 }
 
 /**
+ * Home screen button animateIn
+ *
+ * TODO - Do these with animate.css
+ */
+.buttons .btn {
+  -webkit-transform: scale(1);
+}
+
+.buttons .btn.loading{
+  -webkit-transform: scale(0);
+}
+
+/**
  * ----------------------------------------------------------------------------
  * Global text styles
  * ----------------------------------------------------------------------------
@@ -256,21 +269,15 @@ h1, h2, h3 {
   font-size: .9em;
 }
 
-
+/**
+ * Component specific button styles
+ */
 @torrey-pines-buttons: #416052;
+
 .buttons-tp .btn,
 .buttons-tp .btn:hover {
   background: @torrey-pines-buttons;
   color: white;
-  /*border-right: 1px solid darken(@desert-brown, 8%);*/
-}
-
-.buttons-tp .btn {
-  -webkit-transform: scale(1);
-}
-
-.buttons-tp .btn.loading{
-  -webkit-transform: scale(0);
 }
 
 .buttons-tp .tp-1 {
