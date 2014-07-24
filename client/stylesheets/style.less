@@ -15,17 +15,6 @@ body {
   background: #000;
 }
 
-.page-animation {
-  transition-duration: 400ms;
-  transition-timing-function: linear;
-  /*transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);,*/
-  transition-delay: 0ms;
-}
-
-.fadeOut {
-  opacity: 0;
-}
-
 /**
  * Make the primary container relative so that we can position things inside
  * of it with some absolute numbers.
@@ -48,8 +37,43 @@ body {
 }
 
 /**
- * Animations
+ * ----------------------------------------------------------------------------
+ * Page specific background maps
+ * ----------------------------------------------------------------------------
  */
+.map-tp-menu {
+  background-image: url("/images/map-base-human.png");
+}
+
+.map-tp-menu.natural {
+  background-image: url("/images/map-base-natural.png");
+}
+
+.map-tp-park {
+  background-image: url("/images/map-tp-park.png");
+  background-position: 40px 0;
+}
+
+.map-tp-extent {
+  background-image: url("/images/map-tp-extent.png");
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * Animations
+ * ---------------------------------------------------------------------------
+ */
+
+.page-animation {
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+  /*transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);,*/
+  transition-delay: 0ms;
+}
+
+.fadeOut {
+  opacity: 0;
+}
 
 /**
  * Zoom in big
@@ -135,27 +159,8 @@ body {
   color: lighten(@wetland-blue, 60%);
 }
 
-/**
- * Page specific background maps
- */
 .map-animate {
   transition: all 300ms 0ms ease-in;
-}
-.map-tp-menu {
-  background-image: url("/images/map-base-human.png");
-}
-
-.map-tp-menu.natural {
-  background-image: url("/images/map-base-natural.png");
-}
-
-.map-tp-park {
-  background-image: url("/images/map-tp-park.png");
-  background-position: 40px 0;
-}
-
-.map-tp-extent {
-  background-image: url("/images/map-tp-extent.png");
 }
 
 /**
