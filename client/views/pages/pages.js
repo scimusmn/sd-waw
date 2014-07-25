@@ -3,6 +3,9 @@ Template.page.helpers({
      * Define the attributes for each page link
      */
     attributes: function() {
+        /**
+         * TODO, use the helper for this
+         */
         pageId = this.buttonTitle;
         pageClass = pageId.replace(/\s+/g, '-').toLowerCase();
 
