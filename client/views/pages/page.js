@@ -16,7 +16,6 @@ Template.pagePage.events({
 
         e.preventDefault();
         destination = this.componentId;
-        console.log(destination);
 
         /**
          * Animate the page before we leave. We're mostly removing
