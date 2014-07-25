@@ -7,7 +7,8 @@
       "accounts-ui-bootstrap-dropdown": {},
       "bootstrap3-less": {},
       "dimsum": {},
-      "iron-transitioner": {}
+      "iron-transitioner": {},
+      "marked": {}
     },
     "packages": {
       "iron-router": {
@@ -17,8 +18,8 @@
       },
       "spin": {
         "git": "https://github.com/SachaG/meteor-spin.git",
-        "tag": "v0.2.2",
-        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+        "tag": "v2.0.3",
+        "commit": "23c1145472a710d5c93fa4beaca4e576caeb2f24"
       },
       "accounts-ui-bootstrap-dropdown": {
         "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
@@ -26,9 +27,9 @@
         "commit": "a7af8a52e4e74db020a69b158a8f992797b8b0b0"
       },
       "bootstrap3-less": {
-        "git": "https://github.com/eprochasson/bootstrap3-less",
-        "tag": "v0.1.9",
-        "commit": "5c812c4d7ce72917a065f0424c3cf54e5ff2d16a"
+        "git": "https://github.com/simison/bootstrap3-less",
+        "tag": "v0.2.1",
+        "commit": "dc94a51ed00d7de6d6f2b6d65107a876d849ad61"
       },
       "dimsum": {
         "git": "https://github.com/peerlibrary/meteor-dimsum.git",
@@ -39,6 +40,11 @@
         "git": "https://github.com/percolatestudio/iron-transitioner.git",
         "tag": "v0.1.0",
         "commit": "4a5db7d9c7e212d8784b86aa833334e619bb4bd3"
+      },
+      "marked": {
+        "git": "https://github.com/chuangbo/meteor-marked.git",
+        "tag": "v0.3.2",
+        "commit": "850f63135cdeb05344c420bd586fd8af9cab75df"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

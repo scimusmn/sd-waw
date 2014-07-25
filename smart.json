@@ -5,6 +5,7 @@
     "accounts-ui-bootstrap-dropdown": {},
     "bootstrap3-less": {},
     "dimsum": {},
-    "iron-transitioner": {}
+    "iron-transitioner": {},
+    "marked": {}
   }
 }
