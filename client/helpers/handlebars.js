@@ -6,3 +6,9 @@ Handlebars.registerHelper('pluralize', function(n, thing) {
     return n + ' ' + thing + 's';
   }
 });
+
+Handlebars.registerHelper('lowerSpacesToDashes', function(input) {
+    if (input) {
+        return input.replace(/\s+/g, '-').toLowerCase();
+    }
+});
