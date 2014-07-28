@@ -94,7 +94,7 @@ if (Components.find().count() === 0) {
         order: 3,
         author: admin.profile.name,
         bodyCopy: '<p>Torrey Pines State Reserve is one of the last places where you can see coastal sage scrub habitat. Land development and the introduction of non-native species have eliminated over __% of this habitat in southern California.</p><p>Coastal sage scrub is characterized by soft-leaved, fragrant shrubs. You will often find California Sagebrush and California Buckwheat here.</p>',
-        espBodyCopy: '<p>Torrey Pines State Reserve es uno de los últimos lugares donde se puede ver el hábitat de matorrales de salvia costera. Desarrollo de la tierra y la introducción de especies no nativas se han eliminado más de ___% de este hábitat en el sur de California.<p>Matorral costero se caracteriza por arbustos de hojas suaves y fragantes. Usted encontrará a menudo California Artemisa y California alforfón aquí.</p>',
+        espBodyCopy: '<p>Torrey Pines State Reserve es uno de los últimos lugares donde se puede ver el hábitat de matorrales de salvia costera. Desarrollo de la tierra y la introducción de especies no nativas se han eliminado más de ___% de este hábitat en el sur de California.</p><p>Matorral costero se caracteriza por arbustos de hojas suaves y fragantes. Usted encontrará a menudo California Artemisa y California alforfón aquí.</p>',
         backgroundMapClass: 'map-tp-floristic',
         bodyImage: 'sagebrush_01.png',
         bodyImages: ['sagebrush_01.png', 'sagebrush_02.png']
