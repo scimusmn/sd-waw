@@ -116,6 +116,10 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 5,
         author: admin.profile.name,
+        bodyCopy: '',
+        espBodyCopy: '',
+        backgroundMapClass: 'map-tp-menu-natural',
+        bodyImages: ['torrey-pines-canyoneers-walk.jpg', 'torrey-pines-trail.jpg']
     });
 
     var tpScienceStories = Pages.insert({
