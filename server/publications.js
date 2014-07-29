@@ -19,7 +19,11 @@ Meteor.publish('pages', function(componentId) {
 });
 
 Meteor.publish('singlePage', function(id) {
-  return id && Pages.find(id);
+    /**
+     * Return any page with the URL ID
+     * as well as any subpages with the same parentId
+     */
+    return id && Pages.find( { $or: [ {_id: id}, {parentId: id} ] } );
 });
 
 /**

@@ -13,6 +13,17 @@ Template.componentPage.events({
 
 Template.componentPage.helpers({
     pages: function() {
-        return Pages.find({componentId: this._id}, {sort: {order: 1}});
+        /**
+         * Return only top level pages, no sub-pages (aka pages with defined parentIds)
+         */
+        return Pages.find({
+            $and: [
+                { componentId: this._id },
+                { parentId: {$exists: false} }
+            ],
+        },
+        {
+            sort: {order: 1}
+        });
     }
 });
