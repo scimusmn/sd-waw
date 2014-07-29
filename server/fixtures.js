@@ -121,8 +121,35 @@ if (Components.find().count() === 0) {
         author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
+        backgroundMapClass: 'map-tp-blurred',
+    });
+
+    var tpTrails = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpExplore,
+        buttonTitle: 'Torrey Pines State Reserve Trails',
+        buttonImage: 'tp-explore-trails.jpg',
+        espButtonTitle: 'Senderos Torrey Pines State Reserve',
+        userId: admin._id,
+        order: 1,
+        author: admin.profile.name,
+        bodyCopy: 'Torrey Pines State Reserve has X number of trails to explore on your own. Or you can try out one of many programs including docent-led children\'s programs, naturalist talks, school programs, and many more.',
+        espBodyCopy: 'Torrey Pines State Reserve tiene X cantidad de senderos para explorar por su cuenta. O usted puede probar uno de los muchos programas, incluidos los niños dirigidas por maestros Programas \'s, charlas naturalistas, programas escolares, y muchos más.',
         backgroundMapClass: 'map-tp-menu-natural',
-        bodyImages: ['torrey-pines-canyoneers-walk.jpg', 'torrey-pines-trail.jpg']
+    });
+
+    var tpTrails = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpExplore,
+        buttonTitle: 'Canyoneer Natural Walks',
+        buttonImage: 'tp-explore-canyoneer.jpg',
+        espButtonTitle: 'Paseos Canyoneer Natural',
+        userId: admin._id,
+        order: 2,
+        author: admin.profile.name,
+        bodyCopy: 'Begin the extension trail at the end of Del Mar Scenic Parkway. The trail forks early and turning right will follow the Margaret Fleming Nature Trail to the east side of the wide basin.',
+        espBodyCopy: 'Comienza el camino de extensión al final de Del Mar Scenic Parkway. Las horquillas sendero temprano y girando a la derecha seguirán el Margaret Fleming Nature Trail hacia el lado este de la gran cuenca.',
+        backgroundMapClass: 'map-tp-menu-natural',
     });
 
     var tpScienceStories = Pages.insert({
