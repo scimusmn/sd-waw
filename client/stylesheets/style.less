@@ -387,29 +387,37 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.body-copy h3 {
-  font-family: 'FuturaTS-Medium', sans-serif;
-  font-size: 1.4em;
+/**
+ * Inner page text
+ */
+
+/* Spanish language text */
+.body-copy .esp {
+  color: darken(@golden-spanish, 40%);
 }
 
-/**
- * Make the line lengths a bit shorter
- */
-.body-copy p {
-  width: 90%;
+/* Inner page headlines */
+.body-copy h3 {
+  font-family: 'FuturaTS-Medium', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.body-copy h3 .esp {
+  margin-top: 10px;
+  font-size: .72em;
+}
+
+.body-text .esp {
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .body-copy img {
   margin-bottom: 10px;
 }
 
-.body-copy .esp {
-  /* TODO try this with the golden-spanish */
-  color: darken(@background-tan, 40%);
-  font-size: .8em;
-  letter-spacing: 0.03em;
-  margin-top: 35px;
-}
 
 /**
  * Component and Page specific custom layouts
