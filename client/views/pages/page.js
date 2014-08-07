@@ -3,7 +3,17 @@ Template.pagePage.rendered = function() {
      * Animate objects once the page is rendered
      */
     $('.container-map').addClass('animated fadeIn');
-    $('.body-copy').addClass('animated fadeInLeft');
+    if ($('.body-copy.rare-climate-zone').length) {
+        $('.body-copy').addClass('animated fadeInUp');
+        //$('.body-text').wrapInner('<div class="row"></div>');
+        //$('.body-text p.eng').replaceWith(function(){
+            //return $("<div />", {html: $(this).html()}).addClass('riparian');
+        //});
+
+    }
+    else {
+        $('.body-copy').addClass('animated fadeInLeft');
+    }
     $('.body-copy').css('-webkit-animation-duration', '400ms');
     $('.body-copy').css('animation-duration', '400ms');
     $('.subpage-button, h3').addClass('animated fadeInDown ');

@@ -56,7 +56,7 @@ if (Components.find().count() === 0) {
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
-        mural: 'tp-mural-2.jpg',
+        mural: 'tp-mural-3.jpg',
         bodyCopy: dimsum()
     });
 
@@ -108,6 +108,7 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 4,
         author: admin.profile.name,
+        bodyCopyLayout: 'horizontal',
         bodyCopy: '<p>Coastal California is one of only five places in the world known as a Mediterranean climate zones.</p><p>Coastal sage scrub plants are specially adapted to surviving the mild winters and dry, hot summers typical of these Mediterranean climate zones.</p>',
         espBodyCopy: '<p>Costera de California es uno de los cinco lugares en el mundo conocidos como zonas de clima mediterráneo.</p><p>Plantas de matorral costero están especialmente adaptados para sobrevivir a los inviernos suaves y veranos secos y calientes típicos de estas zonas de clima mediterráneo.</p>',
         backgroundMapClass: 'map-tp-med',
