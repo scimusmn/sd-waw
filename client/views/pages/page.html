@@ -8,25 +8,8 @@
     <div class="body-copy white-box {{bodyCopyLayout}} {{lowerSpacesToDashes buttonTitle}}">
 
       <!-- Horizontal layout -->
-      {{#if bodyCopyLayout}}
-        <div class="row">
-          <div class="col-lg-6 eng">
-            <h3> {{buttonTitle}} </h3>
-            {{{bodyCopy}}}
-          </div>
-          <div class="col-lg-6 esp">
-            <h3> {{espButtonTitle}} </h3>
-            {{{espBodyCopy}}}
-          </div>
-          <div class="row">
-            <a class="btn-home">
-              <span class="glyphicon glyphicon-home"></span>
-            </a>
-          </div>
-        </div>
+      {{#unless bodyCopyLayout}}
 
-        <!-- Vertical layout -->
-        {{else}}
         <h3>
           {{buttonTitle}}<br>
           <span class="esp">{{espButtonTitle}}</span>
@@ -46,7 +29,27 @@
         <a class="btn-home">
           <span class="glyphicon glyphicon-home"></span>
         </a>
-      {{/if}}
+
+      <!-- Vertical layout -->
+      {{else}}
+
+        <div class="row">
+          <div class="col-lg-6 eng">
+            <h3> {{buttonTitle}} </h3>
+            {{{bodyCopy}}}
+          </div>
+          <div class="col-lg-6 esp">
+            <h3> {{espButtonTitle}} </h3>
+            {{{espBodyCopy}}}
+          </div>
+          <div class="row">
+            <a class="btn-home">
+              <span class="glyphicon glyphicon-home"></span>
+            </a>
+          </div>
+        </div>
+
+      {{/unless}}
     </div>
 
   {{else}}
