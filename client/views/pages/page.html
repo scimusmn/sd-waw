@@ -21,33 +21,28 @@
   {{else}}
 
     <!-- Parent page view -->
-    <div class="body-copy white-box {{lowerSpacesToDashes buttonTitle}}">
+    <div class="body-copy white-box {{bodyCopyLayout}} {{lowerSpacesToDashes buttonTitle}}">
+
       <!-- Horizontal layout -->
       {{#if bodyCopyLayout}}
-        <h3>
-          {{buttonTitle}}<br>
-          <span class="esp">{{espButtonTitle}}</span>
-        </h3>
-
-        <div class="body-images">
-          {{#each bodyImages}}
-          <img src="/images/{{this}}"><br>
-          {{/each}}
-        </div>
-
-        <div class="body-text horizontal">
-          <div class="row">
-            <div class="col-lg-6 eng">{{{bodyCopy}}}</div>
-            <div class="col-lg-6 esp">{{{espBodyCopy}}}</div>
+        <div class="row">
+          <div class="col-lg-6 eng">
+            <h3> {{buttonTitle}} </h3>
+            {{{bodyCopy}}}
           </div>
-          <a class="btn-home">
-            <!--Home-->
-            <span class="glyphicon glyphicon-home"></span>
-          </a>
+          <div class="col-lg-6 esp">
+            <h3> {{espButtonTitle}} </h3>
+            {{{espBodyCopy}}}
+          </div>
+          <div class="row">
+            <a class="btn-home">
+              <span class="glyphicon glyphicon-home"></span>
+            </a>
+          </div>
         </div>
 
-      <!-- Vertical layout -->
-      {{else}}
+        <!-- Vertical layout -->
+        {{else}}
         <h3>
           {{buttonTitle}}<br>
           <span class="esp">{{espButtonTitle}}</span>
@@ -59,16 +54,18 @@
           {{/each}}
         </div>
 
-        <p class="eng">{{{bodyCopy}}}</p>
-        <p class="esp">{{{espBodyCopy}}}</p>
+        <div class="body-text">
+          <p class="eng">{{{bodyCopy}}}</p>
+          <p class="esp">{{{espBodyCopy}}}</p>
+        </div>
+
         <a class="btn-home">
-          <!--Home-->
           <span class="glyphicon glyphicon-home"></span>
         </a>
-        {{/if}}
+      {{/if}}
     </div>
 
-    {{/if}}
+  {{/if}}
 
-    <!-- /Page -->
-    </template>
+<!-- /Page -->
+</template>
