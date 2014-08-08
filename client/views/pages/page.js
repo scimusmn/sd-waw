@@ -60,8 +60,14 @@ Template.pagePage.events({
          */
         var animateContentOut = function() {
             // Animate all overlays
-            $('.body-copy').addClass('animated fadeOutLeft');
             $('.container-map').addClass('animated fadeOut');
+            if ($('.body-copy.horizontal').length) {
+                console.log("Fade out down");
+                $('.body-copy').addClass('animated fadeOutDownCustom');
+            }
+            else {
+                $('.body-copy').addClass('animated fadeOutLeft');
+            }
         }
         animateContentOut();
 
