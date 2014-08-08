@@ -35,17 +35,3 @@ Template.componentItem.rendered = function() {
         $item.removeClass('loading');
     });
 }
-
-    //Meteor.setTimeout(function(){
-        //console.log('componentItem this - ', this);
-    //}, 5000);
-
-    //var $item = $(this.find('.component'));
-    //Meteor.defer(function() {
-        //$item.each(function(i) {
-            //setTimeout(function(){
-                //console.log(this);
-            //});
-        //});
-    //});
-//
