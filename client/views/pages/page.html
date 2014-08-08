@@ -2,23 +2,7 @@
 {{title}}
   <!-- Page -->
   <div class="container-map {{backgroundMapClass}} map-animate"></div>
-  {{#if subPages}}
-
-    <!-- Sub page view -->
-    <div class="subpage">
-      <h3>{{buttonTitle}}<br>
-      <span class="esp">{{espButtonTitle}}</span></h3>
-      {{#each subPages}}
-        {{> subPage}}
-      {{/each}}
-      <a class="btn-home">
-        <!--Home-->
-        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-        <span class="glyphicon glyphicon-home"></span>
-      </a>
-    </div>
-
-  {{else}}
+  {{#unless subPages}}
 
     <!-- Parent page view -->
     <div class="body-copy white-box {{bodyCopyLayout}} {{lowerSpacesToDashes buttonTitle}}">
@@ -65,7 +49,23 @@
       {{/if}}
     </div>
 
-  {{/if}}
+  {{else}}
+
+    <!-- Sub page view -->
+    <div class="subpage">
+      <h3>{{buttonTitle}}<br>
+      <span class="esp">{{espButtonTitle}}</span></h3>
+      {{#each subPages}}
+        {{> subPage}}
+      {{/each}}
+      <a class="btn-home">
+        <!--Home-->
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+        <span class="glyphicon glyphicon-home"></span>
+      </a>
+    </div>
+
+  {{/unless}}
 
 <!-- /Page -->
 </template>
