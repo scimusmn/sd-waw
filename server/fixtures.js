@@ -70,8 +70,9 @@ if (Components.find().count() === 0) {
         bodyCopy: 'Torrey Pines State Natural Reserve, the setting for the scene in front of you, is just 18 miles from the Museum.',
         espBodyCopy: 'Reserva Natural Torrey Pines State, el escenario de la escena delante de usted, está a sólo 18 km del Museo.',
         backgroundMapClass: 'map-tp-park',
-        bodyImages: ['torrey-pines-photo.jpg'],
-        bodyImageCredits: ['FPO - Image credit']
+        bodyImages: [
+            {fileName: 'torrey-pines-photo.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
+        ],
     });
 
     var tpRareTree = Pages.insert({
@@ -84,7 +85,9 @@ if (Components.find().count() === 0) {
         bodyCopy: 'The Torrey Pine is found in only two places: Torrey Pines State Natural Reserve and Santa Rosa Island.',
         espBodyCopy: 'El pino de Torrey se encuentra solamente en dos lugares: Torrey Pines Reserva Natural del Estado y la isla de Santa Rosa.',
         backgroundMapClass: 'map-tp-extent',
-        bodyImages: ['tp-tree-rare.jpg'],
+        bodyImages: [
+            {fileName: 'tp-tree-rare.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p. 64' },
+        ],
     });
 
     var tpRareHabitat = Pages.insert({
@@ -97,8 +100,10 @@ if (Components.find().count() === 0) {
         bodyCopy: '<p>Torrey Pines State Reserve is one of the last places where you can see coastal sage scrub habitat. Land development and the introduction of non-native species have eliminated over __% of this habitat in southern California.</p><p>Coastal sage scrub is characterized by soft-leaved, fragrant shrubs. You will often find California Sagebrush and California Buckwheat here.</p>',
         espBodyCopy: '<p>Torrey Pines State Reserve es uno de los últimos lugares donde se puede ver el hábitat de matorrales de salvia costera. Desarrollo de la tierra y la introducción de especies no nativas se han eliminado más de ___% de este hábitat en el sur de California.</p><p>Matorral costero se caracteriza por arbustos de hojas suaves y fragantes. Usted encontrará a menudo California Artemisa y California alforfón aquí.</p>',
         backgroundMapClass: 'map-tp-floristic',
-        bodyImage: 'sagebrush_01.png',
-        bodyImages: ['sagebrush_01.png', 'sagebrush_02.png']
+        bodyImages: [
+            {fileName: 'tp-habitat-sagebrush.png', imageCredit: 'TBD - Stonebird', imageCaption: 'California Sagebrush<br><i>Artemisia californica</i>' },
+            {fileName: 'tp-habitat-cactus.png', imageCredit: 'TBD - Melli', imageCaption: 'Coast Prickly-pear<br><i>Opuntia littoralis</i>'  },
+        ],
     });
 
     var tpRareClimate = Pages.insert({
