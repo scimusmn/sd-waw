@@ -123,7 +123,7 @@ if (Components.find().count() === 0) {
         author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
-        backgroundMapClass: 'map-tp-blurred',
+        backgroundMapClass: 'map-tp-explore',
     });
 
     var tpTrails = Pages.insert({
