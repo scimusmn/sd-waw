@@ -61,8 +61,12 @@
 
     <!-- Sub page view -->
     <div class="subpage-selector">
-      <h3>{{buttonTitle}}<br>
-      <span class="esp">{{espButtonTitle}}</span></h3>
+      <div class="subpage-selector-header">
+        <h3>
+          {{buttonTitle}}<br>
+          <span class="esp">{{espButtonTitle}}</span>
+        </h3>
+      </div>
       {{#each subPages}}
         {{> subPage}}
       {{/each}}

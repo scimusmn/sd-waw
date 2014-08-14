@@ -447,14 +447,16 @@ h1, h2, h3 {
  */
 
 /* Spanish language text */
-.body-copy .esp {
+.body-copy .esp,
+.subpage-selector h3 .esp {
   color: darken(@golden-spanish, 40%);
 }
 
 /* Inner page headlines - English */
-.body-copy h3 {
+.body-copy h3,
+.subpage-selector h3 {
   font-family: 'FuturaTS-Demibold', sans-serif;
-  font-size: 1.5em;
+  font-size: 36px;
   margin-bottom: 24px;
 }
 
@@ -532,20 +534,22 @@ h1, h2, h3 {
   left: 0;
   padding: 1em;
   height: 100%;
-  font-size: 1.3em;
 }
 
-.subpage-selector h3 {
+.subpage-selector-header {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  padding: 20px;
   background: lighten(@background-tan, 6%);
 }
 
+.subpage-selector-header h3 {
+  margin: 20px;
+}
+
 .subpage-selector .btn-home,
-.subpage-selector h3 {
+.subpage-selector-header {
   width: 1366px;
 }
 
@@ -556,7 +560,7 @@ h1, h2, h3 {
   font-size: 1em;
 }
 
-.subpage-button p {
+.subpage-button h4 {
   margin-left: 5px;
 }
 
