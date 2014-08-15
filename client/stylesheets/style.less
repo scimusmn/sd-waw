@@ -532,8 +532,8 @@ h1, h2, h3 {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 1em;
   height: 100%;
+  width: 1366px;
 }
 
 .subpage-selector-header {
@@ -542,6 +542,7 @@ h1, h2, h3 {
   left: 0;
   display: block;
   background: lighten(@background-tan, 6%);
+  z-index: 1000;
 }
 
 .subpage-selector-header h3 {
@@ -553,28 +554,57 @@ h1, h2, h3 {
   width: 1366px;
 }
 
+.subpage-selector-buttons {
+  margin: 117px 0 0 0;
+}
+
 .subpage-button {
   float: left;
-  margin: 107px 12px;
-  background: lighten(@background-tan, 6%);
-  font-size: 1em;
+  margin: 0px;
+  background: lighten(@background-tan, 7%);
+  width: 25%;
+  overflow: hidden;
 }
 
 .subpage-button h4 {
-  margin-left: 5px;
+  margin: 15px;
+  /*height: 77px;*/
+  font-size: 20px;
+}
+
+.subpage-button h4 .esp {
+  margin-top: 6px;
+  font-size: 18px;
 }
 
 .subpage-button .esp {
   color: darken(@background-tan, 40%);
-  font-size: .9em;
   letter-spacing: 0.03em;
 }
 
 .subpage-button img {
-  width: 615px;
+  width: 342px;
+  height: 479px;
 }
-.subpage-button.canyoneer-natural-walks {
-  left: 683px;
+
+.subpage-button-1 {
+  background: darken(@background-tan, 3%);
+  -webkit-animation-delay: 0.4s;
+}
+
+.subpage-button-2 {
+  background: lighten(@background-tan, 3%);
+  -webkit-animation-delay: 0.45s;
+}
+
+.subpage-button-3 {
+  background: lighten(@background-tan, 5%);
+  -webkit-animation-delay: 0.50s;
+}
+
+.subpage-button-4 {
+  background: lighten(@background-tan, 7%);
+  -webkit-animation-delay: 0.55s;
 }
 
 /**
