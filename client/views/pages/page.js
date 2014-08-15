@@ -33,6 +33,8 @@ Template.pagePage.events({
         /**
          * Animate the page before we leave. We're mostly removing
          * the layers on top of the map
+         *
+         * TODO - Make this more DRY
          */
         var animateContentOut = function() {
             if ($('.subpage-selector').length) {
