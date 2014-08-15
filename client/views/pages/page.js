@@ -56,7 +56,7 @@ Template.pagePage.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('pagePage', {_id: destination});
+            Router.go('subPagePage', {_id: destination});
         }
     },
     'click .btn-home': function(e) {
