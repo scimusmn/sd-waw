@@ -21,3 +21,14 @@ Handlebars.registerHelper('lowerSpacesToDashes', function(input) {
         return input.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, '').replace(/\s+/g, '-').toLowerCase();
     }
 });
+
+/**
+ * Strip HTML from a string
+ *
+ * This is obviously imperfect, but I trust the data source...me.
+ */
+Handlebars.registerHelper('brToSpace', function(input) {
+    if (input) {
+        return input.replace(/<br ?\/?>/g, " ")
+    }
+});

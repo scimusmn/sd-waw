@@ -136,8 +136,9 @@ if (Components.find().count() === 0) {
         parentId: tpExplore,
         buttonTitle: 'Torrey Pines<br>State Natural Reserve',
         espButtonTitle: 'Torrey Pines<br>State Natural Reserve',
+        buttonImage: 'tp-explore-reserve.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-reserve.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+            {fileName: 'tp-explore-reserve-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
         ],
         order: 1,
         bodyCopy: 'Visit Torrey Pines State Natural Reserve—one of the last places where you can find coastal sage scrub habitat, which is disappearing due to real estate development. For more information, visit [TBD - website link].',
@@ -150,8 +151,9 @@ if (Components.find().count() === 0) {
         parentId: tpExplore,
         buttonTitle: 'Crest Canyon<br>Open Space Park Preserve',
         espButtonTitle: 'Cresta Canyon<br>Abrir Space Park Preserve',
+        buttonImage: 'tp-explore-crest.png',
         bodyImages: [
-            {fileName: 'tp-explore-crest.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'tp-explore-crest-full.png', imageCredit: '', imageCaption: '' },
         ],
         order: 2,
         bodyCopy: '<p>Stroll through this coastal canyon, south of San Dieguito Lagoon, and you’ll behold a tapestry of native and non-native plants.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD website link].</p>',
@@ -164,8 +166,9 @@ if (Components.find().count() === 0) {
         parentId: tpExplore,
         buttonTitle: 'Bayside Trail,<br>Cabrillo National Monument',
         espButtonTitle: 'Bayside Trail,<br>Monumento Nacional Cabrillo',
+        buttonImage: 'tp-explore-bayside.png',
         bodyImages: [
-            {fileName: 'tp-explore-bayside.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'tp-explore-bayside-full.png', imageCredit: '', imageCaption: '' },
         ],
         order: 3,
         bodyCopy: '<p>Encounter windswept chaparral and coastal sage scrub clinging to the cliffs that overlook San Diego harbor.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD - website link].</p>',
@@ -178,8 +181,9 @@ if (Components.find().count() === 0) {
         parentId: tpExplore,
         buttonTitle: 'Miner’s Loop,<br>Black Mountain Open Space Park',
         espButtonTitle: 'Loop de minero,<br>Cerro Negro Abrir Space Park',
+        buttonImage: 'tp-explore-miners.png',
         bodyImages: [
-            {fileName: 'tp-explore-miners.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
         ],
         order: 4,
         bodyCopy: '<p>Hike through coastal sage scrub and chaparral and see the remains of an old arsenic mine. If you’re lucky, you might spot a quail! </p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD - website link].</p>',

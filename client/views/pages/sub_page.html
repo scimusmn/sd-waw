@@ -1,8 +1,6 @@
 <template name="subPage">
   <div class="subpage-button subpage-button-{{order}} {{lowerSpacesToDashes buttonTitle}}">
-    {{#each bodyImages}}
-      <img src="/images/{{this.fileName}}">
-    {{/each}}
+    <img src="/images/{{buttonImage}}">
     <h4>
       {{{buttonTitle}}}
       <div class="esp">{{{espButtonTitle}}}</div>
@@ -14,9 +12,9 @@
   <!-- Page -->
   <div class="container-map {{backgroundMapClass}} map-animate"></div>
     <!-- Parent page view -->
-    <div class="body-copy white-box {{lowerSpacesToDashes buttonTitle}}">
-      <h3>{{{buttonTitle}}}<br>
-      <span class="esp">{{{espButtonTitle}}}</span></h3>
+    <div class="body-copy subpage-page white-box {{lowerSpacesToDashes buttonTitle}}">
+      <h3>{{brToSpace buttonTitle}}<br>
+      <div class="esp">{{brToSpace espButtonTitle}}</div></h3>
 
       <div class="body-images">
         {{#each bodyImages}}
