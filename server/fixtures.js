@@ -131,31 +131,59 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-tp-explore',
     });
 
-    var tpTrails = Pages.insert({
+    var tpExploreReserve = Pages.insert({
         componentId: torreyPines,
         parentId: tpExplore,
-        buttonTitle: 'Torrey Pines State Reserve Trails',
-        buttonImage: 'tp-explore-trails.jpg',
-        espButtonTitle: 'Senderos Torrey Pines State Reserve',
-        userId: admin._id,
+        buttonTitle: 'Torrey Pines<br>State Natural Reserve',
+        espButtonTitle: 'Torrey Pines<br>State Natural Reserve',
+        bodyImages: [
+            {fileName: 'tp-explore-reserve.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+        ],
         order: 1,
-        author: admin.profile.name,
-        bodyCopy: 'Torrey Pines State Reserve has X number of trails to explore on your own. Or you can try out one of many programs including docent-led children\'s programs, naturalist talks, school programs, and many more.',
-        espBodyCopy: 'Torrey Pines State Reserve tiene X cantidad de senderos para explorar por su cuenta. O usted puede probar uno de los muchos programas, incluidos los niños dirigidas por maestros Programas \'s, charlas naturalistas, programas escolares, y muchos más.',
+        bodyCopy: 'Visit Torrey Pines State Natural Reserve—one of the last places where you can find coastal sage scrub habitat, which is disappearing due to real estate development. For more information, visit [TBD - website link].',
+        espBodyCopy: 'Reserva uno Natural Visita Torrey Pines State de los últimos lugares donde se puede encontrar hábitat de matorrales de salvia costera, que está desapareciendo debido al desarrollo inmobiliario. Para obtener más información, visite [TBD - enlace al sitio web].',
         backgroundMapClass: 'map-tp-menu-natural',
     });
 
-    var tpTrails = Pages.insert({
+    var tpExploreCrest = Pages.insert({
         componentId: torreyPines,
         parentId: tpExplore,
-        buttonTitle: 'Canyoneer Natural Walks',
-        buttonImage: 'tp-explore-canyoneer.jpg',
-        espButtonTitle: 'Paseos Canyoneer Natural',
-        userId: admin._id,
+        buttonTitle: 'Crest Canyon<br>Open Space Park Preserve',
+        espButtonTitle: 'Cresta Canyon<br>Abrir Space Park Preserve',
+        bodyImages: [
+            {fileName: 'tp-explore-crest.png', imageCredit: '', imageCaption: '' },
+        ],
         order: 2,
-        author: admin.profile.name,
-        bodyCopy: 'Begin the extension trail at the end of Del Mar Scenic Parkway. The trail forks early and turning right will follow the Margaret Fleming Nature Trail to the east side of the wide basin.',
-        espBodyCopy: 'Comienza el camino de extensión al final de Del Mar Scenic Parkway. Las horquillas sendero temprano y girando a la derecha seguirán el Margaret Fleming Nature Trail hacia el lado este de la gran cuenca.',
+        bodyCopy: '<p>Stroll through this coastal canyon, south of San Dieguito Lagoon, and you’ll behold a tapestry of native and non-native plants.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD website link].</p>',
+        espBodyCopy: '<p>paseo por este cañón costero, al sur de la Laguna San Dieguito, y te he aquí un tapiz de plantas nativas y no nativas. </p><p> Únete a los cañoneros para esta y otras caminatas guiadas en el sur de California. Para obtener más información, visite [TBD enlace al sitio web].</p>',
+        backgroundMapClass: 'map-tp-menu-natural',
+    });
+
+    var tpExploreBayside = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpExplore,
+        buttonTitle: 'Bayside Trail,<br>Cabrillo National Monument',
+        espButtonTitle: 'Bayside Trail,<br>Monumento Nacional Cabrillo',
+        bodyImages: [
+            {fileName: 'tp-explore-bayside.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 3,
+        bodyCopy: '<p>Encounter windswept chaparral and coastal sage scrub clinging to the cliffs that overlook San Diego harbor.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD - website link].</p>',
+        espBodyCopy: '<p> Encuentro chaparral costero azotado por el viento y el apego de matorrales de salvia a los acantilados que dan a puerto de San Diego. </p> <p> Ingreso de los cañoneros para esta y otras caminatas guiadas en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web]. </p>',
+        backgroundMapClass: 'map-tp-menu-natural',
+    });
+
+    var tpExploreMiners = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpExplore,
+        buttonTitle: 'Miner’s Loop,<br>Black Mountain Open Space Park',
+        espButtonTitle: 'Loop de minero,<br>Cerro Negro Abrir Space Park',
+        bodyImages: [
+            {fileName: 'tp-explore-miners.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 4,
+        bodyCopy: '<p>Hike through coastal sage scrub and chaparral and see the remains of an old arsenic mine. If you’re lucky, you might spot a quail! </p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD - website link].</p>',
+        espBodyCopy: '<p> Caminata a través de matorral costero y chaparral y ver los restos de una antigua mina de arsénico. Si tienes suerte, se podrá encontrar con una codorniz! </p> <p> Únete a los cañoneros por esta y otras caminatas guiadas en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web]. </p>',
         backgroundMapClass: 'map-tp-menu-natural',
     });
 
