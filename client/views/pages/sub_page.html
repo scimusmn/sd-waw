@@ -20,9 +20,14 @@
 
       <div class="body-images">
         {{#each bodyImages}}
-          <img src="/images/{{this}}"><br>
+        <div class="image">
+          <img src="/images/{{this.fileName}}">
+          <div class="credit">{{this.imageCredit}}</div>
+          <div class="caption">{{{this.imageCaption}}}</div>
+        </div>
         {{/each}}
       </div>
+
       <div class="body-text">
         <p>{{{bodyCopy}}}</p>
         <p class="esp">
