@@ -28,7 +28,6 @@ Template.pagePage.events({
      */
     'click .subpage-button': function(e) {
         e.preventDefault();
-        console.log("this: ", this);
         destination = this._id;
 
         /**
@@ -36,9 +35,20 @@ Template.pagePage.events({
          * the layers on top of the map
          */
         var animateContentOut = function() {
-            // Animate all overlays
-            $('.body-copy').addClass('animated fadeOutLeft');
-            $('.container-map').addClass('animated fadeOut');
+            if ($('.subpage-selector').length) {
+                $('.subpage-selector-header h3').addClass('animated fadeOutUp');
+                $('.subpage-button-1').css('-webkit-animation-delay', '.15s');
+                $('.subpage-button-2').css('-webkit-animation-delay', '.1s');
+                $('.subpage-button-3').css('-webkit-animation-delay', '.05s');
+                $('.subpage-button-4').css('-webkit-animation-delay', '.0s');
+                $('.subpage-button').addClass('animated fadeOutUp');
+                $('.subpage-selector-header h3').addClass('animated fadeOutUp');
+                $('.btn-home').addClass('animated fadeOutDownCustom');
+            }
+            else {
+                $('.body-copy').addClass('animated fadeOutLeft');
+                $('.container-map').addClass('animated fadeOut');
+            }
         }
         animateContentOut();
 
@@ -62,8 +72,17 @@ Template.pagePage.events({
             // Animate all overlays
             $('.container-map').addClass('animated fadeOut');
             if ($('.body-copy.horizontal').length) {
-                console.log("Fade out down");
                 $('.body-copy').addClass('animated fadeOutDownCustom');
+            }
+            else if ($('.subpage-selector').length) {
+                $('.subpage-selector-header h3').addClass('animated fadeOutUp');
+                $('.subpage-button-1').css('-webkit-animation-delay', '.15s');
+                $('.subpage-button-2').css('-webkit-animation-delay', '.1s');
+                $('.subpage-button-3').css('-webkit-animation-delay', '.05s');
+                $('.subpage-button-4').css('-webkit-animation-delay', '.0s');
+                $('.subpage-button').addClass('animated fadeOutUp');
+                $('.subpage-selector-header h3').addClass('animated fadeOutUp');
+                $('.btn-home').addClass('animated fadeOutDownCustom');
             }
             else {
                 $('.body-copy').addClass('animated fadeOutLeft');
