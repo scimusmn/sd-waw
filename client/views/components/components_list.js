@@ -1,4 +1,3 @@
-
 /**
  * Helpers for the Component item
  */
