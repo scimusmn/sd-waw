@@ -143,7 +143,7 @@ if (Components.find().count() === 0) {
         order: 1,
         bodyCopy: 'Visit Torrey Pines State Natural Reserve—one of the last places where you can find coastal sage scrub habitat, which is disappearing due to real estate development. For more information, visit [TBD - website link].',
         espBodyCopy: 'Reserva uno Natural Visita Torrey Pines State de los últimos lugares donde se puede encontrar hábitat de matorrales de salvia costera, que está desapareciendo debido al desarrollo inmobiliario. Para obtener más información, visite [TBD - enlace al sitio web].',
-        backgroundMapClass: 'map-tp-menu-natural',
+        backgroundMapClass: 'map-tp-park',
     });
 
     var tpExploreCrest = Pages.insert({
