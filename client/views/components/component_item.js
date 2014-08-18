@@ -11,7 +11,6 @@ Template.componentItem.helpers({
         var delta = 50;
         // Add an expanding delay to achieve cascade effect
         delay = ((order * 100) + 0);
-        console.log(delay);
         attributes.style = [
             'transition-duration: 400ms;',
             'transition-timing-function: linear;',
