@@ -88,10 +88,23 @@ if (Components.find().count() === 0) {
         buttonTitle: 'Then and Now',
         espButtonTitle: 'Antes y ahora',
         userId: admin._id,
-        order: 2,
+        order: 3,
         author: admin.profile.name,
         bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Compare these maps to see how much habitat has been lost.</p>',
         espBodyCopy: '<p>Más del 90% del hábitat de los humedales del sur de California ha desaparecido debido al continuo desarrollo de bienes raíces.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
+        backgroundMapClass: 'map-wet-where',
+    });
+
+    var wetFlyway = Pages.insert({
+        componentId: wetlands,
+        colorPalate: 'wetlands',
+        buttonTitle: 'The Pacific Flyway',
+        espButtonTitle: 'La ruta del Pacífico',
+        userId: admin._id,
+        order: 4,
+        author: admin.profile.name,
+        bodyCopy: 'Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.',
+        espBodyCopy: 'Cada año, más de mil millones de aves utilizan la ruta migratoria del Pacífico-una serie de humedales a lo largo de costa en el oeste de América del Norte el viaje migratorio entre sus hogares del norte y sur de temporada.',
         backgroundMapClass: 'map-wet-where',
     });
 
