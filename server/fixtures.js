@@ -158,7 +158,7 @@ if (Components.find().count() === 0) {
         order: 2,
         bodyCopy: '<p>Stroll through this coastal canyon, south of San Dieguito Lagoon, and you’ll behold a tapestry of native and non-native plants.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD website link].</p>',
         espBodyCopy: '<p>paseo por este cañón costero, al sur de la Laguna San Dieguito, y te he aquí un tapiz de plantas nativas y no nativas. </p><p> Únete a los cañoneros para esta y otras caminatas guiadas en el sur de California. Para obtener más información, visite [TBD enlace al sitio web].</p>',
-        backgroundMapClass: 'map-tp-menu-natural',
+        backgroundMapClass: 'map-tp-explore-crest',
     });
 
     var tpExploreBayside = Pages.insert({
@@ -173,13 +173,13 @@ if (Components.find().count() === 0) {
         order: 3,
         bodyCopy: '<p>Encounter windswept chaparral and coastal sage scrub clinging to the cliffs that overlook San Diego harbor.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD - website link].</p>',
         espBodyCopy: '<p> Encuentro chaparral costero azotado por el viento y el apego de matorrales de salvia a los acantilados que dan a puerto de San Diego. </p> <p> Ingreso de los cañoneros para esta y otras caminatas guiadas en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web]. </p>',
-        backgroundMapClass: 'map-tp-menu-natural',
+        backgroundMapClass: 'map-tp-explore-bayside',
     });
 
     var tpExploreMiners = Pages.insert({
         componentId: torreyPines,
         parentId: tpExplore,
-        buttonTitle: 'Miner’s Loop,<br>Black Mountain Open Space Park',
+        buttonTitle: 'Miner\'s Loop,<br>Black Mountain Open Space Park',
         espButtonTitle: 'Loop de minero,<br>Cerro Negro Abrir Space Park',
         buttonImage: 'tp-explore-miners.png',
         bodyImages: [
@@ -188,7 +188,7 @@ if (Components.find().count() === 0) {
         order: 4,
         bodyCopy: '<p>Hike through coastal sage scrub and chaparral and see the remains of an old arsenic mine. If you’re lucky, you might spot a quail! </p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit [TBD - website link].</p>',
         espBodyCopy: '<p> Caminata a través de matorral costero y chaparral y ver los restos de una antigua mina de arsénico. Si tienes suerte, se podrá encontrar con una codorniz! </p> <p> Únete a los cañoneros por esta y otras caminatas guiadas en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web]. </p>',
-        backgroundMapClass: 'map-tp-menu-natural',
+        backgroundMapClass: 'map-tp-explore-miners',
     });
 
     var tpScienceStories = Pages.insert({
