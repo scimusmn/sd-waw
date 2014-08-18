@@ -82,6 +82,19 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-where',
     });
 
+    var wetThen = Pages.insert({
+        componentId: wetlands,
+        colorPalate: 'wetlands',
+        buttonTitle: 'Then and Now',
+        espButtonTitle: 'Antes y ahora',
+        userId: admin._id,
+        order: 2,
+        author: admin.profile.name,
+        bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Compare these maps to see how much habitat has been lost.</p>',
+        espBodyCopy: '<p>Más del 90% del hábitat de los humedales del sur de California ha desaparecido debido al continuo desarrollo de bienes raíces.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
+        backgroundMapClass: 'map-wet-where',
+    });
+
     /**
      **************************************************************************
      * Torrey Pines
