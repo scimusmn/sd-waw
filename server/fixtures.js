@@ -198,6 +198,69 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 6,
         author: admin.profile.name,
+        bodyCopy: '',
+        espBodyCopy: '',
+        backgroundMapClass: 'map-tp-explore',
+    });
+
+    var tpScienceStoriesOne = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpScienceStories,
+        buttonTitle: 'Science Story<br>One',
+        espButtonTitle: 'Historia de ciencia<br>uno',
+        buttonImage: 'tp-explore-miners.png',
+        bodyImages: [
+            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 1,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-tp-explore-miners',
+    });
+
+    var tpScienceStoriesTwo = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpScienceStories,
+        buttonTitle: 'Science Story<br>Two',
+        espButtonTitle: 'Historia de ciencia<br>duo',
+        buttonImage: 'tp-explore-miners.png',
+        bodyImages: [
+            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 2,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-tp-explore-miners',
+    });
+
+    var tpScienceStoriesThree = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpScienceStories,
+        buttonTitle: 'Science Story<br>Three',
+        espButtonTitle: 'historia de ciencia<br>tres',
+        buttonImage: 'tp-explore-miners.png',
+        bodyImages: [
+            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 3,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-tp-explore-miners',
+    });
+
+    var tpScienceStoriesOne = Pages.insert({
+        componentId: torreyPines,
+        parentId: tpScienceStories,
+        buttonTitle: 'Science Story<br>Four',
+        espButtonTitle: 'historia de ciencia<br>quatro',
+        buttonImage: 'tp-explore-miners.png',
+        bodyImages: [
+            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 4,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-tp-explore-miners',
     });
 
     var canyons = Components.insert({
