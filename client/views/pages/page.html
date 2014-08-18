@@ -1,5 +1,6 @@
 <template name="pagePage">
 {{title}}
+  <div class="{{colorPalate}}">
   <!-- Page -->
   <div class="container-map {{backgroundMapClass}} map-animate"></div>
   {{#unless subPages}}
@@ -80,6 +81,7 @@
     </div>
 
   {{/unless}}
+  </div>
 
 <!-- /Page -->
 </template>
