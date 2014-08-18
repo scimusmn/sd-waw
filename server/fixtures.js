@@ -71,7 +71,7 @@ if (Components.find().count() === 0) {
         espBodyCopy: 'Reserva Natural Torrey Pines State, el escenario de la escena delante de usted, está a sólo 18 km del Museo.',
         backgroundMapClass: 'map-tp-park',
         bodyImages: [
-            {fileName: 'torrey-pines-photo.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
+            {fileName: 'tp-where.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
         ],
     });
 
