@@ -26,21 +26,16 @@ Template.subPagePage.events({
             // Animate all overlays
             $('.container-map').addClass('animated fadeOut');
             if ($('.body-copy.horizontal').length) {
-                console.log("Fade out down");
                 $('.body-copy').addClass('animated fadeOutDownCustom');
             }
             else if ($('.subpage-selector').length) {
-                console.log("I'm here");
-                //$('.subpage-selector-header h3').css('-webkit-animation-delay', '0s');
                 $('.subpage-selector-header h3').addClass('animated fadeOutUp');
-                //$('.subpage-selector-buttons').css('-webkit-animation-delay', '0s');
                 $('.subpage-button-1').css('-webkit-animation-delay', '.15s');
                 $('.subpage-button-2').css('-webkit-animation-delay', '.1s');
                 $('.subpage-button-3').css('-webkit-animation-delay', '.05s');
                 $('.subpage-button-4').css('-webkit-animation-delay', '.0s');
                 $('.subpage-button').addClass('animated fadeOutUp');
                 $('.subpage-selector-header h3').addClass('animated fadeOutUp');
-                //$('.btn-home').css('-webkit-animation-delay', '0s');
                 $('.btn-home').addClass('animated fadeOutDownCustom');
             }
             else {
