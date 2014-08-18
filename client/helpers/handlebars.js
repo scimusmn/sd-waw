@@ -23,9 +23,7 @@ Handlebars.registerHelper('lowerSpacesToDashes', function(input) {
 });
 
 /**
- * Strip HTML from a string
- *
- * This is obviously imperfect, but I trust the data source...me.
+ * Strip <br> from a string
  */
 Handlebars.registerHelper('brToSpace', function(input) {
     if (input) {
