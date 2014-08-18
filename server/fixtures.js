@@ -34,6 +34,11 @@ if (Components.find().count() === 0) {
 
     i = getRandomInt(0, 10);
 
+    /**
+     **************************************************************************
+     * Wetlands
+     **************************************************************************
+     */
     var wetlands = Components.insert({
         title: 'Welcome to<br>Los Peñasquitos Lagoon',
         espTitle: 'Bienvenido a la<br>Laguna Los Peñasquitos',
@@ -48,6 +53,26 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
+    var wetWhere = Pages.insert({
+        componentId: wetlands,
+        buttonTitle: 'Where is it?',
+        espButtonTitle: '¿Dónde está?',
+        userId: admin._id,
+        order: 1,
+        author: admin.profile.name,
+        bodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum. ',
+        espBodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum.',
+        backgroundMapClass: 'map-wet-where',
+        bodyImages: [
+            {fileName: 'wet-where.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
+        ],
+    });
+
+    /**
+     **************************************************************************
+     * Torrey Pines
+     **************************************************************************
+     */
     var torreyPines = Components.insert({
         title: 'Welcome to Torrey Pines',
         espTitle: 'Bienvenido a Torrey Pines',
