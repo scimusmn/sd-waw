@@ -35,14 +35,16 @@ if (Components.find().count() === 0) {
     i = getRandomInt(0, 10);
 
     var wetlands = Components.insert({
-        title: 'Wetlands',
+        title: 'Welcome to<br>Los Peñasquitos Lagoon',
+        espTitle: 'Bienvenido a la<br>Laguna Los Peñasquitos',
         userId: admin._id,
         author: admin.profile.name,
         // TODO - Not sure if I need this field
         submitted: now - i * 3600 * 1000 + 1,
-        description: 'Wetlands general description.',
+        description: 'Los Peñasquitos Marsh Natural Preserve and Lagoon is a coastal marsh in San Diego County',
         componentNum: '0316',
         order: 1,
+        mural: 'wet-mural.jpg',
         bodyCopy: dimsum()
     });
 
