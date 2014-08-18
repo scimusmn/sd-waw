@@ -40,6 +40,7 @@ if (Components.find().count() === 0) {
      **************************************************************************
      */
     var wetlands = Components.insert({
+        colorPalate: 'wetlands',
         title: 'Welcome to<br>Los Peñasquitos Lagoon',
         espTitle: 'Bienvenido a la<br>Laguna Los Peñasquitos',
         userId: admin._id,
@@ -50,11 +51,11 @@ if (Components.find().count() === 0) {
         componentNum: '0316',
         order: 1,
         mural: 'wet-mural.jpg',
-        bodyCopy: dimsum()
     });
 
     var wetWhere = Pages.insert({
         componentId: wetlands,
+        colorPalate: 'wetlands',
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
         userId: admin._id,
@@ -74,6 +75,7 @@ if (Components.find().count() === 0) {
      **************************************************************************
      */
     var torreyPines = Components.insert({
+        colorPalate: 'torrey-pines',
         title: 'Welcome to Torrey Pines',
         espTitle: 'Bienvenido a Torrey Pines',
         userId: admin._id,

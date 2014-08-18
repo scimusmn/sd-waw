@@ -26,7 +26,7 @@ Template.page.helpers({
             'btn ',
             'btn-block ',
             pageClass + ' ',
-            'tp-' + order + ' ',
+            'btn-' + order + ' ',
             'loading'
         ]
 

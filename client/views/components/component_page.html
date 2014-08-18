@@ -1,24 +1,26 @@
 <template name="componentPage">
   <!-- component_page.html -->
 
-  <!-- Map -->
-  <div class="container-map map-tp-menu map-animate"></div>
+  <div class="{{colorPalate}}">
+    <!-- Map -->
+    <div class="container-map map-tp-menu map-animate"></div>
 
-  <!-- Title -->
-  <div class="pabs welcome-title">
-    <div class="eng">{{{ title }}}</div>
-    <div class="esp">{{{ espTitle }}}</div>
-  </div>
+    <!-- Title -->
+    <div class="pabs welcome-title">
+      <div class="eng">{{{ title }}}</div>
+      <div class="esp">{{{ espTitle }}}</div>
+    </div>
 
-  <!-- Postcard -->
-  <img class="postcard postcard-border postcard-shadow" src="/images/{{mural}}">
+    <!-- Postcard -->
+    <img class="postcard postcard-border postcard-shadow" src="/images/{{mural}}">
 
-  <!-- Menu -->
-  <div class="pabs menu-footer">
-    <div class="buttons buttons-tp">
-      {{#each pages}}
-        {{> page}}
-      {{/each}}
+    <!-- Menu -->
+    <div class="pabs menu-footer">
+      <div class="buttons">
+        {{#each pages}}
+          {{> page}}
+        {{/each}}
+      </div>
     </div>
   </div>
 
