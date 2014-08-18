@@ -56,7 +56,7 @@ if (Components.find().count() === 0) {
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
-        mural: 'tp-mural-3.jpg',
+        mural: 'tp-mural.jpg',
         bodyCopy: dimsum()
     });
 
