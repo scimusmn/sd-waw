@@ -69,6 +69,19 @@ if (Components.find().count() === 0) {
         ],
     });
 
+    var wetOur = Pages.insert({
+        componentId: wetlands,
+        colorPalate: 'wetlands',
+        buttonTitle: 'Our wetlands',
+        espButtonTitle: 'Nuestros humedales',
+        userId: admin._id,
+        order: 2,
+        author: admin.profile.name,
+        bodyCopy: 'Southern California has 28 wetlands that line the coast from Santa Barbara south to Mexico.',
+        espBodyCopy: 'Sur de California cuenta con 28 humedales que bordean la costa de Santa Barbara al sur de México.',
+        backgroundMapClass: 'map-wet-where',
+    });
+
     /**
      **************************************************************************
      * Torrey Pines
