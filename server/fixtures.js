@@ -187,6 +187,83 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-explore-northbeach',
     });
 
+    var wetScienceStories = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        buttonTitle: 'Science stories',
+        espButtonTitle: 'Historias de ciencia',
+        userId: admin._id,
+        order: 6,
+        author: admin.profile.name,
+        bodyCopy: '',
+        espBodyCopy: '',
+        backgroundMapClass: 'map-explore',
+    });
+
+    var wetScienceStoriesOne = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetScienceStories,
+        buttonTitle: 'Science Story<br>One',
+        espButtonTitle: 'Historia de ciencia<br>uno',
+        buttonImage: 'wet-explore-miners.png',
+        bodyImages: [
+            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 1,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-wet-explore-miners',
+    });
+
+    var wetScienceStoriesTwo = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetScienceStories,
+        buttonTitle: 'Science Story<br>Two',
+        espButtonTitle: 'Historia de ciencia<br>duo',
+        buttonImage: 'wet-explore-miners.png',
+        bodyImages: [
+            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 2,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-wet-explore-miners',
+    });
+
+    var wetScienceStoriesThree = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetScienceStories,
+        buttonTitle: 'Science Story<br>Three',
+        espButtonTitle: 'historia de ciencia<br>tres',
+        buttonImage: 'wet-explore-miners.png',
+        bodyImages: [
+            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 3,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-wet-explore-miners',
+    });
+
+    var wetScienceStoriesFour = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetScienceStories,
+        buttonTitle: 'Science Story<br>Four',
+        espButtonTitle: 'historia de ciencia<br>quatro',
+        buttonImage: 'wet-explore-miners.png',
+        bodyImages: [
+            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+        ],
+        order: 4,
+        bodyCopy: 'Lorem ipsum',
+        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        backgroundMapClass: 'map-wet-explore-miners',
+    });
+
 
     /**
      **************************************************************************
