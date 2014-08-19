@@ -129,6 +129,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpWhere = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
@@ -144,6 +145,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpRareTree = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Rare tree',
         espButtonTitle: 'Árbol raro',
@@ -159,6 +161,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpRareHabitat = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Rare habitat',
         espButtonTitle: 'Hábitat raros',
@@ -175,6 +178,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpRareClimate = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Rare climate zone',
         espButtonTitle: 'Zona de clima raro',
@@ -188,6 +192,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpExplore = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Explore',
         espButtonTitle: 'Explorá',
@@ -200,6 +205,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpExploreReserve = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Torrey Pines<br>State Natural Reserve',
@@ -215,6 +221,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpExploreCrest = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Crest Canyon<br>Open Space Park Preserve',
@@ -230,6 +237,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpExploreBayside = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Bayside Trail,<br>Cabrillo National Monument',
@@ -245,6 +253,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpExploreMiners = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Miner\'s Loop,<br>Black Mountain Open Space Park',
@@ -260,6 +269,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpScienceStories = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Science stories',
         espButtonTitle: 'Historias de ciencia',
@@ -272,6 +282,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpScienceStoriesOne = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
         buttonTitle: 'Science Story<br>One',
@@ -287,6 +298,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpScienceStoriesTwo = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
         buttonTitle: 'Science Story<br>Two',
@@ -302,6 +314,7 @@ if (Components.find().count() === 0) {
     });
 
     var tpScienceStoriesThree = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
         buttonTitle: 'Science Story<br>Three',
