@@ -152,7 +152,7 @@ if (Components.find().count() === 0) {
         order: 2,
         bodyCopy: '<p>Glimpse some of the more than 700 plant and animal species that inhabit this county preserve. Bring your binoculars!</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
         espBodyCopy: '<p> Glimpse algunas de las más de 700 especies de plantas y animales que habitan en este municipio a preservar. Traiga sus binoculares!</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web]. </p>',
-        backgroundMapClass: 'map-explore',
+        backgroundMapClass: 'map-wet-explore-elijo',
     });
 
     var wetExploreDelMar = Pages.insert({
@@ -168,7 +168,7 @@ if (Components.find().count() === 0) {
         order: 3,
         bodyCopy: '<p>Hike the western-most section of the Coast to Crest Trail, which will soon extend 55 miles from the ocean at Del Mar to Volcan Mountain just north of Julian.</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
         espBodyCopy: '<p>Camine por el más occidental sección de la costa de Crest Trail, que pronto se extenderá a 55 millas del océano en Del Mar a Volcán Montaña justo al norte de Julian.</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web].</p>',
-        backgroundMapClass: 'map-explore',
+        backgroundMapClass: 'map-wet-explore-delmar',
     });
 
     var wetExploreNorthBeach = Pages.insert({
@@ -184,7 +184,7 @@ if (Components.find().count() === 0) {
         order: 3,
         bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
         espBodyCopy: '<p>Disfrute de la brisa del mar y caminar junto a uno de los pocos humedales costeros que quedan en el sur de California.</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web].</p>',
-        backgroundMapClass: 'map-explore',
+        backgroundMapClass: 'map-wet-explore-northbeach',
     });
 
 
