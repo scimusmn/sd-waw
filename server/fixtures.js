@@ -201,7 +201,7 @@ if (Components.find().count() === 0) {
         author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
-        backgroundMapClass: 'map-tp-explore',
+        backgroundMapClass: 'map-explore',
     });
 
     var tpExploreReserve = Pages.insert({
@@ -278,7 +278,7 @@ if (Components.find().count() === 0) {
         author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
-        backgroundMapClass: 'map-tp-explore',
+        backgroundMapClass: 'map-explore',
     });
 
     var tpScienceStoriesOne = Pages.insert({
