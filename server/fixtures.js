@@ -409,7 +409,8 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-tp-explore-miners',
     });
 
-    var tpScienceStoriesOne = Pages.insert({
+    var tpScienceStoriesFour = Pages.insert({
+        colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
         buttonTitle: 'Science Story<br>Four',
