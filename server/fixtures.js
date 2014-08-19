@@ -54,6 +54,7 @@ if (Components.find().count() === 0) {
     });
 
     var wetWhere = Pages.insert({
+        colorPalate: 'wetlands',
         componentId: wetlands,
         colorPalate: 'wetlands',
         buttonTitle: 'Where is it?',
@@ -70,6 +71,7 @@ if (Components.find().count() === 0) {
     });
 
     var wetOur = Pages.insert({
+        colorPalate: 'wetlands',
         componentId: wetlands,
         colorPalate: 'wetlands',
         buttonTitle: 'Our wetlands',
@@ -83,8 +85,8 @@ if (Components.find().count() === 0) {
     });
 
     var wetThen = Pages.insert({
-        componentId: wetlands,
         colorPalate: 'wetlands',
+        componentId: wetlands,
         buttonTitle: 'Then and Now',
         espButtonTitle: 'Antes y ahora',
         userId: admin._id,
@@ -96,8 +98,8 @@ if (Components.find().count() === 0) {
     });
 
     var wetFlyway = Pages.insert({
-        componentId: wetlands,
         colorPalate: 'wetlands',
+        componentId: wetlands,
         buttonTitle: 'The Pacific Flyway',
         espButtonTitle: 'La ruta del Pacífico',
         userId: admin._id,
