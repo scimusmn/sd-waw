@@ -136,7 +136,7 @@ if (Components.find().count() === 0) {
         order: 1,
         bodyCopy: 'Visit Bolsa Chica Ecological Reserve to experience the largest saltwater wetland in southern California. For more information visit [TBD - website link].',
         espBodyCopy: 'Visita la Reserva Ecológica Bolsa Chica para experimentar el mayor humedal de agua salada en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web].',
-        backgroundMapClass: 'map-explore',
+        backgroundMapClass: 'map-wet-explore-bolsa',
     });
 
     var wetExploreElijo = Pages.insert({
