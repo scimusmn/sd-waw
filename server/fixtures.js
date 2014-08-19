@@ -110,6 +110,84 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-where',
     });
 
+    var wetExplore = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        buttonTitle: 'Explore',
+        espButtonTitle: 'Explorá',
+        userId: admin._id,
+        order: 5,
+        author: admin.profile.name,
+        bodyCopy: '',
+        espBodyCopy: '',
+        backgroundMapClass: 'map-explore',
+    });
+
+    var wetExploreBolsa = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetExplore,
+        buttonTitle: 'Bolsa Chica<br>Ecological Reserve',
+        espButtonTitle: 'Bolsa Chica <br> Reserva Ecológica',
+        buttonImage: 'wet-explore-bolsa.jpg',
+        bodyImages: [
+            {fileName: 'wet-explore-bolsa-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+        ],
+        order: 1,
+        bodyCopy: 'Visit Bolsa Chica Ecological Reserve to experience the largest saltwater wetland in southern California. For more information visit [TBD - website link].',
+        espBodyCopy: 'Visita la Reserva Ecológica Bolsa Chica para experimentar el mayor humedal de agua salada en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web].',
+        backgroundMapClass: 'map-explore',
+    });
+
+    var wetExploreElijo = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetExplore,
+        buttonTitle: 'San Elijo Lagoon<br>County Ecological Preserve',
+        espButtonTitle: 'Laguna de San Elijo<br>Condado Reserva Ecológica',
+        buttonImage: 'wet-explore-elijo.jpg',
+        bodyImages: [
+            {fileName: 'wet-explore-elijo-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+        ],
+        order: 2,
+        bodyCopy: '<p>Glimpse some of the more than 700 plant and animal species that inhabit this county preserve. Bring your binoculars!</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
+        espBodyCopy: '<p> Glimpse algunas de las más de 700 especies de plantas y animales que habitan en este municipio a preservar. Traiga sus binoculares!</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web]. </p>',
+        backgroundMapClass: 'map-explore',
+    });
+
+    var wetExploreDelMar = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetExplore,
+        buttonTitle: 'Coast to Crest Trail – <br>Del Mar, San Dieguito River Park',
+        espButtonTitle: 'Costa de Crest Trail - <br> Del Mar, San Dieguito River Park',
+        buttonImage: 'wet-explore-delmar.jpg',
+        bodyImages: [
+            {fileName: 'wet-explore-delmar-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+        ],
+        order: 3,
+        bodyCopy: '<p>Hike the western-most section of the Coast to Crest Trail, which will soon extend 55 miles from the ocean at Del Mar to Volcan Mountain just north of Julian.</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
+        espBodyCopy: '<p>Camine por el más occidental sección de la costa de Crest Trail, que pronto se extenderá a 55 millas del océano en Del Mar a Volcán Montaña justo al norte de Julian.</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web].</p>',
+        backgroundMapClass: 'map-explore',
+    });
+
+    var wetExploreNorthBeach = Pages.insert({
+        colorPalate: 'wetlands',
+        componentId: wetlands,
+        parentId: wetExplore,
+        buttonTitle: 'North Beach Trail,<br>Tijuana Estuary',
+        espButtonTitle: 'North Beach Trail,<br>Estuario de Tijuana',
+        buttonImage: 'wet-explore-northbeach.jpg',
+        bodyImages: [
+            {fileName: 'wet-explore-northbeach-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+        ],
+        order: 3,
+        bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
+        espBodyCopy: '<p>Disfrute de la brisa del mar y caminar junto a uno de los pocos humedales costeros que quedan en el sur de California.</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web].</p>',
+        backgroundMapClass: 'map-explore',
+    });
+
+
     /**
      **************************************************************************
      * Torrey Pines
