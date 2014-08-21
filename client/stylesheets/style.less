@@ -52,7 +52,8 @@ body {
  * Page specific background maps
  * ----------------------------------------------------------------------------
  */
-.map-explore {
+.map-explore,
+.map-stories {
   background-image: url("/images/map-base-human.png");
   -webkit-filter: blur(4px) grayscale(60%);
   padding: 5px * 2;
@@ -677,6 +678,10 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
+.map-stories + .subpage-selector .subpage-button {
+  width: 50%;
+}
+
 .subpage-button h4 {
   margin: 15px;
   /*height: 77px;*/
@@ -696,6 +701,11 @@ h1, h2, h3 {
 .subpage-button img {
   width: 342px;
   height: 479px;
+}
+
+.map-stories + .subpage-selector .subpage-button img {
+  width: 684px;
+  height: 519px;
 }
 
 .subpage-button-1 {
@@ -733,6 +743,19 @@ h1, h2, h3 {
   width: 820px;
 }
 
+.subpage-page.body-copy.jon-on-shortleaved-dudleya,
+.subpage-page.body-copy.jon-on-shortleaved-dudleya .btn-home {
+  width: 1366px;
+}
+
+.body-copy.jon-on-shortleaved-dudleya .image {
+  float: left;
+  margin: 10px;
+}
+
+.body-copy.jon-on-shortleaved-dudleya img {
+  width: 350px;
+}
 
 /**
  * ----------------------------------------------------------------------------

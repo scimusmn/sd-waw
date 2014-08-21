@@ -197,18 +197,18 @@ if (Components.find().count() === 0) {
         author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
-        backgroundMapClass: 'map-explore',
+        backgroundMapClass: 'map-stories',
     });
 
     var wetScienceStoriesOne = Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetScienceStories,
-        buttonTitle: 'Science Story<br>One',
-        espButtonTitle: 'Historia de ciencia<br>uno',
-        buttonImage: 'wet-explore-miners.png',
+        buttonTitle: 'Susan on sehll middens',
+        espButtonTitle: 'Susan en basureros sehll',
+        buttonImage: 'wet-story-01.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'wet-story-01-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 1,
         bodyCopy: 'Lorem ipsum',
@@ -220,50 +220,18 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetScienceStories,
-        buttonTitle: 'Science Story<br>Two',
-        espButtonTitle: 'Historia de ciencia<br>duo',
-        buttonImage: 'wet-explore-miners.png',
+        buttonTitle: 'Jon on Short-leaved Dudleya',
+        espButtonTitle: 'Jon on-Short hojas Dudleya',
+        buttonImage: 'wet-story-02.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'wet-story-02-full.jpg', imageCredit: '', imageCaption: 'Jon Rebman, Curator of Botany' },
+            {fileName: 'wet-story-02-dudleya.jpg', imageCredit: '', imageCaption: 'Short-leaved Dudleya<br>Spanish Common Name<br><i>Dudleya blochmaniae</i><i>subsp.</i><i>brevifolia</i>' },
         ],
         order: 2,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+        bodyCopy: '"I like the Short-leaved Dudleya because it is a tiny, but resilient succulent. It can be easily overlooked because of its size and rarity, but is a particularly unique plant because it needs a type of soil found only in limited undeveloped areas around souther California."<br>-Jon Rebman, Curator of Botany',
+        espBodyCopy: '"Me gusta la Dudleya-Short hojas, ya que es una pequeña, pero resistente suculenta. Puede ser fácilmente pasado por alto debido a su tamaño y rareza, pero es una planta particularmente único, ya que necesita un tipo de suelo sólo se encuentran en zonas no desarrolladas limitados alrededor viento del sur de California. "<br> -Jon Rebman, Curador de Botánica',
         backgroundMapClass: 'map-wet-explore-miners',
     });
-
-    var wetScienceStoriesThree = Pages.insert({
-        colorPalate: 'wetlands',
-        componentId: wetlands,
-        parentId: wetScienceStories,
-        buttonTitle: 'Science Story<br>Three',
-        espButtonTitle: 'historia de ciencia<br>tres',
-        buttonImage: 'wet-explore-miners.png',
-        bodyImages: [
-            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
-        ],
-        order: 3,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-wet-explore-miners',
-    });
-
-    var wetScienceStoriesFour = Pages.insert({
-        colorPalate: 'wetlands',
-        componentId: wetlands,
-        parentId: wetScienceStories,
-        buttonTitle: 'Science Story<br>Four',
-        espButtonTitle: 'historia de ciencia<br>quatro',
-        buttonImage: 'wet-explore-miners.png',
-        bodyImages: [
-            {fileName: 'wet-explore-miners-full.png', imageCredit: '', imageCaption: '' },
-        ],
-        order: 4,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-wet-explore-miners',
-    });
-
 
     /**
      **************************************************************************
@@ -435,71 +403,40 @@ if (Components.find().count() === 0) {
         author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
-        backgroundMapClass: 'map-explore',
+        backgroundMapClass: 'map-stories',
     });
 
     var tpScienceStoriesOne = Pages.insert({
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
-        buttonTitle: 'Science Story<br>One',
-        espButtonTitle: 'Historia de ciencia<br>uno',
-        buttonImage: 'tp-explore-miners.png',
+        buttonTitle: 'Susan on sehll middens',
+        espButtonTitle: 'Susan en basureros sehll',
+        buttonImage: 'wet-story-01.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'wet-story-01-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 1,
         bodyCopy: 'Lorem ipsum',
         espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-tp-explore-miners',
+        backgroundMapClass: 'map-wet-explore-miners',
     });
 
     var tpScienceStoriesTwo = Pages.insert({
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
-        buttonTitle: 'Science Story<br>Two',
-        espButtonTitle: 'Historia de ciencia<br>duo',
-        buttonImage: 'tp-explore-miners.png',
+        buttonTitle: 'Jon on Short-leaved Dudleya',
+        espButtonTitle: 'Jon on-Short hojas Dudleya',
+        buttonImage: 'wet-story-02.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
+            {fileName: 'wet-story-02-full.jpg', imageCredit: '', imageCaption: 'Jon Rebman, Curator of Botany' },
+            {fileName: 'wet-story-02-dudleya.jpg', imageCredit: '', imageCaption: 'Short-leaved Dudleya<br>Spanish Common Name<br><i>Dudleya blochmaniae</i><i>subsp.</i><i>brevifolia</i>' },
         ],
         order: 2,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-tp-explore-miners',
-    });
-
-    var tpScienceStoriesThree = Pages.insert({
-        colorPalate: 'torrey-pines',
-        componentId: torreyPines,
-        parentId: tpScienceStories,
-        buttonTitle: 'Science Story<br>Three',
-        espButtonTitle: 'historia de ciencia<br>tres',
-        buttonImage: 'tp-explore-miners.png',
-        bodyImages: [
-            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
-        ],
-        order: 3,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-tp-explore-miners',
-    });
-
-    var tpScienceStoriesFour = Pages.insert({
-        colorPalate: 'torrey-pines',
-        componentId: torreyPines,
-        parentId: tpScienceStories,
-        buttonTitle: 'Science Story<br>Four',
-        espButtonTitle: 'historia de ciencia<br>quatro',
-        buttonImage: 'tp-explore-miners.png',
-        bodyImages: [
-            {fileName: 'tp-explore-miners-full.png', imageCredit: '', imageCaption: '' },
-        ],
-        order: 4,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-tp-explore-miners',
+        bodyCopy: '"I like the Short-leaved Dudleya because it is a tiny, but resilient succulent. It can be easily overlooked because of its size and rarity, but is a particularly unique plant because it needs a type of soil found only in limited undeveloped areas around souther California."<br>-Jon Rebman, Curator of Botany',
+        espBodyCopy: '"Me gusta la Dudleya-Short hojas, ya que es una pequeña, pero resistente suculenta. Puede ser fácilmente pasado por alto debido a su tamaño y rareza, pero es una planta particularmente único, ya que necesita un tipo de suelo sólo se encuentran en zonas no desarrolladas limitados alrededor viento del sur de California. "<br> -Jon Rebman, Curador de Botánica',
+        backgroundMapClass: 'map-wet-explore-miners',
     });
 
     var canyons = Components.insert({
