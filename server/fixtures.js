@@ -80,8 +80,13 @@ if (Components.find().count() === 0) {
         order: 2,
         author: admin.profile.name,
         bodyCopy: 'Southern California has 28 wetlands that line the coast from Santa Barbara south to Mexico.',
+        bodyCopyLayout: 'horizontal',
         espBodyCopy: 'Sur de California cuenta con 28 humedales que bordean la costa de Santa Barbara al sur de México.',
-        backgroundMapClass: 'map-wet-where',
+        backgroundMapClass: 'map-wet-wetlands',
+        markers: [
+            {order: 1, label: 'Deveraux Lagoon', dotLeft: '20', dotTop: '20', arrowLeft: '200', arrowTop: '40'},
+            {order: 2, label: 'Goleta Slough', dotLeft: '125', dotTop: '155', arrowLeft: '50', arrowTop: '40'}
+        ],
     });
 
     var wetThen = Pages.insert({

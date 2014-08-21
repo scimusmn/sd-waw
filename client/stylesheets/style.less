@@ -125,6 +125,43 @@ body {
 
 /**
  * ----------------------------------------------------------------------------
+ * Markers
+ * ----------------------------------------------------------------------------
+ */
+.marker {
+  position: absolute;
+  /*background-color:rgba(255,0,0,0.3);*/
+  width: 400px;
+}
+
+.marker .markerOrder {
+  position: absolute;
+  top: 11px;
+  right: 19px;
+  font-size: 20px;
+  /*background: rgba(0,255,0, 0.3);*/
+}
+
+.marker .markerLabel {
+  position: absolute;
+  top: 0;
+  right: 59px;
+  /*background-color:rgba(0,0,0,0.3);*/
+  text-align: right;
+  font-size: 30px;
+}
+
+.marker .marker-dot,
+.marker .marker-arrow {
+  background-color:rgba(255,0,0,0.3);
+  float: right;
+}
+.marker .marker-arrow {
+  /*background-color:rgba(255,0,0,0.3);*/
+}
+
+/**
+ * ----------------------------------------------------------------------------
  * Animations
  * ----------------------------------------------------------------------------
  */
@@ -637,6 +674,15 @@ h1, h2, h3 {
 
 .body-copy.explore,
 .body-copy.explore .btn-home {
+  width: 1366px;
+}
+
+.body-copy.our-wetlands {
+  height: 229px;
+}
+
+.body-copy.our-wetlands,
+.body-copy.our-wetlands .btn-home {
   width: 1366px;
 }
 

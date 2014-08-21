@@ -3,6 +3,21 @@
   <div class="{{colorPalate}}">
   <!-- Page -->
   <div class="container-map {{backgroundMapClass}} map-animate"></div>
+
+  <div class="markers">
+    this is a mrker
+    {{#each markers}}
+    <div class="marker" style="top: {{this.dotTop}}px; left: {{this.dotLeft}}px;">
+      <div class="markerOrder">{{this.order}}</div>
+      <div class="markerLabel">{{this.label}}</div>
+      <!--<div class="marker-arrow"><canvas id="{{lowerSpacesToDashes this.label}}" thing="this.label" width="200" height="200"></canvas></div>-->
+      <div class="marker-dot" arrow-left="{{this.arrowLeft}}" arrow-top="{{this.arrowTop}}">
+        <canvas id="{{lowerSpacesToDashes this.label}}-" thing="this.label" width="200" height="200"></canvas>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
   {{#unless subPages}}
 
     <!-- Parent page view -->
