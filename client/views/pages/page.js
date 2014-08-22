@@ -1,5 +1,19 @@
 Template.pagePage.rendered = function() {
     /**
+     * Display the mouse position for dev marker placement
+     */
+    //$('.marker-label').css('display', 'visible');
+
+    $(".wetlands").click(function(e){
+        var parentOffset = $(this).parent().offset();
+        //or $(this).offset(); if you really just want the current element's offset
+        var relX = e.pageX - parentOffset.left;
+        $('.mouse-x').text(relX);
+        var relY = e.pageY - parentOffset.top;
+        $('.mouse-y').text(relY);
+    });
+
+    /**
      * Animate objects once the page is rendered
      */
     $('.container-map').addClass('animated fadeIn');

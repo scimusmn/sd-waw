@@ -2,10 +2,13 @@
 {{title}}
   <div class="{{colorPalate}}">
   <!-- Page -->
-  <div class="container-map {{backgroundMapClass}} map-animate"></div>
+  <div class="container-map {{backgroundMapClass}} map-animate">
+    Mouse position:
+    <div class="mouse-x"></div>
+    <div class="mouse-y"></div>
+  </div>
 
   <div class="markers">
-    this is a mrker
     {{#each markers}}
     <div class="marker">
       <canvas id="{{lowerSpacesToDashes this.label}}" 
