@@ -129,35 +129,38 @@ body {
  * ----------------------------------------------------------------------------
  */
 .marker {
-  position: absolute;
-  /*background-color:rgba(255,0,0,0.3);*/
-  width: 400px;
-}
-
-.marker .markerOrder {
-  position: absolute;
-  top: 11px;
-  right: 19px;
-  font-size: 20px;
-  /*background: rgba(0,255,0, 0.3);*/
-}
-
-.marker .markerLabel {
+  width: 1366px;
+  height: 768px;
   position: absolute;
   top: 0;
-  right: 59px;
-  /*background-color:rgba(0,0,0,0.3);*/
-  text-align: right;
-  font-size: 30px;
+  left: 0;
+  pointer-events: none;
 }
 
-.marker .marker-dot,
-.marker .marker-arrow {
-  background-color:rgba(255,0,0,0.3);
-  float: right;
+.marker .marker-order {
+  position: absolute;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 6px;
+  pointer-events: visible;
 }
-.marker .marker-arrow {
-  /*background-color:rgba(255,0,0,0.3);*/
+
+.marker .marker-label {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0;
+}
+
+.marker canvas {
+  pointer-events: none;
+  opacity: .5;
+}
+
+.marker-dot .marker-order {
+  pointer-events: visible;
 }
 
 /**

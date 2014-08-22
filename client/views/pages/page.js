@@ -22,36 +22,65 @@ Template.pagePage.rendered = function() {
     $('.canyoneer-natural-walks').css('animation-duration', '400ms');
     $('h3').css('animation-duration', '500ms');
 
-    //var canvas = $('.marker canvas');
-    var markerOrder = $('.marker .order').text();
-
     /**
-     * Marker dot
+     * Marker
      */
-    $('.marker .marker-dot canvas').each(function(index, element) {
-        var arrowLeft = $('.marker-dot').attr('arrow-left');
-        var arrowTop = $('.marker-dot').attr('arrow-top');
+    $('.marker canvas').each(function(index, element) {
         var context = element.getContext('2d');
-        var context = element.getContext('2d');
-        var centerX = element.width / 2;
-        var centerY = element.height / 2;
-        var radius = 30;
-        context.beginPath();
-        strokeWidth = 4
-        context.lineWidth = strokeWidth;
-        context.arc(35 , 100, radius, 0, 2 * Math.PI, false);
-        //context.arc(element.width - radius - strokeWidth, radius + strokeWidth, radius, 0, 2 * Math.PI, false);
-        context.fillStyle = 'transparent';
-        context.fill();
-        context.strokeStyle = '#527193';
-        context.stroke();
-        context.beginPath();
-        context.moveTo(46, 74);
+        var strokeWidth = 2;
 
-        context.lineTo(arrowLeft, arrowTop);
-        context.lineWidth = 4;
+        /**
+         * Get circle and pointer position from the database element
+         *
+         * This is laoded into the DOM using the Spacebars template
+         * then we use jQuery to get it from there.
+         *
+         * TODO, see if this data is already loaded in Meteor, so that we
+         * we don't need to traverse the DOM to get it.
+         */
+        var centerX = $(this).attr('dot-left');
+        var centerY = $(this).attr('dot-top');
+        var arrowX = $(this).attr('arrow-left');
+        var arrowY = $(this).attr('arrow-top');
+
+        /**
+         * Draw the pointer
+         */
+        context.beginPath();
+        // Start srawing from the center of the dot
+        context.moveTo(centerX, centerY);
+        context.lineTo(arrowX, arrowY);
+        context.lineWidth = strokeWidth;
         context.strokeStyle = '#527193';
         context.stroke();
+
+        /**
+         * Draw the circle
+         */
+        context.beginPath();
+        context.lineWidth = strokeWidth;
+        var radius = 20;
+        context.arc(centerX , centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = '#FFF';
+        context.fill();
+        context.stroke();
+
+        /**
+         * Position the labels
+         */
+        $(this).siblings('.marker-order').css({
+            'left' : (centerX - 20) + 'px',
+            'top' : (centerY - 20) + 'px'
+        });
+
+        var markerLabel = $(this).siblings('.marker-label')
+        //console.log($(this).siblings('.marker-label').width());
+        var labelY = parseInt(centerY) + 20;
+        $(this).siblings('.marker-label').css({
+            'left' : (centerX - (markerLabel.width() / 2)) + 'px',
+            'top' : labelY + 'px',
+        });
+
     });
 
     /**
@@ -74,6 +103,37 @@ Template.pagePage.events({
     /**
      * Custom actions for page links
      */
+    'mousedown .marker-order': function(e) {
+        e.preventDefault();
+        clicked = e.target;
+
+        var fadeMarkersOut = function() {
+            console.log('Fading the clicked marker out');
+            $('.clicked').removeClass('fadeIn');
+            $('.clicked').addClass('animated fadeOut');
+        }
+
+        var fadeMarkerIn = function() {
+            console.log('Fading the clicked marker in');
+            $('.clicked').removeClass('fadeOut clicked');
+            $(e.target).siblings('.marker-label').addClass('clicked animated fadeIn');
+        }
+
+        fadeMarkersOut();
+        window.setTimeout(function() {
+            fadeMarkerIn();
+        }, 300);
+    },
+
+    'mousedown .devtest': function(e){
+        e.preventDefault();
+        console.log('clicked on', this);
+    },
+
+    'mousedown canvas': function(e){
+        e.preventDefault();
+    },
+
     'click .subpage-button': function(e) {
         e.preventDefault();
         destination = this._id;
