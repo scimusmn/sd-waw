@@ -2,11 +2,8 @@ Template.pagePage.rendered = function() {
     /**
      * Display the mouse position for dev marker placement
      */
-    //$('.marker-label').css('display', 'visible');
-
     $(".wetlands").click(function(e){
         var parentOffset = $(this).parent().offset();
-        //or $(this).offset(); if you really just want the current element's offset
         var relX = e.pageX - parentOffset.left;
         $('.mouse-x').text(relX);
         var relY = e.pageY - parentOffset.top;
@@ -19,16 +16,10 @@ Template.pagePage.rendered = function() {
     $('.container-map').addClass('animated fadeIn');
     if ( $('.body-copy.rare-climate-zone').length || $('.body-copy.our-wetlands').length ) {
         $('.body-copy').addClass('animated fadeInUp');
-        //$('.body-text').wrapInner('<div class="row"></div>');
-        //$('.body-text p.eng').replaceWith(function(){
-            //return $("<div />", {html: $(this).html()}).addClass('riparian');
-        //});
-
     }
     else {
         $('.body-copy').addClass('animated fadeInLeft');
     }
-
     $('.body-copy').css('-webkit-animation-duration', '400ms');
     $('.body-copy').css('animation-duration', '400ms');
     $('.subpage-button, h3').addClass('animated fadeInDown ');
@@ -37,7 +28,7 @@ Template.pagePage.rendered = function() {
     $('h3').css('animation-duration', '500ms');
 
     /**
-     * Marker
+     * Map markers
      */
     $('.marker canvas').each(function(index, element) {
         var context = element.getContext('2d');
@@ -86,9 +77,7 @@ Template.pagePage.rendered = function() {
             'left' : (centerX - 20) + 'px',
             'top' : (centerY - 20) + 'px'
         });
-
         var markerLabel = $(this).siblings('.marker-label')
-        //console.log($(this).siblings('.marker-label').width());
         var labelY = parseInt(centerY) + 20;
         $(this).siblings('.marker-label').css({
             'left' : (centerX - (markerLabel.width() / 2)) + 'px',
@@ -96,21 +85,6 @@ Template.pagePage.rendered = function() {
         });
 
     });
-
-    /**
-     * Marker line
-     */
-    //$('.marker .marker-arrow canvas').each(function(index, element) {
-        //var context = element.getContext('2d');
-        //var context = element.getContext('2d');
-        //context.beginPath();
-        //context.moveTo(20, 20);
-        //context.lineTo(40, 0);
-        //context.lineWidth = 4;
-        //context.strokeStyle = '#527193';
-        //context.stroke();
-    //});
-
 };
 
 Template.pagePage.events({
@@ -138,11 +112,6 @@ Template.pagePage.events({
         window.setTimeout(function() {
             fadeMarkerIn();
         }, 300);
-    },
-
-    'mousedown .devtest': function(e){
-        e.preventDefault();
-        console.log('clicked on', this);
     },
 
     'mousedown canvas': function(e){

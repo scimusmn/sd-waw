@@ -10,7 +10,7 @@ Template.page.helpers({
         pageClass = pageId.replace(/\s+/g, '-').toLowerCase();
 
         /**
-         * Stagger the appearance animation for each link so that they
+         * Stagger the appearance animation for each link so that page links
          * cascade in.
          */
         order = this.order;
