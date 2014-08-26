@@ -14,6 +14,7 @@ Template.pagePage.rendered = function() {
      * Animate objects once the page is rendered
      */
     $('.container-map').addClass('animated fadeIn');
+    $('.markers').addClass('animated fadeIn');
     if ( $('.body-copy.rare-climate-zone').length || $('.body-copy.our-wetlands').length ) {
         $('.body-copy').addClass('animated fadeInUp');
     }
@@ -165,6 +166,7 @@ Template.pagePage.events({
         var animateContentOut = function() {
             // Animate all overlays
             $('.container-map').addClass('animated fadeOut');
+            $('.markers').addClass('animated fadeOut');
             if ($('.body-copy.horizontal').length) {
                 $('.body-copy').addClass('animated fadeOutDownCustom');
             }
