@@ -164,6 +164,42 @@ body {
 }
 
 /**
+ * fadeMarkerOut
+ */
+@-webkit-keyframes fadeMarkerOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .5;
+  }
+}
+
+.fadeMarkerOut {
+  -webkit-animation-name: fadeMarkerOut;
+  animation-name: fadeMarkerOut;
+}
+
+/**
+ * fadeMarkerIn
+ */
+@-webkit-keyframes fadeMarkerIn {
+  0% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeMarkerIn {
+  -webkit-animation-name: fadeMarkerIn;
+  animation-name: fadeMarkerIn;
+}
+
+/**
  * ----------------------------------------------------------------------------
  * Animations
  * ----------------------------------------------------------------------------

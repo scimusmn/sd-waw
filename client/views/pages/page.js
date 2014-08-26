@@ -122,15 +122,16 @@ Template.pagePage.events({
         clicked = e.target;
 
         var fadeMarkersOut = function() {
-            console.log('Fading the clicked marker out');
+            $('.clicked').siblings('canvas').removeClass('fadeMarkerIn');
+            $('.clicked').siblings('canvas').addClass('animated fadeMarkerOut');
             $('.clicked').removeClass('fadeIn');
             $('.clicked').addClass('animated fadeOut');
         }
 
         var fadeMarkerIn = function() {
-            console.log('Fading the clicked marker in');
             $('.clicked').removeClass('fadeOut clicked');
             $(e.target).siblings('.marker-label').addClass('clicked animated fadeIn');
+            $(e.target).siblings('canvas').addClass('animated fadeMarkerIn');
         }
 
         fadeMarkersOut();
