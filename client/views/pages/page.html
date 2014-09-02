@@ -3,9 +3,22 @@
   <div class="{{colorPalate}}">
   <!-- Page -->
   <div class="container-map {{backgroundMapClass}} map-animate">
-    Mouse position:
-    <div class="mouse-x"></div>
-    <div class="mouse-y"></div>
+    {{#if bottomImage}}
+      <div class="before-after-slider">
+        <div class="bottom-image">
+          <div class="label">{{{ bottomImageLabel }}}</div>
+          <img src="/images/{{bottomImage}}">
+        </div>
+        <div class="top-image">
+          <div class="label">{{{ topImageLabel }}}</div>
+          <img src="/images/{{topImage}}">
+        </div>
+      </div>
+      <canvas id="handle" width="40" height="100"></canvas>
+    {{/if}}
+    <!--Mouse position:-->
+    <!--<div class="mouse-x"></div>-->
+    <!--<div class="mouse-y"></div>-->
   </div>
 
   <div class="markers">

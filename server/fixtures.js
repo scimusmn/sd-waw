@@ -121,9 +121,13 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 3,
         author: admin.profile.name,
-        bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Compare these maps to see how much habitat has been lost.</p>',
+        bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Drag your finger across this map to compare how much habitat has been lost.</p>',
         espBodyCopy: '<p>Más del 90% del hábitat de los humedales del sur de California ha desaparecido debido al continuo desarrollo de bienes raíces.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
-        backgroundMapClass: 'map-wet-where',
+        backgroundMapClass: 'map-wet-then-now',
+        bottomImage: 'wet-map-compare-historic.png',
+        bottomImageLabel: 'Historic<br>wetlands',
+        topImage: 'wet-map-compare-present.png',
+        topImageLabel: 'Present day<br>wetlands',
     });
 
     var wetFlyway = Pages.insert({
@@ -289,7 +293,6 @@ if (Components.find().count() === 0) {
         espButtonTitle: '¿Dónde está?',
         userId: admin._id,
         order: 1,
-        author: admin.profile.name,
         bodyCopy: 'Torrey Pines State Natural Reserve, the setting for the scene in front of you, is just 18 miles from the Museum.',
         espBodyCopy: 'Reserva Natural Torrey Pines State, el escenario de la escena delante de usted, está a sólo 18 km del Museo.',
         backgroundMapClass: 'map-tp-park',

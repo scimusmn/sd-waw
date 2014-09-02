@@ -123,6 +123,51 @@ body {
   background-image: url("/images/tp-map-explore-miners.png");
 }
 
+.map-wet-then-now {
+  background-image: url("/images/tp-map-explore-miners.png");
+}
+
+.before-after-slider {
+  position: relative;
+  width: 1366px;
+  height: 768px;
+}
+
+.before-after-slider div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.top-image {
+  /*border-right: solid 2px white;*/
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+#handle {
+  position: absolute;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  /*background: rgba(34,55, 123, 0.5);*/
+}
+
+.before-after-slider .top-image .label,
+.before-after-slider .bottom-image .label {
+  top: auto;
+  bottom: 10px;
+  left: auto;
+  right: 0px;
+  font-size: 2em;
+  color: #000;
+}
+
+.before-after-slider .bottom-image {
+  -webkit-filter: sepia(15%);
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Markers
