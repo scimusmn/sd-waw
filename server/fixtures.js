@@ -138,9 +138,26 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 4,
         author: admin.profile.name,
-        bodyCopy: 'Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.',
+        bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Touch the locations to meet some of the birds that travel the Pacific Flyway</p>',
         espBodyCopy: 'Cada año, más de mil millones de aves utilizan la ruta migratoria del Pacífico-una serie de humedales a lo largo de costa en el oeste de América del Norte el viaje migratorio entre sus hogares del norte y sur de temporada.',
-        backgroundMapClass: 'map-wet-where',
+        markers: [
+            {
+                order: 1, label: 'Black-bellied Plovers', dotLeft: '744', dotTop: '286', arrowLeft: '841', arrowTop: '162',
+                bodyCopy: 'After nesting in Alaska, Black-bellied Plovers migrate south on the Pacific Flyway to winter in southern California.',
+                espBodyCopy: 'Después de anidar en Alaska, chorlitos vientre negro migran hacia el sur por la ruta del Pacífico para el invierno en el sur de California.'
+            },
+            {
+                order: 2, label: 'Western Sandpiper', dotLeft: '835', dotTop: '429', arrowLeft: '1004', arrowTop: '254',
+                bodyCopy: 'Western Sandpipers endure long journeys between their northern breeding grounds in Alaska and winter homes along the coasts of southern California, Mexico, and South America.',
+                espBodyCopy: 'Calidris mauri soportar viajes largos entre sus áreas de reproducción del norte de Alaska y casas de invierno a lo largo de las costas del sur de California, México, y América del Sur.'
+            },
+            {
+                order: 3, label: 'Marbled Godwit', dotLeft: '922', dotTop: '503', arrowLeft: '1060', arrowTop: '356',
+                bodyCopy: 'Immediately after nesting, Marbled Godwits escape cold winters in the northern Great Plains by migrating to milder climates along the west coast.',
+                espBodyCopy: 'Inmediatamente después de anidar, Jaspeado Limosa escapar inviernos fríos en el norte de las Grandes Planicies de migrar a climas más suaves a lo largo de la costa oeste.'
+            }
+        ],
+        backgroundMapClass: 'map-wet-migration',
     });
 
     var wetExplore = Pages.insert({
