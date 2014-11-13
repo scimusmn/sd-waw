@@ -311,10 +311,10 @@ if (Components.find().count() === 0) {
         userId: admin._id,
         order: 1,
         bodyCopy: 'Torrey Pines State Natural Reserve, the setting for the scene in front of you, is just 18 miles from the Museum.',
-        espBodyCopy: 'Reserva Natural Torrey Pines State, el escenario de la escena delante de usted, está a sólo 18 km del Museo.',
+        espBodyCopy: 'La Reserva Natural Estatal de Torrey Pines, el marco de la escena delante de ti, está apenas a 18 millas del Museo.',
         backgroundMapClass: 'map-tp-park',
         bodyImages: [
-            {fileName: 'tp-where.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
+            {fileName: 'tp-where.jpg', imageCredit: '' },
         ],
     });
 
@@ -322,15 +322,15 @@ if (Components.find().count() === 0) {
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Rare tree',
-        espButtonTitle: 'Árbol raro',
+        espButtonTitle: 'Árbol inusual',
         userId: admin._id,
         order: 2,
         author: admin.profile.name,
-        bodyCopy: 'The Torrey Pine is found in only two places: Torrey Pines State Natural Reserve and Santa Rosa Island.',
-        espBodyCopy: 'El pino de Torrey se encuentra solamente en dos lugares: Torrey Pines Reserva Natural del Estado y la isla de Santa Rosa.',
+        bodyCopy: '<p>The Torrey Pine is found in only two places: Torrey Pines State Natural Reserve and Santa Rosa Island.</p><p>There are two distinct varieties of Torrey Pine, each only existing in one location. That makes this tree in coastal San Diego even more unique.</p>',
+        espBodyCopy: '<p>El pino Torrey se encuentra en sólo dos lugares:  La Reserva Natural Estatal de Torrey Pines y en la Isla de Santa Rosa.</p><p>Hay dos variedades distintas de pinos Torrey; cada una existe en un solo lugar, lo cual hace que este árbol de la costa de San Diego sea aun más especial.</p>',
         backgroundMapClass: 'map-tp-extent',
         bodyImages: [
-            {fileName: 'tp-tree-rare.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p. 64' },
+            {fileName: 'tp-tree-rare.jpg', imageCredit: '' },
         ],
     });
 
