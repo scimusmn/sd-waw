@@ -138,8 +138,8 @@ body {
 
 .before-after-slider {
   position: relative;
-  width: 1366px;
-  height: 768px;
+  width: @screen-width;
+  height: @screen-height;
 }
 
 .before-after-slider div {
@@ -179,12 +179,12 @@ body {
 
 /**
  * ----------------------------------------------------------------------------
- * Markers
+ * Map markers
  * ----------------------------------------------------------------------------
  */
 .marker {
-  width: 1366px;
-  height: 768px;
+  width: @screen-width;
+  height: @screen-height;
   position: absolute;
   top: 0;
   left: 0;
@@ -447,8 +447,13 @@ body {
  * ----------------------------------------------------------------------------
  */
 body {
-  font-family: 'FuturaTS-Medium', sans-serif;
+  // This is what they want for style and visibility.
+  // It just might be too much for the ammount of copy that they have
+  /*font-family: 'FuturaTS-Medium', sans-serif;*/
+  // This works better.
+  font-family: 'FuturaTS-Regular', sans-serif;
   font-size: @body-font-size;
+  line-height: @body-line-height;
 }
 
 h1, h2, h3 {
@@ -459,21 +464,22 @@ h1, h2, h3 {
 .welcome-title {
   z-index: 2000;
   font-family: 'FuturaTS-Medium';
-  left: 29px;
-  bottom: 16px;
+  left: 25px;
+  bottom: 25px;
   color: white;
-  padding: 20px 20px 0 0;
   width: 550px;
 }
 
 .welcome-title .eng {
-  font-size: 2.9em;
+  font-size: @welcome-font-size;
+  letter-spacing: @welcome-font-letter-spacing;
 }
 
 .welcome-title .esp {
   color: lighten(@golden-spanish, 10%);
-  font-size: 2.2em;
-  letter-spacing: 0.03em;
+  font-size: @welcome-font-size-esp;
+  margin-top: 25px;
+  letter-spacing: @welcome-font-letter-spacing-esp;
 }
 
 /**
@@ -518,9 +524,9 @@ h1, h2, h3 {
   width: 263px;
   height: 100px;
   margin: 0;
-  padding: 10px 10px 10px 15px;
+  padding: 20px 10px 10px 15px;
   text-align: left;
-  font-size: 1.5em;
+  font-size: @menu-font-size;
   border: none;
   border-radius:0;
   -webkit-box-shadow: none;
@@ -528,7 +534,9 @@ h1, h2, h3 {
 }
 .menu-footer .btn .esp {
   color: lighten(@golden-spanish, 10%);
-  font-size: .85em;
+  font-size: @menu-font-size-esp;
+  margin-top: 10px;
+  line-height: 47px;
 }
 
 /**
@@ -587,6 +595,12 @@ h1, h2, h3 {
   background: darken(@wetlands-blue, 15%);
 }
 
+a.btn,
+a.btn:hover,
+a.btn:active {
+  text-decoration: none;
+}
+
 .torrey-pines .buttons .btn,
 .torrey-pines .buttons .btn:hover {
   color: white;
@@ -629,9 +643,8 @@ h1, h2, h3 {
   background: lighten(@background-tan, 6%);
   bottom: 0;
   left: 0;
-  padding: 1em 2em 1.5em 1.5em;
+  padding: 1em 1.5em 1.5em 1.5em;
   height: 100%;
-  font-size: 1.25em;
   -webkit-box-shadow: 2px 2px 20px @shadow-grey;
           box-shadow: 2px 2px 20px @shadow-grey;
 }
@@ -642,7 +655,7 @@ h1, h2, h3 {
 }
 
 .body-copy img {
-  width: 470px;
+  /*width: 470px;*/
 }
 
 .body-copy .credit {
@@ -671,8 +684,8 @@ h1, h2, h3 {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  font-size: 1.8em;
-  padding-top: 10px;
+  font-size: 35px;
+  padding: 10px 0 10px 0;
   color: lighten(@background-tan, 12%);
   text-align: center;
 }
@@ -701,15 +714,17 @@ h1, h2, h3 {
 .body-copy h3,
 .subpage-selector h3 {
   font-family: 'FuturaTS-Demibold', sans-serif;
-  font-size: 36px;
-  margin-bottom: 24px;
+  font-size: @inner-headline-font-size;
+  letter-spacing: @inner-headline-letter-spacing;
+  margin-bottom: 8px;
 }
 
 /* Inner page headlines - Spanish */
 .body-copy h3 .esp,
 .subpage-selector h3 .esp {
   margin-top: 10px;
-  font-size: .72em;
+  font-size: @inner-headline-font-size-esp;
+  letter-spacing: @inner-headline-letter-spacing;
 }
 
 /* Inner page body copy - English */
@@ -762,12 +777,12 @@ h1, h2, h3 {
 
 .body-copy.rare-climate-zone,
 .body-copy.rare-climate-zone .btn-home {
-  width: 1366px;
+  width: @screen-width;
 }
 
 .body-copy.explore,
 .body-copy.explore .btn-home {
-  width: 1366px;
+  width: @screen-width;
 }
 
 .body-copy.our-wetlands {
@@ -776,7 +791,7 @@ h1, h2, h3 {
 
 .body-copy.our-wetlands,
 .body-copy.our-wetlands .btn-home {
-  width: 1366px;
+  width: @screen-width;
 }
 
 /**
@@ -788,7 +803,7 @@ h1, h2, h3 {
   bottom: 0;
   left: 0;
   height: 100%;
-  width: 1366px;
+  width: @screen-width;
 }
 
 .subpage-selector-header {
@@ -806,7 +821,7 @@ h1, h2, h3 {
 
 .subpage-selector .btn-home,
 .subpage-selector-header {
-  width: 1366px;
+  width: @screen-width;
 }
 
 .subpage-selector-buttons {
@@ -901,7 +916,7 @@ h1, h2, h3 {
 
 .subpage-page.body-copy.jon-on-shortleaved-dudleya,
 .subpage-page.body-copy.jon-on-shortleaved-dudleya .btn-home {
-  width: 1366px;
+  width: @screen-width;
 }
 
 .body-copy.jon-on-shortleaved-dudleya .image {
@@ -998,6 +1013,17 @@ h1, h2, h3 {
  * Font faces
  * ---------------------------------------------------------------------------
  */
+@font-face {
+    font-family: 'FuturaTS-Regular';
+    src: url('/fonts/FuturaTS-Regular.eot');
+    src: url('/fonts/FuturaTS-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FuturaTS-Regular.woff') format('woff'),
+         url('/fonts/FuturaTS-Regular.ttf') format('truetype'),
+         url('/fonts/FuturaTS-Regular.svg#FuturaTS-Demibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'FuturaTS-Demibold';
     src: url('/fonts/FuturaTS-Demibold.eot');
