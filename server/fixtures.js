@@ -338,16 +338,16 @@ if (Components.find().count() === 0) {
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Rare habitat',
-        espButtonTitle: 'Hábitat raros',
+        espButtonTitle: 'Hábitat inusual',
         userId: admin._id,
         order: 3,
         author: admin.profile.name,
-        bodyCopy: '<p>Torrey Pines State Reserve is one of the last places where you can see coastal sage scrub habitat. Land development and the introduction of non-native species have eliminated over __% of this habitat in southern California.</p><p>Coastal sage scrub is characterized by soft-leaved, fragrant shrubs. You will often find California Sagebrush and California Buckwheat here.</p>',
-        espBodyCopy: '<p>Torrey Pines State Reserve es uno de los últimos lugares donde se puede ver el hábitat de matorrales de salvia costera. Desarrollo de la tierra y la introducción de especies no nativas se han eliminado más de ___% de este hábitat en el sur de California.</p><p>Matorral costero se caracteriza por arbustos de hojas suaves y fragantes. Usted encontrará a menudo California Artemisa y California alforfón aquí.</p>',
+        bodyCopy: '<p>Torrey Pines State Natural Reserve is one<br>of the last places where you can see coastal<br>sage scrub habitat.</p><p>Coastal sage scrub plants are usually<br>soft-leaved and fragrant. You will often<br>find California Sagebrush and<br>Coast Prickly-pear here.</p>',
+        espBodyCopy: '<p>La Reserva Natural Estatal de Torrey Pines es<br>uno de los últimos lugares que quedan donde puedes ver el hábitat del matorral costero de salvia.</p><p>Las plantas del matorral costero de salvia son generalmente de hojas suaves y aromáticas. Frecuentemente puedes encontrar aquí<br>el chamizo y el nopal.</p>',
         backgroundMapClass: 'map-tp-floristic',
         bodyImages: [
-            {fileName: 'tp-habitat-sagebrush.png', imageCredit: 'TBD - Stonebird', imageCaption: 'California Sagebrush<br><i>Artemisia californica</i>' },
-            {fileName: 'tp-habitat-cactus.png', imageCredit: 'TBD - Melli', imageCaption: 'Coast Prickly-pear<br><i>Opuntia littoralis</i>'  },
+            {fileName: 'tp-habitat-sagebrush.png', imageCredit: '', imageCaption: 'California Sagebrush', imageCaptionEsp: 'Chamizo', imageCaptionLatin: 'Artemisia californica'},
+            {fileName: 'tp-habitat-cactus.png', imageCredit: '', imageCaption: 'Coast Prickly-pear', imageCaptionEsp: 'Nopal', imageCaptionLatin: 'Opuntia littoralis'}
         ],
     });
 
@@ -355,13 +355,13 @@ if (Components.find().count() === 0) {
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         buttonTitle: 'Rare climate zone',
-        espButtonTitle: 'Zona de clima raro',
+        espButtonTitle: 'Zona climática inusual',
         userId: admin._id,
         order: 4,
         author: admin.profile.name,
         bodyCopyLayout: 'horizontal',
-        bodyCopy: '<p>Coastal California is one of only five places in the world known as a Mediterranean climate zones.</p><p>Coastal sage scrub plants are specially adapted to surviving the mild winters and dry, hot summers typical of these Mediterranean climate zones.</p>',
-        espBodyCopy: '<p>Costera de California es uno de los cinco lugares en el mundo conocidos como zonas de clima mediterráneo.</p><p>Plantas de matorral costero están especialmente adaptados para sobrevivir a los inviernos suaves y veranos secos y calientes típicos de estas zonas de clima mediterráneo.</p>',
+        bodyCopy: '<p>Coastal California is one of only five places in the world<br>known as a Mediterranean climate zone</p><p>Coastal sage scrub plants are specially adapted for the<br>mild winters and long, dry summers typical of these climate zones. </p>',
+        espBodyCopy: '<p>La costa de California es uno de sólo cinco lugares en el mundo que<br>tiene lo que se conoce como zona de clima Mediterráneo.</p><p>Las plantas del matorral costero de salvia están adaptadas<br>especialmente para los inviernos templados y veranos largos y secos,<br>típicos de estas zonas climáticas.</p>',
         backgroundMapClass: 'map-tp-med',
     });
 

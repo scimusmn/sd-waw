@@ -55,7 +55,11 @@
           <div class="image">
             <img src="/images/{{this.fileName}}">
             <div class="credit">{{this.imageCredit}}</div>
-            <div class="caption">{{{this.imageCaption}}}</div>
+            <div class="caption">
+              {{this.imageCaption}}<br>
+              <span class="esp">{{this.imageCaptionEsp}}</span><br>
+              <span class="latin">{{this.imageCaptionLatin}}</span>
+            </div>
           </div>
           {{/each}}
         </div>
