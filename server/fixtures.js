@@ -42,7 +42,7 @@ if (Components.find().count() === 0) {
     var wetlands = Components.insert({
         colorPalate: 'wetlands',
         title: 'Welcome to<br>Los Peñasquitos Lagoon',
-        espTitle: 'Bienvenido a la<br>Laguna Los Peñasquitos',
+        titleEsp: 'Bienvenido a la<br>Laguna Los Peñasquitos',
         userId: admin._id,
         author: admin.profile.name,
         // TODO - Not sure if I need this field
@@ -291,7 +291,7 @@ if (Components.find().count() === 0) {
     var torreyPines = Components.insert({
         colorPalate: 'torrey-pines',
         title: 'Welcome to Torrey Pines',
-        espTitle: 'Bienvenido a Torrey Pines',
+        titleEsp: 'Bienvenido a Torrey Pines',
         userId: admin._id,
         author: admin.profile.name,
         // TODO - Not sure if I need this field
