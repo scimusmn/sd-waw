@@ -2,8 +2,12 @@
   <!-- Template: page -->
 
   <div class="{{colorPalate}}">
+
+    <!-- Map container -->
     <div class="container-map {{backgroundMapClass}} map-animate">
+
       {{#if bottomImage}}
+      <!-- Display two maps for comparison, if they exist -->
         <div class="before-after-slider">
           <div class="bottom-image">
             <div class="label">{{{ bottomImageLabel }}}</div>
@@ -44,12 +48,17 @@
 
     {{#unless subPages}}
 
-      <!-- Parent page view -->
+      <!--
+      Parent page view
+
+      If there aren't any subpages,
+      we just display the normal page layout
+      -->
       <div class="body-copy white-box {{bodyCopyLayout}} {{lowerSpacesToDashes buttonTitle}}">
 
-        <!-- Vertical layout -->
         {{#unless bodyCopyLayout}}
 
+          <!-- Vertical layout -->
           <h3>
             {{{buttonTitle}}}<br>
             <span class="esp">{{{espButtonTitle}}}</span>
@@ -84,6 +93,7 @@
           <a class="btn-home">
             <span class="glyphicon glyphicon-home"></span>
           </a>
+          <!-- /Vertical layout -->
 
         {{else}}
 
@@ -103,14 +113,23 @@
               </a>
             </div>
           </div>
+          <!-- /Horizontal layout -->
 
         {{/unless}}
 
       </div>
 
+      <!-- /Parent page view -->
+
     {{else}}
 
-      <!-- Sub page view -->
+      <!--
+      Sub page selector view
+
+      If there are sub pages, then we should display a menu for selecting them.
+      This is mainly used on the Explore and scientist pages
+
+      -->
       <div class="subpage-selector">
         <div class="subpage-selector-header">
           <h3>
@@ -124,14 +143,15 @@
           {{/each}}
         </div>
         <a class="btn-home">
-          <!--Home-->
-          <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
           <span class="glyphicon glyphicon-home"></span>
         </a>
       </div>
+      <!-- /Sub page view -->
 
     {{/unless}}
+
   </div>
 
   <!-- /Template: page -->
+
 </template>
