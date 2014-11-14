@@ -1,4 +1,4 @@
-Template.subPagePage.rendered = function() {
+Template.subPage.rendered = function() {
     /**
      * Animate objects once the page is rendered
      */
@@ -12,7 +12,7 @@ Template.subPagePage.rendered = function() {
     $('h3').css('animation-duration', '500ms');
 };
 
-Template.subPagePage.events({
+Template.subPage.events({
     'click .btn-home': function(e) {
 
         e.preventDefault();

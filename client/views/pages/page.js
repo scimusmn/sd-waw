@@ -203,7 +203,7 @@ Template.page.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('subPagePage', {_id: destination});
+            Router.go('subPage', {_id: destination});
         }
     },
     'click .btn-home': function(e) {

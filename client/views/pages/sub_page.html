@@ -1,5 +1,6 @@
-<template name="subPage">
-  <!-- Template: subPage -->
+<template name="subPageButton">
+  <!-- Template: subPageButton -->
+
   <div class="subpage-button subpage-button-{{order}} {{lowerSpacesToDashes buttonTitle}}">
     <img src="/images/{{buttonImage}}">
     <h4>
@@ -7,13 +8,15 @@
       <div class="esp">{{{espButtonTitle}}}</div>
     </h4>
   </div>
+
+  <!-- /Template: subPageButton -->
 </template>
 
-<template name="subPagePage">
+<template name="subPage">
+  <!-- Template: subPage -->
+
   <div class="{{colorPalate}}">
-    <!-- Page -->
     <div class="container-map {{backgroundMapClass}} map-animate"></div>
-      <!-- Parent page view -->
       <div class="body-copy subpage-page white-box {{lowerSpacesToDashes buttonTitle}}">
         <h3>{{brToSpace buttonTitle}}<br>
         <div class="esp">{{brToSpace espButtonTitle}}</div></h3>
@@ -38,12 +41,11 @@
             {{{espBodyCopy}}}
           </p>
           <a class="btn-home">
-            <!--Home-->
           <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
         </div>
       </div>
-    <!-- /Page -->
   </div>
+
   <!-- /Template: subPage -->
 </template>
