@@ -1,4 +1,4 @@
-Template.page.helpers({
+Template.button.helpers({
     /**
      * Define the attributes for each page link
      */
@@ -36,7 +36,7 @@ Template.page.helpers({
     },
 });
 
-Template.page.rendered = function() {
+Template.button.rendered = function() {
     $('.container-map').addClass('animated fadeIn');
 
     var $item = $(this.find('.btn'));
@@ -45,7 +45,7 @@ Template.page.rendered = function() {
     });
 };
 
-Template.page.events({
+Template.button.events({
     /**
      * Custom actions for page links
      */
