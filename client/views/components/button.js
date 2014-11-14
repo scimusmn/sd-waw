@@ -87,7 +87,7 @@ Template.button.events({
             goDestination();
         }, 500);
         function goDestination() {
-            Router.go('pagePage', destination);
+            Router.go('page', destination);
         }
     }
 })

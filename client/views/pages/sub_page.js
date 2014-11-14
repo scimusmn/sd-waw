@@ -48,7 +48,7 @@ Template.subPagePage.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('pagePage', {_id: destination});
+            Router.go('page', {_id: destination});
         }
     }
 });

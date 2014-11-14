@@ -1,4 +1,4 @@
-Template.pagePage.rendered = function() {
+Template.page.rendered = function() {
     /**
      * Display the mouse position for dev marker placement
      */
@@ -140,7 +140,7 @@ Template.pagePage.rendered = function() {
     });
 };
 
-Template.pagePage.events({
+Template.page.events({
     /**
      * Custom actions for page links
      */
@@ -247,7 +247,7 @@ Template.pagePage.events({
     }
 });
 
-Template.pagePage.helpers({
+Template.page.helpers({
     doorf: function() {
         return "well of course";
     },
