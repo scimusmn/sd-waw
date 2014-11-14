@@ -2,20 +2,21 @@
   <!-- Template: page -->
 
   {{title}}
+
   <div class="{{colorPalate}}">
     <div class="container-map {{backgroundMapClass}} map-animate">
       {{#if bottomImage}}
-      <div class="before-after-slider">
-        <div class="bottom-image">
-          <div class="label">{{{ bottomImageLabel }}}</div>
-          <img src="/images/{{bottomImage}}">
+        <div class="before-after-slider">
+          <div class="bottom-image">
+            <div class="label">{{{ bottomImageLabel }}}</div>
+            <img src="/images/{{bottomImage}}">
+          </div>
+          <div class="top-image">
+            <div class="label">{{{ topImageLabel }}}</div>
+            <img src="/images/{{topImage}}">
+          </div>
         </div>
-        <div class="top-image">
-          <div class="label">{{{ topImageLabel }}}</div>
-          <img src="/images/{{topImage}}">
-        </div>
-      </div>
-      <canvas id="handle" width="40" height="100"></canvas>
+        <canvas id="handle" width="40" height="100"></canvas>
       {{/if}}
       <!--Mouse position:-->
       <!--<div class="mouse-y"></div>-->
@@ -24,107 +25,107 @@
 
     <div class="markers">
       {{#each markers}}
-      <div class="marker">
-        <canvas id="{{lowerSpacesToDashes this.label}}"
-          dot-left="{{this.dotLeft}}"
-          dot-top="{{this.dotTop}}"
-          arrow-left="{{this.arrowLeft}}"
-          arrow-top="{{this.arrowTop}}"
-          width="1366" height="768">
-        </canvas>
-        <div class="marker-order">{{this.order}}</div>
-        <div class="marker-label {{lowerSpacesToDashes this.label}}-label">{{this.label}}</div>
-      </div>
+        <div class="marker">
+          <canvas id="{{lowerSpacesToDashes this.label}}"
+            dot-left="{{this.dotLeft}}"
+            dot-top="{{this.dotTop}}"
+            arrow-left="{{this.arrowLeft}}"
+            arrow-top="{{this.arrowTop}}"
+            width="1366" height="768">
+          </canvas>
+          <div class="marker-order">{{this.order}}</div>
+          <div class="marker-label {{lowerSpacesToDashes this.label}}-label">{{this.label}}</div>
+        </div>
       {{/each}}
     </div>
 
     {{#unless subPages}}
 
-    <!-- Parent page view -->
-    <div class="body-copy white-box {{bodyCopyLayout}} {{lowerSpacesToDashes buttonTitle}}">
+      <!-- Parent page view -->
+      <div class="body-copy white-box {{bodyCopyLayout}} {{lowerSpacesToDashes buttonTitle}}">
 
-      <!-- Vertical layout -->
-      {{#unless bodyCopyLayout}}
+        <!-- Vertical layout -->
+        {{#unless bodyCopyLayout}}
 
-      <h3>
-        {{{buttonTitle}}}<br>
-        <span class="esp">{{{espButtonTitle}}}</span>
-      </h3>
+          <h3>
+            {{{buttonTitle}}}<br>
+            <span class="esp">{{{espButtonTitle}}}</span>
+          </h3>
 
-      <div class="body-images">
-        {{#each bodyImages}}
-        <div class="image">
-          <img src="/images/{{this.fileName}}">
-          <div class="credit">{{this.imageCredit}}</div>
-          <div class="caption">
-            {{this.imageCaption}}<br>
-            <span class="esp">{{this.imageCaptionEsp}}</span><br>
-            <span class="latin">{{this.imageCaptionLatin}}</span>
+          <div class="body-images">
+            {{#each bodyImages}}
+              <div class="image">
+                <img src="/images/{{this.fileName}}">
+                <div class="credit">{{this.imageCredit}}</div>
+                <div class="caption">
+                  {{this.imageCaption}}<br>
+                  <span class="esp">{{this.imageCaptionEsp}}</span><br>
+                  <span class="latin">{{this.imageCaptionLatin}}</span>
+                </div>
+              </div>
+            {{/each}}
           </div>
-        </div>
-        {{/each}}
-      </div>
 
-      <div class="body-text">
-        This needs to get moved to the subpage elements. Doesn't seem to be loading up properl;y.
-        <p class="eng">{{{bodyCopy}}}</p>
-        <p class="esp">{{{espBodyCopy}}}</p>
-      </div>
+          <div class="body-text">
+            This needs to get moved to the subpage elements. Doesn't seem to be loading up properl;y.
+            <p class="eng">{{{bodyCopy}}}</p>
+            <p class="esp">{{{espBodyCopy}}}</p>
+          </div>
 
-      <div class="website-text">
-        <p class="eng">{{websiteCall}}</p>
-        <p class="esp">{{websiteCallEsp}}</p>
-        <p class="url">{{websiteURL}}</p>
-      </div>
+          <div class="website-text">
+            <p class="eng">{{websiteCall}}</p>
+            <p class="esp">{{websiteCallEsp}}</p>
+            <p class="url">{{websiteURL}}</p>
+          </div>
 
-      <a class="btn-home">
-        <span class="glyphicon glyphicon-home"></span>
-      </a>
-
-      <!-- Horizontal layout -->
-      {{else}}
-
-      <div class="row">
-        <div class="col-lg-6 eng">
-          <h3> {{buttonTitle}} </h3>
-          {{{bodyCopy}}}
-        </div>
-        <div class="col-lg-6 esp">
-          <h3> {{espButtonTitle}} </h3>
-          {{{espBodyCopy}}}
-        </div>
-        <div class="row">
           <a class="btn-home">
             <span class="glyphicon glyphicon-home"></span>
           </a>
-        </div>
+
+        {{else}}
+
+          <!-- Horizontal layout -->
+          <div class="row">
+            <div class="col-lg-6 eng">
+              <h3> {{buttonTitle}} </h3>
+              {{{bodyCopy}}}
+            </div>
+            <div class="col-lg-6 esp">
+              <h3> {{espButtonTitle}} </h3>
+              {{{espBodyCopy}}}
+            </div>
+            <div class="row">
+              <a class="btn-home">
+                <span class="glyphicon glyphicon-home"></span>
+              </a>
+            </div>
+          </div>
+
+        {{/unless}}
+
       </div>
-
-      {{/unless}}
-
-    </div>
 
     {{else}}
 
-    <!-- Sub page view -->
-    <div class="subpage-selector">
-      <div class="subpage-selector-header">
-        <h3>
-          {{buttonTitle}}<br>
-          <span class="esp">{{espButtonTitle}}</span>
-        </h3>
+      <!-- Sub page view -->
+      <div class="subpage-selector">
+        <div class="subpage-selector-header">
+          <h3>
+            {{buttonTitle}}<br>
+            <span class="esp">{{espButtonTitle}}</span>
+          </h3>
+        </div>
+        <div class="subpage-selector-buttons">
+          {{#each subPages}}
+            {{> subPage}}
+          {{/each}}
+        </div>
+        <a class="btn-home">
+          <!--Home-->
+          <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+          <span class="glyphicon glyphicon-home"></span>
+        </a>
       </div>
-      <div class="subpage-selector-buttons">
-        {{#each subPages}}
-        {{> subPage}}
-        {{/each}}
-      </div>
-      <a class="btn-home">
-        <!--Home-->
-        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-        <span class="glyphicon glyphicon-home"></span>
-      </a>
-    </div>
 
     {{/unless}}
   </div>
