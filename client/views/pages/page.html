@@ -16,26 +16,31 @@
         </div>
         <canvas id="handle" width="40" height="100"></canvas>
       {{/if}}
-      <!--Mouse position:-->
+
+      <!-- Dev: Mouse position -->
       <!--<div class="mouse-y"></div>-->
       <!--<div class="mouse-x"></div>-->
+
     </div>
 
-    <div class="markers">
-      {{#each markers}}
-        <div class="marker">
-          <canvas id="{{lowerSpacesToDashes this.label}}"
-            dot-left="{{this.dotLeft}}"
-            dot-top="{{this.dotTop}}"
-            arrow-left="{{this.arrowLeft}}"
-            arrow-top="{{this.arrowTop}}"
-            width="1366" height="768">
-          </canvas>
-          <div class="marker-order">{{this.order}}</div>
-          <div class="marker-label {{lowerSpacesToDashes this.label}}-label">{{this.label}}</div>
-        </div>
-      {{/each}}
-    </div>
+    {{#if markers}}
+      <!-- Display map markers, if they exist -->
+      <div class="markers">
+        {{#each markers}}
+          <div class="marker">
+            <canvas id="{{lowerSpacesToDashes this.label}}"
+              dot-left="{{this.dotLeft}}"
+              dot-top="{{this.dotTop}}"
+              arrow-left="{{this.arrowLeft}}"
+              arrow-top="{{this.arrowTop}}"
+              width="1366" height="768">
+            </canvas>
+            <div class="marker-order">{{this.order}}</div>
+            <div class="marker-label {{lowerSpacesToDashes this.label}}-label">{{this.label}}</div>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
 
     {{#unless subPages}}
 
