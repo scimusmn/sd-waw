@@ -393,7 +393,7 @@ if (Components.find().count() === 0) {
         espBodyCopy: 'Visita la Reserva Natural Estatal de Torrey Pines—uno de los últimos lugares donde puedes encontrar un hábitat de matorral costero de salvia, un ambiente que está desapareciendo a causa de la construcción edilicia. ',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteCallURL: 'www.example.com',
+        websiteURL: 'www.example.com',
         backgroundMapClass: 'map-tp-park',
     });
 
@@ -408,8 +408,11 @@ if (Components.find().count() === 0) {
             {fileName: 'tp-explore-crest-full.jpg', imageCredit: '', imageCaption: 'Crest Canyon Open Space Park Preserve', imageCaptionEsp: 'Reserva de Espacio Abierto Crest Canyon' },
         ],
         order: 2,
-        bodyCopy: '<p>Stroll through this coastal canyon, south of San Dieguito Lagoon, and you’ll behold a tapestry of native and non-native plants.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit sdnat.org/canyoneers.</p>',
-        espBodyCopy: '<p>Pasea por este cañón costero al sur de la Laguna de San Dieguito, y podrás contemplar la rica complejidad de plantas nativas y no-nativas.</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California. Para más información, visita sdnat.org/canyoneers.</p>',
+        bodyCopy: '<p>Stroll through this coastal canyon, south of San Dieguito Lagoon, and you’ll behold a tapestry of native and non-native plants.</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Pasea por este cañón costero al sur de la Laguna de San Dieguito, y podrás contemplar la rica complejidad de plantas nativas y no-nativas.</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-tp-explore-crest',
     });
 
@@ -424,8 +427,11 @@ if (Components.find().count() === 0) {
             {fileName: 'tp-explore-bayside-full.jpg', imageCredit: '', imageCaption: 'Cabrillo National Monument (Bayside Trail)', imageCaptionEsp: 'Monumento Nacional Cabrillo (Sendero Bayside)' },
         ],
         order: 3,
-        bodyCopy: '<p>Encounter windswept chaparral and coastal sage scrub clinging to the cliffs that overlook San Diego harbor.</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit sdnat.org/canyoneers.</p>',
-        espBodyCopy: '<p>Descubre el chaparral y  matorral costero de salvia barridos por el viento, aferrándose a los acantilados que miran hacia la bahía de San Diego.</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California. Para más información, visita sdnat.org/canyoneers.</p>',
+        bodyCopy: '<p>Encounter windswept chaparral and coastal sage scrub clinging to the cliffs that overlook San Diego harbor.</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Descubre el chaparral y  matorral costero de salvia barridos por el viento, aferrándose a los acantilados que miran hacia la bahía de San Diego.</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-tp-explore-bayside',
     });
 
@@ -440,8 +446,11 @@ if (Components.find().count() === 0) {
             {fileName: 'tp-explore-miners-full.jpg', imageCredit: '', imageCaption: 'Black Mountain Open Space Park (Miner’s Loop)', imageCaptionEsp: 'Parque de Espacio Abierto Black Mountain (Miner’s Loop)' },
         ],
         order: 4,
-        bodyCopy: '<p>Hike through coastal sage scrub and chaparral and see the remains of an old arsenic mine. If you’re lucky, you might spot a quail!</p><p>Join the Canyoneers for this and other guided hikes in southern California. For more information, visit sdnat.org/canyoneers.</p>',
-        espBodyCopy: '<p>Sal de caminata atravesando el matorral costero de salvia y el chaparral para ver los restos de una vieja mina de arsénico.  Si tienes suerte, ¡quizás llegues a ver una codorniz!</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California. Para más información, visita sdnat.org/canyoneers.</p>',
+        bodyCopy: '<p>Hike through coastal sage scrub and chaparral and see the remains of an old arsenic mine. If you’re lucky, you might spot a quail!</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Sal de caminata atravesando el matorral costero de salvia y el chaparral para ver los restos de una vieja mina de arsénico.  Si tienes suerte, ¡quizás llegues a ver una codorniz!</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-tp-explore-miners',
     });
 
