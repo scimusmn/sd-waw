@@ -473,9 +473,9 @@ if (Components.find().count() === 0) {
         parentId: tpScienceStories,
         buttonTitle: 'Susan on sehll middens',
         espButtonTitle: 'Susan en basureros sehll',
-        buttonImage: 'wet-story-01.jpg',
+        buttonImage: 'sci-rebman-jon-button.jpg',
         bodyImages: [
-            {fileName: 'wet-story-01-full.jpg', imageCredit: '', imageCaption: '' },
+            {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 1,
         bodyCopy: 'Lorem ipsum',
