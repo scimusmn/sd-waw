@@ -18,7 +18,7 @@ Handlebars.registerHelper('pluralize', function(n, thing) {
  */
 Handlebars.registerHelper('lowerSpacesToDashes', function(input) {
     if (input) {
-        return input.replace(/[\.,'-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, '').replace(/\s+/g, '-').toLowerCase();
+        return input.replace(/[\.,'-\/#!$%\^&\*;:{}=\-_’`~()@\+\?><\[\]\+]/g, '').replace(/\s+/g, '-').toLowerCase();
     }
 });
 
