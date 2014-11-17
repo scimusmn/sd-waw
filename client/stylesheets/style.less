@@ -132,6 +132,21 @@ body {
   background-image: url("/images/tp-map-explore-miners.png");
 }
 
+.sci-tp-midden,
+.sci-tp-flower {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-postion: right;
+}
+
+.sci-tp-midden {
+  background-image: url("/images/sci-arter-susie-midden.jpg");
+}
+
+.sci-tp-flower {
+  background-image: url("/images/sci-rebman-jon-flower.jpg");
+}
+
 .map-wet-then-now {
   background-image: url("/images/tp-map-explore-miners.png");
 }
@@ -735,8 +750,13 @@ a.btn:active {
 .body-copy.black-mountain-open-space-parkbrminers-loop h3 {
   font-size: 32px;
 }
+
 .body-copy.black-mountain-open-space-parkbrminers-loop h3 .esp {
   font-size: 25px;
+}
+
+.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab h3 .esp {
+  font-size: 23px;
 }
 
 /* Inner page headlines - Spanish */
@@ -769,8 +789,18 @@ a.btn:active {
 }
 
 .body-copy.where-is-it img {
-  width: 528px;
+  width: 540px;
 }
+
+.body-copy.rare-tree {
+  font-size: 19px;
+  line-height: 22px;
+}
+.body-copy.rare-tree .esp {
+  font-size: 17px;
+  line-height: 20px;
+}
+
 
 .body-copy.rare-habitat,
 .body-copy.rare-habitat .btn-home {
@@ -790,6 +820,17 @@ a.btn:active {
 // Inner epxlore pages
 .body-copy.subpage-page .body-images img {
   width: 460px;
+}
+
+.body-copy.subpage-page.crest-canyonbropen-space-park-preserve .body-images img,
+.body-copy.subpage-page.cabrillo-national-monumentbrbayside-trail .body-images img,
+.body-copy.subpage-page.black-mountain-open-space-parkbrminers-loop .body-images img {
+  width: 410px;
+}
+
+.body-copy.subpage-page.susie-arterbrcodirector-of-zooarchaeology-lab .body-images img,
+.body-copy.subpage-page.jon-rebmanbrcurator-of-botany .body-images img {
+  width: 305px;
 }
 
 .body-copy.rare-habitat p {
@@ -901,7 +942,7 @@ a.btn:active {
 
 .map-stories + .subpage-selector .subpage-button img {
   width: 684px;
-  height: 519px;
+  height: 496px;
 }
 
 .subpage-button-1 {
@@ -939,9 +980,14 @@ a.btn:active {
   width: 820px;
 }
 
-.subpage-page.body-copy.jon-on-shortleaved-dudleya,
-.subpage-page.body-copy.jon-on-shortleaved-dudleya .btn-home {
-  width: @screen-width;
+.subpage-page.body-copy.jon-rebmanbrcurator-of-botany,
+.subpage-page.body-copy.jon-rebmanbrcurator-of-botany .btn-home {
+  width: 570px;
+}
+
+.subpage-page.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab,
+.subpage-page.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab .btn-home {
+  width: 665px;
 }
 
 .body-copy.jon-on-shortleaved-dudleya .image {
@@ -954,7 +1000,7 @@ a.btn:active {
 }
 
 .website-text {
-  margin-top: 30px;
+  margin-top: 25px;
   background: darken(@background-tan, 3%);
   padding: 10px 0;
 }
@@ -980,6 +1026,39 @@ a.btn:active {
 
 .website-text .url {
   text-align: center;
+}
+
+.background-caption {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  left: auto;
+  right: 0px;
+  background: @background-tan;
+  margin: 0;
+  padding: 15px;
+}
+
+.susie-arterbrcodirector-of-zooarchaeology-lab + .background-caption {
+  width: 34%;
+  height: 80px;
+}
+
+.jon-rebmanbrcurator-of-botany + .background-caption {
+  width: 100px;
+  height: 120px;
+}
+
+.background-caption .esp {
+  color: darken(@golden-spanish, 30%);
+  font-size: 19px;
+  margin-top: 25px;
+}
+
+.background-caption .latin {
+  font-size: 19px;
+  margin-top: 25px;
+  font-style: italic;
 }
 
 /**

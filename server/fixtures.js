@@ -314,7 +314,7 @@ if (Components.find().count() === 0) {
         espBodyCopy: 'La Reserva Natural Estatal de Torrey Pines, el marco de la escena delante de ti, está apenas a 18 millas del Museo.',
         backgroundMapClass: 'map-tp-park',
         bodyImages: [
-            {fileName: 'tp-where.jpg', imageCredit: '' },
+            {fileName: 'tp-where.jpg'},
         ],
     });
 
@@ -471,33 +471,37 @@ if (Components.find().count() === 0) {
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
-        buttonTitle: 'Susan on sehll middens',
-        espButtonTitle: 'Susan en basureros sehll',
-        buttonImage: 'sci-rebman-jon-button.jpg',
+        buttonTitle: 'Susie Arter<br>co-director of zooarchaeology lab',
+        espButtonTitle: 'co-directora del laboratorio de arqueología zoológica',
+        buttonImage: 'sci-arter-susie-button.jpg',
         bodyImages: [
-            {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
+            {fileName: 'sci-arter-susie-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 1,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-wet-explore-miners',
+        bodyCopy: '"Native people came to the<br>area that is now Torrey Pines State Natural Reserve long before Europeans arrived in California. Archaeologists have identified mounds of seafood shells, various stone tools, and numerous fire hearths that may have been used to roast plant foods and remove pine nuts from Torrey Pine cones."',
+        espBodyCopy: '"Los habitantes nativos llegaron a lo que es ahora la Reserva Estatal Natural Torrey Pines mucho antes que los europeos llegaran a California.  Los arqueólogos han identificado montículos de conchas marinas, varias herramientas de piedra, y numerosos remanentes de fogatas que quizás<br>se usaron para asar comida y extraer los piñones de las piñas de los Torrey Pines".',
+        backgroundMapClass: 'sci-tp-midden',
+        backgroundCaption: 'Fire hearth at Torrey Pines State Natural Reserve',
+        backgroundCaptionEsp: 'Fogata en la Reserva Estatal Natural Torrey Pines',
     });
 
     var tpScienceStoriesTwo = Pages.insert({
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         parentId: tpScienceStories,
-        buttonTitle: 'Jon on Short-leaved Dudleya',
-        espButtonTitle: 'Jon on-Short hojas Dudleya',
-        buttonImage: 'wet-story-02.jpg',
+        buttonTitle: 'Jon Rebman<br>curator of botany',
+        espButtonTitle: 'curador de botánica',
+        buttonImage: 'sci-rebman-jon-button.jpg',
         bodyImages: [
-            {fileName: 'wet-story-02-full.jpg', imageCredit: '', imageCaption: 'Jon Rebman, Curator of Botany' },
-            {fileName: 'wet-story-02-dudleya.jpg', imageCredit: '', imageCaption: 'Short-leaved Dudleya<br>Spanish Common Name<br><i>Dudleya blochmaniae</i><i>subsp.</i><i>brevifolia</i>' },
+            {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 2,
-        bodyCopy: '"I like the Short-leaved Dudleya because it is a tiny, but resilient succulent. It can be easily overlooked because of its size and rarity, but is a particularly unique plant because it needs a type of soil found only in limited undeveloped areas around souther California."<br>-Jon Rebman, Curator of Botany',
-        espBodyCopy: '"Me gusta la Dudleya-Short hojas, ya que es una pequeña, pero resistente suculenta. Puede ser fácilmente pasado por alto debido a su tamaño y rareza, pero es una planta particularmente único, ya que necesita un tipo de suelo sólo se encuentran en zonas no desarrolladas limitados alrededor viento del sur de California. "<br> -Jon Rebman, Curador de Botánica',
-        backgroundMapClass: 'map-wet-explore-miners',
+        bodyCopy: '"Some people might call the Coast Prickly-pear the ‘Venus flytrap of the West.’ But instead of eating the bugs that land on it, the flower surrounds the bugs with its pollen-covered stamens so that the insects can transport more pollen to other flowers and help the plant reproduce."',
+        espBodyCopy: '“Algunos quizás se refieran a la flor del nopal como la ‘atrapamoscas del oeste’. Pero en vez de comer los insectos que se posan sobre ella, la flor rodea a los insectos con sus estambres cubiertos de polen para que los insectos puedan transportar más polen a otras flores y ayudar a que la planta se reproduzca”.',
+        backgroundMapClass: 'sci-tp-flower',
+        backgroundCaption: 'Prickly-pear',
+        backgroundCaptionEsp: 'Nopal',
+        backgroundCaptionLatin: 'Opuntia'
     });
 
     var canyons = Components.insert({

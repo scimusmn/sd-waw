@@ -17,9 +17,18 @@
 
   <div class="{{colorPalate}}">
     <div class="container-map {{backgroundMapClass}} map-animate"></div>
+
+      {{#if backgroundCaption}}
+        <div class="background-caption">
+          {{backgroundCaption}}<br>
+          <span class="esp">{{backgroundCaptionEsp}}</span><br>
+          <span class="latin">{{backgroundCaptionLatin}}</span>
+        </div>
+      {{/if}}
+
       <div class="body-copy subpage-page white-box {{lowerSpacesToDashes buttonTitle}}">
-        <h3>{{brToSpace buttonTitle}}<br>
-        <div class="esp">{{brToSpace espButtonTitle}}</div></h3>
+        <h3>{{{buttonTitle}}}<br>
+          <div class="esp">{{{brToSpace espButtonTitle}}}</div></h3>
 
         <div class="body-images">
           {{#each bodyImages}}
@@ -39,17 +48,21 @@
           <p>{{{bodyCopy}}}</p>
           <p class="esp">{{{espBodyCopy}}}</p>
 
-          <div class="website-text">
-            <p class="eng">{{websiteCall}}</p>
-            <p class="esp">{{websiteCallEsp}}</p>
-            <p class="url">{{websiteURL}}</p>
-          </div>
+          {{#if websiteCall}}
+            <div class="website-text">
+              <p class="eng">{{websiteCall}}</p>
+              <p class="esp">{{websiteCallEsp}}</p>
+              <p class="url">{{websiteURL}}</p>
+            </div>
+          {{/if}}
+
 
           <a class="btn-home">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
         </div>
       </div>
+
   </div>
 
   <!-- /Template: subPage -->
