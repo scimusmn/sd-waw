@@ -290,6 +290,7 @@ if (Components.find().count() === 0) {
      */
     var torreyPines = Components.insert({
         colorPalate: 'torrey-pines',
+        link: 'torrey-pines',
         title: 'Welcome to Torrey Pines',
         titleEsp: 'Bienvenido a Torrey Pines',
         userId: admin._id,

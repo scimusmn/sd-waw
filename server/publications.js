@@ -5,8 +5,8 @@ Meteor.publish('components', function(options) {
   return Components.find({}, options);
 });
 
-Meteor.publish('singleComponent', function(id) {
-  return id && Components.find(id);
+Meteor.publish('singleComponent', function(link) {
+  return Components.find( { 'link': link } );
 });
 
 /**
