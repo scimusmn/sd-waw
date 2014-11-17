@@ -173,7 +173,7 @@ Template.page.events({
 
     'click .subpage-button': function(e) {
         e.preventDefault();
-        destination = this._id;
+        destination = this.link;
 
         /**
          * Animate the page before we leave. We're mostly removing
@@ -203,7 +203,7 @@ Template.page.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('subPage', {_id: destination});
+            Router.go('subPage', {link: destination});
         }
     },
     'click .btn-home': function(e) {

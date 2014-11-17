@@ -307,6 +307,7 @@ if (Components.find().count() === 0) {
     var tpWhere = Pages.insert({
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
+        link: 'where-is-it',
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
         userId: admin._id,
@@ -321,6 +322,7 @@ if (Components.find().count() === 0) {
 
     var tpRareTree = Pages.insert({
         colorPalate: 'torrey-pines',
+        link: 'rare-tree',
         componentId: torreyPines,
         buttonTitle: 'Rare tree',
         espButtonTitle: 'Árbol inusual',
@@ -337,6 +339,7 @@ if (Components.find().count() === 0) {
 
     var tpRareHabitat = Pages.insert({
         colorPalate: 'torrey-pines',
+        link: 'rare-habitat',
         componentId: torreyPines,
         buttonTitle: 'Rare habitat',
         espButtonTitle: 'Hábitat inusual',
@@ -354,6 +357,7 @@ if (Components.find().count() === 0) {
 
     var tpRareClimate = Pages.insert({
         colorPalate: 'torrey-pines',
+        link: 'rare-climate',
         componentId: torreyPines,
         buttonTitle: 'Rare climate zone',
         espButtonTitle: 'Zona climática inusual',
@@ -368,6 +372,7 @@ if (Components.find().count() === 0) {
 
     var tpExplore = Pages.insert({
         colorPalate: 'torrey-pines',
+        link: 'explore',
         componentId: torreyPines,
         buttonTitle: 'Explore',
         espButtonTitle: 'Explorá',
@@ -457,6 +462,7 @@ if (Components.find().count() === 0) {
 
     var tpScienceStories = Pages.insert({
         colorPalate: 'torrey-pines',
+        link: 'science',
         componentId: torreyPines,
         buttonTitle: 'Science stories',
         espButtonTitle: 'Historias de ciencia',
