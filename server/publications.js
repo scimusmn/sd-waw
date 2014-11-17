@@ -2,20 +2,18 @@
  * Components
  */
 Meteor.publish('components', function(options) {
-  return Components.find({}, options);
+    return Components.find({}, options);
 });
 
 Meteor.publish('singleComponent', function(link) {
-  return Components.find( { 'link': link } );
+    return Components.find( { 'link': link } );
 });
 
 /**
  * Pages
  */
 Meteor.publish('pages', function(componentId) {
-  return Pages.find({componentId: componentId}, {sort: {order: 1}});
-  // Works
-  //return Pages.find({componentId: componentId});
+    return Pages.find({componentId: componentId}, {sort: {order: 1}});
 });
 
 Meteor.publish('singlePage', function(id) {
@@ -24,13 +22,4 @@ Meteor.publish('singlePage', function(id) {
      * as well as any subpages with the same parentId
      */
     return id && Pages.find( { $or: [ {_id: id}, {parentId: id} ] } );
-});
-
-/**
- * OLD - Comments
- *
- * TODO - figure out why we can't remove this. This should be done with
- */
-Meteor.publish('notifications', function() {
-  return Notifications.find({userId: this.userId});
 });
