@@ -209,7 +209,7 @@ Template.page.events({
     'click .btn-home': function(e) {
 
         e.preventDefault();
-        destination = this.componentId;
+        destination = this.colorPalate;
 
         /**
          * Animate the page before we leave. We're mostly removing
@@ -242,7 +242,8 @@ Template.page.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('componentPage', {_id: destination});
+            console.log('destination - ', destination);
+            Router.go('componentPage', {link: destination});
         }
     }
 });
