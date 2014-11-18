@@ -402,7 +402,7 @@ if (Components.find().count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'www.example.com',
-        backgroundMapClass: 'map-tp-park',
+        backgroundMapClass: 'map-tp-explore-tp',
     });
 
     var tpExploreCrest = Pages.insert({
