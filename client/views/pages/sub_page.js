@@ -16,7 +16,8 @@ Template.subPage.events({
     'click .btn-home': function(e) {
 
         e.preventDefault();
-        destination = this.parentId;
+        var colorPalate = this.colorPalate;
+        var link = this.subPageType;
 
         /**
          * Animate the page before we leave. We're mostly removing
@@ -48,7 +49,7 @@ Template.subPage.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('page', {_id: destination});
+            Router.go('page', {colorPalate: colorPalate, link: link});
         }
     }
 });

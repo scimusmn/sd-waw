@@ -173,7 +173,10 @@ Template.page.events({
 
     'click .subpage-button': function(e) {
         e.preventDefault();
-        destination = this.link;
+        colorPalate = this.colorPalate;
+        subPageType = this.subPageType;
+        link = this.link;
+        console.log('destination - ', link);
 
         /**
          * Animate the page before we leave. We're mostly removing
@@ -203,7 +206,7 @@ Template.page.events({
             goDestination();
         }, 600);
         function goDestination() {
-            Router.go('subPage', {link: destination});
+            Router.go('subPage', {colorPalate: colorPalate, subPageType: subPageType, link: link});
         }
     },
     'click .btn-home': function(e) {

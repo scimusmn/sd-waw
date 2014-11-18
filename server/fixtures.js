@@ -386,6 +386,8 @@ if (Components.find().count() === 0) {
 
     var tpExploreReserve = Pages.insert({
         colorPalate: 'torrey-pines',
+        subPageType: 'explore',
+        link: 'torrey-pines-reserve',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Torrey Pines<br>State Natural Reserve',
@@ -405,6 +407,8 @@ if (Components.find().count() === 0) {
 
     var tpExploreCrest = Pages.insert({
         colorPalate: 'torrey-pines',
+        subPageType: 'explore',
+        link: 'crest-canyon',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Crest Canyon<br>Open Space Park Preserve',
@@ -424,6 +428,8 @@ if (Components.find().count() === 0) {
 
     var tpExploreBayside = Pages.insert({
         colorPalate: 'torrey-pines',
+        subPageType: 'explore',
+        link: 'cabrillo',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Cabrillo National Monument<br>(Bayside Trail)',
@@ -443,6 +449,8 @@ if (Components.find().count() === 0) {
 
     var tpExploreMiners = Pages.insert({
         colorPalate: 'torrey-pines',
+        subPageType: 'explore',
+        link: 'black-mountain',
         componentId: torreyPines,
         parentId: tpExplore,
         buttonTitle: 'Black Mountain Open Space Park<br>(Miner’s Loop)',
@@ -476,6 +484,8 @@ if (Components.find().count() === 0) {
 
     var tpScienceStoriesOne = Pages.insert({
         colorPalate: 'torrey-pines',
+        subPageType: 'science',
+        link: 'susie-arter',
         componentId: torreyPines,
         parentId: tpScienceStories,
         buttonTitle: 'Susie Arter<br>co-director of zooarchaeology lab',
@@ -494,6 +504,8 @@ if (Components.find().count() === 0) {
 
     var tpScienceStoriesTwo = Pages.insert({
         colorPalate: 'torrey-pines',
+        subPageType: 'science',
+        link: 'jon-rebman',
         componentId: torreyPines,
         parentId: tpScienceStories,
         buttonTitle: 'Jon Rebman<br>curator of botany',
