@@ -1,30 +1,35 @@
 Template.layout.rendered = function() {
     /**
      * Define without the var to make this accessible across the events
+     *
+     * 3 minute screen saver
      */
-    //
-    // Set the screensaver
-    //
-    // 6 min = 360 sec = 360000 msec
-    // Longer than normal since we've got some long-ish videos
-    //
-    // sSaverTimeout = 360000;
-    //
-    // Debug screensaver length
-    sSaverTimeout = 5000;
-    saveScreen(sSaverTimeout);
+    sSaverTimeout = 180000;
+    saverEnabled = Router.current().params.query.saver;
+    if (!saverEnabled) {
+        saveScreen(sSaverTimeout);
+    }
 };
 
 /**
  * Reset the screensaver everytime we get a mouse (touch) event
  */
 Template.layout.events({
-    'mousemove': function(event, template) {
+    'click #screensaver': function(event, template) {
+        $('#screensaver').removeClass('animated fadeIn');
+        $('#screensaver').addClass('animated fadeOut');
+        setTimeout(function(){
+            $('#screensaver').hide();
+        }, 600);
+    },
+
+    'click': function(event, template) {
         // Reset the screensaver timer
         clearTimeout(sSaver);
         // Start the screensaver timer
         saveScreen(sSaverTimeout);
     }
+
 });
 
 /**
@@ -34,8 +39,23 @@ Template.layout.events({
  */
 function saveScreen(sSaverTimeout) {
     sSaver = setTimeout(function(){
-        console.log('Screen saved');
-        Router.go('/' + Meteor.settings.public.homeItem);
+
+        // If you're not on the homepage,
+        // go there and send a flag to turn on the screensaver
+        var componentHome = Meteor.settings.public.homeItem;
+        if (Router.current().params.link != componentHome) {
+            Router.go(
+                'componentPage',
+                {link: componentHome},
+                {query: {saver: 'true'}}
+            );
+        }
+        // If you're already on the homepage,
+        // just go ahead and show the screensaver
+        else {
+            $('#screensaver').removeClass('animated fadeOut');
+            $('#screensaver').addClass('animated fadeIn');
+            $('#screensaver').show();
+        }
     }, sSaverTimeout);
 }
-
