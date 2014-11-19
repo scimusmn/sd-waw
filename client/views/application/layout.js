@@ -5,6 +5,8 @@ Template.layout.rendered = function() {
      * 3 minute screen saver
      */
     sSaverTimeout = 180000;
+    // Dev timeout
+    //sSaverTimeout = 5000;
     saverEnabled = Router.current().params.query.saver;
     if (!saverEnabled) {
         saveScreen(sSaverTimeout);
