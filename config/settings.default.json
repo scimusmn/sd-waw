@@ -1,5 +1,6 @@
 {
     "public": {
-        "homeItem": "torrey-pines"
+        "homeItem": "torrey-pines",
+        "ga": "UA-##-#"
     }
 }
