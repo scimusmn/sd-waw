@@ -66,6 +66,7 @@ Template.componentItem.events({
             goDestination();
         }, 500);
         function goDestination() {
+            ga('send', 'event', 'page', 'click', 'admin', '1');
             Router.go('componentPage', destination);
         }
     }
