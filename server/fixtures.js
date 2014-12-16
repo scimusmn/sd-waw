@@ -37,7 +37,7 @@ if (Components.find().count() === 0) {
         espBodyCopy: 'La Laguna de Los Peñasquitos, el marco de la escena delante de ti, está apenas a dieciocho millas del Museo.',
         backgroundMapClass: 'map-wet-where',
         bodyImages: [
-            {fileName: 'wet-where.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
+            {fileName: 'wet-where.jpg'},
         ],
     });
 
@@ -92,9 +92,9 @@ if (Components.find().count() === 0) {
         bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Compare these maps to see how much habitat has been lost.</p>',
         espBodyCopy: '<p>Más del noventa por ciento del hábitat de las marismas del sur de California ha desaparecido debido al constante desarrollo urbano.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
         backgroundMapClass: 'map-wet-then-now',
-        bottomImage: 'wet-map-compare-historic.png',
+        bottomImage: 'wet-compare-historic-map.png',
         bottomImageLabel: 'Historic<br>wetlands',
-        topImage: 'wet-map-compare-present.png',
+        topImage: 'wet-compare-present-map.png',
         topImageLabel: 'Present day<br>wetlands',
     });
 
@@ -162,7 +162,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-explore',
     });
 
-    var wetExploreBolsa = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         subPageType: 'explore',
         componentId: wetlands,
@@ -172,7 +172,7 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Reserva Ecológica Bolsa Chica',
         buttonImage: 'wet-explore-bolsa.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-bolsa-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+            {fileName: 'wet-explore-bolsa-full.jpg'},
         ],
         order: 1,
         bodyCopy: 'Visit Bolsa Chica Ecological Reserve to experience the largest saltwater wetland in southern California.',
@@ -193,7 +193,7 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Reserva Ecológica Laguna de San Elijo ',
         buttonImage: 'wet-explore-elijo.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-elijo-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+            {fileName: 'wet-explore-elijo-full.jpg'},
         ],
         order: 2,
         bodyCopy: '<p>Glimpse some of the more than 700 plant and animal species that inhabit this county preserve. Bring your binoculars!</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -210,11 +210,11 @@ if (Components.find().count() === 0) {
         componentId: wetlands,
         parentId: wetExplore,
         link: 'san-dieguito',
-        buttonTitle: 'San Dieguito River Park (Coast to Crest Trail – Del Mar)',
-        espButtonTitle: 'Parque Río San Dieguito (Sendero Coast to Crest – Del Mar)',
+        buttonTitle: 'San Dieguito River Park<br>(Coast to Crest Trail – Del Mar)',
+        espButtonTitle: 'Parque Río San Dieguito<br>(Sendero Coast to Crest – Del Mar)',
         buttonImage: 'wet-explore-delmar.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-delmar-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+            {fileName: 'wet-explore-delmar-full.jpg'},
         ],
         order: 3,
         bodyCopy: '<p>Hike the western-most section of the Coast to Crest Trail, which will extend 55 miles from the ocean at Del Mar to Volcan Mountain just north of Julian.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -235,7 +235,7 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Reserva Nacional de Investigación Estuarina del Río Tijuana (Sendero North Beach)',
         buttonImage: 'wet-explore-northbeach.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-northbeach-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
+            {fileName: 'wet-explore-northbeach-full.jpg'},
         ],
         order: 3,
         bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -264,8 +264,8 @@ if (Components.find().count() === 0) {
         parentId: wetScienceStories,
         link: 'jon-rebman',
         subPageType: 'science',
-        buttonTitle: 'Jon Rebman, curator of botany',
-        espButtonTitle: 'curador de botánica ',
+        buttonTitle: 'Jon Rebman<br>Curator of botany',
+        espButtonTitle: 'Curador de botánica ',
         buttonImage: 'sci-rebman-jon-button.jpg',
         bodyImages: [
             {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
@@ -285,7 +285,7 @@ if (Components.find().count() === 0) {
         parentId: wetScienceStories,
         subPageType: 'science',
         link: 'phil-unitt',
-        buttonTitle: 'Phil Unitt, curator of birds and mammals',
+        buttonTitle: 'Phil Unitt<br>curator of birds and mammals',
         espButtonTitle: 'curador de pájaros y mamíferos ',
         buttonImage: 'sci-unitt-phill-button.jpg',
         bodyImages: [
@@ -308,13 +308,12 @@ if (Components.find().count() === 0) {
     var torreyPines = Components.insert({
         colorPalate: 'torrey-pines',
         link: 'torrey-pines',
-        title: 'Welcome to Torrey Pines',
-        titleEsp: 'Bienvenido a Torrey Pines',
+        title: 'Torrey Pines',
+        titleEsp: 'Torrey Pines',
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
         mural: 'tp-mural.jpg',
-        bodyCopy: dimsum()
     });
 
     Pages.insert({
@@ -371,7 +370,7 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Zona climática inusual',
         order: 4,
         bodyCopyLayout: 'horizontal',
-        bodyCopy: '<p>Coastal California is one of only five places in the world<br>known as a Mediterranean climate zone</p><p>Coastal sage scrub plants are specially adapted for the<br>mild winters and long, dry summers typical of these climate zones. </p>',
+        bodyCopy: '<p>Coastal California is one of only five places in the world<br>known as a Mediterranean climate zone.</p><p>Coastal sage scrub plants are specially adapted for the<br>mild winters and long, dry summers typical of these climate zones. </p>',
         espBodyCopy: '<p>La costa de California es uno de sólo cinco lugares en el mundo que<br>tiene lo que se conoce como zona de clima Mediterráneo.</p><p>Las plantas del matorral costero de salvia están adaptadas<br>especialmente para los inviernos templados y veranos largos y secos,<br>típicos de estas zonas climáticas.</p>',
         backgroundMapClass: 'map-tp-med',
     });
@@ -405,7 +404,7 @@ if (Components.find().count() === 0) {
         espBodyCopy: 'Visita la Reserva Natural Estatal de Torrey Pines—uno de los últimos lugares donde puedes encontrar un hábitat de matorral costero de salvia, un ambiente que está desapareciendo a causa de la construcción edilicia. ',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'www.example.com',
+        websiteURL: 'parks.ca.gov',
         backgroundMapClass: 'map-tp-explore-tp',
     });
 
@@ -490,8 +489,8 @@ if (Components.find().count() === 0) {
         link: 'susie-arter',
         componentId: torreyPines,
         parentId: tpScienceStories,
-        buttonTitle: 'Susie Arter<br>co-director of zooarchaeology lab',
-        espButtonTitle: 'co-directora del laboratorio de arqueología zoológica',
+        buttonTitle: 'Susie Arter<br>Co-director of zooarchaeology lab',
+        espButtonTitle: 'Co-directora del laboratorio de arqueología zoológica',
         buttonImage: 'sci-arter-susie-button.jpg',
         bodyImages: [
             {fileName: 'sci-arter-susie-full.jpg', imageCredit: '', imageCaption: '' },
@@ -510,8 +509,8 @@ if (Components.find().count() === 0) {
         link: 'jon-rebman',
         componentId: torreyPines,
         parentId: tpScienceStories,
-        buttonTitle: 'Jon Rebman<br>curator of botany',
-        espButtonTitle: 'curador de botánica',
+        buttonTitle: 'Jon Rebman<br>Curator of botany',
+        espButtonTitle: 'Curador de botánica',
         buttonImage: 'sci-rebman-jon-button.jpg',
         bodyImages: [
             {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
@@ -531,18 +530,29 @@ if (Components.find().count() === 0) {
      **************************************************************************
      */
     var canyons = Components.insert({
-        title: 'Canyons',
-        description: 'Canyons general description.',
+        colorPalate: 'canyons',
+        link: 'canyons',
+        title: 'The Canyons ',
+        titleEsp: 'Los cañones',
+        description: dimsum.sentence(1),
         componentNum: '0516',
-        order: 3,
-        bodyCopy: dimsum()
+        order: 5,
+        mural: 'can-mural.jpg'
     });
 
-    var cWhere = Pages.insert({
+    Pages.insert({
+        colorPalate: 'canyons',
         componentId: canyons,
-        title: 'Canyons Where',
-        order: 2,
-        pageCopy: dimsum()
+        link: 'where-is-it',
+        buttonTitle: 'Where are they?',
+        espButtonTitle: '¿Dónde están?',
+        order: 1,
+        bodyCopy: 'Canyons are all around us. In fact, there’s one just a black from the Museum—Florida Canyon.',
+        espBodyCopy: 'Los cañones nos rodean por todas partes. De hecho, hay uno apenas a una cuadra del museo—Florida Canyon.',
+        backgroundMapClass: 'map-can-park',
+        bodyImages: [
+            {fileName: 'can-where.jpg'},
+        ],
     });
 
     /**
