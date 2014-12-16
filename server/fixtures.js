@@ -164,6 +164,7 @@ if (Components.find().count() === 0) {
 
     var wetExploreBolsa = Pages.insert({
         colorPalate: 'wetlands',
+        subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
         link: 'bolsa-chica',
@@ -184,6 +185,7 @@ if (Components.find().count() === 0) {
 
     Pages.insert({
         colorPalate: 'wetlands',
+        subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
         link: 'san-elijo',
@@ -204,6 +206,7 @@ if (Components.find().count() === 0) {
 
     Pages.insert({
         colorPalate: 'wetlands',
+        subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
         link: 'san-dieguito',
@@ -224,6 +227,7 @@ if (Components.find().count() === 0) {
 
     Pages.insert({
         colorPalate: 'wetlands',
+        subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
         link: 'tijuana-river',
@@ -258,33 +262,42 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetScienceStories,
-        buttonTitle: 'Susan on sehll middens',
-        espButtonTitle: 'Susan en basureros sehll',
-        buttonImage: 'wet-story-01.jpg',
+        link: 'jon-rebman',
+        subPageType: 'science',
+        buttonTitle: 'Jon Rebman, curator of botany',
+        espButtonTitle: 'curador de botánica ',
+        buttonImage: 'sci-rebman-jon-button.jpg',
         bodyImages: [
-            {fileName: 'wet-story-01-full.jpg', imageCredit: '', imageCaption: '' },
+            {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 1,
-        bodyCopy: 'Lorem ipsum',
-        espBodyCopy: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-        backgroundMapClass: 'map-wet-explore-miners',
+        bodyCopy: '"If you come across a plant in a saltwater marsh that looks like yellow-orange silly string, you’re actually looking at Saltmarsh Dodder. This plant can’t produce its own nutrients, so it sucks food and water from the plant tangled in its grasp. There are 10 kinds of dodder in San Diego County."',
+        espBodyCopy: '"Si te encuentras con una planta en una marisma de agua salada que se asemeja a la serpentina en aerosol amarillo-naranja, estás en realidad viendo a la tripa de aura.  Esta planta no puede producir sus propios nutrientes, por lo que succiona el alimento y agua de la planta a la cual se enreda. Hay diez tipos de tripa de aura en el condado de San Diego".',
+        backgroundMapClass: 'sci-wet-marsh',
+        backgroundCaption: 'Saltmarsh Dodder',
+        backgroundCaptionEsp: 'Tripa de aura',
+        backgroundCaptionLatin: 'Cuscuta pacifica'
     });
 
     Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetScienceStories,
-        buttonTitle: 'Jon on Short-leaved Dudleya',
-        espButtonTitle: 'Jon on-Short hojas Dudleya',
-        buttonImage: 'wet-story-02.jpg',
+        subPageType: 'science',
+        link: 'phil-unitt',
+        buttonTitle: 'Phil Unitt, curator of birds and mammals',
+        espButtonTitle: 'curador de pájaros y mamíferos ',
+        buttonImage: 'sci-unitt-phill-button.jpg',
         bodyImages: [
-            {fileName: 'wet-story-02-full.jpg', imageCredit: '', imageCaption: 'Jon Rebman, Curator of Botany' },
-            {fileName: 'wet-story-02-dudleya.jpg', imageCredit: '', imageCaption: 'Short-leaved Dudleya<br>Spanish Common Name<br><i>Dudleya blochmaniae</i><i>subsp.</i><i>brevifolia</i>' },
+            {fileName: 'sci-unitt-phill-full.jpg', imageCredit: '', imageCaption: '' },
         ],
         order: 2,
-        bodyCopy: '"I like the Short-leaved Dudleya because it is a tiny, but resilient succulent. It can be easily overlooked because of its size and rarity, but is a particularly unique plant because it needs a type of soil found only in limited undeveloped areas around souther California."<br>-Jon Rebman, Curator of Botany',
-        espBodyCopy: '"Me gusta la Dudleya-Short hojas, ya que es una pequeña, pero resistente suculenta. Puede ser fácilmente pasado por alto debido a su tamaño y rareza, pero es una planta particularmente único, ya que necesita un tipo de suelo sólo se encuentran en zonas no desarrolladas limitados alrededor viento del sur de California. "<br> -Jon Rebman, Curador de Botánica',
-        backgroundMapClass: 'map-wet-explore-miners',
+        bodyCopy: '"The Marsh Wren is well named, since it’s rarely seen outside a marsh. Each male builds multiple nests—woven around tules or cattails—possibly to help advertise his territory. The female selects one nest, or builds her own, before laying her eggs. The subspecies clarkae appears only in coastal southern California."',
+        espBodyCopy: '"El chivirín pantanero está aptamente nombrado, ya que pocas veces se lo ve fuera de un pantano. Cada macho construye múltiples nidos, tejidos alrededor de juncos o totoras, posiblemente para ayudarle a demarcar su territorio. La hembra elige un nido, o construye el suyo propio, antes de poner sus huevos.  La subespecie clarkae aparece únicamente en la costa del sur de California".',
+        backgroundMapClass: 'sci-wet-wren',
+        backgroundCaption: 'Marsh Wren',
+        backgroundCaptionEsp: 'Chivirín pantanero',
+        backgroundCaptionLatin: 'Cistothorus palustris',
     });
 
     /**
