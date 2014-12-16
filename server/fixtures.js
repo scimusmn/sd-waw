@@ -3,36 +3,12 @@
  *
  * This sets up the Mongo DB database
  */
-var now = new Date().getTime();
 dimsum.configure({ flavor: 'jabberwocky' });
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
-/**
- * Setup admin user
- */
-if ( Meteor.users.find().count() === 0 ) {
-    // Create the admin account
-    var adminId = Accounts.createUser({
-        username: 'admin',
-        email: 'admin@example.com',
-        password: 'Password123',
-        profile: {
-            name: 'SMM Admin',
-        }
-    });
-    // Get the admin account object for use in creating dummy posts
-    var admin = Meteor.users.findOne(adminId);
-}
 
 /**
  * Setup default content
  */
 if (Components.find().count() === 0) {
-
-    i = getRandomInt(0, 10);
 
     /**
      **************************************************************************
@@ -56,9 +32,7 @@ if (Components.find().count() === 0) {
         link: 'where-is-it',
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
-        userId: admin._id,
         order: 1,
-        author: admin.profile.name,
         bodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum. ',
         espBodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum.',
         backgroundMapClass: 'map-wet-where',
@@ -75,7 +49,6 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Nuestros humedales',
         userId: admin._id,
         order: 2,
-        author: admin.profile.name,
         bodyCopy: 'Southern California has 28 wetlands that line the coast from Santa Barbara south to Mexico.',
         bodyCopyLayout: 'horizontal',
         espBodyCopy: 'Sur de California cuenta con 28 humedales que bordean la costa de Santa Barbara al sur de México.',
@@ -117,7 +90,6 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Antes y ahora',
         userId: admin._id,
         order: 3,
-        author: admin.profile.name,
         bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Drag your finger across this map to compare how much habitat has been lost.</p>',
         espBodyCopy: '<p>Más del 90% del hábitat de los humedales del sur de California ha desaparecido debido al continuo desarrollo de bienes raíces.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
         backgroundMapClass: 'map-wet-then-now',
@@ -134,7 +106,6 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'La ruta del Pacífico',
         userId: admin._id,
         order: 4,
-        author: admin.profile.name,
         bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Touch the locations to meet some of the birds that travel the Pacific Flyway</p>',
         espBodyCopy: 'Cada año, más de mil millones de aves utilizan la ruta migratoria del Pacífico-una serie de humedales a lo largo de costa en el oeste de América del Norte el viaje migratorio entre sus hogares del norte y sur de temporada.',
         markers: [
@@ -164,7 +135,6 @@ if (Components.find().count() === 0) {
         espButtonTitle: 'Explorá',
         userId: admin._id,
         order: 5,
-        author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
         backgroundMapClass: 'map-explore',
@@ -290,10 +260,7 @@ if (Components.find().count() === 0) {
         link: 'torrey-pines',
         title: 'Welcome to Torrey Pines',
         titleEsp: 'Bienvenido a Torrey Pines',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
@@ -317,15 +284,13 @@ if (Components.find().count() === 0) {
         ],
     });
 
-    var tpRareTree = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         link: 'rare-tree',
         componentId: torreyPines,
         buttonTitle: 'Rare tree',
         espButtonTitle: 'Árbol inusual',
-        userId: admin._id,
         order: 2,
-        author: admin.profile.name,
         bodyCopy: '<p>The Torrey Pine is found in only two places: Torrey Pines State Natural Reserve and Santa Rosa Island.</p><p>There are two distinct varieties of Torrey Pine, each only existing in one location. That makes this tree in coastal San Diego even more unique.</p>',
         espBodyCopy: '<p>El pino Torrey se encuentra en sólo dos lugares:  La Reserva Natural Estatal de Torrey Pines y en la Isla de Santa Rosa.</p><p>Hay dos variedades distintas de pinos Torrey; cada una existe en un solo lugar, lo cual hace que este árbol de la costa de San Diego sea aun más especial.</p>',
         backgroundMapClass: 'map-tp-extent',
@@ -334,15 +299,13 @@ if (Components.find().count() === 0) {
         ],
     });
 
-    var tpRareHabitat = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         link: 'rare-habitat',
         componentId: torreyPines,
         buttonTitle: 'Rare habitat',
         espButtonTitle: 'Hábitat inusual',
-        userId: admin._id,
         order: 3,
-        author: admin.profile.name,
         bodyCopy: '<p>Torrey Pines State Natural Reserve is one<br>of the last places where you can see coastal<br>sage scrub habitat.</p><p>Coastal sage scrub plants are usually<br>soft-leaved and fragrant. You will often<br>find California Sagebrush and<br>Coast Prickly-pear here.</p>',
         espBodyCopy: '<p>La Reserva Natural Estatal de Torrey Pines es<br>uno de los últimos lugares que quedan donde puedes ver el hábitat del matorral costero de salvia.</p><p>Las plantas del matorral costero de salvia son generalmente de hojas suaves y aromáticas. Frecuentemente puedes encontrar aquí<br>el chamizo y el nopal.</p>',
         backgroundMapClass: 'map-tp-floristic',
@@ -352,15 +315,13 @@ if (Components.find().count() === 0) {
         ],
     });
 
-    var tpRareClimate = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         link: 'rare-climate',
         componentId: torreyPines,
         buttonTitle: 'Rare climate zone',
         espButtonTitle: 'Zona climática inusual',
-        userId: admin._id,
         order: 4,
-        author: admin.profile.name,
         bodyCopyLayout: 'horizontal',
         bodyCopy: '<p>Coastal California is one of only five places in the world<br>known as a Mediterranean climate zone</p><p>Coastal sage scrub plants are specially adapted for the<br>mild winters and long, dry summers typical of these climate zones. </p>',
         espBodyCopy: '<p>La costa de California es uno de sólo cinco lugares en el mundo que<br>tiene lo que se conoce como zona de clima Mediterráneo.</p><p>Las plantas del matorral costero de salvia están adaptadas<br>especialmente para los inviernos templados y veranos largos y secos,<br>típicos de estas zonas climáticas.</p>',
@@ -372,10 +333,8 @@ if (Components.find().count() === 0) {
         link: 'explore',
         componentId: torreyPines,
         buttonTitle: 'Explore',
-        espButtonTitle: 'Explorá',
-        userId: admin._id,
+        espButtonTitle: 'Explora',
         order: 5,
-        author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
         backgroundMapClass: 'map-explore',
@@ -471,9 +430,7 @@ if (Components.find().count() === 0) {
         componentId: torreyPines,
         buttonTitle: 'Science stories',
         espButtonTitle: 'Historias de ciencia',
-        userId: admin._id,
         order: 6,
-        author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
         backgroundMapClass: 'map-stories',
@@ -522,10 +479,7 @@ if (Components.find().count() === 0) {
 
     var canyons = Components.insert({
         title: 'Canyons',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'Canyons general description.',
         componentNum: '0516',
         order: 3,
@@ -535,18 +489,13 @@ if (Components.find().count() === 0) {
     var cWhere = Pages.insert({
         componentId: canyons,
         title: 'Canyons Where',
-        userId: admin._id,
         order: 2,
-        author: admin.profile.name,
         pageCopy: dimsum()
     });
 
     var streams = Components.insert({
         title: 'Streams',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'Streams general description.',
         componentNum: '0616',
         order: 4,
@@ -555,10 +504,7 @@ if (Components.find().count() === 0) {
 
     var chaparral = Components.insert({
         title: 'Chaparral',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'Chaparral general description.',
         componentNum: '0704',
         order: 5,
@@ -567,10 +513,7 @@ if (Components.find().count() === 0) {
 
     var oakTree = Components.insert({
         title: 'Oak Tree',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'Oak Tree general description.',
         componentNum: '0813',
         order: 6,
@@ -579,10 +522,7 @@ if (Components.find().count() === 0) {
 
     var mountains = Components.insert({
         title: 'Mountains',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'Mountains general description.',
         componentNum: '0816',
         order: 7,
@@ -591,10 +531,7 @@ if (Components.find().count() === 0) {
 
     var desert = Components.insert({
         title: 'Desert',
-        userId: admin._id,
-        author: admin.profile.name,
         // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
         description: 'Desert general description.',
         componentNum: '0916',
         order: 8,
