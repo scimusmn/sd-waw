@@ -255,7 +255,6 @@ if (Components.find().count() === 0) {
         link: 'torrey-pines',
         title: 'Welcome to Torrey Pines',
         titleEsp: 'Bienvenido a Torrey Pines',
-        // TODO - Not sure if I need this field
         description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
@@ -473,7 +472,6 @@ if (Components.find().count() === 0) {
 
     var canyons = Components.insert({
         title: 'Canyons',
-        // TODO - Not sure if I need this field
         description: 'Canyons general description.',
         componentNum: '0516',
         order: 3,
@@ -489,7 +487,6 @@ if (Components.find().count() === 0) {
 
     var streams = Components.insert({
         title: 'Streams',
-        // TODO - Not sure if I need this field
         description: 'Streams general description.',
         componentNum: '0616',
         order: 4,
@@ -498,7 +495,6 @@ if (Components.find().count() === 0) {
 
     var chaparral = Components.insert({
         title: 'Chaparral',
-        // TODO - Not sure if I need this field
         description: 'Chaparral general description.',
         componentNum: '0704',
         order: 5,
@@ -507,7 +503,6 @@ if (Components.find().count() === 0) {
 
     var oakTree = Components.insert({
         title: 'Oak Tree',
-        // TODO - Not sure if I need this field
         description: 'Oak Tree general description.',
         componentNum: '0813',
         order: 6,
@@ -516,7 +511,6 @@ if (Components.find().count() === 0) {
 
     var mountains = Components.insert({
         title: 'Mountains',
-        // TODO - Not sure if I need this field
         description: 'Mountains general description.',
         componentNum: '0816',
         order: 7,
@@ -525,7 +519,6 @@ if (Components.find().count() === 0) {
 
     var desert = Components.insert({
         title: 'Desert',
-        // TODO - Not sure if I need this field
         description: 'Desert general description.',
         componentNum: '0916',
         order: 8,
