@@ -333,7 +333,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-explore',
     });
 
-    var tpExploreReserve = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         subPageType: 'explore',
         link: 'torrey-pines-reserve',
@@ -354,7 +354,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-tp-explore-tp',
     });
 
-    var tpExploreCrest = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         subPageType: 'explore',
         link: 'crest-canyon',
@@ -375,7 +375,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-tp-explore-crest',
     });
 
-    var tpExploreBayside = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         subPageType: 'explore',
         link: 'cabrillo',
@@ -396,7 +396,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-tp-explore-bayside',
     });
 
-    var tpExploreMiners = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         subPageType: 'explore',
         link: 'black-mountain',
@@ -429,7 +429,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-stories',
     });
 
-    var tpScienceStoriesOne = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         subPageType: 'science',
         link: 'susie-arter',
@@ -449,7 +449,7 @@ if (Components.find().count() === 0) {
         backgroundCaptionEsp: 'Fogata en la Reserva Estatal Natural Torrey Pines',
     });
 
-    var tpScienceStoriesTwo = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         subPageType: 'science',
         link: 'jon-rebman',
