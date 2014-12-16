@@ -1,0 +1,29 @@
+{
+  "undef": true,
+  "unused": true,
+  "camelcase": true,
+  "curly": true,
+  "quotmark": true,
+  "globals": {
+    // jQuery
+    "$": false, 
+    "jQuery": false,
+    // Underscore
+    "_": false,
+    // Normal stuff
+    "window": false,
+    "console": false,
+    // D3
+    "d3": false,
+    "topojson": false,
+    // Meteor objects
+    "Meteor": false,
+    "Template": false,
+    "Deps": false,
+    "Router": false,
+    "Images": false,
+    "Components": false,
+    "Pages": false,
+    "dimsum": false
+  }
+}

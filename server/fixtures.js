@@ -8,6 +8,17 @@ dimsum.configure({ flavor: 'jabberwocky' });
 /**
  * Setup default content
  */
+
+/**
+ * TODO - Remove this in production
+ *
+ * This erases the database on each Meteor reload.
+ *
+ * This makes it easier to edit content in the fixture
+ */
+Components.remove({});
+Pages.remove({});
+
 if (Components.find().count() === 0) {
 
     /**
