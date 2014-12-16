@@ -41,12 +41,9 @@ if (Components.find().count() === 0) {
      */
     var wetlands = Components.insert({
         colorPalate: 'wetlands',
-        title: 'Welcome to<br>Los Peñasquitos Lagoon',
-        titleEsp: 'Bienvenido a la<br>Laguna Los Peñasquitos',
-        userId: admin._id,
-        author: admin.profile.name,
-        // TODO - Not sure if I need this field
-        submitted: now - i * 3600 * 1000 + 1,
+        link: 'wetlands',
+        title: 'Los Peñasquitos Lagoon',
+        titleEsp: 'Laguna Los Peñasquitos',
         description: 'Los Peñasquitos Marsh Natural Preserve and Lagoon is a coastal marsh in San Diego County',
         componentNum: '0316',
         order: 1,
@@ -56,7 +53,7 @@ if (Components.find().count() === 0) {
     var wetWhere = Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
-        colorPalate: 'wetlands',
+        link: 'where-is-it',
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
         userId: admin._id,
