@@ -33,8 +33,8 @@ if (Components.find().count() === 0) {
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
         order: 1,
-        bodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum. ',
-        espBodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum.',
+        bodyCopy: 'Los Peñasquitos Lagoon, the setting for the scene in front of you, is just 18 miles from the Museum.',
+        espBodyCopy: 'La Laguna de Los Peñasquitos, el marco de la escena delante de ti, está apenas a dieciocho millas del Museo.',
         backgroundMapClass: 'map-wet-where',
         bodyImages: [
             {fileName: 'wet-where.jpg', imageCredit: 'TBD - Bill Evarts Photograph, Torrey Pines Landscape and Legacy p.1' },
@@ -50,7 +50,7 @@ if (Components.find().count() === 0) {
         order: 2,
         bodyCopy: 'Southern California has 28 wetlands that line the coast from Santa Barbara south to Mexico.',
         bodyCopyLayout: 'horizontal',
-        espBodyCopy: 'Sur de California cuenta con 28 humedales que bordean la costa de Santa Barbara al sur de México.',
+        espBodyCopy: 'El sur de California tiene veintiocho marismas que bordean la costa desde Santa Bárbara hasta México en el sur.',
         backgroundMapClass: 'map-wet-wetlands',
         markers: [
             {order: 1, label: 'Tijuana Estuary', dotLeft: '830', dotTop: '506', arrowLeft: '1055', arrowTop: '536'},
@@ -89,8 +89,8 @@ if (Components.find().count() === 0) {
         buttonTitle: 'Then and Now',
         espButtonTitle: 'En aquel entonces y hoy en día',
         order: 3,
-        bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Drag your finger across this map to compare how much habitat has been lost.</p>',
-        espBodyCopy: '<p>Más del 90% del hábitat de los humedales del sur de California ha desaparecido debido al continuo desarrollo de bienes raíces.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
+        bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Compare these maps to see how much habitat has been lost.</p>',
+        espBodyCopy: '<p>Más del noventa por ciento del hábitat de las marismas del sur de California ha desaparecido debido al constante desarrollo urbano.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
         backgroundMapClass: 'map-wet-then-now',
         bottomImage: 'wet-map-compare-historic.png',
         bottomImageLabel: 'Historic<br>wetlands',
@@ -104,23 +104,46 @@ if (Components.find().count() === 0) {
         buttonTitle: 'The Pacific Flyway',
         espButtonTitle: 'La ruta migratoria del Pacífico',
         order: 4,
-        bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Touch the locations to meet some of the birds that travel the Pacific Flyway</p>',
-        espBodyCopy: 'Cada año, más de mil millones de aves utilizan la ruta migratoria del Pacífico-una serie de humedales a lo largo de costa en el oeste de América del Norte el viaje migratorio entre sus hogares del norte y sur de temporada.',
+        bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Meet some of the birds that travel the Pacific Flyway.</p>',
+        espBodyCopy: '<p>Cada año más de mil millones de pájaros usan la ruta migratoria del Pacífico, una serie de marismas a lo largo de la costa oeste de Norteamérica, durante el viaje migratorio entre sus hogares norteños y sureños según la temporada.</p><p>Conoce a algunos de los pájaros que viajan a lo largo de la ruta migratoria del Pacífico.</p>',
         markers: [
             {
-                order: 1, label: 'Black-bellied Plovers', dotLeft: '744', dotTop: '286', arrowLeft: '841', arrowTop: '162',
+                order: 1,
+                label: 'Black-bellied Plovers',
+                labelEs: 'Chorlo gris',
+                labelLat: 'Pluvialis squatarola',
+                dotLeft: '744',
+                dotTop: '286',
+                arrowLeft: '841',
+                arrowTop: '162',
                 bodyCopy: 'After nesting in Alaska, Black-bellied Plovers migrate south on the Pacific Flyway to winter in southern California.',
-                espBodyCopy: 'Después de anidar en Alaska, chorlitos vientre negro migran hacia el sur por la ruta del Pacífico para el invierno en el sur de California.'
+                espBodyCopy: 'Después de anidar en Alaska, el chorlo gris migra hacia el sur por la ruta migratoria del Pacífico para pasar el invierno en el sur de California.'
             },
+
             {
-                order: 2, label: 'Western Sandpiper', dotLeft: '835', dotTop: '429', arrowLeft: '1004', arrowTop: '254',
-                bodyCopy: 'Western Sandpipers endure long journeys between their northern breeding grounds in Alaska and winter homes along the coasts of southern California, Mexico, and South America.',
-                espBodyCopy: 'Calidris mauri soportar viajes largos entre sus áreas de reproducción del norte de Alaska y casas de invierno a lo largo de las costas del sur de California, México, y América del Sur.'
+                order: 2,
+                label: 'Western Sandpiper',
+                labelEs: 'Playero occidental',
+                labelLat: 'Calidris mauri',
+                dotLeft: '835',
+                dotTop: '429',
+                arrowLeft: '1004',
+                arrowTop: '254',
+                bodyCopy: 'Western Sandpipers endure long journeys between their northern breeding grounds in Alaska and winter homes in the lower 48 states, Mexico, Central and South America.',
+                espBodyCopy: 'El playero occidental resiste largos viajes entre su área de apareamiento norteña en Alaska y su hogar del sur en los cuarenta y ocho estados continentales, México, Centroamérica y Sudamérica.'
             },
+
             {
-                order: 3, label: 'Marbled Godwit', dotLeft: '922', dotTop: '503', arrowLeft: '1060', arrowTop: '356',
-                bodyCopy: 'Immediately after nesting, Marbled Godwits escape cold winters in the northern Great Plains by migrating to milder climates along the west coast.',
-                espBodyCopy: 'Inmediatamente después de anidar, Jaspeado Limosa escapar inviernos fríos en el norte de las Grandes Planicies de migrar a climas más suaves a lo largo de la costa oeste.'
+                order: 3,
+                label: 'Marbled Godwit',
+                labelEs: 'Picopando canelo',
+                labelLat: 'Limosa fedoa',
+                dotLeft: '922',
+                dotTop: '503',
+                arrowLeft: '1060',
+                arrowTop: '356',
+                bodyCopy: 'Immediately after nesting, Marbled Godwits migrate to the west coast to feed in our wetlands—escaping the cold winter in the northern Great Plains months before it arrives.',
+                espBodyCopy: 'Inmediatamente después de anidar, el picopando canelo migra a la costa oeste para buscar alimento en nuestras marismas; de esta manera se escapa meses antes de la llegada del frío invierno en las Grandes Llanuras del norte.'
             }
         ],
         backgroundMapClass: 'map-wet-migration',
@@ -142,14 +165,17 @@ if (Components.find().count() === 0) {
         componentId: wetlands,
         parentId: wetExplore,
         buttonTitle: 'Bolsa Chica<br>Ecological Reserve',
-        espButtonTitle: 'Bolsa Chica <br> Reserva Ecológica',
+        espButtonTitle: 'Reserva Ecológica Bolsa Chica',
         buttonImage: 'wet-explore-bolsa.jpg',
         bodyImages: [
             {fileName: 'wet-explore-bolsa-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
         ],
         order: 1,
-        bodyCopy: 'Visit Bolsa Chica Ecological Reserve to experience the largest saltwater wetland in southern California. For more information visit [TBD - website link].',
-        espBodyCopy: 'Visita la Reserva Ecológica Bolsa Chica para experimentar el mayor humedal de agua salada en el sur de California. Para obtener más información, visite [TBD - enlace al sitio web].',
+        bodyCopy: 'Visit Bolsa Chica Ecological Reserve to experience the largest saltwater wetland in southern California.',
+        espBodyCopy: 'Visita la Reserva Ecológica Bolsa Chica para conocer de cerca la marisma de agua salada más grande del sur de California.',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'TBD',
         backgroundMapClass: 'map-wet-explore-bolsa',
     });
 
@@ -158,14 +184,17 @@ if (Components.find().count() === 0) {
         componentId: wetlands,
         parentId: wetExplore,
         buttonTitle: 'San Elijo Lagoon<br>County Ecological Preserve',
-        espButtonTitle: 'Laguna de San Elijo<br>Condado Reserva Ecológica',
+        espButtonTitle: 'Reserva Ecológica Laguna de San Elijo ',
         buttonImage: 'wet-explore-elijo.jpg',
         bodyImages: [
             {fileName: 'wet-explore-elijo-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
         ],
         order: 2,
-        bodyCopy: '<p>Glimpse some of the more than 700 plant and animal species that inhabit this county preserve. Bring your binoculars!</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
-        espBodyCopy: '<p> Glimpse algunas de las más de 700 especies de plantas y animales que habitan en este municipio a preservar. Traiga sus binoculares!</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web]. </p>',
+        bodyCopy: '<p>Glimpse some of the more than 700 plant and animal species that inhabit this county preserve. Bring your binoculars!</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Ven a ver algunas de las más de setecientas especies de plantas y animales que habitan esta reserva del condado. ¡Trae tus largavistas!</p><p>Únete a los Canyoneers para caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-wet-explore-elijo',
     });
 
@@ -173,15 +202,18 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
-        buttonTitle: 'Coast to Crest Trail – <br>Del Mar, San Dieguito River Park',
-        espButtonTitle: 'Costa de Crest Trail - <br> Del Mar, San Dieguito River Park',
+        buttonTitle: 'San Dieguito River Park (Coast to Crest Trail – Del Mar)',
+        espButtonTitle: 'Parque Río San Dieguito (Sendero Coast to Crest – Del Mar)',
         buttonImage: 'wet-explore-delmar.jpg',
         bodyImages: [
             {fileName: 'wet-explore-delmar-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
         ],
         order: 3,
-        bodyCopy: '<p>Hike the western-most section of the Coast to Crest Trail, which will soon extend 55 miles from the ocean at Del Mar to Volcan Mountain just north of Julian.</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
-        espBodyCopy: '<p>Camine por el más occidental sección de la costa de Crest Trail, que pronto se extenderá a 55 millas del océano en Del Mar a Volcán Montaña justo al norte de Julian.</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web].</p>',
+        bodyCopy: '<p>Hike the western-most section of the Coast to Crest Trail, which will extend 55 miles from the ocean at Del Mar to Volcan Mountain just north of Julian.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Camina por la parte más occidental del sendero Coast to Crest, el cual se extiende cincuenta y cinco millas desde el océano en Del Mar hasta la montaña Volcan justo al norte de Julian.</p><p>Únete a los Canyoneers para caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-wet-explore-delmar',
     });
 
@@ -189,15 +221,18 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
-        buttonTitle: 'North Beach Trail,<br>Tijuana Estuary',
-        espButtonTitle: 'North Beach Trail,<br>Estuario de Tijuana',
+        buttonTitle: 'Tijuana River National Estuarine Research Reserve (North Beach Trail)',
+        espButtonTitle: 'Reserva Nacional de Investigación Estuarina del Río Tijuana (Sendero North Beach)',
         buttonImage: 'wet-explore-northbeach.jpg',
         bodyImages: [
             {fileName: 'wet-explore-northbeach-full.jpg', imageCredit: 'credit', imageCaption: 'captions' },
         ],
         order: 3,
-        bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California. For more information visit [website link].</p>',
-        espBodyCopy: '<p>Disfrute de la brisa del mar y caminar junto a uno de los pocos humedales costeros que quedan en el sur de California.</p><p>Únete a los cañoneros para caminatas guiadas en el sur de California. Para obtener más información, visite [enlace al sitio web].</p>',
+        bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Disfruta de la brisa marina y camina a lo largo de uno de los pocos estuarios costeros que quedan en el sur de California.</p><p>Únete a los Canyoneers para caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-wet-explore-northbeach',
     });
 
