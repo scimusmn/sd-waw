@@ -470,6 +470,11 @@ if (Components.find().count() === 0) {
         backgroundCaptionLatin: 'Opuntia'
     });
 
+    /**
+     **************************************************************************
+     * Canyons
+     **************************************************************************
+     */
     var canyons = Components.insert({
         title: 'Canyons',
         description: 'Canyons general description.',
@@ -485,6 +490,11 @@ if (Components.find().count() === 0) {
         pageCopy: dimsum()
     });
 
+    /**
+     **************************************************************************
+     * Streams
+     **************************************************************************
+     */
     var streams = Components.insert({
         title: 'Streams',
         description: 'Streams general description.',
@@ -493,6 +503,11 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
+    /**
+     **************************************************************************
+     * Chaparral
+     **************************************************************************
+     */
     var chaparral = Components.insert({
         title: 'Chaparral',
         description: 'Chaparral general description.',
@@ -501,6 +516,11 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
+    /**
+     **************************************************************************
+     * Oak Tree
+     **************************************************************************
+     */
     var oakTree = Components.insert({
         title: 'Oak Tree',
         description: 'Oak Tree general description.',
@@ -509,6 +529,11 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
+    /**
+     **************************************************************************
+     * Mountains
+     **************************************************************************
+     */
     var mountains = Components.insert({
         title: 'Mountains',
         description: 'Mountains general description.',
@@ -517,6 +542,11 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
+    /**
+     **************************************************************************
+     * Desert
+     **************************************************************************
+     */
     var desert = Components.insert({
         title: 'Desert',
         description: 'Desert general description.',
