@@ -19,14 +19,14 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         link: 'wetlands',
         title: 'Los Peñasquitos Lagoon',
-        titleEsp: 'Laguna Los Peñasquitos',
+        titleEsp: 'Laguna de Los Peñasquitos',
         description: 'Los Peñasquitos Marsh Natural Preserve and Lagoon is a coastal marsh in San Diego County',
         componentNum: '0316',
         order: 1,
         mural: 'wet-mural.jpg',
     });
 
-    var wetWhere = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         link: 'where-is-it',
@@ -41,13 +41,12 @@ if (Components.find().count() === 0) {
         ],
     });
 
-    var wetOur = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
-        colorPalate: 'wetlands',
+        link: 'our-wetlands',
         buttonTitle: 'Our wetlands',
-        espButtonTitle: 'Nuestros humedales',
-        userId: admin._id,
+        espButtonTitle: 'Nuestras marismas',
         order: 2,
         bodyCopy: 'Southern California has 28 wetlands that line the coast from Santa Barbara south to Mexico.',
         bodyCopyLayout: 'horizontal',
@@ -83,12 +82,12 @@ if (Components.find().count() === 0) {
         ],
     });
 
-    var wetThen = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
+        link: 'then-now',
         buttonTitle: 'Then and Now',
-        espButtonTitle: 'Antes y ahora',
-        userId: admin._id,
+        espButtonTitle: 'En aquel entonces y hoy en día',
         order: 3,
         bodyCopy: '<p>More than 90% of southern California’s wetland habitat has disappeared due to continuing real estate development.</p><p>Drag your finger across this map to compare how much habitat has been lost.</p>',
         espBodyCopy: '<p>Más del 90% del hábitat de los humedales del sur de California ha desaparecido debido al continuo desarrollo de bienes raíces.</p><p>Compare estos mapas para ver cuánto hábitat se ha perdido.</p>',
@@ -99,12 +98,11 @@ if (Components.find().count() === 0) {
         topImageLabel: 'Present day<br>wetlands',
     });
 
-    var wetFlyway = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         buttonTitle: 'The Pacific Flyway',
-        espButtonTitle: 'La ruta del Pacífico',
-        userId: admin._id,
+        espButtonTitle: 'La ruta migratoria del Pacífico',
         order: 4,
         bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Touch the locations to meet some of the birds that travel the Pacific Flyway</p>',
         espBodyCopy: 'Cada año, más de mil millones de aves utilizan la ruta migratoria del Pacífico-una serie de humedales a lo largo de costa en el oeste de América del Norte el viaje migratorio entre sus hogares del norte y sur de temporada.',
@@ -132,8 +130,7 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         buttonTitle: 'Explore',
-        espButtonTitle: 'Explorá',
-        userId: admin._id,
+        espButtonTitle: 'Explora',
         order: 5,
         bodyCopy: '',
         espBodyCopy: '',
@@ -156,7 +153,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-explore-bolsa',
     });
 
-    var wetExploreElijo = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
@@ -172,7 +169,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-explore-elijo',
     });
 
-    var wetExploreDelMar = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
@@ -188,7 +185,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-explore-delmar',
     });
 
-    var wetExploreNorthBeach = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
@@ -207,17 +204,15 @@ if (Components.find().count() === 0) {
     var wetScienceStories = Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
-        buttonTitle: 'Science stories',
+        buttonTitle: 'Science spotlight',
         espButtonTitle: 'Historias de ciencia',
-        userId: admin._id,
         order: 6,
-        author: admin.profile.name,
         bodyCopy: '',
         espBodyCopy: '',
         backgroundMapClass: 'map-stories',
     });
 
-    var wetScienceStoriesOne = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetScienceStories,
@@ -233,7 +228,7 @@ if (Components.find().count() === 0) {
         backgroundMapClass: 'map-wet-explore-miners',
     });
 
-    var wetScienceStoriesTwo = Pages.insert({
+    Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetScienceStories,
@@ -268,13 +263,12 @@ if (Components.find().count() === 0) {
         bodyCopy: dimsum()
     });
 
-    var tpWhere = Pages.insert({
+    Pages.insert({
         colorPalate: 'torrey-pines',
         componentId: torreyPines,
         link: 'where-is-it',
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
-        userId: admin._id,
         order: 1,
         bodyCopy: 'Torrey Pines State Natural Reserve, the setting for the scene in front of you, is just 18 miles from the Museum.',
         espBodyCopy: 'La Reserva Natural Estatal de Torrey Pines, el marco de la escena delante de ti, está apenas a 18 millas del Museo.',
