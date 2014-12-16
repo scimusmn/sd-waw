@@ -245,7 +245,7 @@ if (Components.find().count() === 0) {
     var wetScienceStories = Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
-        link: 'science'
+        link: 'science',
         buttonTitle: 'Science spotlight',
         espButtonTitle: 'Enfoque científico',
         order: 6,
