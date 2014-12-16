@@ -101,6 +101,7 @@ if (Components.find().count() === 0) {
     Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
+        link: 'pacific-flyway',
         buttonTitle: 'The Pacific Flyway',
         espButtonTitle: 'La ruta migratoria del Pacífico',
         order: 4,
@@ -152,6 +153,7 @@ if (Components.find().count() === 0) {
     var wetExplore = Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
+        link: 'explore',
         buttonTitle: 'Explore',
         espButtonTitle: 'Explora',
         order: 5,
@@ -164,6 +166,7 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
+        link: 'bolsa-chica',
         buttonTitle: 'Bolsa Chica<br>Ecological Reserve',
         espButtonTitle: 'Reserva Ecológica Bolsa Chica',
         buttonImage: 'wet-explore-bolsa.jpg',
@@ -183,6 +186,7 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
+        link: 'san-elijo',
         buttonTitle: 'San Elijo Lagoon<br>County Ecological Preserve',
         espButtonTitle: 'Reserva Ecológica Laguna de San Elijo ',
         buttonImage: 'wet-explore-elijo.jpg',
@@ -202,6 +206,7 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
+        link: 'san-dieguito',
         buttonTitle: 'San Dieguito River Park (Coast to Crest Trail – Del Mar)',
         espButtonTitle: 'Parque Río San Dieguito (Sendero Coast to Crest – Del Mar)',
         buttonImage: 'wet-explore-delmar.jpg',
@@ -221,6 +226,7 @@ if (Components.find().count() === 0) {
         colorPalate: 'wetlands',
         componentId: wetlands,
         parentId: wetExplore,
+        link: 'tijuana-river',
         buttonTitle: 'Tijuana River National Estuarine Research Reserve (North Beach Trail)',
         espButtonTitle: 'Reserva Nacional de Investigación Estuarina del Río Tijuana (Sendero North Beach)',
         buttonImage: 'wet-explore-northbeach.jpg',
@@ -239,6 +245,7 @@ if (Components.find().count() === 0) {
     var wetScienceStories = Pages.insert({
         colorPalate: 'wetlands',
         componentId: wetlands,
+        link: 'science'
         buttonTitle: 'Science spotlight',
         espButtonTitle: 'Enfoque científico',
         order: 6,
