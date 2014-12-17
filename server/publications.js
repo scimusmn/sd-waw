@@ -22,8 +22,6 @@ Meteor.publish('singlePage', function(colorPalate, link) {
      * as well as any subpages with the same parentId
      */
     var topPage = Pages.findOne( { $and: [ { 'colorPalate': colorPalate, 'link': link } ] } );
-    console.log('topPage - ', topPage);
     var id = topPage._id;
-    console.log('id - ', id);
     return id && Pages.find( { $or: [ {_id: id}, {parentId: id} ] } );
 });

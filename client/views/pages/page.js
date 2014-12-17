@@ -176,7 +176,6 @@ Template.page.events({
         colorPalate = this.colorPalate;
         subPageType = this.subPageType;
         link = this.link;
-        console.log('destination - ', link);
 
         /**
          * Animate the page before we leave. We're mostly removing
@@ -245,18 +244,13 @@ Template.page.events({
             goDestination();
         }, 600);
         function goDestination() {
-            console.log('destination - ', destination);
             Router.go('componentPage', {link: destination});
         }
     }
 });
 
 Template.page.helpers({
-    doorf: function() {
-        return "well of course";
-    },
     subPages: function() {
-        console.log("This _is", this._id);
         data = Pages.find({parentId: this._id}, {sort: {order: 1}});
         if (data.count()) {
             return data;
