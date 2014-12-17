@@ -174,7 +174,18 @@ body {
 }
 
 /**
- * Canyons
+ * Mountains
+ */
+.map-mtn-where {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-mtn-our {
+  background-image: url("/images/can-our-map.png");
+}
+
+/**
+ * Torrey Pines
  */
 .sci-tp-midden,
 .sci-tp-flower {
@@ -208,6 +219,16 @@ body {
 
 .sci-can-weasel {
   background-image: url("/images/sci-tremor-scott-weasel.jpg");
+  background-position: right;
+}
+
+.sci-can-spider {
+  background-image: url("/images/sci-berrian-jim-spider.jpg");
+  background-position: right;
+}
+
+.sci-mtn-woodpecker {
+  background-image: url("/images/sci-hargrove-lori-woodpecker.jpg");
   background-position: right;
 }
 
@@ -769,6 +790,43 @@ a.btn:active {
 }
 
 /**
+ * Mountains
+ */
+.mountains .buttons .btn,
+.mountains .buttons .btn:hover {
+  color: white;
+}
+
+.mountains .buttons .btn-1 {
+  background: lighten(@mountains-blue, 5%);
+  padding-left: 36px;
+}
+
+.mountains .buttons .btn-2 {
+  background: lighten(@mountains-blue, 7%);
+}
+
+.mountains .buttons .btn-3 {
+  background: lighten(@mountains-blue, 9%);
+}
+
+.mountains .buttons .btn-4 {
+  background: lighten(@mountains-blue, 11%);
+  padding-left: 36px;
+  width: 394px;
+}
+
+.mountains .buttons .btn-5 {
+  background: lighten(@mountains-blue, 13%);
+  width: 395px;
+}
+
+.mountains .btn-home,
+.mountains .btn-home:hover {
+  background: lighten(@mountains-blue, 15%);
+}
+
+/**
  * ----------------------------------------------------------------------------
  * Inner pages
  * ----------------------------------------------------------------------------
@@ -925,11 +983,13 @@ a.btn:active {
   width: 305px;
 }
 
-
-
 // Inner epxlore pages
 .body-copy.subpage-page .body-images img {
   width: 460px;
+}
+
+.body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img {
+  width: 450px;
 }
 
 .body-copy.subpage-page.crest-canyonbropen-space-park-preserve .body-images img,
@@ -938,6 +998,8 @@ a.btn:active {
 .body-copy.subpage-page.san-dieguito-river-parkbrcoast-to-crest-trail-–-del-mar .body-images img,
 .body-copy.subpage-page.los-peñasquitos-canyon-preservebrlopez-canyon .body-images img,
 .body-copy.subpage-page.tijuana-river-national-estuarine-research-reserve-north-beach-trail .body-images img,
+.body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img,
+.body-copy.subpage-page.palomar-mountain-state-park-thunder-springchimney-flats .body-images img,
 .body-copy.subpage-page.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .body-images img {
   width: 410px;
 }
@@ -1012,11 +1074,16 @@ a.btn:active {
 .subpage-button {
   float: left;
   margin: 0;
-  box-sizing:border-box;
   background: lighten(@background-tan, 7%);
-  width: 25%;
-  border-right: 1px solid #fff;
+  width: 342px;
+  /*box-sizing:border-box;*/
+  border-right: 2px solid #fff;
   overflow: hidden;
+}
+
+.subpage-button-4 {
+  border-right: 0px;
+  width: 340px;
 }
 
 .map-stories + .subpage-selector .subpage-button {
@@ -1025,7 +1092,7 @@ a.btn:active {
 
 .subpage-button h4 {
   margin: 15px;
-  height: 86px;
+  height: 89px;
   font-size: 20px;
 }
 
@@ -1052,11 +1119,6 @@ a.btn:active {
 .subpage-button.tijuana-river-national-estuarine-research-reserve-north-beach-trail .esp {
   font-size: 16px;
   letter-spacing: 0;
-}
-
-.subpage-button img {
-  width: 342px;
-  height: 479px;
 }
 
 .susan-on-sehll-middens,
@@ -1098,6 +1160,11 @@ a.btn:active {
 .subpage-page.body-copy,
 .subpage-page.body-copy .btn-home {
   width: 775px;
+}
+
+.subpage-page.body-copy.lori-hargrovebrecologist,
+.subpage-page.body-copy.lori-hargrovebrecologist .btn-home {
+  width: 880px;
 }
 
 .subpage-page.body-copy.miners-loopbrblack-mountain-open-space-park,
