@@ -560,7 +560,22 @@ if (Components.find().count() === 0) {
         order: 1,
         bodyCopy: 'Canyons are all around us. In fact, there’s one just a black from the Museum—Florida Canyon.',
         espBodyCopy: 'Los cañones nos rodean por todas partes. De hecho, hay uno apenas a una cuadra del museo—Florida Canyon.',
-        backgroundMapClass: 'map-can-park',
+        backgroundMapClass: 'map-can-where',
+        bodyImages: [
+            {fileName: 'can-where.jpg'},
+        ],
+    });
+
+    Pages.insert({
+        colorPalate: 'canyons',
+        componentId: canyons,
+        link: 'our-canyons',
+        buttonTitle: 'Our canyons',
+        espButtonTitle: 'Nuestros cañones',
+        order: 2,
+        bodyCopy: '<p>More than 150 canyons can be found in the urban areas of San Diego County. A canyon habitat might be a mixture of coastal sage scrub and chaparral, or a creekbed with water-dependent plants, or even a sycamore grove.<p><p>These diverse habitats support a variety of plants and animals that live in and move through the canyons of San Diego County.</p>',
+        espBodyCopy: 'Los cañones nos rodean por todas partes. De hecho, hay uno apenas a una cuadra del museo—Florida Canyon.',
+        backgroundMapClass: 'map-can-where',
         bodyImages: [
             {fileName: 'can-where.jpg'},
         ],

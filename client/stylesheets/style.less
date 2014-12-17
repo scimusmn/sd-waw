@@ -86,10 +86,6 @@ body {
   left: -(5px * 2);
 }
 
-.map-wet-where {
-  background-image: url("/images/wet-where-map.png");
-}
-
 .map-menu {
   background-image: url("/images/map-base-human.jpg");
 }
@@ -99,6 +95,9 @@ body {
   background-image: url("/images/map-base-natural.jpg");
 }
 
+/**
+ * Torrey Pines
+ */
 .map-tp-park {
   background-image: url("/images/tp-park-map.png");
 }
@@ -114,6 +113,29 @@ body {
 .map-tp-med {
   background-image: url("/images/tp-med-map.png");
   background-position: right 0;
+}
+
+.map-tp-explore-tp {
+  background-image: url("/images/tp-explore-tp-map.png");
+}
+
+.map-tp-explore-crest {
+  background-image: url("/images/tp-explore-crest-map.png");
+}
+
+.map-tp-explore-bayside {
+  background-image: url("/images/tp-explore-bayside-map.png");
+}
+
+.map-tp-explore-miners {
+  background-image: url("/images/tp-explore-miners-map.png");
+}
+
+/**
+ * Wetlands
+ */
+.map-wet-where {
+  background-image: url("/images/wet-where-map.png");
 }
 
 .map-wet-wetlands {
@@ -140,22 +162,16 @@ body {
   background-image: url("/images/wet-migration-map.png");
 }
 
-.map-tp-explore-tp {
-  background-image: url("/images/tp-explore-tp-map.png");
+/**
+ * Canyons
+ */
+.map-can-where {
+  background-image: url("/images/can-where-map.png");
 }
 
-.map-tp-explore-crest {
-  background-image: url("/images/tp-explore-crest-map.png");
-}
-
-.map-tp-explore-bayside {
-  background-image: url("/images/tp-explore-bayside-map.png");
-}
-
-.map-tp-explore-miners {
-  background-image: url("/images/tp-explore-miners-map.png");
-}
-
+/**
+ * Canyons
+ */
 .sci-tp-midden,
 .sci-tp-flower {
   background-size: cover;
@@ -598,6 +614,12 @@ h1, h2, h3 {
  * carry most of this visual style.
  */
 
+a.btn,
+a.btn:hover,
+a.btn:active {
+  text-decoration: none;
+}
+
 /**
  * This was suggested by the print designer, but I (BCK) really don't like it.
  * I'm leaving it here for reference so that it's obvious that we don't
@@ -616,6 +638,49 @@ h1, h2, h3 {
   /*background: darken(@wetlands-blue, 5%);*/
 /*}*/
 
+/**
+ * Torrey Pines
+ */
+
+.torrey-pines .buttons .btn-1 {
+  background: darken(@torrey-pines-buttons, 5%);
+  padding-left: 26px;
+}
+
+.torrey-pines .buttons .btn-2 {
+  background: darken(@torrey-pines-buttons, 7%);
+}
+
+.torrey-pines .buttons .btn-3 {
+  background: darken(@torrey-pines-buttons, 9%);
+}
+
+.torrey-pines .buttons .btn-4 {
+  background: darken(@torrey-pines-buttons, 11%);
+  padding-left: 26px;
+}
+
+.torrey-pines .buttons .btn-5 {
+  background: darken(@torrey-pines-buttons, 13%);
+}
+
+.torrey-pines .buttons .btn-6 {
+  background: darken(@torrey-pines-buttons, 15%);
+}
+
+.torrey-pines .buttons .btn,
+.torrey-pines .buttons .btn:hover {
+  color: white;
+}
+
+.torrey-pines .btn-home,
+.torrey-pines .btn-home:hover {
+  background: darken(@torrey-pines-buttons, 15%);
+}
+
+/**
+ * Wetlands
+ */
 .wetlands .buttons .btn,
 .wetlands .buttons .btn:hover {
   color: white;
@@ -647,42 +712,50 @@ h1, h2, h3 {
   background: darken(@wetlands-blue, 15%);
 }
 
-a.btn,
-a.btn:hover,
-a.btn:active {
-  text-decoration: none;
+.wetlands .btn-home,
+.wetlands .btn-home:hover {
+  background: darken(@wetlands-blue, 15%);
 }
 
-.torrey-pines .buttons .btn,
-.torrey-pines .buttons .btn:hover {
+/**
+ * Canyons
+ */
+.canyons .buttons .btn,
+.canyons .buttons .btn:hover {
   color: white;
 }
 
-.torrey-pines .buttons .btn-1 {
-  background: darken(@torrey-pines-buttons, 5%);
-  padding-left: 26px;
+.canyons .buttons .btn-1 {
+  background: darken(@torrey-pines-green-darker, 5%);
+  padding-left: 36px;
 }
 
-.torrey-pines .buttons .btn-2 {
-  background: darken(@torrey-pines-buttons, 7%);
+.canyons .buttons .btn-2 {
+  background: darken(@torrey-pines-green-darker, 7%);
 }
 
-.torrey-pines .buttons .btn-3 {
-  background: darken(@torrey-pines-buttons, 9%);
+.canyons .buttons .btn-3 {
+  background: darken(@torrey-pines-green-darker, 9%);
 }
 
-.torrey-pines .buttons .btn-4 {
-  background: darken(@torrey-pines-buttons, 11%);
-  padding-left: 26px;
+.canyons .buttons .btn-4 {
+  background: darken(@torrey-pines-green-darker, 11%);
+  padding-left: 36px;
 }
 
-.torrey-pines .buttons .btn-5 {
-  background: darken(@torrey-pines-buttons, 13%);
+.canyons .buttons .btn-5 {
+  background: darken(@torrey-pines-green-darker, 13%);
 }
 
-.torrey-pines .buttons .btn-6 {
-  background: darken(@torrey-pines-buttons, 15%);
+.canyons .buttons .btn-6 {
+  background: darken(@torrey-pines-green-darker, 15%);
 }
+
+.canyons .btn-home,
+.canyons .btn-home:hover {
+  background: darken(@torrey-pines-green-darker, 15%);
+}
+
 
 /**
  * ----------------------------------------------------------------------------
@@ -706,8 +779,8 @@ a.btn:active {
   margin-bottom: 10px;
 }
 
-.body-copy img {
-  /*width: 470px;*/
+.map-can-where+.body-copy img {
+  width: 480px;
 }
 
 .body-copy .credit {
@@ -741,16 +814,6 @@ a.btn:active {
   padding: 10px 0 10px 0;
   color: lighten(@background-tan, 12%);
   text-align: center;
-}
-
-.wetlands .btn-home,
-.wetlands .btn-home:hover {
-  background: darken(@wetlands-blue, 15%);
-}
-
-.torrey-pines .btn-home,
-.torrey-pines .btn-home:hover {
-  background: darken(@torrey-pines-buttons, 15%);
 }
 
 /**
