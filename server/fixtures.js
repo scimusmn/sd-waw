@@ -31,7 +31,6 @@ if (Components.find().count() === 0) {
         link: 'wetlands',
         title: 'Los Peñasquitos Lagoon',
         titleEsp: 'Laguna de Los Peñasquitos',
-        description: 'Los Peñasquitos Marsh Natural Preserve and Lagoon is a coastal marsh in San Diego County',
         componentNum: '0316',
         order: 1,
         mural: 'wet-mural.jpg',
@@ -321,7 +320,6 @@ if (Components.find().count() === 0) {
         link: 'torrey-pines',
         title: 'Torrey Pines',
         titleEsp: 'Torrey Pines',
-        description: 'The Torrey Pine is a rare tree. This WAW explores its natural environment.',
         componentNum: '0416',
         order: 2,
         mural: 'tp-mural.jpg',
@@ -545,7 +543,6 @@ if (Components.find().count() === 0) {
         link: 'canyons',
         title: 'The Canyons ',
         titleEsp: 'Los cañones',
-        description: dimsum.sentence(1),
         componentNum: '0516',
         order: 3,
         mural: 'can-mural.jpg'
@@ -750,7 +747,6 @@ if (Components.find().count() === 0) {
         link: 'streams',
         title: 'The Rivers and Streams',
         titleEsp: 'Los Ríos y Arroyos',
-        description: dimsum.sentence(1),
         componentNum: '0616',
         order: 4,
         mural: 'mtn-mural.jpg'
@@ -778,7 +774,6 @@ if (Components.find().count() === 0) {
      */
     var chaparral = Components.insert({
         title: 'Chaparral',
-        description: 'Chaparral general description.',
         componentNum: '0704',
         order: 5,
         bodyCopy: dimsum()
@@ -791,7 +786,6 @@ if (Components.find().count() === 0) {
      */
     var oakTree = Components.insert({
         title: 'Oak Tree',
-        description: 'Oak Tree general description.',
         componentNum: '0813',
         order: 6,
         bodyCopy: dimsum()
@@ -807,7 +801,6 @@ if (Components.find().count() === 0) {
         link: 'mountains',
         title: 'The Cuyamaca Mountains',
         titleEsp: 'Las montañas Cuyamaca',
-        description: dimsum.sentence(1),
         componentNum: '0816',
         order: 7,
         mural: 'mtn-mural.jpg'
@@ -1013,7 +1006,6 @@ if (Components.find().count() === 0) {
      */
     var desert = Components.insert({
         title: 'Desert',
-        description: 'Desert general description.',
         componentNum: '0916',
         order: 8,
         bodyCopy: dimsum()
