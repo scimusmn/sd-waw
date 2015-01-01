@@ -547,7 +547,7 @@ if (Components.find().count() === 0) {
         titleEsp: 'Los cañones',
         description: dimsum.sentence(1),
         componentNum: '0516',
-        order: 5,
+        order: 3,
         mural: 'can-mural.jpg'
     });
 
@@ -752,7 +752,7 @@ if (Components.find().count() === 0) {
         titleEsp: 'Las montañas Cuyamaca',
         description: dimsum.sentence(1),
         componentNum: '0816',
-        order: 3,
+        order: 7,
         mural: 'mtn-mural.jpg'
     });
 
