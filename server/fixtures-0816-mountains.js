@@ -15,7 +15,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
      **************************************************************************
      */
     var mountains = Components.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         link: 'mountains',
         title: 'The Cuyamaca Mountains',
         titleEsp: 'Las montañas Cuyamaca',
@@ -25,7 +25,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         componentId: mountains,
         link: 'where-is-it',
         buttonTitle: 'Where is it?',
@@ -40,7 +40,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         componentId: mountains,
         link: 'our-mountains',
         buttonTitle: 'Our mountains',
@@ -52,7 +52,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         componentId: mountains,
         link: 'rare-habitat',
         buttonTitle: 'Rare habitat',
@@ -68,7 +68,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var mtnExplore = Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         componentId: mountains,
         link: 'explore',
         buttonTitle: 'Explore',
@@ -80,7 +80,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: mountains,
         parentId: mtnExplore,
@@ -101,7 +101,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: mountains,
         parentId: mtnExplore,
@@ -122,7 +122,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: mountains,
         parentId: mtnExplore,
@@ -143,7 +143,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: mountains,
         parentId: mtnExplore,
@@ -164,7 +164,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var mtnScienceStories = Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         link: 'science',
         componentId: mountains,
         buttonTitle: 'Science spotlight',
@@ -176,7 +176,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         subPageType: 'science',
         link: 'lori-hargrove',
         componentId: mountains,
@@ -197,7 +197,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'mountains',
+        colorPalate: colorPalate,
         subPageType: 'science',
         link: 'jim-berrian',
         componentId: mountains,

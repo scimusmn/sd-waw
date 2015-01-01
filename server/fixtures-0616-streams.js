@@ -15,7 +15,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
      **************************************************************************
      */
     var streams = Components.insert({
-        colorPalate: 'streams',
+        colorPalate: colorPalate,
         link: 'streams',
         title: 'The Rivers and Streams',
         titleEsp: 'Los Ríos y Arroyos',

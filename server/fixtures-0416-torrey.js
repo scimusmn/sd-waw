@@ -5,11 +5,10 @@ var colorPalate = 'torrey-pines';
 
 Components.remove({ 'colorPalate': colorPalate });
 Pages.remove({ 'colorPalate': colorPalate });
-dimsum.configure({ flavor: 'jabberwocky' });
 
 if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     var torreyPines = Components.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         link: 'torrey-pines',
         title: 'Torrey Pines',
         titleEsp: 'Torrey Pines',
@@ -19,7 +18,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         componentId: torreyPines,
         link: 'where-is-it',
         buttonTitle: 'Where is it?',
@@ -34,7 +33,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         link: 'rare-tree',
         componentId: torreyPines,
         buttonTitle: 'Rare tree',
@@ -49,7 +48,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         link: 'rare-habitat',
         componentId: torreyPines,
         buttonTitle: 'Rare habitat',
@@ -65,7 +64,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         link: 'rare-climate',
         componentId: torreyPines,
         buttonTitle: 'Rare climate zone',
@@ -78,7 +77,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var tpExplore = Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         link: 'explore',
         componentId: torreyPines,
         buttonTitle: 'Explore',
@@ -90,7 +89,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         link: 'torrey-pines-reserve',
         componentId: torreyPines,
@@ -111,7 +110,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         link: 'crest-canyon',
         componentId: torreyPines,
@@ -132,7 +131,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         link: 'cabrillo',
         componentId: torreyPines,
@@ -153,7 +152,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         link: 'black-mountain',
         componentId: torreyPines,
@@ -174,7 +173,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var tpScienceStories = Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         link: 'science',
         componentId: torreyPines,
         buttonTitle: 'Science spotlight',
@@ -186,7 +185,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         subPageType: 'science',
         link: 'susie-arter',
         componentId: torreyPines,
@@ -206,7 +205,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'torrey-pines',
+        colorPalate: colorPalate,
         subPageType: 'science',
         link: 'jon-rebman',
         componentId: torreyPines,

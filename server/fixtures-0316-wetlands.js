@@ -10,7 +10,7 @@ dimsum.configure({ flavor: 'jabberwocky' });
 if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
 
     var wetlands = Components.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         link: 'wetlands',
         title: 'Los Peñasquitos Lagoon',
         titleEsp: 'Laguna de Los Peñasquitos',
@@ -20,7 +20,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         link: 'where-is-it',
         buttonTitle: 'Where is it?',
@@ -35,7 +35,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         link: 'our-wetlands',
         buttonTitle: 'Our wetlands',
@@ -76,7 +76,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         link: 'then-now',
         buttonTitle: 'Then and Now',
@@ -92,7 +92,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         link: 'pacific-flyway',
         buttonTitle: 'The Pacific Flyway',
@@ -144,7 +144,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var wetExplore = Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         link: 'explore',
         buttonTitle: 'Explore',
@@ -156,7 +156,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
@@ -177,7 +177,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
@@ -198,7 +198,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
@@ -219,7 +219,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: wetlands,
         parentId: wetExplore,
@@ -240,7 +240,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var wetScienceStories = Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         link: 'science',
         buttonTitle: 'Science spotlight',
@@ -252,7 +252,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         parentId: wetScienceStories,
         link: 'jon-rebman',
@@ -273,7 +273,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'wetlands',
+        colorPalate: colorPalate,
         componentId: wetlands,
         parentId: wetScienceStories,
         subPageType: 'science',

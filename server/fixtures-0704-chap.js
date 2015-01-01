@@ -10,9 +10,12 @@ dimsum.configure({ flavor: 'jabberwocky' });
 if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
 
     var chaparral = Components.insert({
-        title: 'Chaparral',
+        colorPalate: colorPalate,
+        link: 'wetlands',
+        title: 'The Chaparral',
+        titleEsp: 'El Chaparral',
         componentNum: '0704',
-        order: 5,
-        bodyCopy: dimsum()
+        order: 6,
+        mural: 'chap-mural.jpg',
     });
 }

@@ -10,7 +10,7 @@ dimsum.configure({ flavor: 'jabberwocky' });
 if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
 
     var canyons = Components.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         link: 'canyons',
         title: 'The Canyons ',
         titleEsp: 'Los cañones',
@@ -20,7 +20,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         componentId: canyons,
         link: 'where-is-it',
         buttonTitle: 'Where are they?',
@@ -35,7 +35,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         componentId: canyons,
         link: 'our-canyons',
         buttonTitle: 'Our canyons',
@@ -47,7 +47,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         componentId: canyons,
         link: 'wildlife',
         buttonTitle: 'Wildlife corridors',
@@ -59,7 +59,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var canExplore = Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         componentId: canyons,
         link: 'explore',
         buttonTitle: 'Explore',
@@ -71,7 +71,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: canyons,
         parentId: canExplore,
@@ -92,7 +92,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: canyons,
         parentId: canExplore,
@@ -113,7 +113,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: canyons,
         parentId: canExplore,
@@ -134,7 +134,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         subPageType: 'explore',
         componentId: canyons,
         parentId: canExplore,
@@ -155,7 +155,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     var canScienceStories = Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         link: 'science',
         componentId: canyons,
         buttonTitle: 'Science spotlight',
@@ -167,7 +167,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         subPageType: 'science',
         link: 'michael-wall',
         componentId: canyons,
@@ -188,7 +188,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     });
 
     Pages.insert({
-        colorPalate: 'canyons',
+        colorPalate: colorPalate,
         subPageType: 'science',
         link: 'scott-tremor',
         componentId: canyons,
