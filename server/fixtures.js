@@ -742,6 +742,63 @@ if (Components.find().count() === 0) {
 
     /**
      **************************************************************************
+     * Streams
+     **************************************************************************
+     */
+    var streams = Components.insert({
+        colorPalate: 'streams',
+        link: 'streams',
+        title: 'The Rivers and Streams',
+        titleEsp: 'Los Ríos y Arroyos',
+        description: dimsum.sentence(1),
+        componentNum: '0616',
+        order: 4,
+        mural: 'mtn-mural.jpg'
+    });
+
+    Pages.insert({
+        colorPalate: 'mountains',
+        componentId: mountains,
+        link: 'where-is-it',
+        buttonTitle: 'Where is it?',
+        espButtonTitle: '¿Dónde está?',
+        order: 1,
+        bodyCopy: 'The Cuyamaca Mountains, the setting for the scene in front of you, are just 50 miles from the Museum',
+        espBodyCopy: 'Las montañas Cuyamaca, el marco de la escena delante de ti, están apenas a 50 millas del  Museo. ',
+        backgroundMapClass: 'map-mtn-where',
+        bodyImages: [
+            {fileName: 'mtn-where.jpg'},
+        ],
+    });
+
+    /**
+     **************************************************************************
+     * Chaparral
+     **************************************************************************
+     */
+    var chaparral = Components.insert({
+        title: 'Chaparral',
+        description: 'Chaparral general description.',
+        componentNum: '0704',
+        order: 5,
+        bodyCopy: dimsum()
+    });
+
+    /**
+     **************************************************************************
+     * Oak Tree
+     **************************************************************************
+     */
+    var oakTree = Components.insert({
+        title: 'Oak Tree',
+        description: 'Oak Tree general description.',
+        componentNum: '0813',
+        order: 6,
+        bodyCopy: dimsum()
+    });
+
+    /**
+     **************************************************************************
      * Mountains
      **************************************************************************
      */
@@ -947,45 +1004,6 @@ if (Components.find().count() === 0) {
         backgroundCaption: 'Spider',
         backgroundCaptionEsp: 'Araña',
         backgroundCaptionLatin: 'Apostenus californicus'
-    });
-
-    /**
-     **************************************************************************
-     * Streams
-     **************************************************************************
-     */
-    var streams = Components.insert({
-        title: 'Streams',
-        description: 'Streams general description.',
-        componentNum: '0616',
-        order: 4,
-        bodyCopy: dimsum()
-    });
-
-    /**
-     **************************************************************************
-     * Chaparral
-     **************************************************************************
-     */
-    var chaparral = Components.insert({
-        title: 'Chaparral',
-        description: 'Chaparral general description.',
-        componentNum: '0704',
-        order: 5,
-        bodyCopy: dimsum()
-    });
-
-    /**
-     **************************************************************************
-     * Oak Tree
-     **************************************************************************
-     */
-    var oakTree = Components.insert({
-        title: 'Oak Tree',
-        description: 'Oak Tree general description.',
-        componentNum: '0813',
-        order: 6,
-        bodyCopy: dimsum()
     });
 
     /**
