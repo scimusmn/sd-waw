@@ -98,6 +98,17 @@ a.btn:active {
   text-decoration: none;
 }
 
+/* Spanish text */
+.body-copy .esp,
+.subpage-selector h3 .esp {
+  color: darken(@golden-spanish, 40%);
+}
+
+/* Latin language text for scientific names */
+.latin {
+  font-style: italic;
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Homepage
@@ -244,6 +255,36 @@ a.btn:active {
   height: 100%;
   -webkit-box-shadow: 2px 2px 20px @shadow-grey;
           box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+/* Inner page headlines - English */
+.body-copy h3,
+.subpage-selector h3 {
+  font-family: 'FuturaTS-Demibold', sans-serif;
+  font-size: @inner-headline-font-size;
+  letter-spacing: @inner-headline-letter-spacing;
+  margin-bottom: 15px;
+}
+
+/* Inner page headlines - Spanish */
+.body-copy h3 .esp,
+.subpage-selector h3 .esp {
+  margin-top: 10px;
+  font-size: @inner-headline-font-size-esp;
+  letter-spacing: @inner-headline-letter-spacing;
+}
+
+/* Inner page body copy - Spanish */
+.body-text .esp {
+  display: block;
+  font-size: 19px;
+  margin-top: 18px;
+}
+
+/* Inner page headlines - Horizontal - Spanish */
+.body-copy.horizontal .esp h3 {
+  font-size: 25px;
+  margin-top: 0;
 }
 
 .body-copy .image {
@@ -592,15 +633,34 @@ a.btn:active {
   background-image: url("/images/sci-rebman-jon-flower.jpg");
 }
 
+/**
+ * 0416 - Torrey Pines - Layout and dimensions
+ */
 
-.susie-arterbrcodirector-of-zooarchaeology-lab + .background-caption {
-  width: 34%;
-  height: 80px;
+.body-copy.cabrillo-national-monumentbrbayside-trail h3 {
+  font-size: 35px;
+}
+
+.body-copy.black-mountain-open-space-parkbrminers-loop h3 {
+  font-size: 32px;
+}
+
+.body-copy.black-mountain-open-space-parkbrminers-loop h3 .esp {
+  font-size: 25px;
 }
 
 .jon-rebmanbrcurator-of-botany + .background-caption {
   width: 100px;
   height: 120px;
+}
+
+.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab h3 .esp {
+  font-size: 23px;
+}
+
+.susie-arterbrcodirector-of-zooarchaeology-lab + .background-caption {
+  width: 34%;
+  height: 80px;
 }
 
 /**
@@ -865,70 +925,6 @@ a.btn:active {
 .sci-mtn-woodpecker {
   background-image: url("/images/sci-hargrove-lori-woodpecker.jpg");
   background-position: right;
-}
-
-
-
-/**
- * Inner page text
- */
-
-/* Spanish language text */
-.body-copy .esp,
-.subpage-selector h3 .esp {
-  color: darken(@golden-spanish, 40%);
-}
-
-/* Latin language text for scientific names */
-.latin {
-  font-style: italic;
-}
-
-
-/* Inner page headlines - English */
-.body-copy h3,
-.subpage-selector h3 {
-  font-family: 'FuturaTS-Demibold', sans-serif;
-  font-size: @inner-headline-font-size;
-  letter-spacing: @inner-headline-letter-spacing;
-  margin-bottom: 15px;
-}
-
-.body-copy.cabrillo-national-monumentbrbayside-trail h3 {
-  font-size: 35px;
-}
-
-.body-copy.black-mountain-open-space-parkbrminers-loop h3 {
-  font-size: 32px;
-}
-
-.body-copy.black-mountain-open-space-parkbrminers-loop h3 .esp {
-  font-size: 25px;
-}
-
-.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab h3 .esp {
-  font-size: 23px;
-}
-
-/* Inner page headlines - Spanish */
-.body-copy h3 .esp,
-.subpage-selector h3 .esp {
-  margin-top: 10px;
-  font-size: @inner-headline-font-size-esp;
-  letter-spacing: @inner-headline-letter-spacing;
-}
-
-/* Inner page body copy - English */
-.body-text .esp {
-  display: block;
-  font-size: 19px;
-  margin-top: 18px;
-}
-
-/* Inner page headlines - Horizontal - Spanish */
-.body-copy.horizontal .esp h3 {
-  font-size: 25px;
-  margin-top: 0;
 }
 
 /**
