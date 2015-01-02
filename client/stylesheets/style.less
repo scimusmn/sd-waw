@@ -807,77 +807,6 @@ a.btn:active {
 }
 
 /**
- * Animation settings are handled in javascript
- *
- * .components .component.animate
- */
-
-/**
- * Starting state for animations when a page is rendered
- */
-.components .component.loading {
-  /*background: darken(@background-tan, 10%);*/
-  opacity: 0;
-}
-
-/**
- * End state for components after loading class is removed
- */
-.components .component {
-  background: lighten(@wetlands-blue, 20%);
-  padding: 15px;
-  opacity: 1;
-}
-
-.components .component h3,
-.components .component h3 a {
-  font-family: 'FuturaTS-Medium', sans-serif;
-  color: lighten(@wetlands-blue, 60%);
-}
-
-.map-animate {
-  -webkit-transition: all 300ms 0ms ease-in;
-          transition: all 300ms 0ms ease-in;
-}
-
-/**
- * Home screen button animateIn
- *
- * TODO - Do these with animate.css
- */
-.buttons .btn {
-  -webkit-transform: scale(1);
-}
-
-.buttons .btn.loading{
-  -webkit-transform: scale(0);
-}
-
-/**
- * Component specific button styles
- *
- * Each component features a different color scheme, the navigation buttons
- * carry most of this visual style.
- */
-
-a.btn,
-a.btn:hover,
-a.btn:active {
-  text-decoration: none;
-}
-
-/**
- * This was suggested by the print designer, but I (BCK) really don't like it.
- * I'm leaving it here for reference so that it's obvious that we don't
- * want to go this direction.
- */
-/*.menu-footer .btn {*/
-  /*text-align: center;*/
-/*}*/
-
-
-
-/**
  * ----------------------------------------------------------------------------
  * Inner pages
  * ----------------------------------------------------------------------------
@@ -1492,6 +1421,52 @@ a.btn:active {
 
 .brighter {
   -webkit-filter: brightness(1.5);
+}
+
+/**
+ * Animation settings are handled in javascript
+ *
+ * .components .component.animate
+ */
+
+/**
+ * Starting state for animations when a page is rendered
+ */
+.components .component.loading {
+  opacity: 0;
+}
+
+/**
+ * End state for components after loading class is removed
+ */
+.components .component {
+  background: lighten(@wetlands-blue, 20%);
+  padding: 15px;
+  opacity: 1;
+}
+
+.components .component h3,
+.components .component h3 a {
+  font-family: 'FuturaTS-Medium', sans-serif;
+  color: lighten(@wetlands-blue, 60%);
+}
+
+.map-animate {
+  -webkit-transition: all 300ms 0ms ease-in;
+          transition: all 300ms 0ms ease-in;
+}
+
+/**
+ * Home screen button animateIn
+ *
+ * TODO - Do these with animate.css
+ */
+.buttons .btn {
+  -webkit-transform: scale(1);
+}
+
+.buttons .btn.loading{
+  -webkit-transform: scale(0);
 }
 
 /**
