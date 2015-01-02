@@ -25,8 +25,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Where is it?',
         espButtonTitle: '¿Dónde está?',
         order: 1,
-        bodyCopy: 'There are eight major rivers running through southern California. A network of chaparral and creeks feeds these rivers.',
-        espBodyCopy: 'Hay ocho ríos importantes que fluyen a través del sur de California. Una red de arroyos y riachuelos alimenta estos ríos.',
+        bodyCopy: '<p>Chaparral grows almost everywhere in southern California.</p><p>Early Spanish visitors to the region called this extensive plant habitat chaparro ("short one") because of its abundance of shrubs and short oaks.</p>',
+        espBodyCopy: '<p>El chaparral crece casi por todas partes en el sur de California.</p><p>Los primeros españoles en visitar la región llamaron a este extenso hábitat de plantas chaparro ("bajo en estatura") debido a sus abundantes arbustos y robles bajos.</p>',
         backgroundMapClass: 'map-chaparral-where',
         bodyImages: [
             {fileName: 'chaparral-where.jpg'},
@@ -35,26 +35,33 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
 
     Pages.insert({
         colorPalate: colorPalate,
-        link: 'watersheds',
+        link: 'tough-habitat',
         componentId: chaparral,
         buttonTitle: 'Tough habitat',
         espButtonTitle: 'Hábitat resistente',
         order: 2,
-        bodyCopy: '<p>Each of these outlined regions represents a watershed—an area of land containing a network of creeks and chaparral that drain into the same river.</p><p>Water from mountaintop runoff and rainfall flows downward into nearby creeks, chaparral, and rivers and, eventually, into the ocean.</p>',
-        espBodyCopy: '<p>Cada una de estas regiones demarcadas representa una cuenca—un área de terreno que contiene una red de riachuelos y arroyos que desembocan en el mismo río.</p><p>El agua que viene de los picos montañosos y de la lluvia fluye hacia abajo y se vierte en los riachuelos, arroyos y ríos cercanos y, eventualmente, en el océano.</p>',
-        backgroundMapClass: 'map-chaparral-watersheds',
+        bodyCopy: '<p> Chaparral is no stranger to long, dry summers and mild, wet winters. The various plants that make up this habitat must tolerate long periods of drought and natural wildfires.  </p><p> Chaparral plants typically have woody roots and branches and thick, leathery leaves. Chamise is one of the most common plant species here.  </p>',
+        espBodyCopy: '<p> El chaparral conoce muy bien los largos y secos veranos y los inviernos templados y lluviosos. Las varias plantas que componen este hábitat deben tolerar largos períodos de sequía e incendios naturales.  </p><p> Las plantas del chaparral típicamente tienen raíces y tallos leñosos y hojas gruesas y correosas. Aquí el chamizo es una de las especies de plantas más comunes.  </p>',
+        bodyImages: [ {
+            fileName: 'chaparral-chamise.jpg',
+            imageCaption: 'Chamise',
+            imageCaptionEsp: 'Chamizo',
+            imageCaptionLatin: 'Adenostoma fasciculatum'
+        } ],
+        backgroundMapClass: 'map-chaparral-tough-habitat',
     });
 
     Pages.insert({
         colorPalate: colorPalate,
-        link: 'aquifers',
+        link: 'rare-climate',
         componentId: chaparral,
         buttonTitle: 'Rare climate zone',
         espButtonTitle: 'Zona climática inusual',
         order: 3,
-        bodyCopy: '<p> Not all water from mountain run-off and rainfall reaches our rivers. Some of it seeps into pores in the ground, where it then collects in aquifers—underground water containers. </p><p> What little water makes it into these containers is sometimes pumped out for our use. </p>',
-        espBodyCopy: '<p> No toda el agua de escurrimiento y lluvia alcanza nuestros ríos. Una parte de ella se filtra por los poros de la tierra donde después se congrega en acuíferos—depósitos de agua subterráneos. </p><p> Esa pequeña cantidad de agua que logra llegar a esos depósitos es a veces extraída para nuestro uso mediante bombas hidráulicas. </p>',
-        backgroundMapClass: 'map-chaparral-aquifers'
+        bodyCopyLayout: 'horizontal',
+        bodyCopy: '<p> Coastal California is one of only five places on Earth known as a Mediterranean climate zone.</p><p> The mild, wet winters and long, dry summers typical of this climate zone are ideal for the xerophilous (pronounced ze-RA-fe-les, meaning “dry-loving”) chaparral plants.</p>',
+        espBodyCopy: '<p> La costa de California es sólo uno de cinco lugares en la Tierra que se conocen como zonas climáticas mediterráneas.</p><p>Los templados y lluviosos inviernos y veranos largos y secos típicos de esta zona climática son ideales para las plantas de chaparral xerófilas (pronunciado ce-RO-fi-las, lo que significa que les gusta la sequedad).  </p>',
+        backgroundMapClass: 'map-tp-med',
     });
 
     Pages.insert({
@@ -64,8 +71,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Fire-prone habitat',
         espButtonTitle: 'Hábitat con proclividad a incendiarse',
         order: 4,
-        bodyCopy: '<p> Not all water from mountain run-off and rainfall reaches our rivers. Some of it seeps into pores in the ground, where it then collects in aquifers—underground water containers. </p><p> What little water makes it into these containers is sometimes pumped out for our use. </p>',
-        espBodyCopy: '<p> No toda el agua de escurrimiento y lluvia alcanza nuestros ríos. Una parte de ella se filtra por los poros de la tierra donde después se congrega en acuíferos—depósitos de agua subterráneos. </p><p> Esa pequeña cantidad de agua que logra llegar a esos depósitos es a veces extraída para nuestro uso mediante bombas hidráulicas. </p>',
+        bodyCopy: '<p> Fire is part of the natural life cycle in the chaparral habitat. Planning for fires is a necessary part of life in southern California.  </p><p>Move the timeline to see the places in southern California where fires have burned during the past century. </p>',
+        espBodyCopy: '<p> Los incendios son una parte del ciclo natural de vida del hábitat del chaparral.  La planificación para casos de incendio es un aspecto necesario de la vida en el sur de California.  </p><p>Desplaza el cronograma para ver en qué lugares del sur de  California han habido incendios en el último siglo. </p>',
         backgroundMapClass: 'map-chaparral-aquifers'
     });
 
@@ -84,58 +91,39 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     Pages.insert({
         colorPalate: colorPalate,
         subPageType: 'explore',
-        link: 'los-angeles',
+        link: 'chino-hills',
         componentId: chaparral,
         parentId: chaparralExplore,
-        buttonTitle: 'Rio de Los Angeles State Park',
-        espButtonTitle: 'Parque Estatal Río de Los Ángeles',
-        buttonImage: 'chaparral-explore-los-angeles-button.jpg',
-        bodyImages: [ { fileName: 'chaparral-explore-los-angeles.jpg' } ],
+        buttonTitle: 'Chino Hills State Park ',
+        espButtonTitle: 'Parque Estatal Chino Hills',
+        buttonImage: 'chaparral-explore-chino-hills-button.jpg',
+        bodyImages: [ { fileName: 'chaparral-explore-chino-hills.jpg' } ],
         order: 1,
-        bodyCopy: 'Visit Rio de Los Angeles State Park, where the riverbanks are being restored to create a serene, natural escape from the city.',
-        espBodyCopy: 'Visita el Parque Estatal Río de Los Ángeles, donde las riberas del río están siendo restauradas para crear un escape de la ciudad sereno y natural.',
+        bodyCopy: 'Visit Chino Hills State Park for a day hike or an overnight stay amid chaparral and coastal sage scrub habitats.',
+        espBodyCopy: 'Visita el Parque Estatal Chino Hills para dar una caminata de día o pasar la noche entre los hábitats de chaparral y matorral costero de salvia.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'TBD',
-        backgroundMapClass: 'map-chaparral-explore-la',
+        backgroundMapClass: 'map-chaparral-explore-chino-hills',
     });
 
     Pages.insert({
         colorPalate: colorPalate,
         subPageType: 'explore',
-        link: 'blue-sky',
+        link: 'daley-ranch',
         componentId: chaparral,
         parentId: chaparralExplore,
-        buttonTitle: 'Blue Sky Ecological Reserve',
-        espButtonTitle: 'Reserva Ecológica Blue Sky',
-        buttonImage: 'chaparral-explore-blue-sky-button.jpg',
-        bodyImages: [ { fileName: 'chaparral-explore-blue-sky.jpg' } ],
+        buttonTitle: 'Daley Ranch (Boulder Loop)',
+        espButtonTitle: 'Daley Ranch (Circuito Boulder) ',
+        buttonImage: 'chaparral-explore-daley-ranch-button.jpg',
+        bodyImages: [ { fileName: 'chaparral-explore-daley-ranch.jpg' } ],
         order: 2,
-        bodyCopy: '<p> Enjoy a leisurely stroll beneath a canopy of giant oaks while listening to water rippling over rocks in a nearby stream. </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
-        espBodyCopy: '<p> Disfruta de una caminata relajada bajo las copas de gigantescos robles mientras escuchas el agua rizándose sobre las rocas de un arroyo cercano. </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+        bodyCopy: '<p>Climb a steep trail to the top of a ridge, where you’ll take in sweeping views of hills covered in chaparral and coastal sage scrub. </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Escala por un sendero empinado hasta la cima de una cresta donde podrás apreciar vistas panorámicas de colinas cubiertas de chaparral y matorral costero de salvia.</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-chaparral-explore-blue-sky',
-    });
-
-    Pages.insert({
-        colorPalate: colorPalate,
-        subPageType: 'explore',
-        link: 'old-coach',
-        componentId: chaparral,
-        parentId: chaparralExplore,
-        buttonTitle: 'San Dieguito River Park (Old Coach Staging Area – Coast to Crest Trail)',
-        espButtonTitle: 'Parque del Río San Dieguito (Zona Old Coach Staging – Sendero Coast to Crest)',
-        buttonImage: 'chaparral-explore-old-coach-button.jpg',
-        bodyImages: [ { fileName: 'chaparral-explore-old-coach.jpg' } ],
-        order: 3,
-        bodyCopy: '<p> Enjoy a leisurely stroll beneath a canopy of giant oaks while listening to water rippling over rocks in a nearby stream. </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
-        espBodyCopy: '<p> Disfruta de una caminata relajada bajo las copas de gigantescos robles mientras escuchas el agua rizándose sobre las rocas de un arroyo cercano. </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
-        websiteCall: 'For more information, visit:',
-        websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-chaparral-explore-old-coach',
+        backgroundMapClass: 'map-chaparral-explore-daley-ranch',
     });
 
     Pages.insert({
@@ -144,17 +132,36 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         link: 'green-valley',
         componentId: chaparral,
         parentId: chaparralExplore,
-        buttonTitle: 'Cuyamaca Rancho State Park (Green Valley Falls Loop)',
-        espButtonTitle: 'Parque Estatal Cuyamaca Rancho (Circuito Green Valley Falls)',
+        buttonTitle: 'Oakoasis County Open Space Preserve',
+        espButtonTitle: 'Reserva de Espacio Abierto Oakoasis en el Condado de San Diego',
         buttonImage: 'chaparral-explore-green-valley-button.jpg',
         bodyImages: [ { fileName: 'chaparral-explore-green-valley.jpg' } ],
-        order: 4,
-        bodyCopy: '<p> Start your morning wading beneath waterfall cascades and hiking alongside the Sweetwater River.  </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
-        espBodyCopy: '<p> Empieza tu mañana vadeando debajo de cascadas y haciendo una caminata a lo largo del Río Sweetwater.  </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+        order: 3,
+        bodyCopy: '<p> Hike up boulder-studded hillsides on this gentle trail, which leads to a spot overlooking the San Vicente Reservoir. </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Camina subiendo por laderas tachonadas de peñascos a lo largo de este sendero fácil de transitar que lleva a un sitio con vista al embalse San Vicente.  </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
         backgroundMapClass: 'map-chaparral-explore-green-valley',
+    });
+
+    Pages.insert({
+        colorPalate: colorPalate,
+        subPageType: 'explore',
+        link: 'iron-mountain',
+        componentId: chaparral,
+        parentId: chaparralExplore,
+        buttonTitle: 'Iron Mountain (Ellie Lane Loop Trail)',
+        espButtonTitle: 'Iron Mountain (Sendero del Circuito Ellie Lane)',
+        buttonImage: 'chaparral-explore-iron-mountain-button.jpg',
+        bodyImages: [ { fileName: 'chaparral-explore-iron-mountain.jpg' } ],
+        order: 4,
+        bodyCopy: '<p> Enjoy a challenging but rewarding hike through the chaparral and on up to the peak of Iron Mountain.</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
+        espBodyCopy: '<p>Disfruta de una caminata ardua pero gratificante por el chaparral y hasta la cima de Iron Mountain. </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+        websiteCall: 'For more information, visit:',
+        websiteCallEsp: 'Para más información, visita:',
+        websiteURL: 'sdnat.org/canyoneers',
+        backgroundMapClass: 'map-chaparral-explore-iron-mountain',
     });
 
     var chaparralScienceStories = Pages.insert({
@@ -172,43 +179,43 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     Pages.insert({
         colorPalate: colorPalate,
         subPageType: 'science',
-        link: 'melissa-stepek',
+        link: 'laura-kabes',
         componentId: chaparral,
         parentId: chaparralScienceStories,
-        buttonTitle: 'Melissa Stepek<br>Herpetologist',
+        buttonTitle: 'Laura Kabes<br>Herpetologist',
         espButtonTitle: 'Herpetóloga',
-        buttonImage: 'sci-stepek-melissa-button.jpg',
+        buttonImage: 'sci-kabes-laura-button.jpg',
         bodyImages: [
-            {fileName: 'sci-stepek-melissa.jpg'},
+            {fileName: 'sci-kabes-laura.jpg'},
         ],
         order: 1,
-        bodyCopy: '"Only one native semi-aquatic turtle can be found in California: the Western Pond Turtle. It dives deep into ponds to escape predators, feed, and regulate its body temperature. It lays eggs and nests on the land surrounding the pond."',
-        espBodyCopy: '"Hay sólo una tortuga nativa semi-acuática en California: la tortuga de charcos del Pacífico. Se sumerge profundamente dentro de estanques para escaparse de los predadores, para alimentarse y regular su temperatura corporal.  Pone sus huevos y anida sobre la tierra alrededor del estanque".',
-        backgroundMapClass: 'sci-chaparral-turtle',
-        backgroundCaption: 'Western Pond Turtle',
-        backgroundCaptionEsp: 'Tortuga de charcos del Pacífico',
-        backgroundCaptionLatin: 'Actinemys marmorata'
+        bodyCopy: '"I think Granite Night Lizards are the coolest lizards in San Diego County. You can find them in various habitats—but only in southern California and northern Baja California. They live in the tiniest cracks of granite boulders. And check out those eyes!"',
+        espBodyCopy: '"Yo creo que las lagartijas nocturnas de granito son las lagartijas más interesantes del condado de San Diego. Puedes encontrarlas en varios hábitats, pero únicamente en el sur de California y el norte de Baja California. Viven dentro de las grietas más pequeñas de las rocas de granito. ¡Y fíjate en esos ojos!".',
+        backgroundMapClass: 'sci-chaparral-lizard',
+        backgroundCaption: 'Granite Night Lizard',
+        backgroundCaptionEsp: 'Lagartija nocturna de granito',
+        backgroundCaptionLatin: 'Xantusia henshawi'
     });
 
     Pages.insert({
         colorPalate: colorPalate,
         subPageType: 'science',
-        link: 'kevin-clark',
+        link: 'drew-stokes',
         componentId: chaparral,
         parentId: chaparralScienceStories,
-        buttonTitle: 'Kevin Clark<br> Ecologist',
-        espButtonTitle: 'Ecologista',
-        buttonImage: 'sci-clark-kevin-button.jpg',
+        buttonTitle: 'Drew Stokes<br>Wildlife biologist',
+        espButtonTitle: 'Biólogo de vida silvestre',
+        buttonImage: 'sci-stokes-drew-button.jpg',
         bodyImages: [
-            {fileName: 'sci-clark-kevin.jpg'},
+            {fileName: 'sci-stokes-drew.jpg'},
         ],
         order: 2,
-        bodyCopy: '"The Yellow-billed Cuckoo is an amazing bird that each year travels more than 10,000 miles, round trip, from South America to the tall cottonwood riparian groves in California—and back again. Its breeding cycle is one of the fastest in the avian world: the chick leaves its nest in as soon as seven days after hatching."',
-        espBodyCopy: '"El cuclillo pico amarillo es un pájaro fascinante que viaja más de 10.000 millas cada año, ida y vuelta, desde Sudamérica hasta las altas arboledas ribereñas del álamo blanco en California—para repetir el viaje otra vez. Su ciclo de reproducción es uno de los más veloces en el mundo aviario: el polluelo deja su nido apenas siete días después de nacer."',
-        backgroundMapClass: 'sci-chaparral-cuckoo',
-        backgroundCaption: 'Yellow-billed Cuckoo',
-        backgroundCaptionEsp: 'Cuclillo pico amarillo',
-        backgroundCaptionLatin: 'Coccyzus americanus'
+        bodyCopy: '"The Western Mastiff Bat is so cool! It is North America’s largest bat species, with a wingspan of almost two feet. It is well adapted to southern California’s Mediterranean-like landscape, roosting deep in rock fractures in high, steep cliffs above the chaparral vegetation—where it is safe from wildfires."',
+        espBodyCopy: '"¡El murciélago con bonete mayor es tan interesante! Es la especie más grande de los murciélagos norteamericanos, con una envergadura de casi dos pies. Está bien adaptado al paisaje mediterráneao del sur de California, y se aposenta dentro de las rocas en profundas fracturas en acantilados altos y empinados sobre la vegetación del chaparral, donde encuentra resguardo de los incendios naturales".',
+        backgroundMapClass: 'sci-chaparral-bat',
+        backgroundCaption: 'Western Mastiff Bat',
+        backgroundCaptionEsp: 'Murciélago con bonete mayor',
+        backgroundCaptionLatin: 'Eumops perotis'
     });
 
 }
