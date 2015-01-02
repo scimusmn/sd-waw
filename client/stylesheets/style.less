@@ -314,6 +314,345 @@ a.btn:active {
  * Component and page specific styles
  * ----------------------------------------------------------------------------
  */
+
+
+
+
+
+
+.body-copy.where-is-it,
+.body-copy.where-is-it .btn-home,
+.body-copy.where-are-they,
+.body-copy.where-are-they .btn-home {
+  width: 600px;
+}
+
+.body-copy.tough-habitat,
+.body-copy.tough-habitat .btn-home {
+  width: 720px;
+}
+
+.body-copy.where-is-it img,
+.body-copy.where-are-they img {
+  width: 540px;
+}
+
+.body-copy.rare-tree {
+  font-size: 19px;
+  line-height: 22px;
+}
+.body-copy.rare-tree .esp {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.body-copy.rare-habitat,
+.body-copy.rare-habitat .btn-home {
+  width: 785px;
+}
+
+.body-copy.rare-habitat .body-images,
+.body-copy.tough-habitat .body-images,
+.subpage-page .body-images {
+  float: right;
+  margin-left: 20px;
+}
+
+.body-copy.tough-habitat .body-images img {
+ width: 310px;
+}
+
+.body-copy.rare-habitat .body-images img {
+  width: 305px;
+}
+
+// Inner epxlore pages
+.body-copy.subpage-page .body-images img {
+  width: 460px;
+}
+
+.body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img {
+  width: 450px;
+}
+
+.body-copy.subpage-page.drew-stokesbrwildlife-biologist,
+.body-copy.subpage-page.drew-stokesbrwildlife-biologist .btn-home {
+  width: 655px;
+}
+
+
+.body-copy.subpage-page.laura-kabesbrherpetologist,
+.body-copy.subpage-page.laura-kabesbrherpetologist .btn-home,
+.body-copy.subpage-page.drew-stokesbrwildlife-biologist,
+.body-copy.subpage-page.drew-stokesbrwildlife-biologist .btn-home {
+  width: 655px;
+}
+
+.body-copy.subpage-page.laura-kabesbrherpetologist .body-images img,
+.body-copy.subpage-page.drew-stokesbrwildlife-biologist .body-images img {
+  width: 360px;
+}
+
+.body-copy.subpage-page.crest-canyonbropen-space-park-preserve .body-images img,
+.body-copy.subpage-page.cabrillo-national-monumentbrbayside-trail .body-images img,
+.body-copy.subpage-page.black-mountain-open-space-parkbrminers-loop .body-images img,
+.body-copy.subpage-page.san-dieguito-river-parkbrcoast-to-crest-trail-–-del-mar .body-images img,
+.body-copy.subpage-page.los-peñasquitos-canyon-preservebrlopez-canyon .body-images img,
+.body-copy.subpage-page.tijuana-river-national-estuarine-research-reserve-north-beach-trail .body-images img,
+.body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img,
+.body-copy.subpage-page.palomar-mountain-state-park-thunder-springchimney-flats .body-images img,
+.body-copy.subpage-page.san-dieguito-river-park-old-coach-staging-area-–-coast-to-crest-trail .body-images img,
+.body-copy.subpage-page.cuyamaca-rancho-state-park-green-valley-falls-loop .body-images img,
+.body-copy.subpage-page.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .body-images img {
+  width: 410px;
+}
+
+.body-copy.subpage-page.michael-wallbrvice-president-of-research-and-public-programs .body-images img,
+.body-copy.subpage-page.susie-arterbrcodirector-of-zooarchaeology-lab .body-images img,
+.body-copy.subpage-page.jon-rebmanbrcurator-of-botany .body-images img {
+  width: 305px;
+}
+
+.body-copy.rare-habitat p {
+  width: 95%;
+}
+
+.body-copy.rare-climate-zone {
+  height: 327px;
+}
+
+.body-copy.rare-climate-zone,
+.body-copy.rare-climate-zone .btn-home {
+  width: @screen-width;
+}
+
+.body-copy.explore,
+.body-copy.explore .btn-home {
+  width: @screen-width;
+}
+
+/**
+ * Subpages
+ */
+
+.subpage-selector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: @screen-width;
+}
+
+.subpage-selector-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: lighten(@background-tan, 6%);
+  z-index: 1000;
+}
+
+.subpage-selector-header h3 {
+  margin: 20px;
+}
+
+.subpage-selector .btn-home,
+.subpage-selector-header {
+  width: @screen-width;
+}
+
+.subpage-selector-buttons {
+  margin: 117px 0 0 0;
+}
+
+.subpage-button {
+  float: left;
+  margin: 0;
+  background: lighten(@background-tan, 7%);
+  width: 342px;
+  /*box-sizing:border-box;*/
+  border-right: 2px solid #fff;
+  overflow: hidden;
+}
+
+.subpage-button-4 {
+  border-right: 0px;
+  width: 340px;
+}
+
+.map-stories + .subpage-selector .subpage-button {
+  width: 50%;
+}
+
+.subpage-button h4 {
+  margin: 15px;
+  height: 89px;
+  font-size: 20px;
+}
+
+.subpage-button h4 .esp {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.subpage-button .esp {
+  color: darken(@background-tan, 40%);
+  letter-spacing: 0.03em;
+}
+
+.subpage-button.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop h4,
+.subpage-button.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .esp {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.subpage-button.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .esp {
+  font-size: 17px;
+}
+
+.subpage-button.tijuana-river-national-estuarine-research-reserve-north-beach-trail .esp {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.susan-on-sehll-middens,
+.jon-on-shortleaved-dudleya {
+  width: 50%;
+}
+
+.susan-on-sehll-middens.subpage-button img,
+.jon-on-shortleaved-dudleya.subpage-button img {
+  width: 684px;
+  height: 520px;
+}
+
+.map-stories + .subpage-selector .subpage-button img {
+  width: 684px;
+  height: 496px;
+}
+
+.subpage-button-1 {
+  background: darken(@background-tan, 3%);
+  -webkit-animation-delay: 0.4s;
+}
+
+.subpage-button-2 {
+  background: lighten(@background-tan, 3%);
+  -webkit-animation-delay: 0.45s;
+}
+
+.subpage-button-3 {
+  background: lighten(@background-tan, 5%);
+  -webkit-animation-delay: 0.50s;
+}
+
+.subpage-button-4 {
+  background: lighten(@background-tan, 7%);
+  -webkit-animation-delay: 0.55s;
+}
+
+.subpage-page.body-copy,
+.subpage-page.body-copy .btn-home {
+  width: 775px;
+}
+
+.subpage-page.body-copy.lori-hargrovebrecologist,
+.subpage-page.body-copy.lori-hargrovebrecologist .btn-home {
+  width: 880px;
+}
+
+.subpage-page.body-copy.miners-loopbrblack-mountain-open-space-park,
+.subpage-page.body-copy.miners-loopbrblack-mountain-open-space-park .btn-home {
+  width: 800px;
+}
+
+.subpage-page.body-copy.coast-to-crest-trail-–-brdel-mar-san-dieguito-river-park,
+.subpage-page.body-copy.coast-to-crest-trail-–-brdel-mar-san-dieguito-river-park .btn-home {
+  width: 820px;
+}
+
+.subpage-page.body-copy.jon-rebmanbrcurator-of-botany,
+.subpage-page.body-copy.jon-rebmanbrcurator-of-botany .btn-home {
+  width: 570px;
+}
+
+.subpage-page.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab,
+.subpage-page.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab .btn-home {
+  width: 665px;
+}
+
+.body-copy.jon-on-shortleaved-dudleya .image {
+  float: left;
+  margin: 10px;
+}
+
+.body-copy.jon-on-shortleaved-dudleya img {
+  width: 350px;
+}
+
+.website-text {
+  margin-top: 25px;
+  background: darken(@background-tan, 3%);
+  padding: 10px 0;
+  clear: both;
+}
+
+.website-text .eng,
+.website-text .esp {
+  float: left;
+  margin: 0 0 10px 0;
+  padding: 0;
+  width: 45%;
+  font-size: 17px;
+}
+
+.website-text .eng {
+  text-align: right;
+  margin-right: 5%;
+}
+
+.website-text .esp {
+  margin-left: 5%;
+  text-align: left;
+}
+
+.website-text .url {
+  text-align: center;
+}
+
+.background-caption {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  left: auto;
+  right: 0px;
+  background: @background-tan;
+  margin: 0;
+  padding: 15px;
+}
+
+.background-caption .esp {
+  color: darken(@golden-spanish, 30%);
+  font-size: 19px;
+  margin-top: 25px;
+}
+
+.background-caption .latin {
+  font-size: 19px;
+  margin-top: 25px;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+/**
+ * Explore
+ */
 .map-explore,
 .map-stories {
   background-image: url("/images/map-base-human.jpg");
@@ -331,6 +670,12 @@ a.btn:active {
 .map-menu-natural {
   background-image: url("/images/map-base-natural.jpg");
 }
+
+
+
+
+
+
 
 /**
  * 0316 - Wetlands - Homepage buttons
@@ -925,332 +1270,6 @@ a.btn:active {
 .sci-mtn-woodpecker {
   background-image: url("/images/sci-hargrove-lori-woodpecker.jpg");
   background-position: right;
-}
-
-/**
- * Component and Page specific custom layouts
- */
-.body-copy.where-is-it,
-.body-copy.where-is-it .btn-home,
-.body-copy.where-are-they,
-.body-copy.where-are-they .btn-home {
-  width: 600px;
-}
-
-.body-copy.tough-habitat,
-.body-copy.tough-habitat .btn-home {
-  width: 720px;
-}
-
-.body-copy.where-is-it img,
-.body-copy.where-are-they img {
-  width: 540px;
-}
-
-.body-copy.rare-tree {
-  font-size: 19px;
-  line-height: 22px;
-}
-.body-copy.rare-tree .esp {
-  font-size: 17px;
-  line-height: 20px;
-}
-
-.body-copy.rare-habitat,
-.body-copy.rare-habitat .btn-home {
-  width: 785px;
-}
-
-.body-copy.rare-habitat .body-images,
-.body-copy.tough-habitat .body-images,
-.subpage-page .body-images {
-  float: right;
-  margin-left: 20px;
-}
-
-.body-copy.tough-habitat .body-images img {
- width: 310px;
-}
-
-.body-copy.rare-habitat .body-images img {
-  width: 305px;
-}
-
-// Inner epxlore pages
-.body-copy.subpage-page .body-images img {
-  width: 460px;
-}
-
-.body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img {
-  width: 450px;
-}
-
-.body-copy.subpage-page.drew-stokesbrwildlife-biologist,
-.body-copy.subpage-page.drew-stokesbrwildlife-biologist .btn-home {
-  width: 655px;
-}
-
-
-.body-copy.subpage-page.laura-kabesbrherpetologist,
-.body-copy.subpage-page.laura-kabesbrherpetologist .btn-home,
-.body-copy.subpage-page.drew-stokesbrwildlife-biologist,
-.body-copy.subpage-page.drew-stokesbrwildlife-biologist .btn-home {
-  width: 655px;
-}
-
-.body-copy.subpage-page.laura-kabesbrherpetologist .body-images img,
-.body-copy.subpage-page.drew-stokesbrwildlife-biologist .body-images img {
-  width: 360px;
-}
-
-.body-copy.subpage-page.crest-canyonbropen-space-park-preserve .body-images img,
-.body-copy.subpage-page.cabrillo-national-monumentbrbayside-trail .body-images img,
-.body-copy.subpage-page.black-mountain-open-space-parkbrminers-loop .body-images img,
-.body-copy.subpage-page.san-dieguito-river-parkbrcoast-to-crest-trail-–-del-mar .body-images img,
-.body-copy.subpage-page.los-peñasquitos-canyon-preservebrlopez-canyon .body-images img,
-.body-copy.subpage-page.tijuana-river-national-estuarine-research-reserve-north-beach-trail .body-images img,
-.body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img,
-.body-copy.subpage-page.palomar-mountain-state-park-thunder-springchimney-flats .body-images img,
-.body-copy.subpage-page.san-dieguito-river-park-old-coach-staging-area-–-coast-to-crest-trail .body-images img,
-.body-copy.subpage-page.cuyamaca-rancho-state-park-green-valley-falls-loop .body-images img,
-.body-copy.subpage-page.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .body-images img {
-  width: 410px;
-}
-
-.body-copy.subpage-page.michael-wallbrvice-president-of-research-and-public-programs .body-images img,
-.body-copy.subpage-page.susie-arterbrcodirector-of-zooarchaeology-lab .body-images img,
-.body-copy.subpage-page.jon-rebmanbrcurator-of-botany .body-images img {
-  width: 305px;
-}
-
-.body-copy.rare-habitat p {
-  width: 95%;
-}
-
-.body-copy.rare-climate-zone {
-  height: 327px;
-}
-
-.body-copy.rare-climate-zone,
-.body-copy.rare-climate-zone .btn-home {
-  width: @screen-width;
-}
-
-.body-copy.explore,
-.body-copy.explore .btn-home {
-  width: @screen-width;
-}
-
-/**
- * Subpages
- */
-
-.subpage-selector {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: @screen-width;
-}
-
-.subpage-selector-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  background: lighten(@background-tan, 6%);
-  z-index: 1000;
-}
-
-.subpage-selector-header h3 {
-  margin: 20px;
-}
-
-.subpage-selector .btn-home,
-.subpage-selector-header {
-  width: @screen-width;
-}
-
-.subpage-selector-buttons {
-  margin: 117px 0 0 0;
-}
-
-.subpage-button {
-  float: left;
-  margin: 0;
-  background: lighten(@background-tan, 7%);
-  width: 342px;
-  /*box-sizing:border-box;*/
-  border-right: 2px solid #fff;
-  overflow: hidden;
-}
-
-.subpage-button-4 {
-  border-right: 0px;
-  width: 340px;
-}
-
-.map-stories + .subpage-selector .subpage-button {
-  width: 50%;
-}
-
-.subpage-button h4 {
-  margin: 15px;
-  height: 89px;
-  font-size: 20px;
-}
-
-.subpage-button h4 .esp {
-  margin-top: 6px;
-  font-size: 18px;
-}
-
-.subpage-button .esp {
-  color: darken(@background-tan, 40%);
-  letter-spacing: 0.03em;
-}
-
-.subpage-button.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop h4,
-.subpage-button.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .esp {
-  font-size: 18px;
-  letter-spacing: 0;
-}
-
-.subpage-button.torrey-pines-state-natural-reservebrgonzales-canyon-–-torrey-pines-loop .esp {
-  font-size: 17px;
-}
-
-.subpage-button.tijuana-river-national-estuarine-research-reserve-north-beach-trail .esp {
-  font-size: 16px;
-  letter-spacing: 0;
-}
-
-.susan-on-sehll-middens,
-.jon-on-shortleaved-dudleya {
-  width: 50%;
-}
-
-.susan-on-sehll-middens.subpage-button img,
-.jon-on-shortleaved-dudleya.subpage-button img {
-  width: 684px;
-  height: 520px;
-}
-
-.map-stories + .subpage-selector .subpage-button img {
-  width: 684px;
-  height: 496px;
-}
-
-.subpage-button-1 {
-  background: darken(@background-tan, 3%);
-  -webkit-animation-delay: 0.4s;
-}
-
-.subpage-button-2 {
-  background: lighten(@background-tan, 3%);
-  -webkit-animation-delay: 0.45s;
-}
-
-.subpage-button-3 {
-  background: lighten(@background-tan, 5%);
-  -webkit-animation-delay: 0.50s;
-}
-
-.subpage-button-4 {
-  background: lighten(@background-tan, 7%);
-  -webkit-animation-delay: 0.55s;
-}
-
-.subpage-page.body-copy,
-.subpage-page.body-copy .btn-home {
-  width: 775px;
-}
-
-.subpage-page.body-copy.lori-hargrovebrecologist,
-.subpage-page.body-copy.lori-hargrovebrecologist .btn-home {
-  width: 880px;
-}
-
-.subpage-page.body-copy.miners-loopbrblack-mountain-open-space-park,
-.subpage-page.body-copy.miners-loopbrblack-mountain-open-space-park .btn-home {
-  width: 800px;
-}
-
-.subpage-page.body-copy.coast-to-crest-trail-–-brdel-mar-san-dieguito-river-park,
-.subpage-page.body-copy.coast-to-crest-trail-–-brdel-mar-san-dieguito-river-park .btn-home {
-  width: 820px;
-}
-
-.subpage-page.body-copy.jon-rebmanbrcurator-of-botany,
-.subpage-page.body-copy.jon-rebmanbrcurator-of-botany .btn-home {
-  width: 570px;
-}
-
-.subpage-page.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab,
-.subpage-page.body-copy.susie-arterbrcodirector-of-zooarchaeology-lab .btn-home {
-  width: 665px;
-}
-
-.body-copy.jon-on-shortleaved-dudleya .image {
-  float: left;
-  margin: 10px;
-}
-
-.body-copy.jon-on-shortleaved-dudleya img {
-  width: 350px;
-}
-
-.website-text {
-  margin-top: 25px;
-  background: darken(@background-tan, 3%);
-  padding: 10px 0;
-  clear: both;
-}
-
-.website-text .eng,
-.website-text .esp {
-  float: left;
-  margin: 0 0 10px 0;
-  padding: 0;
-  width: 45%;
-  font-size: 17px;
-}
-
-.website-text .eng {
-  text-align: right;
-  margin-right: 5%;
-}
-
-.website-text .esp {
-  margin-left: 5%;
-  text-align: left;
-}
-
-.website-text .url {
-  text-align: center;
-}
-
-.background-caption {
-  position: absolute;
-  top: auto;
-  bottom: 0px;
-  left: auto;
-  right: 0px;
-  background: @background-tan;
-  margin: 0;
-  padding: 15px;
-}
-
-.background-caption .esp {
-  color: darken(@golden-spanish, 30%);
-  font-size: 19px;
-  margin-top: 25px;
-}
-
-.background-caption .latin {
-  font-size: 19px;
-  margin-top: 25px;
-  font-style: italic;
 }
 
 /**
