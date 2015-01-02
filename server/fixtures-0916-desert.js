@@ -10,7 +10,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
 
     var desert = Components.insert({
         colorPalate: colorPalate,
-        link: 'wetlands',
+        link: 'desert',
         title: 'The Colorado Desert',
         titleEsp: 'El Desierto del Colorado',
         componentNum: '0916',
