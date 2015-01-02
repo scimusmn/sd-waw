@@ -74,7 +74,134 @@ body {
 
 /**
  * ----------------------------------------------------------------------------
- * Page specific background maps
+ * Global text styles
+ * ----------------------------------------------------------------------------
+ */
+body {
+  // This is what they want for style and visibility.
+  // It just might be too much for the ammount of copy that they have
+  /*font-family: 'FuturaTS-Medium', sans-serif;*/
+  // This works better.
+  font-family: 'FuturaTS-Regular', sans-serif;
+  font-size: @body-font-size;
+  line-height: @body-line-height;
+}
+
+h1, h2, h3 {
+  font-family: 'FuturaTS-Demibold', sans-serif;
+  margin-top: 0;
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * Home screen
+ * ----------------------------------------------------------------------------
+ */
+.welcome-title {
+  z-index: 2000;
+  font-family: 'FuturaTS-Medium';
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  color: white;
+  width: 550px;
+}
+
+.welcome-title .eng {
+  font-size: @welcome-font-size;
+  letter-spacing: @welcome-font-letter-spacing;
+}
+
+.welcome-title .esp {
+  color: lighten(@golden-spanish, 10%);
+  font-size: @welcome-font-size-esp;
+  margin-top: 25px;
+  letter-spacing: @welcome-font-letter-spacing-esp;
+}
+
+.welcome-title {
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.4), 
+    0px 6px 13px rgba(0,0,0,0.1), 
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.embossed {
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+/**
+ * Home screen primary footer navigation
+ */
+.menu-footer {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  width: 800px;
+  padding-left: 11px;
+}
+
+.menu-footer .btn {
+  font-family: 'FuturaTS-Light', sans-serif;
+  float: left;
+  white-space: normal;
+  width: 263px;
+  height: 100px;
+  margin: 0;
+  padding: 20px 10px 10px 15px;
+  text-align: left;
+  font-size: @menu-font-size;
+  border: none;
+  border-radius:0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu-footer .btn .esp {
+  color: lighten(@golden-spanish, 10%);
+  font-size: @menu-font-size-esp;
+  margin-top: 10px;
+  line-height: 47px;
+}
+
+.postcard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.jaunt-left-02 {
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.jaunt-right-02 {
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Safari and Chrome */
+  -o-transform: rotate(2deg); /* Opera */
+  -moz-transform: rotate(2deg); /* Firefox */
+  -webkit-backface-visibility: hidden;
+}
+
+.postcard-border {
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+  background: white;
+}
+
+.postcard-shadow {
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * Component and page specific styles
  * ----------------------------------------------------------------------------
  */
 .map-explore,
@@ -96,43 +223,46 @@ body {
 }
 
 /**
- * Torrey Pines
+ * 0316 - Wetlands - Homepage buttons
  */
-.map-tp-park {
-  background-image: url("/images/tp-park-map.png");
+.wetlands .buttons .btn,
+.wetlands .buttons .btn:hover {
+  color: white;
 }
 
-.map-tp-extent {
-  background-image: url("/images/tp-species-extent-map.png");
+.wetlands .buttons .btn-1 {
+  background: darken(@wetlands-blue, 5%);
+  padding-left: 36px;
 }
 
-.map-tp-floristic {
-  background-image: url("/images/tp-floristic-map.png");
+.wetlands .buttons .btn-2 {
+  background: darken(@wetlands-blue, 7%);
 }
 
-.map-tp-med {
-  background-image: url("/images/tp-med-map.png");
-  background-position: right 0;
+.wetlands .buttons .btn-3 {
+  background: darken(@wetlands-blue, 9%);
 }
 
-.map-tp-explore-tp {
-  background-image: url("/images/tp-explore-tp-map.png");
+.wetlands .buttons .btn-4 {
+  background: darken(@wetlands-blue, 11%);
+  padding-left: 36px;
 }
 
-.map-tp-explore-crest {
-  background-image: url("/images/tp-explore-crest-map.png");
+.wetlands .buttons .btn-5 {
+  background: darken(@wetlands-blue, 13%);
 }
 
-.map-tp-explore-bayside {
-  background-image: url("/images/tp-explore-bayside-map.png");
+.wetlands .buttons .btn-6 {
+  background: darken(@wetlands-blue, 15%);
 }
 
-.map-tp-explore-miners {
-  background-image: url("/images/tp-explore-miners-map.png");
+.wetlands .btn-home,
+.wetlands .btn-home:hover {
+  background: darken(@wetlands-blue, 15%);
 }
 
 /**
- * Wetlands
+ * 0316 - Wetlands - Background images
  */
 .map-wet-where {
   background-image: url("/images/wet-where-map.png");
@@ -162,108 +292,6 @@ body {
   background-image: url("/images/wet-migration-map.png");
 }
 
-/**
- * Canyons
- */
-.map-can-where {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-can-our {
-  background-image: url("/images/can-our-map.png");
-}
-
-/**
- * Streams
- */
-.map-streams-where {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-streams-watersheds {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-streams-aquifers {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-streams-explore-la {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-streams-explore-blue-sky {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-streams-explore-old-coach {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-streams-explore-green-valley {
-  background-image: url("/images/can-where-map.png");
-}
-
-.sci-streams-turtle {
-  background-image: url("/images/sci-stepek-melissa-turtle.jpg");
-  background-position: right;
-}
-
-.sci-streams-cuckoo {
-  background-image: url("/images/sci-clark-kevin-cuckoo.jpg");
-  background-position: right;
-}
-
-/**
- * Chapparal
- */
-.map-chaparral-where {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-chaparral-tough-habitat {
-  background-image: url("/images/can-where-map.png");
-}
-
-.sci-chaparral-lizard {
-  background-image: url("/images/sci-kabes-laura-lizard.jpg");
-  background-position: right;
-}
-
-.sci-chaparral-bat {
-  background-image: url("/images/sci-stokes-drew-bat.jpg");
-  background-position: right;
-}
-
-/**
- * Mountains
- */
-.map-mtn-where {
-  background-image: url("/images/can-where-map.png");
-}
-
-.map-mtn-our {
-  background-image: url("/images/can-our-map.png");
-}
-
-/**
- * Torrey Pines
- */
-.sci-tp-midden,
-.sci-tp-flower {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-postion: right;
-}
-
-.sci-tp-midden {
-  background-image: url("/images/sci-arter-susie-midden.jpg");
-}
-
-.sci-tp-flower {
-  background-image: url("/images/sci-rebman-jon-flower.jpg");
-}
-
 .sci-wet-marsh {
   background-image: url("/images/sci-rebman-jon-dodder.jpg");
   background-position: right;
@@ -274,31 +302,25 @@ body {
   background-position: right;
 }
 
-.sci-can-bees {
-  background-image: url("/images/sci-wall-michael-bees.jpg");
-  background-position: right;
-}
-
-.sci-can-weasel {
-  background-image: url("/images/sci-tremor-scott-weasel.jpg");
-  background-position: right;
-}
-
-.sci-can-spider {
-  background-image: url("/images/sci-berrian-jim-spider.jpg");
-  background-position: right;
-}
-
-.sci-mtn-woodpecker {
-  background-image: url("/images/sci-hargrove-lori-woodpecker.jpg");
-  background-position: right;
-}
-
 .map-wet-then-now {
   background-image: url("/images/tp-explore-miners-map.png");
 }
 
+/**
+ * 0316 - Wetlands - Custom page and image dimensions
+ */
+.body-copy.our-wetlands {
+  height: 229px;
+}
 
+.body-copy.our-wetlands,
+.body-copy.our-wetlands .btn-home {
+  width: @screen-width;
+}
+
+/**
+ * 0316 - Wetlands - Background compare slider
+ */
 .before-after-slider {
   position: relative;
   width: @screen-width;
@@ -341,9 +363,7 @@ body {
 }
 
 /**
- * ----------------------------------------------------------------------------
- * Map markers
- * ----------------------------------------------------------------------------
+ * 0316 - Wetlands - Map markers
  */
 .marker {
   width: @screen-width;
@@ -381,7 +401,7 @@ body {
 }
 
 /**
- * fadeMarkerOut
+ * 0316 - Wetlands - Map marker animations
  */
 @-webkit-keyframes fadeMarkerOut {
   0% {
@@ -398,9 +418,6 @@ body {
   animation-name: fadeMarkerOut;
 }
 
-/**
- * fadeMarkerIn
- */
 @-webkit-keyframes fadeMarkerIn {
   0% {
     opacity: .5;
@@ -414,6 +431,248 @@ body {
 .fadeMarkerIn {
   -webkit-animation-name: fadeMarkerIn;
   animation-name: fadeMarkerIn;
+}
+
+/**
+ * 0416 - Torrey Pines - Home page buttons
+ */
+.torrey-pines .buttons .btn-1 {
+  background: darken(@torrey-pines-buttons, 5%);
+  padding-left: 26px;
+}
+
+.torrey-pines .buttons .btn-2 {
+  background: darken(@torrey-pines-buttons, 7%);
+}
+
+.torrey-pines .buttons .btn-3 {
+  background: darken(@torrey-pines-buttons, 9%);
+}
+
+.torrey-pines .buttons .btn-4 {
+  background: darken(@torrey-pines-buttons, 11%);
+  padding-left: 26px;
+}
+
+.torrey-pines .buttons .btn-5 {
+  background: darken(@torrey-pines-buttons, 13%);
+}
+
+.torrey-pines .buttons .btn-6 {
+  background: darken(@torrey-pines-buttons, 15%);
+}
+
+.torrey-pines .buttons .btn,
+.torrey-pines .buttons .btn:hover {
+  color: white;
+}
+
+.torrey-pines .btn-home,
+.torrey-pines .btn-home:hover {
+  background: darken(@torrey-pines-buttons, 15%);
+}
+
+/**
+ * 0416 - Torrey Pines - Background images
+ */
+.map-tp-park {
+  background-image: url("/images/tp-park-map.png");
+}
+
+.map-tp-extent {
+  background-image: url("/images/tp-species-extent-map.png");
+}
+
+.map-tp-floristic {
+  background-image: url("/images/tp-floristic-map.png");
+}
+
+.map-tp-med {
+  background-image: url("/images/tp-med-map.png");
+  background-position: right 0;
+}
+
+.map-tp-explore-tp {
+  background-image: url("/images/tp-explore-tp-map.png");
+}
+
+.map-tp-explore-crest {
+  background-image: url("/images/tp-explore-crest-map.png");
+}
+
+.map-tp-explore-bayside {
+  background-image: url("/images/tp-explore-bayside-map.png");
+}
+
+.map-tp-explore-miners {
+  background-image: url("/images/tp-explore-miners-map.png");
+}
+
+.sci-tp-midden,
+.sci-tp-flower {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-postion: right;
+}
+
+.sci-tp-midden {
+  background-image: url("/images/sci-arter-susie-midden.jpg");
+}
+
+.sci-tp-flower {
+  background-image: url("/images/sci-rebman-jon-flower.jpg");
+}
+
+
+.susie-arterbrcodirector-of-zooarchaeology-lab + .background-caption {
+  width: 34%;
+  height: 80px;
+}
+
+.jon-rebmanbrcurator-of-botany + .background-caption {
+  width: 100px;
+  height: 120px;
+}
+
+/**
+ * 0516 - Canyons - Background images
+ */
+.map-can-where {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-can-our {
+  background-image: url("/images/can-our-map.png");
+}
+
+.sci-can-bees {
+  background-image: url("/images/sci-wall-michael-bees.jpg");
+  background-position: right;
+}
+
+.sci-can-weasel {
+  background-image: url("/images/sci-tremor-scott-weasel.jpg");
+  background-position: right;
+}
+
+.sci-can-spider {
+  background-image: url("/images/sci-berrian-jim-spider.jpg");
+  background-position: right;
+}
+
+/**
+ * 0616 - Streams - Background images
+ */
+.map-streams-where {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-streams-watersheds {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-streams-aquifers {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-streams-explore-la {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-streams-explore-blue-sky {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-streams-explore-old-coach {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-streams-explore-green-valley {
+  background-image: url("/images/can-where-map.png");
+}
+
+.sci-streams-turtle {
+  background-image: url("/images/sci-stepek-melissa-turtle.jpg");
+  background-position: right;
+}
+
+.sci-streams-cuckoo {
+  background-image: url("/images/sci-clark-kevin-cuckoo.jpg");
+  background-position: right;
+}
+
+/**
+ * 0704 - Chapparal - Background images
+ */
+.map-chaparral-where {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-chaparral-tough-habitat {
+  background-image: url("/images/can-where-map.png");
+}
+
+.sci-chaparral-lizard {
+  background-image: url("/images/sci-kabes-laura-lizard.jpg");
+  background-position: right;
+}
+
+.sci-chaparral-bat {
+  background-image: url("/images/sci-stokes-drew-bat.jpg");
+  background-position: right;
+}
+
+/**
+ * 0816 - Mountains - Homepage buttons
+ */
+.mountains .buttons .btn,
+.mountains .buttons .btn:hover {
+  color: white;
+}
+
+.mountains .buttons .btn-1 {
+  background: lighten(@mountains-blue, 5%);
+  padding-left: 36px;
+}
+
+.mountains .buttons .btn-2 {
+  background: lighten(@mountains-blue, 7%);
+}
+
+.mountains .buttons .btn-3 {
+  background: lighten(@mountains-blue, 9%);
+}
+
+.mountains .buttons .btn-4 {
+  background: lighten(@mountains-blue, 11%);
+  padding-left: 36px;
+  width: 394px;
+}
+
+.mountains .buttons .btn-5 {
+  background: lighten(@mountains-blue, 13%);
+  width: 395px;
+}
+
+.mountains .btn-home,
+.mountains .btn-home:hover {
+  background: lighten(@mountains-blue, 15%);
+}
+
+/**
+ * 0816 - Mountains - Background images
+ */
+.map-mtn-where {
+  background-image: url("/images/can-where-map.png");
+}
+
+.map-mtn-our {
+  background-image: url("/images/can-our-map.png");
+}
+
+.sci-mtn-woodpecker {
+  background-image: url("/images/sci-hargrove-lori-woodpecker.jpg");
+  background-position: right;
 }
 
 /**
@@ -456,21 +715,10 @@ body {
   }
 }
 
-/*@keyframes clickDown {*/
-  /*0%, 50%, 100% {*/
-    /*opacity: 1;*/
-  /*}*/
-
-  /*25%, 75% {*/
-    /*opacity: 0;*/
-  /*}*/
-/*}*/
-
 .clickDown {
   -webkit-animation-name: clickDown;
   animation-name: clickDown;
 }
-
 
 /**
  * Zoom in big
@@ -605,106 +853,6 @@ body {
 }
 
 /**
- * ----------------------------------------------------------------------------
- * Global text styles
- * ----------------------------------------------------------------------------
- */
-body {
-  // This is what they want for style and visibility.
-  // It just might be too much for the ammount of copy that they have
-  /*font-family: 'FuturaTS-Medium', sans-serif;*/
-  // This works better.
-  font-family: 'FuturaTS-Regular', sans-serif;
-  font-size: @body-font-size;
-  line-height: @body-line-height;
-}
-
-h1, h2, h3 {
-  font-family: 'FuturaTS-Demibold', sans-serif;
-  margin-top: 0;
-}
-
-.welcome-title {
-  z-index: 2000;
-  font-family: 'FuturaTS-Medium';
-  position: absolute;
-  left: 25px;
-  bottom: 25px;
-  color: white;
-  width: 550px;
-}
-
-.welcome-title .eng {
-  font-size: @welcome-font-size;
-  letter-spacing: @welcome-font-letter-spacing;
-}
-
-.welcome-title .esp {
-  color: lighten(@golden-spanish, 10%);
-  font-size: @welcome-font-size-esp;
-  margin-top: 25px;
-  letter-spacing: @welcome-font-letter-spacing-esp;
-}
-
-/**
- * Several text shadows
- */
-.welcome-title {
-  text-shadow: 0px 3px 3px rgba(0,0,0,0.4), 
-    0px 6px 13px rgba(0,0,0,0.1), 
-    0px 18px 23px rgba(0,0,0,0.1);
-}
-
-/**
- * Embossed text style
- */
-.embossed {
-  color: rgba(0,0,0,0.6);
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-}
-
-/**
- * ----------------------------------------------------------------------------
- * Home screen
- * ----------------------------------------------------------------------------
- */
-
-/**
- * Home screen primary footer navigation
- */
-.menu-footer {
-  position: absolute;
-  top: auto;
-  left: auto;
-  right: 0;
-  bottom: 0;
-  width: 800px;
-  padding-left: 11px;
-}
-
-.menu-footer .btn {
-  font-family: 'FuturaTS-Light', sans-serif;
-  float: left;
-  white-space: normal;
-  width: 263px;
-  height: 100px;
-  margin: 0;
-  padding: 20px 10px 10px 15px;
-  text-align: left;
-  font-size: @menu-font-size;
-  border: none;
-  border-radius:0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.menu-footer .btn .esp {
-  color: lighten(@golden-spanish, 10%);
-  font-size: @menu-font-size-esp;
-  margin-top: 10px;
-  line-height: 47px;
-}
-
-/**
  * Component specific button styles
  *
  * Each component features a different color scheme, the navigation buttons
@@ -725,94 +873,6 @@ a.btn:active {
 /*.menu-footer .btn {*/
   /*text-align: center;*/
 /*}*/
-
-/**
- * When there are less than 6 buttons, we need to fill in the background, but
- * this messes up the animation in of the buttons. So I need to do some work
- * still to figure out how to handle this.
- */
-/*.wetlands .menu-footer {*/
-  /*background: darken(@wetlands-blue, 5%);*/
-/*}*/
-
-/**
- * Torrey Pines
- */
-
-.torrey-pines .buttons .btn-1 {
-  background: darken(@torrey-pines-buttons, 5%);
-  padding-left: 26px;
-}
-
-.torrey-pines .buttons .btn-2 {
-  background: darken(@torrey-pines-buttons, 7%);
-}
-
-.torrey-pines .buttons .btn-3 {
-  background: darken(@torrey-pines-buttons, 9%);
-}
-
-.torrey-pines .buttons .btn-4 {
-  background: darken(@torrey-pines-buttons, 11%);
-  padding-left: 26px;
-}
-
-.torrey-pines .buttons .btn-5 {
-  background: darken(@torrey-pines-buttons, 13%);
-}
-
-.torrey-pines .buttons .btn-6 {
-  background: darken(@torrey-pines-buttons, 15%);
-}
-
-.torrey-pines .buttons .btn,
-.torrey-pines .buttons .btn:hover {
-  color: white;
-}
-
-.torrey-pines .btn-home,
-.torrey-pines .btn-home:hover {
-  background: darken(@torrey-pines-buttons, 15%);
-}
-
-/**
- * Wetlands
- */
-.wetlands .buttons .btn,
-.wetlands .buttons .btn:hover {
-  color: white;
-}
-
-.wetlands .buttons .btn-1 {
-  background: darken(@wetlands-blue, 5%);
-  padding-left: 36px;
-}
-
-.wetlands .buttons .btn-2 {
-  background: darken(@wetlands-blue, 7%);
-}
-
-.wetlands .buttons .btn-3 {
-  background: darken(@wetlands-blue, 9%);
-}
-
-.wetlands .buttons .btn-4 {
-  background: darken(@wetlands-blue, 11%);
-  padding-left: 36px;
-}
-
-.wetlands .buttons .btn-5 {
-  background: darken(@wetlands-blue, 13%);
-}
-
-.wetlands .buttons .btn-6 {
-  background: darken(@wetlands-blue, 15%);
-}
-
-.wetlands .btn-home,
-.wetlands .btn-home:hover {
-  background: darken(@wetlands-blue, 15%);
-}
 
 /**
  * Canyons
@@ -851,42 +911,6 @@ a.btn:active {
   background: darken(@torrey-pines-green-darker, 15%);
 }
 
-/**
- * Mountains
- */
-.mountains .buttons .btn,
-.mountains .buttons .btn:hover {
-  color: white;
-}
-
-.mountains .buttons .btn-1 {
-  background: lighten(@mountains-blue, 5%);
-  padding-left: 36px;
-}
-
-.mountains .buttons .btn-2 {
-  background: lighten(@mountains-blue, 7%);
-}
-
-.mountains .buttons .btn-3 {
-  background: lighten(@mountains-blue, 9%);
-}
-
-.mountains .buttons .btn-4 {
-  background: lighten(@mountains-blue, 11%);
-  padding-left: 36px;
-  width: 394px;
-}
-
-.mountains .buttons .btn-5 {
-  background: lighten(@mountains-blue, 13%);
-  width: 395px;
-}
-
-.mountains .btn-home,
-.mountains .btn-home:hover {
-  background: lighten(@mountains-blue, 15%);
-}
 
 /**
  * Streams
@@ -953,10 +977,13 @@ a.btn:active {
 
 .chaparral .buttons .btn-5 {
   background: darken(@mountains-blue, 6%);
+  padding-left: 36px;
+  width: 394px;
 }
 
 .chaparral .buttons .btn-6 {
   background: darken(@mountains-blue, 7%);
+  width: 395px;
 }
 
 .chaparral .btn-home,
@@ -1200,15 +1227,6 @@ a.btn:active {
   width: @screen-width;
 }
 
-.body-copy.our-wetlands {
-  height: 229px;
-}
-
-.body-copy.our-wetlands,
-.body-copy.our-wetlands .btn-home {
-  width: @screen-width;
-}
-
 /**
  * Subpages
  */
@@ -1409,16 +1427,6 @@ a.btn:active {
   padding: 15px;
 }
 
-.susie-arterbrcodirector-of-zooarchaeology-lab + .background-caption {
-  width: 34%;
-  height: 80px;
-}
-
-.jon-rebmanbrcurator-of-botany + .background-caption {
-  width: 100px;
-  height: 120px;
-}
-
 .background-caption .esp {
   color: darken(@golden-spanish, 30%);
   font-size: 19px;
@@ -1469,42 +1477,6 @@ a.btn:active {
 
 .brighter {
   -webkit-filter: brightness(1.5);
-}
-
-/**
- * Images
- */
-.postcard {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.jaunt-left-02 {
-  -webkit-transform: rotate(-2deg);
-      -ms-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-}
-
-.jaunt-right-02 {
-  transform: rotate(2deg);
-  -ms-transform: rotate(2deg); /* IE 9 */
-  -webkit-transform: rotate(2deg); /* Safari and Chrome */
-  -o-transform: rotate(2deg); /* Opera */
-  -moz-transform: rotate(2deg); /* Firefox */
-  -webkit-backface-visibility: hidden;
-}
-
-.postcard-border {
-  border-right: 10px solid white;
-  border-top: 10px solid white;
-  background: white;
-}
-
-.postcard-shadow {
-  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
-          box-shadow: 2px 2px 20px @shadow-grey;
 }
 
 /**
