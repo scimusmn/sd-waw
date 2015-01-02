@@ -315,11 +315,9 @@ a.btn:active {
  * ----------------------------------------------------------------------------
  */
 
-
-
-
-
-
+/**
+ * Page type - Where is is?
+ */
 .body-copy.where-is-it,
 .body-copy.where-is-it .btn-home,
 .body-copy.where-are-they,
@@ -327,49 +325,16 @@ a.btn:active {
   width: 600px;
 }
 
-.body-copy.tough-habitat,
-.body-copy.tough-habitat .btn-home {
-  width: 720px;
-}
-
 .body-copy.where-is-it img,
 .body-copy.where-are-they img {
   width: 540px;
 }
 
-.body-copy.rare-tree {
-  font-size: 19px;
-  line-height: 22px;
-}
-.body-copy.rare-tree .esp {
-  font-size: 17px;
-  line-height: 20px;
-}
-
-.body-copy.rare-habitat,
-.body-copy.rare-habitat .btn-home {
-  width: 785px;
-}
-
-.body-copy.rare-habitat .body-images,
-.body-copy.tough-habitat .body-images,
-.subpage-page .body-images {
-  float: right;
-  margin-left: 20px;
-}
-
-.body-copy.tough-habitat .body-images img {
- width: 310px;
-}
 
 .body-copy.rare-habitat .body-images img {
   width: 305px;
 }
 
-// Inner epxlore pages
-.body-copy.subpage-page .body-images img {
-  width: 460px;
-}
 
 .body-copy.subpage-page.cuyamaca-rancho-state-park-stonewall-peak .body-images img {
   width: 450px;
@@ -590,6 +555,42 @@ a.btn:active {
   width: 350px;
 }
 
+
+
+
+
+
+
+
+/**
+ * Explore
+ */
+.map-explore,
+.map-stories {
+  background-image: url("/images/map-base-human.jpg");
+  -webkit-filter: blur(4px) grayscale(60%);
+  padding: 5px * 2;
+  top: -(5px * 2);
+  left: -(5px * 2);
+}
+
+.map-menu {
+  background-image: url("/images/map-base-human.jpg");
+}
+
+.map-menu.natural,
+.map-menu-natural {
+  background-image: url("/images/map-base-natural.jpg");
+}
+
+// Explore subpages
+.body-copy.subpage-page .body-images img {
+  width: 460px;
+}
+
+/**
+ * Explore website callouts
+ */
 .website-text {
   margin-top: 25px;
   background: darken(@background-tan, 3%);
@@ -620,6 +621,11 @@ a.btn:active {
   text-align: center;
 }
 
+/**
+ * Background image captions
+ * 
+ * Primarily used on scientist features
+ */
 .background-caption {
   position: absolute;
   top: auto;
@@ -642,36 +648,6 @@ a.btn:active {
   margin-top: 25px;
   font-style: italic;
 }
-
-
-
-
-
-
-
-
-/**
- * Explore
- */
-.map-explore,
-.map-stories {
-  background-image: url("/images/map-base-human.jpg");
-  -webkit-filter: blur(4px) grayscale(60%);
-  padding: 5px * 2;
-  top: -(5px * 2);
-  left: -(5px * 2);
-}
-
-.map-menu {
-  background-image: url("/images/map-base-human.jpg");
-}
-
-.map-menu.natural,
-.map-menu-natural {
-  background-image: url("/images/map-base-natural.jpg");
-}
-
-
 
 
 
