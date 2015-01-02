@@ -216,6 +216,60 @@ a.btn:active {
 
 /**
  * ----------------------------------------------------------------------------
+ * Inner page - layout and dimensions
+ * ----------------------------------------------------------------------------
+ */
+.btn-home,
+.btn-home:hover {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 35px;
+  padding: 10px 0 10px 0;
+  color: lighten(@background-tan, 12%);
+  text-align: center;
+}
+
+.body-copy,
+.body-copy .btn-home {
+  width: 543px;
+}
+
+.body-copy {
+  position: absolute;
+  background: lighten(@background-tan, 6%);
+  bottom: 0;
+  left: 0;
+  padding: 1em 1.5em 1.5em 1.5em;
+  height: 100%;
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+.body-copy .image {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.body-copy .credit {
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  color: rgba(255, 255, 255, .5);
+  font-family: 'FuturaTS-Light', sans-serif;
+  font-size: 8px;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: 100% 0;
+}
+
+.body-copy .caption {
+  font-family: 'FuturaTS-Light', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/**
+ * ----------------------------------------------------------------------------
  * Component and page specific styles
  * ----------------------------------------------------------------------------
  */
@@ -806,64 +860,7 @@ a.btn:active {
   background-position: right;
 }
 
-/**
- * ----------------------------------------------------------------------------
- * Inner pages
- * ----------------------------------------------------------------------------
- */
 
-.body-copy {
-  position: absolute;
-  background: lighten(@background-tan, 6%);
-  bottom: 0;
-  left: 0;
-  padding: 1em 1.5em 1.5em 1.5em;
-  height: 100%;
-  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
-          box-shadow: 2px 2px 20px @shadow-grey;
-}
-
-.body-copy .image {
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.map-can-where+.body-copy img {
-  width: 480px;
-}
-
-.body-copy .credit {
-  top: 10px;
-  right: 15px;
-  position: absolute;
-  color: rgba(255, 255, 255, .5);
-  font-family: 'FuturaTS-Light', sans-serif;
-  font-size: 8px;
-  -webkit-transform: rotate(-90deg);
-  -webkit-transform-origin: 100% 0;
-}
-
-.body-copy .caption {
-  font-family: 'FuturaTS-Light', sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.body-copy,
-.body-copy .btn-home {
-  width: 543px;
-}
-
-.btn-home,
-.btn-home:hover {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  font-size: 35px;
-  padding: 10px 0 10px 0;
-  color: lighten(@background-tan, 12%);
-  text-align: center;
-}
 
 /**
  * Inner page text
