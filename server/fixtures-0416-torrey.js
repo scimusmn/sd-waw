@@ -43,7 +43,12 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: '<p>El pino Torrey se encuentra en sólo dos lugares:  La Reserva Natural Estatal de Torrey Pines y en la Isla de Santa Rosa.</p><p>Hay dos variedades distintas de pinos Torrey; cada una existe en un solo lugar, lo cual hace que este árbol de la costa de San Diego sea aun más especial.</p>',
         backgroundMapClass: 'map-tp-extent',
         bodyImages: [
-            {fileName: 'tp-tree-rare.jpg', imageCredit: '' },
+            {
+                fileName: 'tp-tree-rare.jpg',
+                imageCaption: 'Torrey Pine',
+                imageCaptionEsp: 'Pino de Torrey',
+                imageCaptionLatin: 'Pinus torreyana ssp. torreyana'
+            }
         ],
     });
 
