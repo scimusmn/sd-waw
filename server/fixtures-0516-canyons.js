@@ -77,7 +77,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         link: 'placerita',
         buttonTitle: 'Placerita Canyon<br>State Park',
         espButtonTitle: 'Parque Estatal<br>Placerita Canyon',
-        buttonImage: 'can-explore-placerita.jpg',
+        buttonImage: 'can-explore-placerita-1.jpg',
         bodyImages: [
             {fileName: 'can-explore-placerita-full.jpg'},
         ],
@@ -98,7 +98,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         link: 'gonzales',
         buttonTitle: 'Torrey Pines State Natural Reserve<br>(Gonzales Canyon – Torrey Pines Loop)',
         espButtonTitle: 'Reserva Estatal Natural Torrey Pines<br>(Gonzalez Canyon – Circuito Torrey Pines)',
-        buttonImage: 'can-explore-gonzales.jpg',
+        buttonImage: 'can-explore-gonzales-1.jpg',
         bodyImages: [
             {fileName: 'can-explore-gonzales-full.jpg'},
         ],
@@ -119,7 +119,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         link: 'lopez',
         buttonTitle: 'Los Peñasquitos Canyon Preserve<br>(Lopez Canyon)',
         espButtonTitle: 'Reserva Los Peñasquitos Canyon<br>(Lopez Canyon)',
-        buttonImage: 'can-explore-lopez.jpg',
+        buttonImage: 'can-explore-lopez-1.jpg',
         bodyImages: [
             {fileName: 'can-explore-lopez-full.jpg'},
         ],
@@ -140,7 +140,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         link: 'florida',
         buttonTitle: 'Florida Canyon',
         espButtonTitle: 'Florida Canyon',
-        buttonImage: 'can-explore-florida.jpg',
+        buttonImage: 'can-explore-florida-1.jpg',
         bodyImages: [
             {fileName: 'can-explore-florida-full.jpg'},
         ],
