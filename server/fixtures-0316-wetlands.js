@@ -171,7 +171,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: 'Visita la Reserva Ecológica Bolsa Chica para conocer de cerca la marisma de agua salada más grande del sur de California.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'TBD',
+        websiteURL: 'parks.ca.gov',
         backgroundMapClass: 'map-wet-explore-bolsa',
     });
 

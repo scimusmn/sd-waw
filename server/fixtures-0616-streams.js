@@ -89,7 +89,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: 'Visita el Parque Estatal Río de Los Ángeles, donde las riberas del río están siendo restauradas para crear un escape de la ciudad sereno y natural.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'TBD',
+        websiteURL: 'parks.ca.gov',
         backgroundMapClass: 'map-streams-explore-la',
     });
 

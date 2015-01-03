@@ -102,7 +102,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: 'Visita el Parque Nacional Joshua Tree, donde puedes pasar el día escalando formaciones rocosas o disfrutando de una caminata tranquila entre los árboles espinosos y extraños que llevan el nombre de Joshua Tree.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'TBD',
+        websiteURL: 'parks.ca.gov',
         backgroundMapClass: 'map-desert-explore-joshua',
     });
 

@@ -95,7 +95,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: 'Visita al Parque Estatal de la Montaña Palomar y disfruta de una vista panorámica del sur de California que abarca desde el océano hasta el desierto.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'TBD',
+        websiteURL: 'parks.ca.gov',
         backgroundMapClass: 'map-wet-explore-bolsa',
     });
 

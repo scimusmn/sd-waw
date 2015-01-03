@@ -106,7 +106,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: 'Visita el Parque Estatal Chino Hills para dar una caminata de día o pasar la noche entre los hábitats de chaparral y matorral costero de salvia.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
-        websiteURL: 'TBD',
+        websiteURL: 'parks.ca.gov',
         backgroundMapClass: 'map-chaparral-explore-chino-hills',
     });
 
