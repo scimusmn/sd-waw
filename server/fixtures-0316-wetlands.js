@@ -229,7 +229,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         bodyImages: [
             {fileName: 'wet-explore-northbeach-full.jpg'},
         ],
-        order: 3,
+        order: 4,
         bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
         espBodyCopy: '<p>Disfruta de la brisa marina y camina a lo largo de uno de los pocos estuarios costeros que quedan en el sur de California.</p><p>Únete a los Canyoneers para caminatas guiadas en el sur de California.</p>',
         websiteCall: 'For more information, visit:',
