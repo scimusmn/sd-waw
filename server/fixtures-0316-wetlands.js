@@ -97,7 +97,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'The Pacific Flyway',
         espButtonTitle: 'La ruta migratoria del Pacífico',
         order: 4,
-        bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway–a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Meet some of the birds that travel the Pacific Flyway.</p>',
+        bodyCopy: '<p>Each year more than a billion birds use the Pacific Flyway—a series of wetlands along North America’s west coast–on the migratory journey between their seasonal northern and southern homes.</p><p>Meet some of the birds that travel the Pacific Flyway.</p>',
         espBodyCopy: '<p>Cada año más de mil millones de pájaros usan la ruta migratoria del Pacífico, una serie de marismas a lo largo de la costa oeste de Norteamérica, durante el viaje migratorio entre sus hogares norteños y sureños según la temporada.</p><p>Conoce a algunos de los pájaros que viajan a lo largo de la ruta migratoria del Pacífico.</p>',
         markers: [
             {
@@ -277,8 +277,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         parentId: wetScienceStories,
         subPageType: 'science',
         link: 'phil-unitt',
-        buttonTitle: 'Phil Unitt<br>curator of birds and mammals',
-        espButtonTitle: 'curador de pájaros y mamíferos ',
+        buttonTitle: 'Phil Unitt<br>Curator of birds and mammals',
+        espButtonTitle: 'Curador de pájaros y mamíferos ',
         buttonImage: 'sci-unitt-phill-button.jpg',
         bodyImages: [
             {fileName: 'sci-unitt-phill-full.jpg', imageCredit: '', imageCaption: '' },
