@@ -605,7 +605,7 @@ a.btn:active {
  * 0316 - Wetlands - Background images
  */
 .map-wet-where {
-  background-image: url("/images/wet-where-map-v03.png");
+  background-image: url("/images/wet-where-map-v07.png");
 }
 
 .map-wet-wetlands {
@@ -613,19 +613,19 @@ a.btn:active {
 }
 
 .map-wet-explore-bolsa {
-  background-image: url("/images/wet-explore-bolsa-map.png");
+  background-image: url("/images/wet-wetlands-explore-bolsa-v03.png");
 }
 
 .map-wet-explore-elijo {
-  background-image: url("/images/wet-explore-elijo-map.png");
+  background-image: url("/images/wet-explore-elijo-map-v01.png");
 }
 
 .map-wet-explore-delmar {
-  background-image: url("/images/wet-explore-delmar-map.png");
+  background-image: url("/images/wet-explore-delmar-map-v01.png");
 }
 
 .map-wet-explore-northbeach {
-  background-image: url("/images/wet-explore-northbeach-map.png");
+  background-image: url("/images/wet-explore-northbeach-map-v01.png");
 }
 
 .map-wet-migration {
@@ -741,11 +741,14 @@ a.btn:active {
   text-align: center;
   font-size: 30px;
   opacity: 0;
+  background: #fff;
+  padding: 10px;
+  z-index: 99999;
 }
 
 .marker canvas {
   pointer-events: none;
-  opacity: .5;
+  opacity: .2;
 }
 
 .marker-dot .marker-order {
@@ -783,6 +786,7 @@ a.btn:active {
 .fadeMarkerIn {
   -webkit-animation-name: fadeMarkerIn;
   animation-name: fadeMarkerIn;
+  -vendor-animation-duration: .5s;
 }
 
 /**

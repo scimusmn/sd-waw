@@ -128,12 +128,14 @@ Template.page.rendered = function() {
          */
         $(this).siblings('.marker-order').css({
             'left' : (centerX - 20) + 'px',
-            'top' : (centerY - 20) + 'px'
+            'top' : (centerY - 18) + 'px'
         });
         var markerLabel = $(this).siblings('.marker-label')
-        var labelY = parseInt(centerY) + 20;
+        var labelY = parseInt(centerY) - 24;
+        //var labelY = parseInt(centerY) + 20;
         $(this).siblings('.marker-label').css({
-            'left' : (centerX - (markerLabel.width() / 2)) + 'px',
+            'left' : (centerX - (markerLabel.width()) - 35 ) + 'px',
+            //'left' : (centerX - (markerLabel.width() / 2)) + 'px',
             'top' : labelY + 'px',
         });
 
