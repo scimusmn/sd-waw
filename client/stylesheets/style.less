@@ -99,6 +99,7 @@ a.btn:active {
 }
 
 /* Spanish text */
+.marker-pop-up .esp,
 .body-copy .esp,
 .subpage-selector h3 .esp {
   color: darken(@golden-spanish, 40%);
@@ -230,6 +231,8 @@ a.btn:active {
  * Inner page - layout and dimensions
  * ----------------------------------------------------------------------------
  */
+.btn-close,
+.btn-close:hover,
 .btn-home,
 .btn-home:hover {
   position: absolute;
@@ -596,9 +599,15 @@ a.btn:active {
   background: darken(@wetlands-blue, 15%);
 }
 
+.wetlands .btn-close,
+.wetlands .btn-close:hover,
 .wetlands .btn-home,
 .wetlands .btn-home:hover {
   background: darken(@wetlands-blue, 15%);
+}
+
+.wetlands .btn-close {
+  width: 530px;
 }
 
 /**
@@ -717,6 +726,12 @@ a.btn:active {
 /**
  * 0316 - Wetlands - Map markers
  */
+.marker-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .marker {
   width: @screen-width;
   height: @screen-height;
@@ -724,6 +739,10 @@ a.btn:active {
   top: 0;
   left: 0;
   pointer-events: none;
+}
+
+.marker .marker-number {
+  font-size: 25px;
 }
 
 .marker .marker-order {
@@ -743,7 +762,7 @@ a.btn:active {
   opacity: 0;
   background: #fff;
   padding: 10px;
-  z-index: 99999;
+  z-index: 100;
 }
 
 .marker canvas {
@@ -753,6 +772,42 @@ a.btn:active {
 
 .marker-dot .marker-order {
   pointer-events: visible;
+}
+
+.marker-circle-active {
+  stroke: #FFF;
+}
+
+.marker-pop-up {
+  pointer-events: none;
+  opacity: 0;
+  background: lighten(@background-tan, 6%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 530px;
+  height: 768px;
+  padding: 30px;
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
+}
+
+.popActive {
+  pointer-events: all;
+}
+
+.marker-pop-up img {
+  width: 470px;
+}
+
+.marker-pop-up .caption {
+  position: relative;
+  margin-top: -77px;
+  margin-bottom: 10px;
+  left: 0;
+  background: #FFF;
+  width: 175px;
+  padding: 10px;
 }
 
 /**

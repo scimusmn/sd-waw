@@ -2,7 +2,7 @@ Template.page.rendered = function() {
     /**
      * Display the mouse position for dev marker placement
      */
-    $(".wetlands").click(function(e){
+    $('.wetlands').click(function(e){
         var parentOffset = $(this).parent().offset();
         var relX = e.pageX - parentOffset.left;
         $('.mouse-x').text(relX);
@@ -29,13 +29,81 @@ Template.page.rendered = function() {
     $('h3').css('animation-duration', '500ms');
 
     /**
+     * SVG Markers for Pacific Flyway
+     */
+    var selector = '.map-wet-migration .marker-svg';
+    if ($(selector).length) {
+        var svgWidth = 1366;
+        var svgHeight = 768;
+        var svg = d3.select(selector)
+            .append('svg')
+            .attr('width', svgWidth)
+            .attr('height', svgHeight);
+    }
+    $(selector).each(function(index, element) {
+
+        var centerX = $(this).data('dot-left');
+        var centerY = $(this).data('dot-top');
+        var arrowX = $(this).data('arrow-left');
+        var arrowY = $(this).data('arrow-top');
+        var markerNumber = $(this).data('marker-number');
+
+        var lineGroup = svg.append('g');
+
+        var lineData = [ { 'x': centerX, 'y': centerY }, { 'x': arrowX,  'y': arrowY} ];
+
+        var lineFunction = d3.svg.line()
+            .x(function(d) { return d.x; })
+            .y(function(d) { return d.y; })
+            .interpolate('linear');
+
+        // Pointer line
+        var lineGraph = lineGroup.append('path')
+            .attr('d', lineFunction(lineData))
+            .attr('stroke', '#527193')
+            .attr('stroke-width', 4)
+            .attr('fill', 'none');
+
+        // Marker
+        svg
+            .append('circle')
+            .attr('r', 20)
+            .attr('fill', '#FFF')
+            .attr('stroke', '#527193')
+            .attr('stroke-width', 4)
+            .attr('class', 'marker-circle marker-circle-' + markerNumber)
+            .attr('cx', centerX)
+            .attr('cy', centerY);
+
+        // Text
+        svg
+            .append('svg:text')
+            .attr('x', centerX - 6)
+            .attr('y', centerY + 8)
+            .attr('class', 'marker-numbers')
+            .text(markerNumber);
+
+        svg
+            .append('circle')
+            .attr('r', 50)
+            .attr('fill', 'transparent')
+            //.attr('stroke', '#527193')
+            //.attr('stroke-width', 4)
+            .attr('class', 'marker-click-area')
+            .attr('data-marker-number', markerNumber)
+            .attr('cx', centerX)
+            .attr('cy', centerY);
+
+    });
+
+    /**
      * Then/Now slider for comparison pages
      */
     if ($('.map-wet-then-now').length) {
         /**
          * Starting handle position
          */
-        $(".top-image").css('width', '75%');
+        $('.top-image').css('width', '75%');
         var canvasHeight = $('#handle').height();
         var canvasWidth = $('#handle').width();
         var canvasLeft = ((1366 / 4) * 3) - (canvasWidth / 2);
@@ -43,14 +111,14 @@ Template.page.rendered = function() {
         $('#handle').css('top', canvasTop + 'px');
         $('#handle').css('left',  canvasLeft + 'px');
 
-        $(".before-after-slider").mousemove(
+        $('.before-after-slider').mousemove(
             function(e) {
             // get the mouse x (horizontal) position and offset of the div
             var offset =  $(this).offset();
             var iTopWidth = (e.pageX - offset.left);
 
             // set width of bottomimage div
-            $(this).find(".top-image").width(iTopWidth);
+            $(this).find('.top-image').width(iTopWidth);
             $('#handle').css('left', iTopWidth - (canvasWidth / 2));
         }
         );
@@ -146,6 +214,32 @@ Template.page.events({
     /**
      * Custom actions for page links
      */
+    'mousedown .marker-pop-up .btn-close': function(e) {
+        $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
+        var item = d3.selectAll('.marker-circle');
+        item.style('fill', '#FFF');
+        item.style('stroke', '#527193');
+        item.style('stroke-width', 4);
+    },
+
+    'mousedown .marker-svg circle.marker-click-area': function(e) {
+        var item;
+        var clicked = e.target;
+
+        var clickedImage  = $(e.currentTarget).data('marker-number');
+        $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
+        $('.marker-pop-up.' + clickedImage ).removeClass('fadeOutLeft popActive').addClass('animated fadeInLeft popActive');
+        item = d3.selectAll('.marker-circle');
+        item.style('fill', '#FFF');
+        item.style('stroke', '#527193');
+        item.style('stroke-width', 4);
+
+        item = d3.selectAll('.marker-circle-' + clickedImage);
+        item.style('fill', '#527193');
+        item.style('stroke', '#FFF');
+        item.style('stroke-width', 4);
+
+    },
     'mousedown .marker-order': function(e) {
         e.preventDefault();
         clicked = e.target;

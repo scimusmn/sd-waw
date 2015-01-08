@@ -25,26 +25,38 @@
       <!--<div class="mouse-y"></div>-->
       <!--<div class="mouse-x"></div>-->
 
+      {{#if markers}}
+        <!-- Display map markers, if they exist -->
+        <div class="markers {{backgroundMapClass}}">
+          {{#each markers}}
+
+
+          <div class="marker-svg {{this.order}}"
+            data-dot-left={{this.dotLeft}}
+            data-dot-top={{this.dotTop}}
+            data-arrow-left={{this.arrowLeft}}
+            data-arrow-top={{this.arrowTop}}
+            data-marker-number={{this.order}}
+            >
+          </div>
+
+            <!--<div class="marker">-->
+              <!--<canvas id="{{lowerSpacesToDashes this.label}}"-->
+                <!--dot-left="{{this.dotLeft}}"-->
+                <!--dot-top="{{this.dotTop}}"-->
+                <!--arrow-left="{{this.arrowLeft}}"-->
+                <!--arrow-top="{{this.arrowTop}}"-->
+                <!--width="1366" height="768">-->
+              <!--</canvas>-->
+              <!--<div class="marker-order">{{this.order}}</div>-->
+              <!--<div class="marker-label {{lowerSpacesToDashes this.label}}-label">{{this.label}}</div>-->
+            <!--</div>-->
+          {{/each}}
+        </div>
+      {{/if}}
+
     </div>
 
-    {{#if markers}}
-      <!-- Display map markers, if they exist -->
-      <div class="markers">
-        {{#each markers}}
-          <div class="marker">
-            <canvas id="{{lowerSpacesToDashes this.label}}"
-              dot-left="{{this.dotLeft}}"
-              dot-top="{{this.dotTop}}"
-              arrow-left="{{this.arrowLeft}}"
-              arrow-top="{{this.arrowTop}}"
-              width="1366" height="768">
-            </canvas>
-            <div class="marker-order">{{this.order}}</div>
-            <div class="marker-label {{lowerSpacesToDashes this.label}}-label">{{this.label}}</div>
-          </div>
-        {{/each}}
-      </div>
-    {{/if}}
 
     {{#unless subPages}}
 
@@ -88,6 +100,27 @@
           <a class="btn-home">
             <span class="glyphicon glyphicon-home"></span>
           </a>
+
+          {{#each markers}}
+            <div class="marker-pop-up {{this.order}}">
+
+              <img src="/images/{{markerImage}}">
+
+              <div class="caption">
+                {{this.label}}<br>
+                <span class="esp">{{this.labelEs}}</span><br>
+                <span class="latin">{{this.labelLat}}</span>
+              </div>
+
+              <div class="body-text">
+                <p class="eng">{{{this.bodyCopy}}}</p>
+                <p class="esp">{{{this.espBodyCopy}}}</p>
+              </div>
+              <div class='btn-close'>
+                <span class="glyphicon glyphicon-remove"></span>
+              </div>
+            </div>
+          {{/each}}
           <!-- /Vertical layout -->
 
         {{else}}

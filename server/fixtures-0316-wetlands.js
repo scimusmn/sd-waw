@@ -110,7 +110,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 arrowLeft: '841',
                 arrowTop: '162',
                 bodyCopy: 'After nesting in Alaska, Black-bellied Plovers migrate south on the Pacific Flyway to winter in southern California.',
-                espBodyCopy: 'Después de anidar en Alaska, el chorlo gris migra hacia el sur por la ruta migratoria del Pacífico para pasar el invierno en el sur de California.'
+                espBodyCopy: 'Después de anidar en Alaska, el chorlo gris migra hacia el sur por la ruta migratoria del Pacífico para pasar el invierno en el sur de California.',
+                markerImage: 'wet-plover.jpg'
             },
 
             {
@@ -123,7 +124,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 arrowLeft: '1004',
                 arrowTop: '254',
                 bodyCopy: 'Western Sandpipers endure long journeys between their northern breeding grounds in Alaska and winter homes in the lower 48 states, Mexico, Central and South America.',
-                espBodyCopy: 'El playero occidental resiste largos viajes entre su área de apareamiento norteña en Alaska y su hogar del sur en los cuarenta y ocho estados continentales, México, Centroamérica y Sudamérica.'
+                espBodyCopy: 'El playero occidental resiste largos viajes entre su área de apareamiento norteña en Alaska y su hogar del sur en los cuarenta y ocho estados continentales, México, Centroamérica y Sudamérica.',
+                markerImage: 'wet-sandpiper.jpg'
             },
 
             {
@@ -136,7 +138,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 arrowLeft: '1060',
                 arrowTop: '356',
                 bodyCopy: 'Immediately after nesting, Marbled Godwits migrate to the west coast to feed in our wetlands—escaping the cold winter in the northern Great Plains months before it arrives.',
-                espBodyCopy: 'Inmediatamente después de anidar, el picopando canelo migra a la costa oeste para buscar alimento en nuestras marismas; de esta manera se escapa meses antes de la llegada del frío invierno en las Grandes Llanuras del norte.'
+                espBodyCopy: 'Inmediatamente después de anidar, el picopando canelo migra a la costa oeste para buscar alimento en nuestras marismas; de esta manera se escapa meses antes de la llegada del frío invierno en las Grandes Llanuras del norte.',
+                markerImage: 'wet-godwit.jpg'
             }
         ],
         backgroundMapClass: 'map-wet-migration',
