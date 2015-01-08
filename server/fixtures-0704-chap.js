@@ -188,9 +188,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Laura Kabes<br>Herpetologist',
         espButtonTitle: 'Herpetóloga',
         buttonImage: 'sci-kabes-laura-button.jpg',
-        bodyImages: [
-            {fileName: 'sci-kabes-laura.jpg'},
-        ],
+        bodyImages: [ {fileName: 'sci-kabes-laura.jpg'} ],
         order: 1,
         bodyCopy: '"I think Granite Night Lizards are the coolest lizards in San Diego County. You can find them in various habitats—but only in southern California and northern Baja California. They live in the tiniest cracks of granite boulders. And check out those eyes!"',
         espBodyCopy: '"Yo creo que las lagartijas nocturnas de granito son las lagartijas más interesantes del condado de San Diego. Puedes encontrarlas en varios hábitats, pero únicamente en el sur de California y el norte de Baja California. Viven dentro de las grietas más pequeñas de las rocas de granito. ¡Y fíjate en esos ojos!".',
@@ -209,9 +207,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Drew Stokes<br>Wildlife biologist',
         espButtonTitle: 'Biólogo de vida silvestre',
         buttonImage: 'sci-stokes-drew-button.jpg',
-        bodyImages: [
-            {fileName: 'sci-stokes-drew.jpg'},
-        ],
+        bodyImages: [ {fileName: 'sci-stokes-drew.jpg'} ],
         order: 2,
         bodyCopy: '"The Western Mastiff Bat is so cool! It is North America’s largest bat species, with a wingspan of almost two feet. It is well adapted to southern California’s Mediterranean-like landscape, roosting deep in rock fractures in high, steep cliffs above the chaparral vegetation—where it is safe from wildfires."',
         espBodyCopy: '"¡El murciélago con bonete mayor es tan interesante! Es la especie más grande de los murciélagos norteamericanos, con una envergadura de casi dos pies. Está bien adaptado al paisaje mediterráneao del sur de California, y se aposenta dentro de las rocas en profundas fracturas en acantilados altos y empinados sobre la vegetación del chaparral, donde encuentra resguardo de los incendios naturales".',
