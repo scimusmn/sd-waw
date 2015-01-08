@@ -63,8 +63,18 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: '<p>La Reserva Natural Estatal de Torrey Pines es<br>uno de los últimos lugares que quedan donde puedes ver el hábitat del matorral costero de salvia.</p><p>Las plantas del matorral costero de salvia son generalmente de hojas suaves y aromáticas. Frecuentemente puedes encontrar aquí<br>el chamizo y el nopal.</p>',
         backgroundMapClass: 'map-tp-floristic',
         bodyImages: [
-            {fileName: 'tp-habitat-sagebrush.png', imageCredit: '', imageCaption: 'California Sagebrush', imageCaptionEsp: 'Chamizo', imageCaptionLatin: 'Artemisia californica'},
-            {fileName: 'tp-habitat-cactus.png', imageCredit: '', imageCaption: 'Coast Prickly-pear', imageCaptionEsp: 'Nopal', imageCaptionLatin: 'Opuntia littoralis'}
+            {
+                fileName: 'tp-habitat-sagebrush.png',
+                imageCaption: 'California Sagebrush',
+                imageCaptionEsp: 'Chamizo',
+                imageCaptionLatin: 'Artemisia californica'
+            },
+            {
+                fileName: 'tp-habitat-cactus.png',
+                imageCaption: 'Coast Prickly-pear',
+                imageCaptionEsp: 'Nopal',
+                imageCaptionLatin: 'Opuntia littoralis'
+            }
         ],
     });
 
