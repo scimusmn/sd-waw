@@ -33,9 +33,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         bodyCopy: 'There are eight major rivers running through southern California. A network of streams and creeks feeds these rivers.',
         espBodyCopy: 'Hay ocho ríos importantes que fluyen a través del sur de California. Una red de arroyos y riachuelos alimenta estos ríos.',
         backgroundMapClass: 'map-streams-where',
-        bodyImages: [
-            {fileName: 'streams-where.jpg'},
-        ],
+        bodyImages: [ {fileName: 'streams-where.jpg'} ],
     });
 
     Pages.insert({
@@ -171,9 +169,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Melissa Stepek<br>Herpetologist',
         espButtonTitle: 'Herpetóloga',
         buttonImage: 'sci-stepek-melissa-button.jpg',
-        bodyImages: [
-            {fileName: 'sci-stepek-melissa.jpg'},
-        ],
+        bodyImages: [ {fileName: 'sci-stepek-melissa.jpg'} ],
         order: 1,
         bodyCopy: '"Only one native semi-aquatic turtle can be found in California: the Western Pond Turtle. It dives deep into ponds to escape predators, feed, and regulate its body temperature. It lays eggs and nests on the land surrounding the pond."',
         espBodyCopy: '"Hay sólo una tortuga nativa semi-acuática en California: la tortuga de charcos del Pacífico. Se sumerge profundamente dentro de estanques para escaparse de los predadores, para alimentarse y regular su temperatura corporal.  Pone sus huevos y anida sobre la tierra alrededor del estanque".',
@@ -192,9 +188,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Kevin Clark<br> Ecologist',
         espButtonTitle: 'Ecologista',
         buttonImage: 'sci-clark-kevin-button.jpg',
-        bodyImages: [
-            {fileName: 'sci-clark-kevin.jpg'},
-        ],
+        bodyImages: [ {fileName: 'sci-clark-kevin.jpg'} ],
         order: 2,
         bodyCopy: '"The Yellow-billed Cuckoo is an amazing bird that each year travels more than 10,000 miles, round trip, from South America to the tall cottonwood riparian groves in California—and back again. Its breeding cycle is one of the fastest in the avian world: the chick leaves its nest in as soon as seven days after hatching."',
         espBodyCopy: '"El cuclillo pico amarillo es un pájaro fascinante que viaja más de 10.000 millas cada año, ida y vuelta, desde Sudamérica hasta las altas arboledas ribereñas del álamo blanco en California—para repetir el viaje otra vez. Su ciclo de reproducción es uno de los más veloces en el mundo aviario: el polluelo deja su nido apenas siete días después de nacer."',
