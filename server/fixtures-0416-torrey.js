@@ -199,7 +199,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Co-directora del laboratorio de arqueología zoológica',
         buttonImage: 'sci-arter-susie-button.jpg',
         bodyImages: [
-            {fileName: 'sci-arter-susie-full.jpg', imageCredit: '', imageCaption: '' },
+            {fileName: 'sci-arter-susie-full.jpg'},
         ],
         order: 1,
         bodyCopy: '"Native people came to the<br>area that is now Torrey Pines State Natural Reserve long before Europeans arrived in California. Archaeologists have identified mounds of seafood shells, various stone tools, and numerous fire hearths that may have been used to roast plant foods and remove pine nuts from Torrey Pine cones."',
@@ -219,7 +219,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Curador de botánica',
         buttonImage: 'sci-rebman-jon-button.jpg',
         bodyImages: [
-            {fileName: 'sci-rebman-jon-full.jpg', imageCredit: '', imageCaption: '' },
+            {fileName: 'sci-rebman-jon-full.jpg'},
         ],
         order: 2,
         bodyCopy: '"Some people might call the Coast Prickly-pear the ‘Venus flytrap of the West.’ But instead of eating the bugs that land on it, the flower surrounds the bugs with its pollen-covered stamens so that the insects can transport more pollen to other flowers and help the plant reproduce."',
