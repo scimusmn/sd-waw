@@ -40,6 +40,7 @@ Template.page.rendered = function() {
             .attr('width', svgWidth)
             .attr('height', svgHeight);
     }
+
     $(selector).each(function(index, element) {
 
         var centerX = $(this).data('dot-left');
@@ -151,6 +152,8 @@ Template.page.rendered = function() {
     /**
      * Map markers
      */
+    if($('.map-wet-wetlands').length) {
+
     $('.marker canvas').each(function(index, element) {
         var context = element.getContext('2d');
         var strokeWidth = 2;
@@ -208,6 +211,7 @@ Template.page.rendered = function() {
         });
 
     });
+    }
 };
 
 Template.page.events({
