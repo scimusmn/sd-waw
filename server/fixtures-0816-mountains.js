@@ -38,17 +38,17 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         ],
     });
 
-    Pages.insert({
-        colorPalate: colorPalate,
-        componentId: mountains,
-        link: 'our-mountains',
-        buttonTitle: 'Our mountains',
-        espButtonTitle: 'Nuestras montañas',
-        order: 2,
-        bodyCopy: 'Southern California has several hundred mountain peaks, including San Gorgonio Mountain, which rises to 11,503 feet.',
-        espBodyCopy: 'El sur de California tiene varios centenares de cumbres, incluyendo la montaña San Gorgonio, que tiene una elevación de 11.503 pies.',
-        backgroundMapClass: 'map-mtn-our',
-    });
+    //Pages.insert({
+        //colorPalate: colorPalate,
+        //componentId: mountains,
+        //link: 'our-mountains',
+        //buttonTitle: 'Our mountains',
+        //espButtonTitle: 'Nuestras montañas',
+        //order: 2,
+        //bodyCopy: 'Southern California has several hundred mountain peaks, including San Gorgonio Mountain, which rises to 11,503 feet.',
+        //espBodyCopy: 'El sur de California tiene varios centenares de cumbres, incluyendo la montaña San Gorgonio, que tiene una elevación de 11.503 pies.',
+        //backgroundMapClass: 'map-mtn-our',
+    //});
 
     Pages.insert({
         colorPalate: colorPalate,
@@ -57,12 +57,13 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Rare habitat',
         espButtonTitle: 'Hábitat inusual',
         order: 4,
+        bodyCopyLayout: 'horizontal',
         bodyCopy: '<p>Our highest mountain peaks—the coolest and wettest areas of southern California—are home to some of the last conifer forests in the region.</p><p>Move the slider to compare southern California elevations to conifer forest locations.</p>',
-        espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>TBD</p>',
+        espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>Mueva el control deslizante para comparar las elevaciones del sur de California a coníferas lugares forestales.</p>',
         backgroundMapClass: 'map-wet-then-now',
-        bottomImage: 'mtn-compare-elevation-01.png',
+        bottomImage: 'mtn-compare-elevation-01-v03.png',
         bottomImageLabel: 'Low elevation',
-        topImage: 'mtn-compare-elevation-02.png',
+        topImage: 'mtn-compare-elevation-02-v03.png',
         topImageLabel: 'High elevation',
     });
 
@@ -96,7 +97,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'parks.ca.gov',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-mtn-explore-palomar',
     });
 
     Pages.insert({
@@ -117,7 +118,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-mtn-explore-stonewall',
     });
 
     Pages.insert({
@@ -138,7 +139,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-mtn-explore-volcan',
     });
 
     Pages.insert({
@@ -159,7 +160,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-mtn-explore-thunder',
     });
 
     var mtnScienceStories = Pages.insert({
