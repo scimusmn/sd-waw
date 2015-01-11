@@ -732,11 +732,29 @@ a.btn:active {
 /**
  * 0316 - Wetlands - Map markers
  */
+
 .marker-svg {
   position: absolute;
   top: 0;
   left: 0;
 }
+
+.marker-line {
+  stroke: #527193;
+  stroke-width: 4;
+  fill: none;
+}
+
+.map-wet-wetlands .marker-line {
+  stroke-width: 2;
+}
+
+.map-wet-wetlands .marker-circle {
+  fill: #FFF;
+  stroke: #527193;
+  stroke-width: 2;
+}
+
 
 .marker {
   width: @screen-width;
@@ -749,6 +767,7 @@ a.btn:active {
 
 .marker .marker-number {
   font-size: 25px;
+  text-align: center;
 }
 
 .marker .marker-order {

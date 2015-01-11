@@ -31,7 +31,14 @@ Template.page.rendered = function() {
     /**
      * SVG Markers for Pacific Flyway
      */
-    var selector = '.map-wet-migration .marker-svg';
+    var selector;
+    if ($('.map-wet-migration').length) {
+        selector = '.map-wet-migration .marker-svg';
+    }
+    else if ($('.map-wet-wetlands')){
+        selector = '.map-wet-wetlands .marker-svg';
+    }
+
     if ($(selector).length) {
         var svgWidth = 1366;
         var svgHeight = 768;
@@ -41,47 +48,54 @@ Template.page.rendered = function() {
             .attr('height', svgHeight);
     }
 
-    $(selector).each(function(index, element) {
+    $(selector).each(function() {
 
+        // Get data about the marker from the DOM
         var centerX = $(this).data('dot-left');
         var centerY = $(this).data('dot-top');
         var arrowX = $(this).data('arrow-left');
         var arrowY = $(this).data('arrow-top');
         var markerNumber = $(this).data('marker-number');
 
+        // Marker group
         var lineGroup = svg.append('g');
 
+        // Pointer line
         var lineData = [ { 'x': centerX, 'y': centerY }, { 'x': arrowX,  'y': arrowY} ];
-
         var lineFunction = d3.svg.line()
             .x(function(d) { return d.x; })
             .y(function(d) { return d.y; })
             .interpolate('linear');
-
-        // Pointer line
-        var lineGraph = lineGroup.append('path')
+        lineGroup.append('path')
             .attr('d', lineFunction(lineData))
-            .attr('stroke', '#527193')
-            .attr('stroke-width', 4)
-            .attr('fill', 'none');
+            .attr('class', 'marker-line');
 
         // Marker
         svg
             .append('circle')
             .attr('r', 20)
-            .attr('fill', '#FFF')
-            .attr('stroke', '#527193')
-            .attr('stroke-width', 4)
             .attr('class', 'marker-circle marker-circle-' + markerNumber)
             .attr('cx', centerX)
             .attr('cy', centerY);
 
         // Text
+        var textX;
+        var textY;
+        // One digit
+        if (markerNumber.toString().length < 2) {
+            textX = centerX - 6;
+            textY = (centerY + 8);
+        }
+        // Two digits
+        else {
+            textX = centerX - 12;
+            textY = (centerY + 8);
+        }
         svg
             .append('svg:text')
-            .attr('x', centerX - 6)
-            .attr('y', centerY + 8)
             .attr('class', 'marker-numbers')
+            .attr('x', textX)
+            .attr('y', textY)
             .text(markerNumber);
 
         svg
@@ -101,6 +115,16 @@ Template.page.rendered = function() {
      * Then/Now slider for comparison pages
      */
     if ($('.map-wet-then-now').length) {
+        selector = '.map-wet-migration .marker-svg';
+        if ($(selector).length) {
+            var svgWidth = 1366;
+            var svgHeight = 768;
+            var svg = d3.select(selector)
+                .append('svg')
+                .attr('width', svgWidth)
+                .attr('height', svgHeight);
+        }
+
         /**
          * Starting handle position
          */
@@ -152,11 +176,11 @@ Template.page.rendered = function() {
     /**
      * Map markers
      */
-    if($('.map-wet-wetlands').length) {
+    //if($('.map-wet-wetlands').length) {
 
-    $('.marker canvas').each(function(index, element) {
-        var context = element.getContext('2d');
-        var strokeWidth = 2;
+    //$('.marker canvas').each(function(index, element) {
+        //var context = element.getContext('2d');
+        //var strokeWidth = 2;
 
         /**
          * Get circle and pointer position from the database element
@@ -167,51 +191,51 @@ Template.page.rendered = function() {
          * TODO, see if this data is already loaded in Meteor, so that we
          * we don't need to traverse the DOM to get it.
          */
-        var centerX = $(this).attr('dot-left');
-        var centerY = $(this).attr('dot-top');
-        var arrowX = $(this).attr('arrow-left');
-        var arrowY = $(this).attr('arrow-top');
+        //var centerX = $(this).attr('dot-left');
+        //var centerY = $(this).attr('dot-top');
+        //var arrowX = $(this).attr('arrow-left');
+        //var arrowY = $(this).attr('arrow-top');
 
         /**
          * Draw the pointer
          */
-        context.beginPath();
-        // Start srawing from the center of the dot
-        context.moveTo(centerX, centerY);
-        context.lineTo(arrowX, arrowY);
-        context.lineWidth = strokeWidth;
-        context.strokeStyle = '#527193';
-        context.stroke();
+        //context.beginPath();
+        //// Start srawing from the center of the dot
+        //context.moveTo(centerX, centerY);
+        //context.lineTo(arrowX, arrowY);
+        //context.lineWidth = strokeWidth;
+        //context.strokeStyle = '#527193';
+        //context.stroke();
 
         /**
          * Draw the circle
          */
-        context.beginPath();
-        context.lineWidth = strokeWidth;
-        var radius = 20;
-        context.arc(centerX , centerY, radius, 0, 2 * Math.PI, false);
-        context.fillStyle = '#FFF';
-        context.fill();
-        context.stroke();
+        //context.beginPath();
+        //context.lineWidth = strokeWidth;
+        //var radius = 20;
+        //context.arc(centerX , centerY, radius, 0, 2 * Math.PI, false);
+        //context.fillStyle = '#FFF';
+        //context.fill();
+        //context.stroke();
 
         /**
          * Position the labels
          */
-        $(this).siblings('.marker-order').css({
-            'left' : (centerX - 20) + 'px',
-            'top' : (centerY - 18) + 'px'
-        });
-        var markerLabel = $(this).siblings('.marker-label')
-        var labelY = parseInt(centerY) - 24;
-        //var labelY = parseInt(centerY) + 20;
-        $(this).siblings('.marker-label').css({
-            'left' : (centerX - (markerLabel.width()) - 35 ) + 'px',
-            //'left' : (centerX - (markerLabel.width() / 2)) + 'px',
-            'top' : labelY + 'px',
-        });
+        //$(this).siblings('.marker-order').css({
+            //'left' : (centerX - 20) + 'px',
+            //'top' : (centerY - 18) + 'px'
+        //});
+        //var markerLabel = $(this).siblings('.marker-label')
+        //var labelY = parseInt(centerY) - 24;
+        ////var labelY = parseInt(centerY) + 20;
+        //$(this).siblings('.marker-label').css({
+            //'left' : (centerX - (markerLabel.width()) - 35 ) + 'px',
+            ////'left' : (centerX - (markerLabel.width() / 2)) + 'px',
+            //'top' : labelY + 'px',
+        //});
 
-    });
-    }
+    //});
+    //}
 };
 
 Template.page.events({
