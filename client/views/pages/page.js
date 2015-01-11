@@ -183,69 +183,6 @@ Template.page.rendered = function() {
         context.stroke();
     }
 
-    /**
-     * Map markers
-     */
-    //if($('.map-wet-wetlands').length) {
-
-    //$('.marker canvas').each(function(index, element) {
-        //var context = element.getContext('2d');
-        //var strokeWidth = 2;
-
-        /**
-         * Get circle and pointer position from the database element
-         *
-         * This is laoded into the DOM using the Spacebars template
-         * then we use jQuery to get it from there.
-         *
-         * TODO, see if this data is already loaded in Meteor, so that we
-         * we don't need to traverse the DOM to get it.
-         */
-        //var centerX = $(this).attr('dot-left');
-        //var centerY = $(this).attr('dot-top');
-        //var arrowX = $(this).attr('arrow-left');
-        //var arrowY = $(this).attr('arrow-top');
-
-        /**
-         * Draw the pointer
-         */
-        //context.beginPath();
-        //// Start srawing from the center of the dot
-        //context.moveTo(centerX, centerY);
-        //context.lineTo(arrowX, arrowY);
-        //context.lineWidth = strokeWidth;
-        //context.strokeStyle = '#527193';
-        //context.stroke();
-
-        /**
-         * Draw the circle
-         */
-        //context.beginPath();
-        //context.lineWidth = strokeWidth;
-        //var radius = 20;
-        //context.arc(centerX , centerY, radius, 0, 2 * Math.PI, false);
-        //context.fillStyle = '#FFF';
-        //context.fill();
-        //context.stroke();
-
-        /**
-         * Position the labels
-         */
-        //$(this).siblings('.marker-order').css({
-            //'left' : (centerX - 20) + 'px',
-            //'top' : (centerY - 18) + 'px'
-        //});
-        //var markerLabel = $(this).siblings('.marker-label')
-        //var labelY = parseInt(centerY) - 24;
-        ////var labelY = parseInt(centerY) + 20;
-        //$(this).siblings('.marker-label').css({
-            //'left' : (centerX - (markerLabel.width()) - 35 ) + 'px',
-            ////'left' : (centerX - (markerLabel.width() / 2)) + 'px',
-            //'top' : labelY + 'px',
-        //});
-
-    //});
-    //}
 };
 
 /**
