@@ -98,6 +98,8 @@ Template.page.rendered = function() {
             .attr('y', textY)
             .text(markerNumber);
 
+        // Click area
+        // TODO - we might need to disable this on the wetlands map
         svg
             .append('circle')
             .attr('r', 50)
@@ -238,52 +240,41 @@ Template.page.rendered = function() {
     //}
 };
 
+/**
+ * Custom actions for page links
+ */
 Template.page.events({
     /**
-     * Custom actions for page links
+     * Close button for popup layers
      */
-    'mousedown .marker-pop-up .btn-close': function(e) {
+    'mousedown .marker-pop-up .btn-close': function() {
         $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
-        var item = d3.selectAll('.marker-circle');
-        item.style('fill', '#FFF');
-        item.style('stroke', '#527193');
-        item.style('stroke-width', 4);
+        d3.selectAll('.marker-clicked').classed('marker-clicked', false);
     },
 
     'mousedown .marker-svg circle.marker-click-area': function(e) {
-        var item;
-        var clicked = e.target;
-
         var clickedImage  = $(e.currentTarget).data('marker-number');
         $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
         $('.marker-pop-up.' + clickedImage ).removeClass('fadeOutLeft popActive').addClass('animated fadeInLeft popActive');
-        item = d3.selectAll('.marker-circle');
-        item.style('fill', '#FFF');
-        item.style('stroke', '#527193');
-        item.style('stroke-width', 4);
-
-        item = d3.selectAll('.marker-circle-' + clickedImage);
-        item.style('fill', '#527193');
-        item.style('stroke', '#FFF');
-        item.style('stroke-width', 4);
-
+        d3.selectAll('.marker-clicked').classed('marker-clicked', false);
+        d3.selectAll('.marker-circle-' + clickedImage).classed('marker-clicked', true);
     },
+
     'mousedown .marker-order': function(e) {
         e.preventDefault();
-        clicked = e.target;
 
         var fadeMarkersOut = function() {
             $('.clicked').siblings('canvas').removeClass('fadeMarkerIn');
             $('.clicked').siblings('canvas').addClass('animated fadeMarkerOut');
             $('.clicked').removeClass('fadeIn');
             $('.clicked').addClass('animated fadeOut');
-        }
+        };
 
         var fadeMarkerIn = function() {
             $('.clicked').removeClass('fadeOut clicked');
             $(e.target).siblings('.marker-label').addClass('clicked animated fadeIn');
             $(e.target).siblings('canvas').addClass('animated fadeMarkerIn');
-        }
+        };
 
         fadeMarkersOut();
         window.setTimeout(function() {
@@ -291,10 +282,11 @@ Template.page.events({
         }, 300);
     },
 
-    'mousedown canvas': function(e){
-        e.preventDefault();
-    },
-
+    /**
+     * Subpage buttons
+     *
+     * Explore and scientists pages
+     */
     'click .subpage-button': function(e) {
         e.preventDefault();
         colorPalate = this.colorPalate;
@@ -332,6 +324,10 @@ Template.page.events({
             Router.go('subPage', {colorPalate: colorPalate, subPageType: subPageType, link: link});
         }
     },
+
+    /**
+     * Home button
+     */
     'click .btn-home': function(e) {
 
         e.preventDefault();
