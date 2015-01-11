@@ -41,7 +41,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Nuestros desiertos',
         order: 2,
         bodyCopy: '<p>Southern California’s two deserts showcase different environments.</p><p>The Mojave Desert is at a higher elevation, making its climate cooler and wetter than that of its lower, warmer, and drier neighbor, the Sonoran Desert. These differences produce two distinct but equally diverse habitats.</p>',
-        espBodyCopy: '<p>Los dos desiertos del sur de California exhiben ambientes naturales diferentes.</p><p>El Desierto de Mojave está a una mayor elevación, lo cual hace que su clima sea más fresco y húmedo al del Desierto de Sonora, su vecino más cálido y seco de abajo.  Estas diferencias producen dos hábitats distintos pero igualmente diversos.</p>',
+        espBodyCopy: '<p>Los dos desiertos del sur de California exhiben ambientes naturales diferentes.</p><p>El Desierto de Mojave está a una mayor elevación, lo cual hace que su clima sea más fresco y húmedo al del Desierto de Sonora, su vecino más cálido y seco que se encuentra a meno elevación.  Estas diferencias producen dos hábitats distintos pero igualmente diversos.</p>',
         bodyImages: [
             {
                 fileName: 'desert-mojave.jpg',
@@ -188,7 +188,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         componentId: desert,
         parentId: desertScienceStories,
         buttonTitle: 'Margi Dykens<br>Registrar and director of research library',
-        espButtonTitle: 'Secretario y director de la biblioteca de investigación',
+        espButtonTitle: 'Directora de registro y de la biblioteca de investigación',
         buttonImage: 'sci-dykens-margi-button.jpg',
         bodyImages: [
             {fileName: 'sci-dykens-margi-full.jpg'},
