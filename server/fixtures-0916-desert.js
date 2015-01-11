@@ -57,21 +57,24 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         backgroundMapClass: 'map-desert-our',
     });
 
-    Pages.insert({
-        colorPalate: colorPalate,
-        componentId: desert,
-        link: 'rare-habitat',
-        buttonTitle: 'Rare habitat',
-        espButtonTitle: 'Hábitat inusual',
-        order: 4,
-        bodyCopy: '<p>Our highest mountain peaks—the coolest and wettest areas of southern California—are home to some of the last conifer forests in the region.</p><p>Move the slider to compare southern California elevations to conifer forest locations.</p>',
-        espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>TBD</p>',
-        backgroundMapClass: 'map-wet-then-now',
-        bottomImage: 'desert-compare-elevation-01.png',
-        bottomImageLabel: 'Low elevation',
-        topImage: 'desert-compare-elevation-02.png',
-        topImageLabel: 'High elevation',
-    });
+    //
+    // Disabled until map is complete
+    //
+    //Pages.insert({
+        //colorPalate: colorPalate,
+        //componentId: desert,
+        //link: 'rare-habitat',
+        //buttonTitle: 'Rare habitat',
+        //espButtonTitle: 'Hábitat inusual',
+        //order: 4,
+        //bodyCopy: '<p>Our highest mountain peaks—the coolest and wettest areas of southern California—are home to some of the last conifer forests in the region.</p><p>Move the slider to compare southern California elevations to conifer forest locations.</p>',
+        //espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>TBD</p>',
+        //backgroundMapClass: 'map-wet-then-now',
+        //bottomImage: 'desert-compare-elevation-01.png',
+        //bottomImageLabel: 'Low elevation',
+        //topImage: 'desert-compare-elevation-02.png',
+        //topImageLabel: 'High elevation',
+    //});
 
     var desertExplore = Pages.insert({
         colorPalate: colorPalate,
