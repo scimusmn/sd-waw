@@ -56,6 +56,7 @@ Template.page.rendered = function() {
         var arrowX = $(this).data('arrow-left');
         var arrowY = $(this).data('arrow-top');
         var markerNumber = $(this).data('marker-number');
+        var markerLabel = $(this).data('marker-label');
 
         // Marker group
         var lineGroup = svg.append('g');
@@ -71,7 +72,7 @@ Template.page.rendered = function() {
             .attr('class', 'marker-line');
 
         // Marker
-        svg
+        var markerCircle = svg
             .append('circle')
             .attr('r', 20)
             .attr('class', 'marker-circle marker-circle-' + markerNumber)
@@ -99,17 +100,24 @@ Template.page.rendered = function() {
             .text(markerNumber);
 
         // Click area
-        // TODO - we might need to disable this on the wetlands map
-        svg
+        //
+        // We don't use this on some maps because of overlap.
+        var clickArea = svg
             .append('circle')
-            .attr('r', 50)
             .attr('fill', 'transparent')
-            //.attr('stroke', '#527193')
-            //.attr('stroke-width', 4)
             .attr('class', 'marker-click-area')
+            .attr('data-dot-left', arrowX)
+            .attr('data-dot-top', arrowY)
             .attr('data-marker-number', markerNumber)
+            .attr('data-marker-label', markerLabel)
             .attr('cx', centerX)
             .attr('cy', centerY);
+        if ($('.map-wet-migration').length) {
+            clickArea.attr('r', 50);
+        }
+        else {
+            clickArea.attr('r', 20);
+        }
 
     });
 
@@ -252,12 +260,35 @@ Template.page.events({
         d3.selectAll('.marker-clicked').classed('marker-clicked', false);
     },
 
+    // Swap out marker states
     'mousedown .marker-svg circle.marker-click-area': function(e) {
+        var clickedImage  = $(e.currentTarget).data('marker-number');
+        d3.selectAll('.marker-clicked').classed('marker-clicked', false);
+        d3.selectAll('.marker-circle-' + clickedImage).classed('marker-clicked', true);
+    },
+
+    // Wetlands data toggling
+    'mousedown .map-wet-wetlands .marker-svg circle.marker-click-area': function(e) {
+        var clickedLeft  = $(e.currentTarget).data('dot-left');
+        console.log('clickedLeft - ', clickedLeft);
+        var clickedTop  = $(e.currentTarget).data('dot-top');
+        console.log('clickedTop - ', clickedTop);
+        var clickedImage  = $(e.currentTarget).data('marker-number');
+        var clickedLabel  = $(e.currentTarget).data('marker-label');
+        $('.wetland-name').remove();
+        $('.map-wet-wetlands').append( '<div class="wetland-name">' + clickedLabel + '</div>' );
+        $('.wetland-name').css({
+            'left': (clickedLeft + 4),
+            'top': clickedTop - 50});
+        console.log('clickedImage - ', clickedImage);
+        console.log('clickedLabel - ', clickedLabel);
+    },
+
+    // Pacific Flyway toggling
+    'mousedown .map-wet-migration .marker-svg circle.marker-click-area': function(e) {
         var clickedImage  = $(e.currentTarget).data('marker-number');
         $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
         $('.marker-pop-up.' + clickedImage ).removeClass('fadeOutLeft popActive').addClass('animated fadeInLeft popActive');
-        d3.selectAll('.marker-clicked').classed('marker-clicked', false);
-        d3.selectAll('.marker-circle-' + clickedImage).classed('marker-clicked', true);
     },
 
     'mousedown .marker-order': function(e) {

@@ -37,6 +37,7 @@
             data-arrow-left={{this.arrowLeft}}
             data-arrow-top={{this.arrowTop}}
             data-marker-number={{this.order}}
+            data-marker-label={{this.label}}
             >
           </div>
 
@@ -141,6 +142,13 @@
               </a>
             </div>
           </div>
+
+          {{#each markers}}
+            <div class="marker-pop-up {{this.order}}">
+              {{this.label}}
+            </div>
+          {{/each}}
+
           <!-- /Horizontal layout -->
 
         {{/unless}}
