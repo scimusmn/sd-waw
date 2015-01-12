@@ -54,7 +54,22 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         order: 4,
         bodyCopy: '<p>Despite extensive real estate development in southern California, natural habitat still exists. Canyons and other undeveloped areas are known as wildlife corridors—passageways that enable animals to move between larger pieces of wilderness. <p>',
         espBodyCopy: '<p>A pesar del vasto desarrollo de edificaciones en el sur de California, el hábitat natural aún existe. Los cañones y otras áreas sin desarrollo urbano se conocen como corredores de vida silvestre—vías de paso que permiten a los animales desplazarse entre porciones más grandes de territorios naturales.</p>',
-        backgroundMapClass: 'map-can-our',
+        backgroundMapClass: 'map-can-wild',
+        bodyImages: [
+            {
+                fileName: 'can-cougar.jpg',
+                imageCaption: 'Mountain Lion',
+                imageCaptionEsp: 'Puma',
+                imageCaptionLatin: 'Puma concolor'
+            },
+            {
+                fileName: 'can-bobcat.jpg',
+                imageCaption: 'Bobcat',
+                imageCaptionEsp: 'Gato montés',
+                imageCaptionLatin: 'Lynx rufus'
+            }
+        ],
+
     });
 
     var canExplore = Pages.insert({
@@ -87,7 +102,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'parks.ca.gov',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-can-explore-placerita',
     });
 
     Pages.insert({
@@ -108,7 +123,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-can-explore-gonzales',
     });
 
     Pages.insert({
@@ -129,7 +144,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-can-explore-lopez',
     });
 
     Pages.insert({
@@ -150,7 +165,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'sdnat.org/canyoneers',
-        backgroundMapClass: 'map-wet-explore-bolsa',
+        backgroundMapClass: 'map-can-explore-florida',
     });
 
     var canScienceStories = Pages.insert({

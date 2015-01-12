@@ -38,17 +38,18 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         ],
     });
 
-    //Pages.insert({
-        //colorPalate: colorPalate,
-        //componentId: mountains,
-        //link: 'our-mountains',
-        //buttonTitle: 'Our mountains',
-        //espButtonTitle: 'Nuestras montañas',
-        //order: 2,
-        //bodyCopy: 'Southern California has several hundred mountain peaks, including San Gorgonio Mountain, which rises to 11,503 feet.',
-        //espBodyCopy: 'El sur de California tiene varios centenares de cumbres, incluyendo la montaña San Gorgonio, que tiene una elevación de 11.503 pies.',
-        //backgroundMapClass: 'map-mtn-our',
-    //});
+    Pages.insert({
+        colorPalate: colorPalate,
+        componentId: mountains,
+        link: 'our-mountains',
+        buttonTitle: 'Our mountains',
+        espButtonTitle: 'Nuestras montañas',
+        order: 2,
+        bodyCopyLayout: 'horizontal',
+        bodyCopy: 'Southern California has several hundred mountain peaks, including San Gorgonio Mountain, which rises to 11,503 feet.',
+        espBodyCopy: 'El sur de California tiene varios centenares de cumbres, incluyendo la montaña San Gorgonio, que tiene una elevación de 11.503 pies.',
+        backgroundMapClass: 'map-mtn-our',
+    });
 
     Pages.insert({
         colorPalate: colorPalate,
@@ -59,7 +60,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         order: 3,
         bodyCopyLayout: 'horizontal',
         bodyCopy: '<p>Our highest mountain peaks—the coolest and wettest areas of southern California—are home to some of the last conifer forests in the region.</p><p>Move the slider to compare southern California elevations to conifer forest locations.</p>',
-        espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>Mueva el control deslizante para comparar las elevaciones del sur de California a coníferas lugares forestales.</p>',
+        espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>Mueve el control deslizable para comparar las elevaciones del sur de California con los sitios de bosques coníferas.</p>',
         backgroundMapClass: 'map-wet-then-now',
         bottomImage: 'mtn-compare-elevation-01-v03.png',
         bottomImageLabel: '',
@@ -93,7 +94,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         ],
         order: 1,
         bodyCopy: 'Visit Palomar Mountain State Park and enjoy a panoramic view of southern California that stretches from the ocean to the desert.',
-        espBodyCopy: 'Visita al Parque Estatal de la Montaña Palomar y disfruta de una vista panorámica del sur de California que abarca desde el océano hasta el desierto.',
+        espBodyCopy: 'Visita al Parque Estatal Palomar Mountain y disfruta de una vista panorámica del sur de California que abarca desde el océano hasta el desierto.',
         websiteCall: 'For more information, visit:',
         websiteCallEsp: 'Para más información, visita:',
         websiteURL: 'parks.ca.gov',
@@ -149,7 +150,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         parentId: mtnExplore,
         link: 'thunder',
         buttonTitle: 'Palomar Mountain State Park (Thunder Spring/Chimney Flats)',
-        espButtonTitle: 'Parque Estatal de la Montaña Palomar (Thunder Spring/Chimney Flats)',
+        espButtonTitle: 'Parque Estatal Palomar Mountain (Thunder Spring/Chimney Flats)',
         buttonImage: 'mtn-explore-thunder.jpg',
         bodyImages: [
             {fileName: 'mtn-explore-thunder-full.jpg'},
@@ -189,7 +190,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         ],
         order: 1,
         bodyCopy: '"The White-headed Woodpecker is found only in the pine forests of western North America, from Canada south to Cuyamaca Rancho State Park in San Diego County. The Cedar Fire in 2003, which burned 95 percent of the park, destroyed this species\' southernmost habitat."',
-        espBodyCopy: '"El carpintero cabeza blanca se encuentra únicamente en los bosques de pinos en el oeste de Norteamérica, desde Canadá hacia el sur en el Parque Estatal Cuyamaca Rancho en el condado de San Diego. El incendio Cedar en 2003, que quemó el noventa y cinco por ciento del parque, destruyó el hábitat más sureño de esta especie".',
+        espBodyCopy: '"El carpintero cabeza blanca se encuentra únicamente en los bosques de pinos en el oeste de Norteamérica, desde Canadá hasta el sur en el Parque Estatal Cuyamaca Rancho en el condado de San Diego. El incendio Cedar de 2003, que quemó el noventa y cinco por ciento del parque, destruyó el hábitat más sureño de esta especie".',
         backgroundMapClass: 'sci-mtn-woodpecker',
         backgroundCaption: 'White-headed Woodpecker',
         backgroundCaptionEsp: 'Carpintero cabeza blanca',
@@ -210,7 +211,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         ],
         order: 2,
         bodyCopy: '"This native Californian spider was discovered only recently, in 2005. It’s smaller than a grain of rice. This discovery is exciting because it shows that we still have new finds to make right here in our local mountains."',
-        espBodyCopy: '"Esta araña nativa de California fue descubierta recién en 2005.  Es más pequeña que un grano de arroz.  Este descubrimiento es fascinante porque demuestra que tenemos nuevas cosas para descubrir aquí mismo en nuestras montañas locales".',
+        espBodyCopy: '"Esta araña nativa de California fue recién descubierta en 2005.  Es más pequeña que un grano de arroz.  Este descubrimiento es fascinante porque demuestra que tenemos nuevas cosas para descubrir aquí mismo en nuestras montañas locales".',
         backgroundMapClass: 'sci-can-spider',
         backgroundCaption: 'Spider',
         backgroundCaptionEsp: 'Araña',

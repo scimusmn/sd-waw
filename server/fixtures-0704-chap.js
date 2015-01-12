@@ -60,7 +60,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         order: 3,
         bodyCopyLayout: 'horizontal',
         bodyCopy: '<p> Coastal California is one of only five places on Earth known as a Mediterranean climate zone.</p><p> The mild, wet winters and long, dry summers typical of this climate zone are ideal for the xerophilous (pronounced ze-RA-fe-les, meaning “dry-loving”) chaparral plants.</p>',
-        espBodyCopy: '<p> La costa de California es sólo uno de cinco lugares en la Tierra que se conocen como zonas climáticas mediterráneas.</p><p>Los templados y lluviosos inviernos y veranos largos y secos típicos de esta zona climática son ideales para las plantas de chaparral xerófilas (pronunciado ce-RO-fi-las, lo que significa que les gusta la sequedad).  </p>',
+        espBodyCopy: '<p> La costa de California es sólo uno de cinco lugares en la Tierra que se conocen como zonas climáticas mediterráneas.</p><p>Los templados y lluviosos inviernos y los veranos largos y secos típicos de esta zona climática son ideales para las plantas de chaparral xerófilas (pronunciado ce-RO-fi-las, lo que significa que les gusta la sequedad).  </p>',
         backgroundMapClass: 'map-tp-med',
     });
 
