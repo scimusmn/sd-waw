@@ -36,29 +36,29 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         bodyImages: [ {fileName: 'streams-where.jpg'} ],
     });
 
-    Pages.insert({
-        colorPalate: colorPalate,
-        link: 'watersheds',
-        componentId: streams,
-        buttonTitle: 'Watersheds',
-        espButtonTitle: 'Cuencas',
-        order: 2,
-        bodyCopy: '<p>Each of these outlined regions represents a watershed—an area of land containing a network of creeks and streams that drain into the same river.</p><p>Water from mountaintop runoff and rainfall flows downward into nearby creeks, streams, and rivers and, eventually, into the ocean.</p>',
-        espBodyCopy: '<p>Cada una de estas regiones demarcadas representa una cuenca—un área de terreno que contiene una red de riachuelos y arroyos que desembocan en el mismo río.</p><p>El agua que viene de los picos montañosos y de la lluvia fluye hacia abajo y se vierte en los riachuelos, arroyos y ríos cercanos y, eventualmente, en el océano.</p>',
-        backgroundMapClass: 'map-streams-watersheds',
-    });
+    //Pages.insert({
+        //colorPalate: colorPalate,
+        //link: 'watersheds',
+        //componentId: streams,
+        //buttonTitle: 'Watersheds',
+        //espButtonTitle: 'Cuencas',
+        //order: 2,
+        //bodyCopy: '<p>Each of these outlined regions represents a watershed—an area of land containing a network of creeks and streams that drain into the same river.</p><p>Water from mountaintop runoff and rainfall flows downward into nearby creeks, streams, and rivers and, eventually, into the ocean.</p>',
+        //espBodyCopy: '<p>Cada una de estas regiones demarcadas representa una cuenca—un área de terreno que contiene una red de riachuelos y arroyos que desembocan en el mismo río.</p><p>El agua que viene de los picos montañosos y de la lluvia fluye hacia abajo y se vierte en los riachuelos, arroyos y ríos cercanos y, eventualmente, en el océano.</p>',
+        //backgroundMapClass: 'map-streams-watersheds',
+    //});
 
-    Pages.insert({
-        colorPalate: colorPalate,
-        link: 'aquifers',
-        componentId: streams,
-        buttonTitle: 'Aquifers',
-        espButtonTitle: 'Acuíferos',
-        order: 3,
-        bodyCopy: '<p> Not all water from mountain run-off and rainfall reaches our rivers. Some of it seeps into pores in the ground, where it then collects in aquifers—underground water containers. </p><p> What little water makes it into these containers is sometimes pumped out for our use. </p>',
-        espBodyCopy: '<p> No toda el agua de escurrimiento y lluvia alcanza nuestros ríos. Una parte de ella se filtra por los poros de la tierra donde después se congrega en acuíferos—depósitos de agua subterráneos. </p><p> Esa pequeña cantidad de agua que logra llegar a esos depósitos es a veces extraída para nuestro uso mediante bombas hidráulicas. </p>',
-        backgroundMapClass: 'map-streams-aquifers'
-    });
+    //Pages.insert({
+        //colorPalate: colorPalate,
+        //link: 'aquifers',
+        //componentId: streams,
+        //buttonTitle: 'Aquifers',
+        //espButtonTitle: 'Acuíferos',
+        //order: 3,
+        //bodyCopy: '<p> Not all water from mountain run-off and rainfall reaches our rivers. Some of it seeps into pores in the ground, where it then collects in aquifers—underground water containers. </p><p> What little water makes it into these containers is sometimes pumped out for our use. </p>',
+        //espBodyCopy: '<p> No toda el agua de escurrimiento y lluvia alcanza nuestros ríos. Una parte de ella se filtra por los poros de la tierra donde después se congrega en acuíferos—depósitos de agua subterráneos. </p><p> Esa pequeña cantidad de agua que logra llegar a esos depósitos es a veces extraída para nuestro uso mediante bombas hidráulicas. </p>',
+        //backgroundMapClass: 'map-streams-aquifers'
+    //});
 
     var streamsExplore = Pages.insert({
         colorPalate: colorPalate,
