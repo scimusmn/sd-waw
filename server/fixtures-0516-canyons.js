@@ -25,7 +25,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Where are they?',
         espButtonTitle: '¿Dónde están?',
         order: 1,
-        bodyCopy: 'Canyons are all around us. In fact, there’s one just a black from the Museum—Florida Canyon.',
+        bodyCopy: 'Canyons are all around us. In fact, there’s one just a block from the Museum—Florida Canyon.',
         espBodyCopy: 'Los cañones nos rodean por todas partes. De hecho, hay uno apenas a una cuadra del museo—Florida Canyon.',
         backgroundMapClass: 'map-can-where',
         bodyImages: [
