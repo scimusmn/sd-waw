@@ -45,8 +45,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         bodyImages: [
             {
                 fileName: 'desert-mojave.jpg',
-                imageCaption: 'El Desierto de Mojave',
-                imageCaptionEsp: 'Chamizo',
+                imageCaption: 'Mojave Desert',
+                imageCaptionEsp: 'El Desierto de Mojave',
             },
             {
                 fileName: 'desert-sonoran.jpg',
