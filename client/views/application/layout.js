@@ -30,6 +30,10 @@ Template.layout.events({
         clearTimeout(sSaver);
         // Start the screensaver timer
         saveScreen(sSaverTimeout);
+    },
+
+    'dragstart': function(e) {
+        e.preventDefault();
     }
 
 });
