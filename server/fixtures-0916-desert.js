@@ -37,7 +37,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         colorPalate: colorPalate,
         componentId: desert,
         link: 'our-desert',
-        buttonTitle: 'Our desert',
+        buttonTitle: 'Our deserts',
         espButtonTitle: 'Nuestros desiertos',
         order: 2,
         bodyCopy: '<p>Southern California’s two deserts showcase different environments.</p><p>The Mojave Desert is at a higher elevation, making its climate cooler and wetter than that of its lower, warmer, and drier neighbor, the Sonoran Desert. These differences produce two distinct but equally diverse habitats.</p>',
