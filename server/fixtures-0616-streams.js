@@ -48,17 +48,17 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         //backgroundMapClass: 'map-streams-watersheds',
     //});
 
-    //Pages.insert({
-        //colorPalate: colorPalate,
-        //link: 'aquifers',
-        //componentId: streams,
-        //buttonTitle: 'Aquifers',
-        //espButtonTitle: 'Acuíferos',
-        //order: 3,
-        //bodyCopy: '<p> Not all water from mountain run-off and rainfall reaches our rivers. Some of it seeps into pores in the ground, where it then collects in aquifers—underground water containers. </p><p> What little water makes it into these containers is sometimes pumped out for our use. </p>',
-        //espBodyCopy: '<p> No toda el agua de escurrimiento y lluvia alcanza nuestros ríos. Una parte de ella se filtra por los poros de la tierra donde después se congrega en acuíferos—depósitos de agua subterráneos. </p><p> Esa pequeña cantidad de agua que logra llegar a esos depósitos es a veces extraída para nuestro uso mediante bombas hidráulicas. </p>',
-        //backgroundMapClass: 'map-streams-aquifers'
-    //});
+    Pages.insert({
+        colorPalate: colorPalate,
+        link: 'aquifers',
+        componentId: streams,
+        buttonTitle: 'Aquifers',
+        espButtonTitle: 'Acuíferos',
+        order: 3,
+        bodyCopy: '<p> Not all water from mountain run-off and rainfall reaches our rivers. Some of it seeps into pores in the ground, where it then collects in aquifers—underground water containers. </p><p> What little water makes it into these containers is sometimes pumped out for our use. </p>',
+        espBodyCopy: '<p> No toda el agua de escurrimiento y lluvia alcanza nuestros ríos. Una parte de ella se filtra por los poros de la tierra donde después se congrega en acuíferos—depósitos de agua subterráneos. </p><p> Esa pequeña cantidad de agua que logra llegar a esos depósitos es a veces extraída para nuestro uso mediante bombas hidráulicas. </p>',
+        backgroundMapClass: 'map-streams-aquifers'
+    });
 
     var streamsExplore = Pages.insert({
         colorPalate: colorPalate,
