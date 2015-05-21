@@ -15,7 +15,11 @@ Template.page.rendered = function() {
      */
     $('.container-map').addClass('animated fadeIn');
     $('.markers').addClass('animated fadeIn');
-    if ( $('.body-copy.rare-climate-zone').length || $('.body-copy.our-wetlands').length ) {
+    if (
+        $('.body-copy.rare-climate-zone').length ||
+        $('.body-copy.our-wetlands').length ||
+        $('.body-copy.watersheds').length) {
+
         $('.body-copy').addClass('animated fadeInUp');
     }
     else {
