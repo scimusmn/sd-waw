@@ -36,17 +36,18 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         bodyImages: [ {fileName: 'streams-where.jpg'} ],
     });
 
-    //Pages.insert({
-        //colorPalate: colorPalate,
-        //link: 'watersheds',
-        //componentId: streams,
-        //buttonTitle: 'Watersheds',
-        //espButtonTitle: 'Cuencas',
-        //order: 2,
-        //bodyCopy: '<p>Each of these outlined regions represents a watershed—an area of land containing a network of creeks and streams that drain into the same river.</p><p>Water from mountaintop runoff and rainfall flows downward into nearby creeks, streams, and rivers and, eventually, into the ocean.</p>',
-        //espBodyCopy: '<p>Cada una de estas regiones demarcadas representa una cuenca—un área de terreno que contiene una red de riachuelos y arroyos que desembocan en el mismo río.</p><p>El agua que viene de los picos montañosos y de la lluvia fluye hacia abajo y se vierte en los riachuelos, arroyos y ríos cercanos y, eventualmente, en el océano.</p>',
-        //backgroundMapClass: 'map-streams-watersheds',
-    //});
+    Pages.insert({
+        colorPalate: colorPalate,
+        link: 'watersheds',
+        componentId: streams,
+        buttonTitle: 'Watersheds',
+        espButtonTitle: 'Cuencas',
+        order: 2,
+        bodyCopy: '<p>Each of these outlined regions represents a watershed—an area of land containing a network of creeks and streams that drain into the same river.</p><p>Water from mountaintop runoff and rainfall flows downward into nearby creeks, streams, and rivers and, eventually, into the ocean.</p>',
+        espBodyCopy: '<p>Cada una de estas regiones demarcadas representa una cuenca—un área de terreno que contiene una red de riachuelos y arroyos que desembocan en el mismo río.</p><p>El agua que viene de los picos montañosos y de la lluvia fluye hacia abajo y se vierte en los riachuelos, arroyos y ríos cercanos y, eventualmente, en el océano.</p>',
+        bodyCopyLayout: 'horizontal',
+        backgroundMapClass: 'map-streams-watersheds',
+    });
 
     Pages.insert({
         colorPalate: colorPalate,
