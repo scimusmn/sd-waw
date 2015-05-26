@@ -125,68 +125,6 @@ Template.page.rendered = function() {
 
     });
 
-    /**
-     * Then/Now slider for comparison pages
-     */
-    if ($('.map-wet-then-now').length) {
-        selector = '.map-wet-migration .marker-svg';
-        if ($(selector).length) {
-            var svgWidth = 1366;
-            var svgHeight = 768;
-            var svg = d3.select(selector)
-                .append('svg')
-                .attr('width', svgWidth)
-                .attr('height', svgHeight);
-        }
-
-        /**
-         * Starting handle position
-         */
-        $('.top-image').css('width', '75%');
-        var canvasHeight = $('#handle').height();
-        var canvasWidth = $('#handle').width();
-        var canvasLeft = ((1366 / 4) * 3) - (canvasWidth / 2);
-        var canvasTop = ((768 / 2) - (canvasHeight / 2));
-        $('#handle').css('top', canvasTop + 'px');
-        $('#handle').css('left',  canvasLeft + 'px');
-
-        $('.before-after-slider').mousemove(
-            function(e) {
-            // get the mouse x (horizontal) position and offset of the div
-            var offset =  $(this).offset();
-            var iTopWidth = (e.pageX - offset.left);
-
-            // set width of bottomimage div
-            $(this).find('.top-image').width(iTopWidth);
-            $('#handle').css('left', iTopWidth - (canvasWidth / 2));
-        }
-        );
-        /**
-         * Draw the little handle and arrows for the top image
-         */
-        var handleCanvas = document.getElementById('handle');
-        var context = handleCanvas.getContext('2d');
-
-        context.beginPath();
-        context.moveTo(10, ((handleCanvas.height / 2) - 10));
-        context.lineTo(10, ((handleCanvas.height / 2) + 10));
-        context.lineTo(0, ( handleCanvas.height / 2 ));
-        context.lineTo(10, ((handleCanvas.height / 2) - 10));
-        context.fill();
-        var boxWidth = 5.5;
-        context.rect(((handleCanvas.width / 2) - (boxWidth / 2)), (handleCanvas.height / 3), boxWidth, (handleCanvas.height / 3));
-        context.fillStyle = 'white';
-        context.fill();
-        context.moveTo((handleCanvas.width - 10), ((handleCanvas.height / 2) - 10));
-        context.lineTo((handleCanvas.width - 10), ((handleCanvas.height / 2) + 10));
-        context.lineTo(handleCanvas.width, ( handleCanvas.height / 2 ));
-        context.lineTo((handleCanvas.width - 10), ((handleCanvas.height / 2) - 10));
-        context.fill();
-        context.lineWidth = 1;
-        context.strokeStyle = '#888';
-        context.stroke();
-    }
-
 };
 
 /**
