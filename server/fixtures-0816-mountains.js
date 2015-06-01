@@ -61,7 +61,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         bodyCopyLayout: 'horizontal',
         bodyCopy: '<p>Our highest mountain peaks—the coolest and wettest areas of southern California—are home to some of the last conifer forests in the region.</p><p>Move the slider to compare southern California elevations to conifer forest locations.</p>',
         espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>Mueve el control deslizable para comparar las elevaciones del sur de California con los sitios de bosques coníferas.</p>',
-        backgroundMapClass: 'map-wet-then-now',
+        backgroundMapClass: 'map-mount-rare',
         bottomImage: 'mtn-compare-elevation-01-v08.png',
         bottomImageLabel: '',
         topImage: 'mtn-compare-elevation-02-v04.png',
