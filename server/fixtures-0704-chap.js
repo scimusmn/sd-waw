@@ -64,20 +64,18 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         backgroundMapClass: 'map-tp-med',
     });
 
-    //
-    // Commented out, because the source content doesn't exist yet
-    //
-    //Pages.insert({
-        //colorPalate: colorPalate,
-        //link: 'aquifers',
-        //componentId: chaparral,
-        //buttonTitle: 'Fire-prone habitat',
-        //espButtonTitle: 'Hábitat con proclividad a incendiarse',
-        //order: 4,
-        //bodyCopy: '<p> Fire is part of the natural life cycle in the chaparral habitat. Planning for fires is a necessary part of life in southern California.  </p><p>Move the timeline to see the places in southern California where fires have burned during the past century. </p>',
-        //espBodyCopy: '<p> Los incendios son una parte del ciclo natural de vida del hábitat del chaparral.  La planificación para casos de incendio es un aspecto necesario de la vida en el sur de California.  </p><p>Desplaza el cronograma para ver en qué lugares del sur de  California han habido incendios en el último siglo. </p>',
-        //backgroundMapClass: 'map-chaparral-aquifers'
-    //});
+    Pages.insert({
+        colorPalate: colorPalate,
+        link: 'fire',
+        componentId: chaparral,
+        buttonTitle: 'Fire-prone habitat',
+        espButtonTitle: 'Hábitat con proclividad a incendiarse',
+        order: 4,
+        //bodyCopyLayout: 'horizontal',
+        bodyCopy: '<p> Fire is part of the natural life cycle in the chaparral habitat. Planning for fires is a necessary part of life in southern California.  </p><p>Move the timeline to see the places in southern California where fires have burned during the past century. </p>',
+        espBodyCopy: '<p> Los incendios son una parte del ciclo natural de vida del hábitat del chaparral.  La planificación para casos de incendio es un aspecto necesario de la vida en el sur de California.  </p><p>Desplaza el cronograma para ver en qué lugares del sur de  California han habido incendios en el último siglo. </p>',
+        backgroundMapClass: 'map-chaparral-fire'
+    });
 
     var chaparralExplore = Pages.insert({
         colorPalate: colorPalate,

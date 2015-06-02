@@ -188,6 +188,17 @@ Template.page.rendered = function() {
       context.stroke();
     }
 
+    if ($('.map-chaparral-fire').length) {
+      console.log('On the right page');
+      $('.map-chaparral-fire').append('<div class="timeline-label"><h3>Fires during:<br><span class="esp">Incendios durante:</span></h3></div>');
+      $('.map-chaparral-fire').append('<div class="timeline"></div>');
+      $('div.timeline').append('<div data-period="01" class="period active period-01">1900 -<br>1924</div>');
+      $('div.timeline').append('<div data-period="02" class="period period-02">1925 -<br>1949</div>');
+      $('div.timeline').append('<div data-period="03" class="period period-03">1950 -<br>1974</div>');
+      $('div.timeline').append('<div data-period="04" class="period period-04">1975 -<br>1999</div>');
+      $('div.timeline').append('<div data-period="05" class="period period-05">2000 -<br>2013</div>');
+    }
+
 };
 
 /**
@@ -231,6 +242,24 @@ Template.page.events({
         var clickedImage  = $(e.currentTarget).data('marker-number');
         $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
         $('.marker-pop-up.' + clickedImage ).removeClass('fadeOutLeft popActive').addClass('animated fadeInLeft popActive');
+    },
+
+    // Chaparral fire map
+    'mouseover .map-chaparral-fire .timeline .period': function(e) {
+      $('.map-chaparral-fire').removeClass('map-animate animated fadeIn');
+      var periodNum = $(e.currentTarget).data('period');
+      console.log('periodNum - ', periodNum);
+
+      // Indicate active timeline object
+      $('.map-chaparral-fire .timeline div').removeClass('active');
+      $(e.currentTarget).addClass('active');
+
+      // Swap background map
+      $('.map-chaparral-fire').css('background-position', function () {
+        return (periodNum * 1366);
+        //return 'url("/images/chaparral-fire-v10-p' + periodNum + '.png")';
+      });
+
     },
 
     'mousedown .marker-order': function(e) {

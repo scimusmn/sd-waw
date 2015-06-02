@@ -1322,13 +1322,10 @@ a.btn:active {
 
 .chaparral .buttons .btn-5 {
   background: darken(@mountains-blue, 6%);
-  padding-left: 36px;
-  width: 394px;
 }
 
 .chaparral .buttons .btn-6 {
   background: darken(@mountains-blue, 7%);
-  width: 395px;
 }
 
 .chaparral .btn-home,
@@ -1341,6 +1338,66 @@ a.btn:active {
  */
 .map-chaparral-where {
   background-image: url("/images/chaparral-where-v02.png");
+}
+
+.map-chaparral-fire {
+  background-image: url("/images/chaparral-fire-v11.png");
+}
+
+.map-chaparral-fire .timeline-label {
+  background: transparent;
+  height: 100px;
+  width: 730px;
+  position: absolute;
+  top: 530px;
+  left: 600px;
+}
+
+.map-chaparral-fire .timeline-label h3 {
+  font-family: 'FuturaTS-Demibold', sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.015em;
+  margin-bottom: 15px;
+  color: @background-tan;
+}
+
+.map-chaparral-fire .timeline-label h3 .esp {
+  margin-top: 10px;
+  font-size: 28px;
+  letter-spacing: 0.015em;
+  color: darken(@background-tan, 20%);
+}
+
+.map-chaparral-fire .timeline {
+  background: darken(@mountains-blue, 5%);
+  height: 100px;
+  width: 730px;
+  position: absolute;
+  bottom: 40px;
+  left: 600px;
+}
+
+.map-chaparral-fire .timeline .period {
+  background: darken(@mountains-blue, 5%);
+  color: lighten(@background-tan, 1%);
+  float: left;
+  width: 140px;
+  height: 90px;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  padding: 10px;
+}
+
+.map-chaparral-fire .timeline .period-01 {
+  margin-left: 5px;
+}
+
+.map-chaparral-fire .timeline .period.active{
+  background: lighten(@background-tan, 10%);
+  color: #333;
 }
 
 .map-chaparral-tough-habitat {
@@ -1372,9 +1429,19 @@ a.btn:active {
   background-image: url("/images/sci-stokes-drew-bat.jpg");
   background-position: right;
 }
+
 /**
  * 0704 - Chaparral - Layout and dimensions
  */
+/*.body-copy.fireprone-habitat,*/
+/*.body-copy.fireprone-habitat .btn-home {*/
+  /*width: @screen-width;*/
+/*}*/
+
+/*.body-copy.fireprone-habitat {*/
+  /*height: 270px;*/
+/*}*/
+
 .body-copy.tough-habitat,
 .body-copy.tough-habitat .btn-home {
   width: 720px;
