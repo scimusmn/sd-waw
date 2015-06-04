@@ -80,7 +80,7 @@
           <div class="body-images">
             {{#each bodyImages}}
               <div class="image">
-                <img class="{{this.zoom}}" src="/images/{{this.fileName}}">
+                <img class="{{this.zoom}}" data-zoom-caption="{{this.zoomCaption}}" data-zoom-caption-esp="{{this.zoomCaptionEsp}}" src="/images/{{this.fileName}}">
                 <div class="credit">{{this.imageCredit}}</div>
                 {{#if this.imageCaption}}
                   <div class="caption">

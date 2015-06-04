@@ -19,6 +19,12 @@
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
         <img width="{{highlightedImageWidth}}" height="{{highlightedImageHeight}}" src="{{highlightedImage}}">
+        {{#if zoomCaption}}
+          <div class="zoom-caption">
+            <p>{{zoomCaption}}</p>
+            <p class="esp">{{zoomCaptionEsp}}</p>
+          </div>
+        {{/if}}
       </div>
     </div>
 

@@ -60,13 +60,19 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 fileName: 'can-cougar.jpg',
                 imageCaption: 'Mountain Lion',
                 imageCaptionEsp: 'Puma',
-                imageCaptionLatin: 'Puma concolor'
+                imageCaptionLatin: 'Puma concolor',
+                zoom: 'zoom-true',
+                zoomCaption: 'Canyons and other wildlife corridors enable Mountain Lions to move safely between large natural areas in which they can rest, find food, and find mates.',
+                zoomCaptionEsp: 'Los cañones y otros corredores de vida silvestre les permiten a los pumas desplazarse sin peligro entre vastas áreas naturales donde pueden descansar, encontrar comida y encontrar parejas.'
             },
             {
                 fileName: 'can-bobcat.jpg',
                 imageCaption: 'Bobcat',
                 imageCaptionEsp: 'Gato montés',
-                imageCaptionLatin: 'Lynx rufus'
+                imageCaptionLatin: 'Lynx rufus',
+                zoom: 'zoom-true',
+                zoomCaption: 'Think you might have seen a bobcat near your backyard? You’re probably right. Bobcats sometimes use small wildlife corridors near urban areas to get to larger natural areas.',
+                zoomCaptionEsp: '¿Piensas que puedes haber visto un gato montés cerca de tu patio trasero? Probablemente estás en lo correcto. Los gatos montés a veces usan pequeños corredores de vida silvestre cerca de áreas urbanas para llegar a áreas naturales más grandes.'
             }
         ],
 
@@ -94,7 +100,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal<br>Placerita Canyon',
         buttonImage: 'can-explore-placerita-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-placerita-full.jpg'},
+            {fileName: 'can-explore-placerita-full.jpg', zoom: 'zoom-true'},
         ],
         order: 1,
         bodyCopy: 'Visit Placerita Canyon State Park to experience a range of habitats in one area—from cool, oak woodlands to dense, chaparral-covered hillsides.',
@@ -115,7 +121,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Estatal Natural Torrey Pines<br>(Gonzalez Canyon – Circuito Torrey Pines)',
         buttonImage: 'can-explore-gonzales-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-gonzales-full.jpg'},
+            {fileName: 'can-explore-gonzales-full.jpg', zoom: 'zoom-true'},
         ],
         order: 2,
         bodyCopy: '<p>Explore a canyon filled with various aromatic plants including the native California Sagebrush and the non-native Fennel.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -136,7 +142,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Los Peñasquitos Canyon<br>(Lopez Canyon)',
         buttonImage: 'can-explore-lopez-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-lopez-full.jpg'},
+            {fileName: 'can-explore-lopez-full.jpg', zoom: 'zoom-true'},
         ],
         order: 3,
         bodyCopy: '<p>Walk past magnificent sycamores to an old creek bed, where you’ll encounter a variety of chaparral and coastal sage scrub plants.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -157,7 +163,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Florida Canyon',
         buttonImage: 'can-explore-florida-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-florida-full.jpg'},
+            {fileName: 'can-explore-florida-full.jpg', zoom: 'zoom-true'},
         ],
         order: 4,
         bodyCopy: '<p>Experience an urban wilderness, just steps away from the Museum, as you descend into a canyon filled with native and non-native plants and critters!</p><p>Join the Canyoneers for guided hikes in southern California.</p>',

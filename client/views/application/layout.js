@@ -16,6 +16,12 @@ Template.layout.helpers({
     },
     highlightedImageTopMargin: function() {
       return ((768 - Session.get('highlightedImageHeight') - 30) / 2);
+    },
+    zoomCaption: function() {
+      return Session.get('highlightedImageCaption');
+    },
+    zoomCaptionEsp: function() {
+      return Session.get('highlightedImageCaptionEsp');
     }
 });
 
@@ -93,6 +99,8 @@ Template.layout.events({
       Session.set('highlightedImage', clickedImage[0].currentSrc);
       Session.set('highlightedImageWidth', imageWidth);
       Session.set('highlightedImageHeight', imageHeight);
+      Session.set('highlightedImageCaption', clickedImage[0].dataset.zoomCaption);
+      Session.set('highlightedImageCaptionEsp', clickedImage[0].dataset.zoomCaptionEsp);
 
       $('.image-overlay-cover').removeClass('animated fadeOut');
       $('.image-overlay-cover').addClass('animated fadeIn');
@@ -145,6 +153,13 @@ function saveScreen(sSaverTimeout) {
                 {link: componentHome},
                 {query: {saver: 'true'}}
             );
+            // Hide the overlay if it's up
+            $('.image-overlay-cover').removeClass('animated fadeIn');
+            $('.image-overlay-cover').addClass('animated fadeOut');
+            setTimeout(function(){
+              $('.image-overlay-cover').hide();
+            }, 200);
+
         }
         // If you're already on the homepage,
         // just go ahead and show the screensaver
