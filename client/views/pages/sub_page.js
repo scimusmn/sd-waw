@@ -10,6 +10,8 @@ Template.subPage.rendered = function() {
     $('.subpage-button ').css('animation-duration', '300ms');
     $('.canyoneer-natural-walks').css('animation-duration', '400ms');
     $('h3').css('animation-duration', '500ms');
+    $('img.zoom-true').parent().append('<div class="mag-glass"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span></div>');
+
 };
 
 Template.subPage.events({

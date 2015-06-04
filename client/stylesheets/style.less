@@ -326,6 +326,76 @@ a.btn:active {
   line-height: 19px;
 }
 
+.image-overlay-cover {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: @screen-width;
+  height: @screen-height;
+  background: rgba(0, 0, 0, 0.88);
+  text-align: center;
+  display: none;
+}
+
+.image-overlay {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:auto;
+  margin-right:auto;
+  background: #fafafa;
+  -webkit-box-shadow: 2px 2px 20px @shadow-grey;
+          box-shadow: 2px 2px 20px @shadow-grey;
+  text-align: center;
+}
+
+.image-overlay img {
+  margin: 15px 0 15px 0;
+}
+
+.mag-glass {
+  position: absolute;
+  color: white;
+  width: 40px;
+  font-size: 40px;
+  z-index: 147483647;
+  top: 20px;
+  right: 20px;
+  /*opacity: .9;*/
+  /*mix-blend-mode: overlay;*/
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333;
+  opacity: .5;
+}
+
+/*.image-overlay {*/
+  /*background: rgba(0, 0, 0, 0.9);*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+  /*position: absolute;*/
+  /*display: block;*/
+  /*width: (@screen-width / 2);*/
+  /*height: @screen-height;*/
+  /*display: none;*/
+  /*z-index: 9999;*/
+  /*margin-right: auto;*/
+  /*margin-left: auto;*/
+/*}*/
+
+.close-img {
+  position: absolute;
+  color: white;
+  width: 40px;
+  font-size: 40px;
+  z-index: 147483647;
+  top: 20px;
+  right: 20px;
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Page type styles

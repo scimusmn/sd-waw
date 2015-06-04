@@ -1,4 +1,7 @@
 Template.page.rendered = function() {
+
+    $('img.zoom-true').parent().append('<div class="mag-glass"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span></div>');
+
     /**
      * Display the mouse position for dev marker placement
      */
@@ -208,10 +211,6 @@ Template.page.events({
     /**
      * Close button for popup layers
      */
-    'mousedown .marker-pop-up .btn-close': function() {
-        $('.marker-pop-up.popActive').removeClass('fadeInLeft popActive').addClass('animated fadeOutLeft');
-        d3.selectAll('.marker-clicked').classed('marker-clicked', false);
-    },
 
     // Swap out marker states
     'mousedown .marker-svg circle.marker-click-area': function(e) {

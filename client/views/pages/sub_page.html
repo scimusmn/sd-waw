@@ -33,7 +33,7 @@
         <div class="body-images">
           {{#each bodyImages}}
           <div class="image">
-            <img src="/images/{{this.fileName}}">
+            <img class="{{this.zoom}}" src="/images/{{this.fileName}}">
             <div class="credit">{{this.imageCredit}}</div>
             <div class="caption">
               {{this.imageCaption}}<br>
