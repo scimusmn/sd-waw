@@ -198,10 +198,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Ecologista',
         buttonImage: 'sci-hargrove-lori-button.jpg',
         bodyImages: [
-            {
-              fileName: 'sci-hargrove-lori-full.jpg',
-              zoom: 'zoom-true',
-            },
+            { fileName: 'sci-hargrove-lori-full.jpg' },
         ],
         order: 1,
         bodyCopy: '"The White-headed Woodpecker is found only in the pine forests of western North America, from Canada south to Cuyamaca Rancho State Park in San Diego County. The Cedar Fire in 2003, which burned 95 percent of the park, destroyed this species\' southernmost habitat."',
