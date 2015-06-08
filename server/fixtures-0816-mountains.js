@@ -90,7 +90,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal Palomar Mountain',
         buttonImage: 'mtn-explore-palomar.jpg',
         bodyImages: [
-            {fileName: 'mtn-explore-palomar-full.jpg'},
+            {
+              fileName: 'mtn-explore-palomar-full.jpg',
+              zoom: 'zoom-true',
+            },
         ],
         order: 1,
         bodyCopy: 'Visit Palomar Mountain State Park and enjoy a panoramic view of southern California that stretches from the ocean to the desert.',
@@ -111,7 +114,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal Cuyamaca Rancho (Pico Stonewall)',
         buttonImage: 'mtn-explore-stonewall.jpg',
         bodyImages: [
-            {fileName: 'mtn-explore-stonewall-full.jpg'},
+            {
+              fileName: 'mtn-explore-stonewall-full.jpg',
+              zoom: 'zoom-true',
+            },
         ],
         order: 2,
         bodyCopy: '<p>Climb a switchback trail to Stonewall Peak at 5,730 feet and enjoy views of Lake Cuyamaca and nearby peaks.</p><p>Join the canyoneers for guided hikes in southern California.</p>',
@@ -132,7 +138,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Silvestre Volcan Mountain',
         buttonImage: 'mtn-explore-volcan.jpg',
         bodyImages: [
-            {fileName: 'mtn-explore-volcan-full.jpg'},
+            {
+              fileName: 'mtn-explore-volcan-full.jpg',
+              zoom: 'zoom-true',
+            },
         ],
         order: 3,
         bodyCopy: '<p>Hike alongside beds of wildflowers and under the shade of giant oak trees straight to Volcan Peak for a view of the entire preserve. </p><p>Join the canyoneers for guided hikes in southern California.</p>',
@@ -153,7 +162,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal Palomar Mountain (Thunder Spring/Chimney Flats)',
         buttonImage: 'mtn-explore-thunder.jpg',
         bodyImages: [
-            {fileName: 'mtn-explore-thunder-full.jpg'},
+            {
+              fileName: 'mtn-explore-thunder-full.jpg',
+              zoom: 'zoom-true',
+            },
         ],
         order: 4,
         bodyCopy: '<p>Enjoy a picturesque trail up to Thunder Spring while hiking through oak and conifer forests. It gets a little steep, but the view is worth the climb!</p><p>Join the canyoneers for guided hikes in southern California.</p>',
@@ -186,7 +198,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Ecologista',
         buttonImage: 'sci-hargrove-lori-button.jpg',
         bodyImages: [
-            {fileName: 'sci-hargrove-lori-full.jpg'},
+            {
+              fileName: 'sci-hargrove-lori-full.jpg',
+              zoom: 'zoom-true',
+            },
         ],
         order: 1,
         bodyCopy: '"The White-headed Woodpecker is found only in the pine forests of western North America, from Canada south to Cuyamaca Rancho State Park in San Diego County. The Cedar Fire in 2003, which burned 95 percent of the park, destroyed this species\' southernmost habitat."',
