@@ -47,7 +47,8 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 fileName: 'tp-tree-rare.jpg',
                 imageCaption: 'Torrey Pine',
                 imageCaptionEsp: 'Pino de Torrey',
-                imageCaptionLatin: 'Pinus torreyana ssp. torreyana'
+                imageCaptionLatin: 'Pinus torreyana ssp. torreyana',
+                zoom: 'zoom-true'
             }
         ],
     });
@@ -67,13 +68,15 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 fileName: 'tp-habitat-sagebrush.png',
                 imageCaption: 'California Sagebrush',
                 imageCaptionEsp: 'Chamizo',
-                imageCaptionLatin: 'Artemisia californica'
+                imageCaptionLatin: 'Artemisia californica',
+                zoom: 'zoom-true'
             },
             {
                 fileName: 'tp-habitat-cactus.png',
                 imageCaption: 'Coast Prickly-pear',
                 imageCaptionEsp: 'Nopal',
-                imageCaptionLatin: 'Opuntia littoralis'
+                imageCaptionLatin: 'Opuntia littoralis',
+                zoom: 'zoom-true'
             }
         ],
     });
@@ -113,7 +116,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Natural<br>Estatal de Torrey Pines',
         buttonImage: 'tp-explore-reserve.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-reserve-full.jpg' },
+            {
+              fileName: 'tp-explore-reserve-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 1,
         bodyCopy: 'Visit Torrey Pines State Natural Reserve—one of the last places where you can find coastal sage scrub habitat, which is disappearing due to real estate development.',
@@ -134,7 +140,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva de Espacio<br>Abierto Crest Canyon',
         buttonImage: 'tp-explore-crest.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-crest-full.jpg'},
+            {
+              fileName: 'tp-explore-crest-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 2,
         bodyCopy: '<p>Stroll through this coastal canyon, south of San Dieguito Lagoon, and you’ll behold a tapestry of native and non-native plants.</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
@@ -155,7 +164,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Monumento Nacional Cabrillo<br>(Sendero Bayside)',
         buttonImage: 'tp-explore-bayside.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-bayside-full.jpg'},
+            {
+              fileName: 'tp-explore-bayside-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 3,
         bodyCopy: '<p>Encounter windswept chaparral and coastal sage scrub clinging to the cliffs that overlook San Diego harbor.</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
@@ -176,7 +188,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque de Espacio Abierto<br>Black Mountain (Miner’s Loop)',
         buttonImage: 'tp-explore-miners.jpg',
         bodyImages: [
-            {fileName: 'tp-explore-miners-full.jpg'},
+            {
+              fileName: 'tp-explore-miners-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 4,
         bodyCopy: '<p>Hike through coastal sage scrub and chaparral and see the remains of an old arsenic mine. If you’re lucky, you might spot a quail!</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
