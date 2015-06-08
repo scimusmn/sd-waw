@@ -169,7 +169,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Ecológica Bolsa Chica',
         buttonImage: 'wet-explore-bolsa.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-bolsa-full.jpg'},
+            {
+              fileName: 'wet-explore-bolsa-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 1,
         bodyCopy: 'Visit Bolsa Chica Ecological Reserve to experience the largest saltwater wetland in southern California.',
@@ -190,7 +193,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Ecológica Laguna de San Elijo ',
         buttonImage: 'wet-explore-elijo.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-elijo-full.jpg'},
+            {
+              fileName: 'wet-explore-elijo-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 2,
         bodyCopy: '<p>Glimpse some of the more than 700 plant and animal species that inhabit this county preserve. Bring your binoculars!</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -211,7 +217,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Río San Dieguito<br>(Sendero Coast to Crest – Del Mar)',
         buttonImage: 'wet-explore-delmar.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-delmar-full.jpg'},
+            {
+              fileName: 'wet-explore-delmar-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 3,
         bodyCopy: '<p>Hike the western-most section of the Coast to Crest Trail, which will extend 55 miles from the ocean at Del Mar to Volcan Mountain just north of Julian.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -232,7 +241,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Nacional de Investigación Estuarina del Río Tijuana (Sendero North Beach)',
         buttonImage: 'wet-explore-northbeach.jpg',
         bodyImages: [
-            {fileName: 'wet-explore-northbeach-full.jpg'},
+            {
+              fileName: 'wet-explore-northbeach-full.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 4,
         bodyCopy: '<p>Enjoy the ocean breeze and hike alongside one of the few remaining coastal wetlands in southern California.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
