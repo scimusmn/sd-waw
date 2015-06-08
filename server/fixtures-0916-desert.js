@@ -47,11 +47,14 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
                 fileName: 'desert-mojave.jpg',
                 imageCaption: 'Mojave Desert',
                 imageCaptionEsp: 'El Desierto de Mojave',
+                zoom: 'zoom-true'
+
             },
             {
                 fileName: 'desert-sonoran.jpg',
                 imageCaption: 'Sonoran Desert',
                 imageCaptionEsp: 'El Desierto de Sonora',
+                zoom: 'zoom-true'
             },
         ],
         backgroundMapClass: 'map-desert-our',
@@ -98,7 +101,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Nacional Joshua Tree ',
         buttonImage: 'desert-explore-joshua-button.jpg',
         bodyImages: [
-            {fileName: 'desert-explore-joshua.jpg'},
+            {
+              fileName: 'desert-explore-joshua.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 1,
         bodyCopy: 'Visit Joshua Tree National Park, where you can spend the day rock climbing or enjoying a leisurely hike among the spiky, fanciful Joshua Trees.',
@@ -119,7 +125,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal del Desierto Anza-Borrego<br>(Cañón Hellhole / Cascada Maidenhair)',
         buttonImage: 'desert-explore-hellhole-button.jpg',
         bodyImages: [
-            {fileName: 'desert-explore-hellhole.jpg'},
+            {
+              fileName: 'desert-explore-hellhole.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 2,
         bodyCopy: '<p> On this challenging hike, explore a hidden oasis that’s fed by a year-round spring.  </p><p>Join the canyoneers for guided hikes in southern California.</p>',
@@ -140,7 +149,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal del Desierto Anza-Borrego (Sendero Morteros)',
         buttonImage: 'desert-explore-morteros-button.jpg',
         bodyImages: [
-            {fileName: 'desert-explore-morteros.jpg'},
+            {
+              fileName: 'desert-explore-morteros.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 3,
         bodyCopy: '<p> Hike alongside a variety of cacti and depressions in the rocks—called morteros—where native people ground up plant materials that they gathered nearby.   </p><p>Join the canyoneers for guided hikes in southern California.</p>',
@@ -161,7 +173,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal del Desierto Anza-Borrego (Mine Canyon) ',
         buttonImage: 'desert-explore-mine-button.jpg',
         bodyImages: [
-            {fileName: 'desert-explore-mine.jpg'},
+            {
+              fileName: 'desert-explore-mine.jpg',
+              zoom: 'zoom-true'
+            },
         ],
         order: 4,
         bodyCopy: '<p> On this desert adventure, you’ll encounter abandoned gold mines and the Teddy-bear Cholla. Don’t be fooled by its name: this snuggly looking cactus is anything but cuddly!  </p><p>Join the canyoneers for guided hikes in southern California.</p>',
