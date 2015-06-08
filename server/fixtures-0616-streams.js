@@ -82,7 +82,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Rio de Los Angeles State Park',
         espButtonTitle: 'Parque Estatal Río de Los Ángeles',
         buttonImage: 'streams-explore-los-angeles-button.jpg',
-        bodyImages: [ { fileName: 'streams-explore-los-angeles.jpg' } ],
+        bodyImages: [ {
+          fileName: 'streams-explore-los-angeles.jpg',
+          zoom: 'zoom-true'
+        } ],
         order: 1,
         bodyCopy: 'Visit Rio de Los Angeles State Park, where the riverbanks are being restored to create a serene, natural escape from the city.',
         espBodyCopy: 'Visita el Parque Estatal Río de Los Ángeles, donde las riberas del río están siendo restauradas para crear un escape de la ciudad sereno y natural.',
@@ -101,7 +104,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Blue Sky Ecological Reserve',
         espButtonTitle: 'Reserva Ecológica Blue Sky',
         buttonImage: 'streams-explore-blue-sky-button.jpg',
-        bodyImages: [ { fileName: 'streams-explore-blue-sky.jpg' } ],
+        bodyImages: [ {
+          fileName: 'streams-explore-blue-sky.jpg',
+          zoom: 'zoom-true'
+        } ],
         order: 2,
         bodyCopy: '<p> Enjoy a leisurely stroll beneath a canopy of giant oaks while listening to water rippling over rocks in a nearby stream. </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
         espBodyCopy: '<p> Disfruta de una caminata relajada bajo las copas de gigantescos robles mientras escuchas el agua rizándose sobre las rocas de un arroyo cercano. </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
@@ -120,7 +126,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'San Dieguito River Park (Old Coach Staging Area – Coast to Crest Trail)',
         espButtonTitle: 'Parque del Río San Dieguito (Zona Old Coach Staging – Sendero Coast to Crest)',
         buttonImage: 'streams-explore-old-coach-button.jpg',
-        bodyImages: [ { fileName: 'streams-explore-old-coach.jpg' } ],
+        bodyImages: [ {
+          fileName: 'streams-explore-old-coach.jpg',
+          zoom: 'zoom-true'
+        } ],
         order: 3,
         bodyCopy: '<p> Hike to Raptor Ridge, and discover how it got its name. From there you’ll have a panoramic view of the San Pasqual Agricultural Preserve and the San Diego Zoo Safari Park.</p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
         espBodyCopy: '<p> Disfruta de una excursión a Raptor Ridge ("Cresta de las Aves Rapaces"), y descubre cómo recibió su nombre. Desde ahí tendrás una vista panorámica de la Reserva Agrícola San Pasqual y el Parque Safari del Zoológico de San Diego.</p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
@@ -139,7 +148,10 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         buttonTitle: 'Cuyamaca Rancho State Park (Green Valley Falls Loop)',
         espButtonTitle: 'Parque Estatal Cuyamaca Rancho (Circuito Green Valley Falls)',
         buttonImage: 'streams-explore-green-valley-button.jpg',
-        bodyImages: [ { fileName: 'streams-explore-green-valley.jpg' } ],
+        bodyImages: [ {
+          fileName: 'streams-explore-green-valley.jpg',
+          zoom: 'zoom-true'
+        } ],
         order: 4,
         bodyCopy: '<p> Start your morning wading beneath waterfall cascades and hiking alongside the Sweetwater River.  </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
         espBodyCopy: '<p> Empieza tu mañana vadeando debajo de cascadas y haciendo una caminata a lo largo del Río Sweetwater.  </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
