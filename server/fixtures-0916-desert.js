@@ -60,24 +60,18 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         backgroundMapClass: 'map-desert-our',
     });
 
-    //
-    // Disabled until map is complete
-    //
-    //Pages.insert({
-        //colorPalate: colorPalate,
-        //componentId: desert,
-        //link: 'rare-habitat',
-        //buttonTitle: 'Rare habitat',
-        //espButtonTitle: 'Hábitat inusual',
-        //order: 4,
-        //bodyCopy: '<p>Our highest mountain peaks—the coolest and wettest areas of southern California—are home to some of the last conifer forests in the region.</p><p>Move the slider to compare southern California elevations to conifer forest locations.</p>',
-        //espBodyCopy: '<p>Nuestras cumbres más elevadas—las zonas más frescas y húmedas del sur de California—albergan algunos de los últimos bosques de coníferas en la región.</p><p>TBD</p>',
-        //backgroundMapClass: 'map-wet-then-now',
-        //bottomImage: 'desert-compare-elevation-01.png',
-        //bottomImageLabel: 'Low elevation',
-        //topImage: 'desert-compare-elevation-02.png',
-        //topImageLabel: 'High elevation',
-    //});
+    Pages.insert({
+        colorPalate: colorPalate,
+        componentId: desert,
+        link: 'dry-climate',
+        buttonTitle: 'Dry climate',
+        espButtonTitle: 'Clima seco',
+        order: 4,
+        bodyCopyLayout: 'horizontal',
+        bodyCopy: '<p>Although every desert has its own distinguishing features, deserts worldwide share one common trait: a scarcity of rain.',
+        espBodyCopy: '<p>Si bien cada desierto tiene sus propias características que lo distinguen, los desiertos a lo largo del mundo comparten un rasgo en común: la escasez de lluvia.<p>',
+        backgroundMapClass: 'map-desert-dry-climate',
+    });
 
     var desertExplore = Pages.insert({
         colorPalate: colorPalate,

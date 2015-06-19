@@ -21,6 +21,7 @@ Template.page.rendered = function() {
     if (
         $('.map-mount-rare+.body-copy.rare-habitat').length ||
         $('.body-copy.rare-climate-zone').length ||
+        $('.body-copy.dry-climate').length ||
         $('.body-copy.our-wetlands').length ||
         $('.body-copy.watersheds').length) {
 
