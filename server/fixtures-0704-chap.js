@@ -63,7 +63,7 @@ if (Components.find({ colorPalate: colorPalate }).count() === 0) {
     order: 3,
     bodyCopyLayout: 'horizontal',
     bodyCopy: '<p> Coastal California is one of only five places on Earth known as a Mediterranean climate zone.</p><p> The mild, wet winters and long, dry summers typical of this climate zone are ideal for the xerophilous (pronounced ze-RA-fe-les, meaning “dry-loving”) chaparral plants.</p>',
-    espBodyCopy: '<p> La costa de California es sólo uno de cinco lugares en la Tierra que se conocen como zonas climáticas mediterráneas.</p><p>Los templados y lluviosos inviernos y los veranos largos y secos típicos de esta zona climática son ideales para las plantas de chaparral xerófilas (pronunciado ce-RO-fi-las, lo que significa que les gusta la sequedad).  </p>',
+    espBodyCopy: '<p> La costa de California es sólo uno de cinco lugares en la Tierra que se conocen como zonas climáticas mediterráneas.</p><p>Los templados y lluviosos inviernos y los veranos largos y secos típicos de esta zona climática son ideales para las plantas de chaparral xerófilas (lo que significa que les gusta la sequedad).  </p>',
     backgroundMapClass: 'map-tp-med',
   });
 
@@ -147,7 +147,7 @@ if (Components.find({ colorPalate: colorPalate }).count() === 0) {
     ],
     order: 3,
     bodyCopy: '<p> Hike up boulder-studded hillsides on this gentle trail, which leads to a spot overlooking the San Vicente Reservoir. </p><p>Join the Canyoneers for this and other guided hikes in southern California.</p>',
-    espBodyCopy: '<p>Camina subiendo por laderas tachonadas de peñascos a lo largo de este sendero fácil de transitar que lleva a un sitio con vista al embalse San Vicente.  </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
+    espBodyCopy: '<p>Camina subiendo por laderas tachonadas de peñascos a lo largo de este sendero fácil de transitar que lleva a un sitio con vista a la reserva de San Vicente.  </p><p>Únete a los Canyoneers para disfrutar de ésta y otras caminatas guiadas en el sur de California.</p>',
     websiteCall: 'For more information, visit:',
     websiteCallEsp: 'Para más información, visita:',
     websiteURL: 'sdnat.org/canyoneers',
