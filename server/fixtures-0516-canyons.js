@@ -3,10 +3,10 @@
  */
 var colorPalate = 'canyons';
 
-Components.remove({ 'colorPalate': colorPalate });
-Pages.remove({ 'colorPalate': colorPalate });
+Components.remove({ colorPalate: colorPalate });
+Pages.remove({ colorPalate: colorPalate });
 
-if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
+if (Components.find({ colorPalate: colorPalate }).count() === 0) {
 
     var canyons = Components.insert({
         colorPalate: colorPalate,
@@ -29,7 +29,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espBodyCopy: 'Los cañones nos rodean por todas partes. De hecho, hay uno apenas a una cuadra del museo—Florida Canyon.',
         backgroundMapClass: 'map-can-where',
         bodyImages: [
-            {fileName: 'can-where.jpg'},
+            { fileName: 'can-where.jpg' },
         ],
     });
 
@@ -100,7 +100,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Parque Estatal<br>Placerita Canyon',
         buttonImage: 'can-explore-placerita-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-placerita-full.jpg', zoom: 'zoom-true'},
+            { fileName: 'can-explore-placerita-full.jpg', zoom: 'zoom-true' },
         ],
         order: 1,
         bodyCopy: 'Visit Placerita Canyon State Park to experience a range of habitats in one area—from cool, oak woodlands to dense, chaparral-covered hillsides.',
@@ -121,7 +121,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Estatal Natural Torrey Pines<br>(Gonzalez Canyon – Circuito Torrey Pines)',
         buttonImage: 'can-explore-gonzales-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-gonzales-full.jpg', zoom: 'zoom-true'},
+            { fileName: 'can-explore-gonzales-full.jpg', zoom: 'zoom-true' },
         ],
         order: 2,
         bodyCopy: '<p>Explore a canyon filled with various aromatic plants including the native California Sagebrush and the non-native Fennel.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -142,7 +142,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Reserva Los Peñasquitos Canyon<br>(Lopez Canyon)',
         buttonImage: 'can-explore-lopez-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-lopez-full.jpg', zoom: 'zoom-true'},
+            { fileName: 'can-explore-lopez-full.jpg', zoom: 'zoom-true' },
         ],
         order: 3,
         bodyCopy: '<p>Walk past magnificent sycamores to an old creek bed, where you’ll encounter a variety of chaparral and coastal sage scrub plants.</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -163,7 +163,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Florida Canyon',
         buttonImage: 'can-explore-florida-1.jpg',
         bodyImages: [
-            {fileName: 'can-explore-florida-full.jpg', zoom: 'zoom-true'},
+            { fileName: 'can-explore-florida-full.jpg', zoom: 'zoom-true' },
         ],
         order: 4,
         bodyCopy: '<p>Experience an urban wilderness, just steps away from the Museum, as you descend into a canyon filled with native and non-native plants and critters!</p><p>Join the Canyoneers for guided hikes in southern California.</p>',
@@ -196,7 +196,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Vice presidente de investigaciones y programas públicos',
         buttonImage: 'sci-wall-michael-button.jpg',
         bodyImages: [
-            {fileName: 'sci-wall-michael-full.jpg'},
+            { fileName: 'sci-wall-michael-full.jpg' },
         ],
         order: 1,
         bodyCopy: '"I always dig seeing Valley Carpenter Bees around my house. The males are large, golden in color, and like to hang out around dead wood where the females make nests. The females are black. Most people wouldn’t think that the male and female belong to the same species."',
@@ -217,7 +217,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         espButtonTitle: 'Especialista en mamíferos',
         buttonImage: 'sci-tremor-scott-button.jpg',
         bodyImages: [
-            {fileName: 'sci-tremor-scott-full.jpg'},
+            { fileName: 'sci-tremor-scott-full.jpg' },
         ],
         order: 2,
         bodyCopy: '"The Long-tailed Weasel is common in southern California canyons but is rarely seen. This stealthy predator enters the maze of burrows created by Pocket Gophers and California Ground Squirrels. There, the weasel captures and devours gophers, mice, rats, squirrels, and rabbits."',

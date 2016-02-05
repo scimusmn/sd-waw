@@ -1,6 +1,6 @@
 /**
-* Chaparral
-*/
+ * Chaparral
+ */
 var colorPalate = 'chaparral';
 
 Components.remove({ colorPalate: colorPalate });

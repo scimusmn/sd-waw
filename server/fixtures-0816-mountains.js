@@ -1,6 +1,6 @@
 /**
-* Mountains
-*/
+ * Mountains
+ */
 var colorPalate = 'mountains';
 
 Components.remove({ colorPalate: colorPalate });
@@ -8,11 +8,6 @@ Pages.remove({ colorPalate: colorPalate });
 
 if (Components.find({ colorPalate: colorPalate }).count() === 0) {
 
-  /**
-  **************************************************************************
-  * Mountains
-  **************************************************************************
-  */
   var mountains = Components.insert({
     colorPalate: colorPalate,
     link: 'mountains',
