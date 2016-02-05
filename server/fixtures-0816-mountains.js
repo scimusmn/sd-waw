@@ -197,7 +197,7 @@ if (Components.find({ colorPalate: colorPalate }).count() === 0) {
     componentId: mountains,
     parentId: mtnScienceStories,
     buttonTitle: 'Lori Hargrove<br>Ecologist',
-    espButtonTitle: 'Ecologista',
+    espButtonTitle: 'Ecóloga',
     buttonImage: 'sci-hargrove-lori-button.jpg',
     bodyImages: [
       { fileName: 'sci-hargrove-lori-full.jpg' },
