@@ -1,12 +1,12 @@
 /**
-* Desert
-*/
+ * Desert
+ */
 var colorPalate = 'desert';
 
-Components.remove({ 'colorPalate': colorPalate });
-Pages.remove({ 'colorPalate': colorPalate });
+Components.remove({ colorPalate: colorPalate });
+Pages.remove({ colorPalate: colorPalate });
 
-if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
+if (Components.find({ colorPalate: colorPalate }).count() === 0) {
 
   var desert = Components.insert({
     colorPalate: colorPalate,
@@ -29,7 +29,9 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     espBodyCopy: 'El Desierto del Colorado  (también conocido como el Valle del Río Colorado) comienza apenas ochenta millas al este del Museo y forma parte del Desierto de Sonora que lo abarca, el cual se extiende a lo largo de partes del sudoeste norteamericano y el noroeste de México.',
     backgroundMapClass: 'map-desert-where',
     bodyImages: [
-      {fileName: 'desert-where.jpg'},
+      {
+        fileName: 'desert-where.jpg',
+      },
     ],
   });
 
@@ -47,14 +49,14 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
         fileName: 'desert-mojave.jpg',
         imageCaption: 'Mojave Desert',
         imageCaptionEsp: 'El Desierto de Mojave',
-        zoom: 'zoom-true'
+        zoom: 'zoom-true',
 
       },
       {
         fileName: 'desert-sonoran.jpg',
         imageCaption: 'Sonoran Desert',
         imageCaptionEsp: 'El Desierto de Sonora',
-        zoom: 'zoom-true'
+        zoom: 'zoom-true',
       },
     ],
     backgroundMapClass: 'map-desert-our',
@@ -97,7 +99,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     bodyImages: [
       {
         fileName: 'desert-explore-joshua.jpg',
-        zoom: 'zoom-true'
+        zoom: 'zoom-true',
       },
     ],
     order: 1,
@@ -121,7 +123,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     bodyImages: [
       {
         fileName: 'desert-explore-hellhole.jpg',
-        zoom: 'zoom-true'
+        zoom: 'zoom-true',
       },
     ],
     order: 2,
@@ -145,7 +147,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     bodyImages: [
       {
         fileName: 'desert-explore-morteros.jpg',
-        zoom: 'zoom-true'
+        zoom: 'zoom-true',
       },
     ],
     order: 3,
@@ -169,7 +171,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     bodyImages: [
       {
         fileName: 'desert-explore-mine.jpg',
-        zoom: 'zoom-true'
+        zoom: 'zoom-true',
       },
     ],
     order: 4,
@@ -203,7 +205,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     espButtonTitle: 'Directora de registro y de la biblioteca de investigación',
     buttonImage: 'sci-dykens-margi-button.jpg',
     bodyImages: [
-      {fileName: 'sci-dykens-margi-full.jpg'},
+      { fileName: 'sci-dykens-margi-full.jpg' },
     ],
     order: 1,
     bodyCopy: '"Cacti are very challenging subjects for illustrators. The Teddy-bear Cholla may appear soft and cuddly, but it is covered with tiny hair-like spines—called glochids—that are almost invisible. It will cling to any animal or person brushing up against it, making it difficult to examine closely and draw."',
@@ -211,7 +213,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     backgroundMapClass: 'sci-desert-cholla',
     backgroundCaption: 'Teddy-bear Cholla',
     backgroundCaptionEsp: 'Cholla del oso',
-    backgroundCaptionLatin: 'Cylindropuntia bigeloviii var. bigelovii'
+    backgroundCaptionLatin: 'Cylindropuntia bigeloviii var. bigelovii',
   });
 
   Pages.insert({
@@ -224,7 +226,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     espButtonTitle: 'Curador de herpetología',
     buttonImage: 'sci-hollingsworth-brad-button.jpg',
     bodyImages: [
-      {fileName: 'sci-hollingsworth-brad-full.jpg'},
+      { fileName: 'sci-hollingsworth-brad-full.jpg' },
     ],
     order: 2,
     bodyCopy: '"The Desert Iguana, one of my favorite lizards, is among the most heat-adapted animals in the world. It can tolerate body temperatures above 110˚F, making it perfect for the blazing desert heat. It gets most of its moisture from desert plants and likes to eat yellow flowers when they’re in bloom."',
@@ -232,7 +234,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     backgroundMapClass: 'sci-desert-iguana',
     backgroundCaption: 'Desert Iguana',
     backgroundCaptionEsp: 'Iguana del desierto',
-    backgroundCaptionLatin: 'Dipsosaurus dorsalis'
+    backgroundCaptionLatin: 'Dipsosaurus dorsalis',
   });
 
 }
