@@ -3,10 +3,10 @@
 */
 var colorPalate = 'mountains';
 
-Components.remove({ 'colorPalate': colorPalate });
-Pages.remove({ 'colorPalate': colorPalate });
+Components.remove({ colorPalate: colorPalate });
+Pages.remove({ colorPalate: colorPalate });
 
-if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
+if (Components.find({ colorPalate: colorPalate }).count() === 0) {
 
   /**
   **************************************************************************
@@ -20,7 +20,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     titleEsp: 'Las montañas Cuyamaca',
     componentNum: '0816',
     order: 7,
-    mural: 'mtn-mural.jpg'
+    mural: 'mtn-mural.jpg',
   });
 
   Pages.insert({
@@ -34,7 +34,9 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     espBodyCopy: 'Las montañas Cuyamaca, el marco de la escena delante de ti, están apenas a 50 millas del  Museo. ',
     backgroundMapClass: 'map-mtn-where',
     bodyImages: [
-      {fileName: 'mtn-where.jpg'},
+      {
+        fileName: 'mtn-where.jpg',
+      },
     ],
   });
 
@@ -206,7 +208,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     backgroundMapClass: 'sci-mtn-woodpecker',
     backgroundCaption: 'White-headed Woodpecker',
     backgroundCaptionEsp: 'Carpintero cabeza blanca',
-    backgroundCaptionLatin: 'Picoides albolarvatus'
+    backgroundCaptionLatin: 'Picoides albolarvatus',
   });
 
   Pages.insert({
@@ -219,7 +221,9 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     espButtonTitle: 'Entomólogo',
     buttonImage: 'sci-berrian-jim-button.jpg',
     bodyImages: [
-      {fileName: 'sci-berrian-jim-full.jpg'},
+      {
+        fileName: 'sci-berrian-jim-full.jpg',
+      },
     ],
     order: 2,
     bodyCopy: '"This native Californian spider was discovered only recently, in 2005. It’s smaller than a grain of rice. This discovery is exciting because it shows that we still have new finds to make right here in our local mountains."',
@@ -227,7 +231,7 @@ if (Components.find( { 'colorPalate': colorPalate } ).count() === 0) {
     backgroundMapClass: 'sci-can-spider',
     backgroundCaption: 'Spider',
     backgroundCaptionEsp: 'Araña',
-    backgroundCaptionLatin: 'Apostenus californicus'
+    backgroundCaptionLatin: 'Apostenus californicus',
   });
 
 }
