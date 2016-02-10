@@ -1,11 +1,11 @@
 /**
  * Components
  */
-Meteor.publish(components, function (options) {
+Meteor.publish('components', function (options) {
   return Components.find({}, options);
 });
 
-Meteor.publish(singleComponent, function (link) {
+Meteor.publish('singleComponent', function (link) {
   return Components.find({ link: link });
 });
 
