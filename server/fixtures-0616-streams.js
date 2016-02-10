@@ -199,7 +199,7 @@ if (Components.find({ colorPalate: colorPalate }).count() === 0) {
         componentId: streams,
         parentId: streamsScienceStories,
         buttonTitle: 'Kevin Clark<br> Ecologist',
-        espButtonTitle: 'Ecologista',
+        espButtonTitle: 'Ecóloga',
         buttonImage: 'sci-clark-kevin-button.jpg',
         bodyImages: [ { fileName: 'sci-clark-kevin.jpg'} ],
         order: 2,
